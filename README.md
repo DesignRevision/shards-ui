@@ -76,7 +76,7 @@ Building better products is something I'm trying to get really good at. I’d lo
 
 ## License
 
-This project is licensed under the DRL 1.0 license - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the DRL 1.0 license - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
