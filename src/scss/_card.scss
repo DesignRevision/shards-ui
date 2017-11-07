@@ -1,0 +1,229 @@
+//
+// Base styles
+//
+
+.card {
+  background-color: $card-bg;
+  border: none;
+
+  @include border-radius($card-border-radius);
+  @include box-shadow($card-box-shadow);
+
+  // Fix paragraph margins inside cards
+  .card-text {
+    margin-bottom: $card-paragraph-margin-bottom;
+  }
+
+  // Remove text decoration.
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.card-body {
+  padding: $card-spacer-x;
+}
+
+.card-title {
+  font-weight: $card-title-font-weight;
+  margin-bottom: $card-title-margin-bottom;
+}
+
+.card-link {
+  font-family: $font-family-poppins-first;
+
+  + .card-link {
+    margin-left: $card-spacer-x;
+  }
+}
+
+.card {
+  > .list-group:first-child {
+    .list-group-item:first-child {
+      @include border-top-radius($card-border-radius);
+    }
+  }
+
+  > .list-group:last-child {
+    .list-group-item:last-child {
+      @include border-bottom-radius($card-border-radius);
+    }
+  }
+
+  .list-group-item {
+    padding: $card-list-group-item-padding;
+  }
+}
+
+
+//
+// Optional textual caps
+//
+
+.card-header {
+  padding: $card-header-spacer-y $card-header-spacer-x;
+  background-color: $card-cap-bg;
+  border-bottom: none;
+
+  &:first-child {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+}
+
+.card-footer {
+  padding: $card-footer-spacer-y $card-footer-spacer-x;
+  background-color: $card-cap-bg;
+  border-top: none;
+
+  &:last-child {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
+}
+
+
+//
+// Header navs
+//
+
+.card-header-tabs {
+  margin-bottom: -1rem;
+  border-bottom: 0;
+
+  .nav-link {
+    &:hover {
+      border-bottom: transparent;
+    }
+  }
+}
+
+// Card image
+.card-img-overlay {
+  padding: $card-img-overlay-padding;
+  background: rgba($blueish-grey, .5);
+  border-radius: $card-border-radius;
+
+  .card-title {
+    color: $white;
+  }
+}
+
+.card-img {
+  @include border-radius($card-inner-border-radius);
+}
+
+// Card image caps
+.card-img-top {
+  @include border-top-radius($card-inner-border-radius);
+}
+
+.card-img-bottom {
+  @include border-bottom-radius($card-inner-border-radius);
+}
+
+
+//
+// Card decks
+//
+
+@include media-breakpoint-up(sm) {
+  .card-deck {
+    margin-right: -$card-deck-margin;
+    margin-left: -$card-deck-margin;
+
+    .card {
+      margin-right: $card-deck-margin;
+      margin-left: $card-deck-margin;
+    }
+  }
+}
+
+
+//
+// Card groups
+//
+
+@include media-breakpoint-up(sm) {
+  .card-group {
+    // Apply box shadow and fix the border radius of the card group.
+    @include box-shadow($card-box-shadow);
+    @include border-bottom-radius($card-border-radius);
+
+    .card {
+      // Disable box shadow on cards as it's applied on the parent card group.
+      box-shadow: none;
+
+      .card-body {
+        border-right: $card-group-card-border;
+      }
+
+      .card-footer {
+        border-radius: 0;
+        border-right: $card-group-card-border;
+      }
+
+      &:first-child {
+        .card-footer {
+          border-bottom-left-radius: $card-border-radius;
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+
+        .card-footer {
+          border-bottom-right-radius: $card-border-radius;
+          border: none;
+        }
+      }
+
+      // Handle rounded corners
+      @if $enable-rounded {
+        &:first-child {
+          @include border-right-radius(0);
+
+          .card-img-top {
+            border-top-right-radius: 0;
+          }
+          .card-img-bottom {
+            border-bottom-right-radius: 0;
+          }
+        }
+        &:last-child {
+          @include border-left-radius(0);
+
+          .card-img-top {
+            border-top-left-radius: 0;
+          }
+          .card-img-bottom {
+            border-bottom-left-radius: 0;
+          }
+        }
+
+        &:not(:first-child):not(:last-child) {
+          border-radius: 0;
+
+          .card-img-top,
+          .card-img-bottom {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//
+// Card Columns
+//
+
+.card-columns {
+  .card {
+    margin-bottom: $card-columns-margin;
+  }
+
+  @include media-breakpoint-up(sm) {
+    column-count: $card-columns-count;
+    column-gap: $card-columns-gap;
+  }
+}

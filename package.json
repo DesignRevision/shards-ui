@@ -1,0 +1,59 @@
+{
+  "name": "shards",
+  "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
+  "version": "1.0.0",
+  "private": true,
+  "main": "js/index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch serve-dist",
+    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css-compile": "npm-run-all css-compile:main css-compile:extras",
+    "css-compile:main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/shards.scss dist/css/shards.css",
+    "css-compile:extras": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/extras/scss/shards-extras.scss dist/css/shards-extras.css",
+    "css-prefix": "postcss --config build/postcss.config.js --replace dist/css/*.css",
+    "css-minify": "npm-run-all css-minify:main css-minify:extras",
+    "css-minify:main": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards.min.css dist/css/shards.css",
+    "css-minify:extras": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards-extras.min.css dist/css/shards-extras.css",
+    "js": "npm-run-all js-compile js-minify",
+    "js-compile": "webpack --config build/webpack.config.js",
+    "js-minify": "npm-run-all js-minify:main js-minify:extras",
+    "js-minify:main": "uglifyjs --compress --mangle --output dist/js/shards.min.js dist/js/shards.js",
+    "js-minify:extras": "uglifyjs --compress --mangle --output dist/js/extras.min.js dist/js/extras.js",
+    "copy-html": "copyfiles -f src/extras/*.html dist",
+    "copy-images": "copyfiles -u 3 src/extras/images/**/**/* dist/images/",
+    "serve-dist": "browser-sync start --server \"./dist\" --files \".\" --no-open --no-online --no-notify",
+    "watch": "npm-run-all --parallel watch-css watch-html watch-images watch-js",
+    "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
+    "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
+    "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
+    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisk/shards.git"
+  },
+  "author": "Catalin Vasile",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisk/shards/issues"
+  },
+  "homepage": "https://designrevision.com/download/shards",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "clean-css-cli": "^4.1.6",
+    "copyfiles": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.1.0",
+    "sass-lint": "^1.10.2",
+    "sass-unused": "^0.2.2",
+    "uglify-js": "^3.1.2",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "bootstrap-datepicker": "^1.7.1",
+    "nouislider": "^10.1.0"
+  }
+}

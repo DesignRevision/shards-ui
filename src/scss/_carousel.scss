@@ -1,0 +1,79 @@
+//
+// Carousel adjustments
+//
+
+// Wrapper for the slide container and indicators
+.carousel {
+  box-shadow: $card-box-shadow;
+}
+
+.carousel-item {
+  @include transition($carousel-transition);
+}
+
+//
+// Left/right controls for nav
+//
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: $carousel-control-width;
+  color: $carousel-control-color;
+  opacity: $carousel-control-opacity;
+
+  @include hover-focus {
+    color: $carousel-control-color;
+  }
+}
+
+// Icons for within
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
+}
+
+.carousel-control-prev-icon {
+  background-image: $carousel-control-prev-icon-bg;
+}
+
+.carousel-control-next-icon {
+  background-image: $carousel-control-next-icon-bg;
+}
+
+
+// Optional indicator pips
+//
+// Add an ordered list with the following class and add a list item for each
+// slide your carousel holds.
+
+.carousel-indicators {
+  margin-right: $carousel-control-width;
+  margin-left: $carousel-control-width;
+
+  li {
+    width: $carousel-indicator-width;
+    height: $carousel-indicator-height;
+    margin-right: $carousel-indicator-spacer;
+    margin-left: $carousel-indicator-spacer;
+    background-color: rgba($carousel-indicator-active-bg, .5);
+    border-radius: $carousel-indicator-border-radius;
+  }
+
+  .active {
+    background-color: $carousel-indicator-active-bg;
+  }
+}
+
+
+// Optional captions
+.carousel-caption {
+  right: ((100% - $carousel-caption-width) / 2);
+  left: ((100% - $carousel-caption-width) / 2);
+  color: $carousel-caption-color;
+
+  // Fix caption color.
+  * {
+    color: $carousel-caption-color;
+  }
+}

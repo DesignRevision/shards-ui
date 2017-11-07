@@ -1,0 +1,56 @@
+//
+// Progress bar adjustments
+//
+
+.progress-wrapper {
+  position: relative;
+  color: $body-color;
+
+  .progress-label {
+    font-size: $progress-label-font-size;
+  }
+
+  .progress-value {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    color: $body-color;
+  }
+}
+
+.progress {
+  font-size: $progress-font-size;
+  line-height: $progress-height;
+  background-color: $progress-bg;
+  margin-top: 6px;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+}
+
+// Small progress bar helper.
+.progress-sm {
+  height: $progress-sm-height;
+}
+
+// Large progress bar helper.
+.progress-lg {
+  height: $progress-lg-height;
+  .progress-bar { height: $progress-lg-height; }
+}
+
+.progress-bar {
+  height: $progress-height;
+  line-height: $progress-height;
+  color: $progress-bar-color;
+  background-color: $progress-bar-bg;
+  @include transition($progress-bar-transition);
+}
+
+.progress-bar-striped {
+  @include gradient-striped();
+  background-size: $progress-height $progress-height;
+}
+
+.progress-bar-animated {
+  animation: progress-bar-stripes $progress-bar-animation-timing;
+}

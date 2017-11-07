@@ -1,0 +1,83 @@
+//
+// Adjust tooltips
+//
+
+// Base class
+.tooltip {
+  z-index: $zindex-tooltip;
+  margin: $tooltip-margin;
+  @include reset-text(); // Partially reset our font and text properties to avoid inheriting weird values.
+  font-size: $font-size-sm;
+
+  &.show { opacity: $tooltip-opacity; }
+
+  .arrow {
+    width: $tooltip-arrow-width;
+    height: $tooltip-arrow-height;
+  }
+
+  &.bs-tooltip-top {
+    padding: $tooltip-arrow-width 0;
+
+    .arrow::before {
+      margin-left: -($tooltip-arrow-width - 2);
+      border-width: $tooltip-arrow-width $tooltip-arrow-width 0;
+      border-top-color: $tooltip-arrow-color;
+    }
+  }
+
+  &.bs-tooltip-right {
+    padding: 0 $tooltip-arrow-width;
+
+    .arrow::before {
+      margin-top: -($tooltip-arrow-width - 2);
+      border-width: $tooltip-arrow-width $tooltip-arrow-width $tooltip-arrow-width 0;
+      border-right-color: $tooltip-arrow-color;
+    }
+  }
+
+  &.bs-tooltip-bottom {
+    padding: $tooltip-arrow-width 0;
+
+    .arrow::before {
+      margin-left: -($tooltip-arrow-width - 2);
+      border-width: 0 $tooltip-arrow-width $tooltip-arrow-width;
+      border-bottom-color: $tooltip-arrow-color;
+    }
+  }
+
+  &.bs-tooltip-left {
+    padding: 0 $tooltip-arrow-width;
+
+    .arrow::before {
+      margin-top: -($tooltip-arrow-width - 2);
+      border-width: $tooltip-arrow-width 0 $tooltip-arrow-width $tooltip-arrow-width;
+      border-left-color: $tooltip-arrow-color;
+    }
+  }
+
+  &.bs-tooltip-auto {
+    &[x-placement^="top"] {
+      @extend .bs-tooltip-top;
+    }
+    &[x-placement^="right"] {
+      @extend .bs-tooltip-right;
+    }
+    &[x-placement^="bottom"] {
+      @extend .bs-tooltip-bottom;
+    }
+    &[x-placement^="left"] {
+      @extend .bs-tooltip-left;
+    }
+  }
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+  max-width: $tooltip-max-width;
+  padding: $tooltip-padding-y $tooltip-padding-x;
+  color: $tooltip-color;
+  background-color: $tooltip-bg;
+  @include border-radius($border-radius);
+  box-shadow: $tooltip-box-shadow;
+}

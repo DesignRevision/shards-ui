@@ -1,0 +1,140 @@
+// Nav adjustments
+
+.nav {
+  font-size: 0.875rem;
+  font-family: $font-family-poppins-first;
+}
+
+.nav-link {
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  @include transition($nav-transition);
+}
+
+
+//
+// Tabs
+//
+
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+
+  .nav-item {
+    margin-bottom: -$nav-tabs-border-width;
+  }
+
+  .nav-link {
+    @include border-top-radius($nav-tabs-border-radius);
+
+    @include hover-focus {
+      border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+    }
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+
+      &:hover {
+        cursor: not-allowed;
+        border-color: transparent;
+      }
+    }
+
+    &:hover {
+      border-color: lighten($nav-tabs-border-color, 8%);
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-tabs-link-active-color;
+    background-color: $nav-tabs-link-active-bg;
+    border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-bg;
+  }
+}
+
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+
+    &.active,
+    &.active:hover,
+    .show > & {
+      color: $nav-pills-link-active-color;
+      background-color: $nav-pills-link-active-bg;
+    }
+
+    &:hover {
+      background-color: lighten($nav-tabs-border-color, 16%);
+    }
+  }
+}
+
+
+//
+// Nav Outlined Pills
+//
+
+.nav-outlined-pills {
+  .nav-link {
+    @include border-radius($nav-pills-border-radius);
+    border: 1px solid transparent;
+
+    &.active,
+    .show > & {
+      background: none;
+      color: $nav-pills-link-active-bg;
+      border-color: $nav-pills-link-active-bg;
+    }
+
+    &:hover {
+      border-color: lighten($nav-tabs-border-color, 8%);
+    }
+  }
+}
+
+
+//
+// Color variations
+//
+
+@each $color, $value in $colors {
+
+  .nav-#{$color} {
+    // Active pills
+    .nav-link.active {
+      background-color: $value;
+      border-color: darken($value, 3%);
+      @include color-yiq($value);
+    }
+
+    // Link color
+    .nav-link {
+      color: $value;
+    }
+
+    // Outlined pills color variations.
+    &.nav-outlined-pills {
+
+      // Active pills
+      .nav-link.active {
+        background: transparent;
+        border-color: lighten($value, 10%);
+        color: $value;
+
+        &:hover {
+          border-color: lighten($value, 10%);
+        }
+      }
+
+      // Link color
+      .nav-link {
+        color: $value;
+      }
+    }
+  }
+
+}

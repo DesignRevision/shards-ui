@@ -1,0 +1,17 @@
+// Images Adjustments
+
+// Image thumbnails
+.img-thumbnail {
+  padding: $thumbnail-padding;
+  border: none;
+
+  @include border-radius($thumbnail-border-radius);
+  @include box-shadow($thumbnail-box-shadow);
+}
+
+//
+// Figures
+//
+
+.figure-img { margin-bottom: ($spacer / 2); }
+.figure-caption { font-size: $figure-caption-font-size; }

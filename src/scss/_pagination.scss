@@ -1,0 +1,71 @@
+//
+// Pagination adjustments
+//
+
+.pagination {
+  @include border-radius();
+  font-family: $font-family-poppins-first;
+  font-size: $pagination-font-size;
+}
+
+.page-item {
+  box-shadow: $pagination-box-shadow;
+
+  &:first-child {
+    @include border-left-radius($border-radius);
+    overflow: hidden;
+  }
+
+  &:last-child {
+    @include border-right-radius($border-radius);
+    overflow: hidden;
+
+    .page-link {
+      border-right: none;
+    }
+  }
+
+  &.active .page-link {
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border-color;
+  }
+
+  &.disabled .page-link {
+    color: $pagination-disabled-color;
+    background-color: $pagination-disabled-bg;
+    border-color: $pagination-disabled-border-color;
+  }
+}
+
+.page-link {
+  padding: $pagination-padding-y $pagination-padding-x;
+  line-height: $pagination-line-height;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  border: none;
+  margin: 0;
+  border: none; // Override Bootstrap.
+  border-right: $pagination-border-width solid $pagination-border-color;
+
+  @include transition($transition-base);
+
+  @include hover-focus {
+    color: $pagination-hover-color;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+}

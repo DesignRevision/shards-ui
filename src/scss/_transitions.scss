@@ -1,0 +1,9 @@
+// Transitions Adjustments
+
+.fade {
+  @include transition($transition-fade);
+}
+
+.collapsing {
+  @include transition($transition-collapse);
+}

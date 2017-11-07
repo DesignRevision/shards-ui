@@ -1,0 +1,14 @@
+//
+// Jumbotron adjustments
+//
+
+.jumbotron {
+  padding: $jumbotron-padding-y $jumbotron-padding-x;
+  margin-bottom: $jumbotron-padding;
+  background-color: $jumbotron-bg;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}

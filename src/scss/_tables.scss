@@ -1,0 +1,27 @@
+// Adjusted Table Stylings
+
+//
+// Basic Bootstrap table
+//
+
+.table {
+  margin-bottom: $spacer;
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $table-accent-bg;
+  }
+}
+
+//
+// Table backgrounds
+//
+
+@each $color, $value in $theme-colors {
+  @include table-row-variant($color, theme-color-level($color, -9));
+}

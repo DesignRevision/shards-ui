@@ -1,0 +1,47 @@
+//
+// Badges adjustments
+//
+
+// Base class
+.badge {
+  padding: $badge-padding-y $badge-padding-x;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  font-family: $badge-font-family;
+  color: $badge-color;
+
+  @include border-radius();
+}
+
+// Add badge anchor transitions.
+a.badge {
+  @include transition($transition-base);
+}
+
+// Pill badges
+.badge-pill {
+  @include border-radius($badge-pill-border-radius);
+}
+
+// Squared badges
+.badge-squared {
+  @include border-radius(0);
+}
+
+// Contextual Colors
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variant($value);
+  }
+
+  .badge-outline-#{$color} {
+    background: none;
+    border: 1px solid $value;
+    color: $value;
+
+    // Fix light outlined badges
+    @if ( $value == theme-color("light") ) {
+      @include color-yiq($value);
+    }
+  }
+}

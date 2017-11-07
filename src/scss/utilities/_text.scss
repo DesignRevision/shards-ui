@@ -1,0 +1,37 @@
+//
+// Text utilities adjustments
+//
+
+// Weight and italics
+.font-weight-normal { font-weight: $font-weight-normal; }
+.font-weight-bold   { font-weight: $font-weight-bold; }
+
+// Contextual colors
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant('.text-#{$color}', $value);
+}
+
+// Black and white text emphasis variants.
+
+.text-white {
+  color: $white;
+}
+
+a.text-white {
+  @include hover-focus {
+    color: darken($white, 10%) !important;
+  }
+}
+
+.text-black {
+  color: $black;
+}
+
+a.text-black {
+  @include hover-focus {
+    color: darken($black, 10%) !important;
+  }
+}
+
+// Text muted
+.text-muted { color: $text-muted !important; }

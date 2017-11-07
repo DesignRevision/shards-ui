@@ -1,0 +1,388 @@
+// scss-lint:disable PropertyCount, VendorPrefix
+
+// Embedded icons from Open Iconic for the custom select icon.
+// Released under MIT and copyright 2014 Waybury.
+// https://useiconic.com/open
+
+
+// Checkboxes and radios
+//
+// Adjusts Bootstrap's base class that takes care of all the key behavioral aspects.
+
+.custom-control {
+  min-height: (1rem * $line-height-base);
+  padding-left: $custom-control-gutter;
+
+  .custom-control-description {
+    transition: $custom-select-transition;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-indicator {
+    color: $custom-control-indicator-checked-color;
+    background-color: $custom-control-indicator-checked-bg;
+    border-color: transparent;
+    @include box-shadow($custom-control-indicator-checked-box-shadow);
+  }
+
+  &:focus ~ .custom-control-indicator {
+    // the mixin is not used here to make sure there is feedback
+    box-shadow: $custom-control-indicator-focus-box-shadow;
+  }
+
+  &:active ~ .custom-control-indicator {
+    color: $custom-control-indicator-active-color;
+    background-color: $custom-control-indicator-active-bg;
+    @include box-shadow($custom-control-indicator-active-box-shadow);
+  }
+
+  &:disabled {
+    ~ .custom-control-indicator {
+      background-color: $custom-control-indicator-disabled-bg;
+    }
+
+    ~ .custom-control-description {
+      color: $custom-control-description-disabled-color;
+    }
+  }
+}
+
+
+//
+// Custom indicator
+//
+
+.custom-control-indicator {
+  top: (($line-height-base - $custom-control-indicator-size) / 2);
+  width: $custom-control-indicator-size;
+  height: $custom-control-indicator-size;
+  background-color: $custom-control-indicator-bg;
+  border: $custom-control-indicator-border;
+  transition: all 250ms cubic-bezier(.27,.01,.38,1.06);
+}
+
+
+//
+// Checkboxes
+//
+
+.custom-checkbox {
+
+  .custom-control-indicator {
+    @include border-radius($custom-checkbox-indicator-border-radius);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 5px;
+      height: 11px;
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
+      border-right: 2px solid $white;
+      border-bottom: 2px solid $white;
+      transition: $custom-checkbox-indicator-transition;
+      transition-delay: 100ms;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: none;
+
+    &:after {
+      opacity: 1;
+      transform: rotate(45deg) scale(1);
+    }
+  }
+
+  .custom-control-input:indeterminate ~ .custom-control-indicator {
+    background-color: $custom-checkbox-indicator-indeterminate-bg;
+    @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+  }
+
+  .custom-control-input:focus ~ .custom-control-indicator {
+    @include box-shadow($input-focus-box-shadow);
+  }
+
+  .custom-control-input:disabled ~ .custom-control-indicator {
+    border-color: $border-color;
+
+    &:after {
+      border-color: lighten($blueish-grey, 30%);
+    }
+  }
+}
+
+//
+// Radios
+//
+
+.custom-radio {
+  .custom-control-indicator {
+    border-radius: $custom-radio-indicator-border-radius;
+    &:after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: $white;
+      width: $custom-control-indicator-size;
+      height: $custom-control-indicator-size;
+      top: -1px;
+      left: -1px;
+      opacity: 0;
+      transform: scale(0);
+      transition: $custom-radio-indicator-transition;
+      transition-delay: 100ms;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: none;
+    &:after {
+      opacity: 1;
+      transform: scale(.4);
+    }
+  }
+
+  .custom-control-input:focus ~ .custom-control-indicator {
+    @include box-shadow($input-focus-box-shadow);
+  }
+
+  .custom-control-input:disabled ~ .custom-control-indicator {
+    border-color: $border-color;
+
+    &:after {
+      background: lighten($blueish-grey, 30%);
+    }
+  }
+}
+
+
+// Layout options
+//
+// By default radios and checkboxes are `inline-block` with no additional spacing
+// set. Use these optional classes to tweak the layout.
+
+.custom-controls-stacked .custom-control {
+  margin-bottom: $custom-control-spacer-y;
+}
+
+
+// Select
+//
+// Replaces the browser default select with a custom one, mostly pulled from
+// http://primercss.io.
+//
+
+.custom-select {
+  height: $input-height;
+  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+  line-height: $custom-select-line-height;
+  color: $custom-select-color;
+  font-size: $input-font-size;
+  font-weight: $font-weight-normal;
+  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
+  background-size: $custom-select-bg-size;
+  border: $custom-select-border-width solid $custom-select-border-color;
+
+  @include transition($input-transition);
+  @include form-control-hover();
+  @include form-control-focus();
+
+  @if $enable-rounded {
+    border-radius: $custom-select-border-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  &:focus {
+    border-color: $custom-select-focus-border-color;
+    @include box-shadow($custom-select-focus-box-shadow);
+
+    // For visual consistency with IE.
+    &::-ms-value {
+      color: $input-color;
+      background-color: $input-bg;
+    }
+  }
+
+  &:disabled{
+    color: $custom-select-disabled-color;
+    background-color: $custom-select-disabled-bg;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: $input-hover-border-color;
+  }
+}
+
+.custom-select-sm {
+  height: $custom-select-height-sm;
+  padding-top: $custom-select-padding-y;
+  padding-bottom: $custom-select-padding-y;
+  font-size: $custom-select-font-size-sm;
+}
+
+
+// File
+//
+// Custom file input.
+
+.custom-file {
+  height: $custom-file-height;
+  font-size: $input-font-size;
+
+  @include transition($input-transition);
+}
+
+.custom-file-input {
+  min-width: $custom-file-width;
+  height: $custom-file-height;
+
+  // TODO: Optimisation needed as it's duplicating the code found
+  // in mixins/_forms.scss in the form-control-focus() mixin.
+  &:focus ~ .custom-file-control {
+    color: $input-focus-color;
+    border-color: $input-focus-border-color;
+
+    @include box-shadow($input-focus-box-shadow);
+
+    &:before {
+      color: theme-color("primary");
+      background: lighten($input-focus-border-color, 45);
+      border-color: $input-focus-border-color;
+    }
+
+    // Set the border color to the focused state border color
+    // when the input is also hovered.
+    &:hover {
+      border-color: $input-focus-border-color;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & ~ .custom-file-control,
+    & ~ .custom-file-control:before {
+      border-color: $input-hover-border-color;
+    }
+  }
+
+  &:disabled + .custom-file-control {
+    color: $custom-select-disabled-color;
+    background-color: lighten($custom-select-disabled-bg, 5%);
+  }
+}
+
+.custom-file-control {
+  height: $custom-file-height;
+  padding: $custom-file-padding-x $custom-file-padding-y;
+  line-height: $custom-file-line-height;
+  color: $custom-file-color;
+  font-weight: $font-weight-normal;
+  background-color: $custom-file-bg;
+  border: $custom-select-border-width solid $custom-select-border-color;
+
+  @include transition(box-shadow $transition-duration $ease-in-out-circ, border-color $transition-duration $ease-in-out-circ);
+  @include border-radius($custom-file-border-radius);
+
+  &::before {
+    top: -$custom-file-border-width;
+    right: -$custom-file-border-width;
+    bottom: -$custom-file-border-width;
+    height: $custom-file-height;
+    padding: $custom-file-padding-x $custom-file-padding-y;
+    line-height: $custom-file-line-height;
+    color: $custom-file-button-color;
+    background-color: $custom-file-button-bg;
+    border: $custom-file-border-width solid $custom-file-border-color;
+    @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
+    @include transition(background $transition-duration $ease-in-out-circ, color $transition-duration $ease-in-out-circ, border-color $transition-duration $ease-in-out-circ);
+  }
+}
+
+
+// Toggle
+//
+// Custom toggle switch.
+
+.custom-toggle {
+  padding-left: ($custom-toggle-width + 10px);
+
+  .custom-control-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $custom-toggle-width;
+    height: $custom-toggle-height;
+    background: $custom-toggle-background-color;
+    display: block;
+    border-radius: $custom-toggle-border-radius;
+    border: $custom-toggle-border;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: $custom-toggle-knob-width;
+      height: $custom-toggle-knob-height;
+      background: $input-border-color;
+      border-radius: $custom-toggle-knob-border-radius;
+      transition: 0.3s;
+    }
+  }
+
+  .custom-control-input:disabled:active + .custom-control-indicator:after {
+    width: $custom-toggle-knob-width;
+  }
+
+  .custom-control-input:disabled:checked + .custom-control-indicator,
+  .custom-control-input:disabled:active + .custom-control-indicator {
+    background-color: $custom-control-indicator-disabled-bg;
+  }
+
+  .custom-control-input:active + .custom-control-indicator {
+    background-color: $custom-toggle-background-color;
+  }
+
+  .custom-control-input:checked + .custom-control-indicator {
+    background: $custom-toggle-checked-background;
+
+    &:after {
+      background: $custom-toggle-checked-knob-background;
+    }
+  }
+
+  .custom-control-input:checked + .custom-control-indicator:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+  }
+
+  .custom-control-input:active + .custom-control-indicator:after {
+    width: $custom-toggle-knob-active-width;
+  }
+
+  .custom-control-input:disabled:checked + .custom-control-indicator {
+    border-color: $border-color;
+
+    &:after {
+      background: $border-color;
+    }
+  }
+}
+
+// Custom slider inputs
+.custom-slider-input { display: none; }

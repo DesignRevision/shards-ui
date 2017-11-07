@@ -1,0 +1,36 @@
+// scss-lint:disable QualifyingElement
+
+// Adjust Button Groups
+
+// Sizing
+//
+// Remix the default button sizing classes into new ones for easier manipulation.
+
+.btn-group-sm > .btn { @extend .btn-sm; }
+.btn-group-lg > .btn { @extend .btn-lg; }
+
+//
+// Split button dropdowns
+//
+
+.btn + .dropdown-toggle-split {
+  padding-right: $input-btn-padding-x * .75;
+  padding-left: $input-btn-padding-x * .75;
+}
+
+.btn-sm + .dropdown-toggle-split {
+  padding-right: $input-btn-padding-x-sm * .75;
+  padding-left: $input-btn-padding-x-sm * .75;
+}
+
+.btn-lg + .dropdown-toggle-split {
+  padding-right: $input-btn-padding-x-lg * .75;
+  padding-left: $input-btn-padding-x-lg * .75;
+}
+
+
+// The clickable button for toggling the menu
+// Set the same inset shadow as the :active state
+.btn-group.show .dropdown-toggle {
+  @include box-shadow($btn-active-box-shadow);
+}

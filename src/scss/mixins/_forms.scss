@@ -1,0 +1,136 @@
+// Forms mixins
+
+// Form control focus state
+@mixin form-control-focus() {
+  &:focus {
+    color: $input-focus-color;
+    border-color: $input-focus-border-color;
+    @include box-shadow($input-focus-box-shadow);
+
+    // Set the border color to the focused state border color
+    // when the input is also hovered.
+    &:hover {
+      border-color: $input-focus-border-color;
+    }
+  }
+}
+
+// Form control hover state.
+@mixin form-control-hover() {
+  &:hover {
+    border-color: $input-hover-border-color;
+  }
+}
+
+// Form validation mixin for dynamic states.
+@mixin form-validation-state($state, $color) {
+  .form-control,
+  .custom-select {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      border-color: $color;
+      @include box-shadow(0 5px 11.5px rgba($color, .1));
+
+      &:focus {
+        box-shadow: 0 5px 11.5px rgba($color, .1), 0 1px 1px .1rem rgba($color, .2);
+
+        &:hover {
+          border-color: $color;
+        }
+      }
+    }
+  }
+
+  .form-check-input {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      + .form-check-label {
+        color: $color;
+      }
+    }
+  }
+
+  .custom-control-input {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      ~ .custom-control-indicator {
+        background-color: lighten($color, 20);
+        border-color: lighten($color, 10);
+      }
+      ~ .custom-control-description {
+        color: $color;
+      }
+    }
+  }
+
+  // Custom select
+  .custom-select {
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      color: $color;
+    }
+  }
+
+  // Custom file upload
+  .custom-file-input {
+    &:focus {
+      .was-validated &:#{$state},
+      &.is-#{$state} {
+        ~ .custom-file-control {
+          box-shadow: 0 5px 11.5px rgba($color, .1), 0 1px 1px .1rem rgba($color, .2);
+        }
+      }
+    }
+
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+      ~ .custom-file-control {
+        border-color: $color;
+        box-shadow: 0 5px 11.5px rgba($color, .1);
+
+        &::before {
+          //border-color: inherit;
+          background-color: lighten($color, 40);
+          border-color: lighten($color, 10);
+          color: $color;
+        }
+
+        &::after {
+          color: $color;
+        }
+      }
+    }
+  }
+
+  // Custom toggles
+  .custom-toggle .custom-control-input {
+
+    &:checked {
+      .was-validated &:#{$state},
+      &.is-#{$state} {
+        ~ .custom-control-indicator {
+          background: $custom-toggle-checked-background;
+          border-color: transparent;
+
+          &:after {
+            background: $custom-toggle-knob-background;
+          }
+        }
+      }
+    }
+
+    .was-validated &:#{$state},
+    &.is-#{$state} {
+
+      ~ .custom-control-indicator {
+        background: $white;
+
+        &:after {
+          background: #eb8c95;
+        }
+      }
+
+    }
+  }
+
+}

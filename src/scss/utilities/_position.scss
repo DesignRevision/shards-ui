@@ -1,0 +1,15 @@
+// Positioning
+
+.fixed-top {
+  z-index: $zindex-fixed;
+}
+
+.fixed-bottom {
+  z-index: $zindex-fixed;
+}
+
+.sticky-top {
+  @supports (position: sticky) {
+    z-index: $zindex-sticky;
+  }
+}

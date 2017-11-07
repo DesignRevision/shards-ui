@@ -1,0 +1,15 @@
+//
+// Close button adjustments
+//
+
+.close {
+  font-size: $close-font-size;
+  font-weight: $close-font-weight;
+  color: $close-color;
+  text-shadow: $close-text-shadow;
+  @include transition($transition-base);
+
+  @include hover-focus {
+    color: $close-color;
+  }
+}

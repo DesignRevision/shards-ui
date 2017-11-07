@@ -1,0 +1,16 @@
+//
+// Shards Agency landing page styles.
+//
+
+// Shards dependencies.
+@import '../../scss/functions';
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+// Extra pages styles.
+// Note: If you plan on using only one of the pages it's best to comment out
+// the other and re-compile this file. Please make sure you keep the
+// dependencies included above as they're used in all partials.
+@import 'agency-landing';
+@import 'app-promo';
+

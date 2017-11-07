@@ -1,0 +1,109 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant($background, $border, $hover-box-shadow, $active-background: darken($background, 5%), $active-border: darken($border, 10%)) {
+  background-color: $background;
+  border-color: $border;
+
+  @include box-shadow($btn-box-shadow);
+  @include color-yiq($background);
+
+  &:hover {
+    @include color-yiq($background);
+    background-color: $active-background;
+    border-color: $background;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.05), $hover-box-shadow;
+  }
+
+  &:focus,
+  &.focus {
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: 0 0 0 3px rgba($background,.15),
+                  0 3px 15px rgba($background, 0.2),
+                  0 2px 5px rgba($black, .1);
+    } @else {
+      box-shadow: 0 0 0 3px rgba($border, .5);
+    }
+  }
+
+  // TODO: This should be placed inside a mixin
+  $btn-active-box-shadow:
+    inset 0 0.1875rem 0.625rem 0 darken($background, 10%),
+    inset 0 0.0625rem 0.125rem 0 darken($background, 15%);
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    background-color: $background;
+    border-color: $border;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: $active-background;
+    background-image: none; // Remove the gradient for the pressed/active state
+    border-color: $active-border;
+    @include box-shadow($btn-active-box-shadow);
+  }
+}
+
+@mixin button-outline-variant($color, $color-hover: #fff) {
+  background-color: transparent;
+  background-image: none;
+  border-color: $color;
+
+  // Fix light outlined buttons
+  @if ( $color == theme-color("light") ) {
+    @include color-yiq($color);
+  }
+
+  @include hover {
+    background-color: $color;
+    border-color: $color;
+    box-shadow:
+      0 5px 15px rgba(0,0,0, 0.05),
+      0 4px 10px rgba($color, .25);
+
+    @include color-yiq($color);
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 3px rgba($color,.15),
+                0 3px 15px rgba($color, 0.2),
+                0 2px 5px rgba($black, .1);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+
+    @if ( $color == theme-color("light") ) {
+      @include color-yiq($color);
+    }
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+  @include border-radius($border-radius);
+}

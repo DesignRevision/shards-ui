@@ -1,0 +1,31 @@
+// Contextual backgrounds
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+
+    // Fix cards with background colors.
+    &.card {
+
+      // Improve content accessibility.
+      .card-title,
+      .card-body,
+      .card-header,
+      .card-footer {
+        @include color-yiq($color);
+      }
+
+      // Adjust card header background.
+      .card-header,
+      .card-footer {
+        background: darken($color, 3%);
+      }
+    }
+
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}

@@ -1,0 +1,282 @@
+//
+// Custom nouislider (10.0.0) styling
+//
+
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  background: $slider-base-background;
+  border-radius: $slider-base-border-radius;
+  box-shadow: $slider-base-box-shadow;
+  margin: $slider-base-margin-top 0;
+
+  // Remove the default outline and apply custom styling.
+  :focus {
+    outline: 0;
+    box-shadow: $slider-handle-focus-box-shadow;
+  }
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-connect {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: $slider-connect-color;
+  border-radius: $slider-base-border-radius;
+}
+
+.noUi-origin {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+  border: $slider-handle-border;
+  border-radius: $slider-handle-border-radius;
+  width: $slider-handle-width;
+  height: $slider-handle-height;
+  box-shadow: $slider-handle-box-shadow;
+  background: $slider-handle-background;
+  transition: $slider-handle-transition;
+
+  // Change the cursor to a grab hand on hover.
+  &:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor:-moz-grab;
+  }
+
+  // Change the cursor to a grabbing hand on active.
+  &:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    cursor:-moz-grabbing;
+  }
+
+  &:after {
+    left: 17px;
+  }
+}
+
+// Slider size and handle placement
+.noUi-horizontal {
+  height: $slider-base-size;
+
+  .noUi-handle {
+    left: -$slider-handle-width / 2;
+    top: -10px;
+  }
+
+  .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 30px;
+  }
+}
+
+.noUi-vertical {
+  width: $slider-base-size;
+
+  .noUi-handle {
+    left: -10px;
+    top: -$slider-handle-width / 2;
+
+    &:before,
+    &:after {
+      width: 14px;
+      height: 1px;
+      left: 6px;
+      top: 14px;
+    }
+
+    &:after {
+      top: 17px;
+    }
+  }
+
+  .noUi-tooltip {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 30px;
+  }
+}
+
+// Handles and cursors
+.noUi-draggable {
+  cursor: ew-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+
+.noUi-active {
+  transform: scale(1.1);
+}
+
+// Disabled state
+[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+[disabled] .noUi-handle {
+  background: $slider-handle-disabled-background;
+
+  // Override to the default handle box shadow when the slider is disabled.
+  &:focus {
+    box-shadow: $slider-handle-box-shadow;
+  }
+}
+
+// Base
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-pips {
+  position: absolute;
+  color: $slider-pips-color;
+  font-size: 12px;
+}
+
+// Values
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.noUi-value-sub {
+  color: $slider-pips-color;
+  font-size: 10px;
+}
+
+// Markings
+.noUi-marker {
+  position: absolute;
+  background: $slider-pips-color;
+}
+
+.noUi-marker-sub {
+  background: $slider-pips-color;
+}
+
+.noUi-marker-large {
+  background: $slider-pips-color;
+}
+
+// Horizontal layout
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: auto;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.noUi-value-horizontal {
+  transform: translate3d(-50%, 50%, 0);
+}
+
+.noUi-marker-horizontal {
+  &.noUi-marker {
+    margin-left: -1px;
+    width: 1px;
+    height: 4px;
+  }
+
+  &.noUi-marker-sub {
+    height: 5px;
+  }
+
+  &.noUi-marker-large {
+    height: 7px;
+  }
+}
+
+// Vertical layout
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+
+.noUi-value-vertical {
+  transform: translate3d(0, -50%, 0);
+  padding-left: 25px;
+}
+
+.noUi-marker-vertical {
+  &.noUi-marker {
+    width: 5px;
+    height: 2px;
+    margin-top: -1px;
+  }
+
+  &.noUi-marker-sub {
+    width: 10px;
+  }
+
+  &.noUi-marker-large {
+    width: 15px;
+  }
+}
+
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $slider-tooltip-border-radius;
+  border-radius: $slider-tooltip-border-radius;
+  background: $slider-tooltip-background;
+  color: $slider-tooltip-color;
+  box-shadow: $slider-tooltip-box-shadow;
+  font-size: $slider-tooltip-font-size;
+  padding: $slider-tooltip-padding;
+}
+
+// Color variations
+@each $color, $value in $theme-colors {
+  .slider-#{$color} {
+    .noUi-connect {
+      background: $value;
+    }
+  }
+}
