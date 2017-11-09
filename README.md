@@ -8,7 +8,7 @@
 
 Shards is a **free** and modern UI kit that comes packed with **2 pre-built pages** and **11 extra custom components** that you can use to kick off your next project.
 
-![Social - Twitter Share](https://img.shields.io/twitter/url/http/shields.io.svg?style=social) ![Social - Twitter Follow](https://img.shields.io/twitter/follow/DesignRevision.svg?style=social&label=Follow)
+[![Social - Twitter Share](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://designrevision.com/downloads/shards&text=I%20love%20the%20free%20Shards%20UI%20kit%20based%20on%20%23bootstrap%20by%20%40DesignRevision%20%23ui%20%23kit%20%23freebie%20) [![Social - Twitter Follow](https://img.shields.io/twitter/follow/DesignRevision.svg?style=social&label=Follow)](https://twitter.com/designrevision)
 
 ## Quick Links
 
@@ -26,7 +26,7 @@ The following instructions will help you get started with Shards.
 ### 📦 Download
 Currently there are only two ways of downloading Shards:
 * [Official Website](https://designrevision.com/download/shards)
-* [Release Package]()
+* [Release Package](https://github.com/DesignRevision/shards-ui/releases)
 
 ### 🖇 Dependencies
 
