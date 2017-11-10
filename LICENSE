@@ -1,86 +1,21 @@
-Copyright (c) 2017, DesignRevision (https://designrevision.com)
-Copyright (c) 2017, Catalin Vasile
+MIT License
 
-DESIGNREVISION LICENCE (DRL) - Version 1.0
-------------------------------------------
-The following product is subject to the terms of following license and the
-person obtaining a copy of this software and associated documentation files
-(the "Software”) is required to abide to them.
+Copyright (c) 2017 DesignRevision <contact@designrevision.com>
 
-1. LICENSE SUMMARY
-  1.1. - Unlimited commercial client work usage. - YES
-  1.2. - Unlimited personal work usage. - YES
-  1.3. - Educational and training purposes. - YES
-  1.4. - Creation of "Software as a Service" (SaaS) application(s).
-         (eg. generators, etc) - NO
-  1.5. - Creation of product(s) aimed for specific platform(s).
-         (eg. WordPress Themes, etc) - NO
-  1.6. - Distribution - NO
-  1.7. - Sub-licensing - NO
-  1.8. - Re-selling - NO
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-2. PREAMBLE
-This Agreement governs the relationship between the customer (“you”,
-“the Licensee") and our company (“DesignRevision”, “the Licensor"). This Agreement
-sets the terms, rights, restrictions and obligations on using the product(s)
-(hereinafter: "The Software") created and owned by the Licensor.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-3. LICENSE GRANT
-The Licensor grants the Licensee a personal, non-exclusive, non-assignable &
-non-transferable, commercial with terms, including the rights to create, but not
-distribute derivative works license, all in with accordance with the terms set
-forth and other legal restrictions set forth in the 3rd party software used while
-creating the Software.
-  3.1). LIMITED: The Licensee may use the Software for the purpose of:
-    3.1.1). Modifying the Software to suit Licensee’s needs and specifications.
-    3.1.2). Running the Software on Licensee’s server(s).
-    3.1.3). Allowing 3rd parties to run the Software on Licensee’s server(s).
-    3.1.4). Publishing and distributing the Software’s output to 3rd parties
-            servers in scope of commercial client work.
-  3.4). COMMERCIAL USE ALLOWED WITH RESTRICTIONS: The Licensee is allowed to use
-        the Software in commercial works for 3rd parties (“project based client
-        work”). The Licensee is NOT ALLOWED UNDER ANY CIRCUMSTANCE to use or
-        modify the Software to create Software as a Service ("SaaS") platforms,
-        generators, builders or any type of webpage provider or creator based
-        on the Software.
-  3.5). ATTRIBUTION REQUIREMENTS: Attribution is not required, but it is highly
-        appreciated.
-  3.6). DERIVATIVE WORKS: The Licensee may create derivative works based on the
-        Software, including amending the Software’s source code, modifying it,
-        integrating it into a larger codebase or removing portions of the
-        Software as long as no distribution of the derivative work is made.
-  3.7). NON ASSIGNABLE and NON-TRANSFERABLE: The Licensee may not assign or
-        transfer his rights and duties under this license.
-  3.8). SUPPORT AND MAINTENANCE: The Licensor IS NOT REQUIRED to provide the
-        Licensee support and maintenance.
-
-4. LIABILITY
-The Software is provided AS-IS. The Licensor shall never, and without any limit,
-be liable for any damage, cost, expense or any other payment incurred by the
-Licensee as a result of the Software’s actions, failure, bugs and/or any other
-interaction between the Software and the Licensee’s end-equipment, computers,
-other software, services or any 3rd party’s end-equipment, computers, other
-software or services. Moreover, the Licensor shall never be liable for any defect
-in source code introduced or written by the Licensee when using the Software or
-the Software’s source code.
-
-5. WARRANTY
-The Software is provided without any warranty. The Licensor disclaims any warranty
-that the Software shall be error free, without defects or code which may cause
-damage to the Licensee’s computers or to the Licensee, and that the Software shall
-be functional. The Licensee shall be solely liable to any damage, defect or loss
-incurred as a result of operating software and undertake the risks contained in
-running the Software on Licensee’s Server(s) and Website(s).
-
-6. LICENSE TERMS AND PRODUCT REVISIONS
-The company reserves its rights to revise these agreements and the Software’s
-properties as a product in any moment without the liability of issuing any warning
-before to the Licensee. All License revision dates are listed below in the
-“License update dates” section.
-
-7. TERMINATION
-The terms of this license shall be terminated if any of the above conditions
-are not met.
-
-8. LICENSE UPDATE DATES (DD/MM/YYYY):
-* 06/11/2017 - Initial license introduction.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

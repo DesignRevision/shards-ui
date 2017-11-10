@@ -1,43 +1,52 @@
 {
-  "name": "shards",
+  "name": "shards-ui",
   "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "main": "js/index.js",
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
+    "copy-html": "copyfiles -f src/extras/*.html dist",
+    "copy-images": "copyfiles -u 3 src/extras/images/**/**/**/* dist/images/",
     "css": "npm-run-all css-compile css-prefix css-minify",
-    "css-compile": "npm-run-all css-compile:main css-compile:extras",
-    "css-compile:main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/shards.scss dist/css/shards.css",
+    "css-compile": "npm-run-all css-compile:main css-compile:extras css-compile:demo",
+    "css-compile:demo": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/extras/scss/shards-demo.scss dist/css/shards-demo.css",
     "css-compile:extras": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/extras/scss/shards-extras.scss dist/css/shards-extras.css",
-    "css-prefix": "postcss --config build/postcss.config.js --replace dist/css/*.css",
-    "css-minify": "npm-run-all css-minify:main css-minify:extras",
-    "css-minify:main": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards.min.css dist/css/shards.css",
+    "css-compile:main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/shards.scss dist/css/shards.css",
+    "css-minify": "npm-run-all css-minify:main css-minify:extras css-minify:demo",
+    "css-minify:demo": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards-demo.min.css dist/css/shards-demo.css",
     "css-minify:extras": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards-extras.min.css dist/css/shards-extras.css",
+    "css-minify:main": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/shards.min.css dist/css/shards.css",
+    "css-prefix": "postcss --config build/postcss.config.js --replace dist/css/*.css",
     "js": "npm-run-all js-compile js-minify",
     "js-compile": "webpack --config build/webpack.config.js",
-    "js-minify": "npm-run-all js-minify:main js-minify:extras",
+    "js-minify": "npm-run-all js-minify:main js-minify:demo",
+    "js-minify:demo": "uglifyjs --compress --mangle --output dist/js/demo.min.js dist/js/demo.js",
     "js-minify:main": "uglifyjs --compress --mangle --output dist/js/shards.min.js dist/js/shards.js",
-    "js-minify:extras": "uglifyjs --compress --mangle --output dist/js/extras.min.js dist/js/extras.js",
-    "copy-html": "copyfiles -f src/extras/*.html dist",
-    "copy-images": "copyfiles -u 3 src/extras/images/**/**/* dist/images/",
     "serve-dist": "browser-sync start --server \"./dist\" --files \".\" --no-open --no-online --no-notify",
     "watch": "npm-run-all --parallel watch-css watch-html watch-images watch-js",
-    "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
-    "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
     "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
+    "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
+    "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
     "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hisk/shards.git"
+    "url": "git+https://github.com/DesignRevision/shards-ui"
   },
   "author": "Catalin Vasile",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hisk/shards/issues"
+    "url": "https://github.com/DesignRevision/shards-ui/issues"
   },
-  "homepage": "https://designrevision.com/download/shards",
+  "homepage": "https://designrevision.com/downloads/shards",
+  "keywords": [
+    "ui",
+    "kit",
+    "ui kit",
+    "free",
+    "bootstrap 4"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",

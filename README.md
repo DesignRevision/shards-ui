@@ -3,8 +3,8 @@
 </p>
 
 ![Price](https://img.shields.io/badge/Price-FREE-brightgreen.svg)
-![License](https://img.shields.io/badge/Size-12.41_kb_min/gz-brightgreen.svg)
-![License](https://img.shields.io/badge/License-DRL_1.0-brightgreen.svg)
+![Size](https://img.shields.io/badge/Size-12.41_kb_min/gz-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 Shards is a **free** and modern UI kit that comes packed with **2 pre-built pages** and **11 extra custom components** that you can use to kick off your next project.
 
@@ -74,31 +74,17 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## 💁 Feedback
 Building better products is something I'm trying to get really good at. I’d love to hear more about how you plan on using Shards and what features you consider important in similar products. If you could spare a few minutes, please fill out [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLScyj8F-fyVlb-AAeM-UFXSpDgrfdC81yWm1BNF8_gVCpXN8jw/viewform?usp=sf_link) to help me better understand your current context and what I could do to improve my products.
 
-## License
-
-This project is licensed under the DRL 1.0 license - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 While building this project we used various free resources built and made 
 available by some wonderful people around the world. See the [ATTRIB.md](ATTRIB.md) file for details.
 
-## F.A.Q
-* **What's up with that license?**
-  * The DRL 1.0 license is a temporary solution and a better fit based on my current goals. This is subject to change soon.
-* **Can I use this in my client projects?**
-  * Yes, you can. I'd love to see what you come up with! 😃
-* **Can I use it to make a generator/builder or an end-product that will be sold?**
-  * No.
-* **Do I have to credit you anywhere if I use this UI kit?**
-  * No.
-
 ## Roadmap
 Below are a couple of items from my list of improvements for the upcoming month(s).
 
 ### General
-- [ ] Publish as an NPM package.
-- [ ] Change the license to a more permissive alternative.
+- [x] Publish as an NPM package.
+- [x] Change the license to a more permissive alternative.
 
 ### Design
 - [ ] Improve the Sketch document (nested symbols).
