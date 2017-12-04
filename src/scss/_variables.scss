@@ -505,7 +505,8 @@ $custom-file-text: (
 // Custom toggle
 $custom-toggle-width: 50px;
 $custom-toggle-height: 28px;
-$custom-toggle-border: 1px solid $input-border-color;
+$custom-toggle-border-width: 1px;
+$custom-toggle-border: $custom-toggle-border-width solid $input-border-color;
 $custom-toggle-background-color: $white;
 $custom-toggle-border-radius: 100px;
 
