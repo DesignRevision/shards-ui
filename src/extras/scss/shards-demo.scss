@@ -86,7 +86,8 @@
   }
 
   .inner-wrapper {
-    z-index: 1;
+    position: relative;
+    z-index: 3;
 
     > p {
       margin-bottom: 20px;
@@ -100,6 +101,8 @@
   }
 
   .product-by {
+    position: relative;
+    z-index: 3;
     margin-bottom: 30px;
 
     a:hover {
@@ -125,6 +128,7 @@
     width: 50vw;
     height: 80vh;
     transform: rotate(-25deg);
+    z-index: 1;
   }
 
   &:before {
@@ -168,6 +172,7 @@
   z-index: 1;
   width: 280px;
   animation: float 7s ease-in-out infinite;
+  z-index: 2;
 }
 
 // Floating animation
@@ -206,6 +211,7 @@
   .color-wrapper {
     float: left;
     @include media-breakpoint-down(xs) {
+      float: none;
       max-width: 230px;
       margin: 0 auto;
     }
