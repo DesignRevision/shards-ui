@@ -327,6 +327,7 @@
     display: block;
     border-radius: $custom-toggle-border-radius;
     border: $custom-toggle-border;
+    opacity: 0.99;
 
     &:hover {
       cursor: pointer;
@@ -367,7 +368,7 @@
   }
 
   .custom-control-input:checked + .custom-control-indicator:after {
-    left: calc(100% - 3px);
+    left: $custom-toggle-width - $custom-toggle-border-width - 3px;
     transform: translateX(-100%);
   }
 
