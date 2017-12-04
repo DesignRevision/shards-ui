@@ -1713,6 +1713,7 @@ i.material-icons {
   display: block;
   border-radius: 100px;
   border: 1px solid #becad6;
+  opacity: 0.99;
 }
 
 .custom-toggle .custom-control-indicator:hover {
@@ -1753,7 +1754,7 @@ i.material-icons {
 }
 
 .custom-toggle .custom-control-input:checked + .custom-control-indicator:after {
-  left: calc(100% - 3px);
+  left: 46px;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }

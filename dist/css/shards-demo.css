@@ -81,7 +81,8 @@
 }
 
 .welcome .inner-wrapper {
-  z-index: 1;
+  position: relative;
+  z-index: 3;
 }
 
 .welcome .inner-wrapper > p {
@@ -95,6 +96,8 @@
 }
 
 .welcome .product-by {
+  position: relative;
+  z-index: 3;
   margin-bottom: 30px;
 }
 
@@ -120,6 +123,7 @@
   height: 80vh;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
+  z-index: 1;
 }
 
 .welcome:before {
@@ -167,6 +171,7 @@
   width: 280px;
   -webkit-animation: float 7s ease-in-out infinite;
           animation: float 7s ease-in-out infinite;
+  z-index: 2;
 }
 
 @-webkit-keyframes float {
@@ -222,6 +227,7 @@
 
 @media (max-width: 575px) {
   .page-content .color-wrapper {
+    float: none;
     max-width: 230px;
     margin: 0 auto;
   }
