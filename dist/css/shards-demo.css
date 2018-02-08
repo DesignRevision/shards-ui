@@ -74,7 +74,7 @@
   color: #1f2429;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
   .welcome h1 {
     font-size: 5.90rem;
   }
@@ -134,13 +134,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e7ef', endColorstr='#ffffff', GradientType=1);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .welcome:before {
     left: -30%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .welcome:before {
     left: -35%;
   }
@@ -154,7 +154,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e7ef', GradientType=1);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .welcome:after {
     right: -17%;
   }
@@ -225,7 +225,7 @@
   float: left;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
   .page-content .color-wrapper {
     float: none;
     max-width: 230px;
@@ -282,6 +282,10 @@
   box-shadow: 0 0 25px rgba(40, 47, 60, 0.05), 0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05);
 }
 
+.page-content .content .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f7f8fb;
+}
+
 .page-content .content .table td,
 .page-content .content .table th {
   padding: 30px 25px;
@@ -317,7 +321,7 @@
   font-size: 1rem !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .sm-hidden {
     display: none;
   }
@@ -392,13 +396,13 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   #cards .last {
     display: block !important;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   #cards .card {
     max-width: 350px;
     display: table;
@@ -407,13 +411,13 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   #progress-bars .pb-widths {
     margin-bottom: 1.875rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   #popups-popovers .row > div {
     margin-bottom: 1.875rem;
   }
@@ -427,7 +431,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   #badges .badge {
     display: table;
     margin-left: auto;
@@ -437,13 +441,13 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   #forms .custom-dropdown-example {
     margin-bottom: 1.5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .custom-controls-example {
     width: 100%;
     max-width: 100%;

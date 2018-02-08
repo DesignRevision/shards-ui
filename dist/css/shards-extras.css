@@ -18,7 +18,7 @@
   background: #007bff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .shards-landing-page--1 .welcome .inner-wrapper {
     text-align: center;
   }
@@ -88,7 +88,7 @@
   background: #212529;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .shards-app-promo-page--1 .welcome {
     height: auto;
   }
@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .shards-app-promo-page--1 .welcome {
     height: auto;
   }
@@ -155,7 +155,7 @@
 
 .shards-app-promo-page--1 .app-screenshot img {
   max-width: 300px;
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 50%;
   left: 100%;
@@ -164,11 +164,13 @@
   box-shadow: 0 13px 25px rgba(0, 0, 0, 0.05), 0 60px 100px rgba(192, 192, 192, 0.5);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .shards-app-promo-page--1 .app-screenshot img {
-    left: 50%;
-    -webkit-transform: translateX(-50%, 0);
-            transform: translateX(-50%, 0);
+    display: table;
+    position: static;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    margin: 0 auto;
   }
 }
 
@@ -182,10 +184,14 @@
   font-size: 27px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .shards-app-promo-page--1 .feature .icon {
     margin-right: 1.5rem !important;
   }
+}
+
+.shards-app-promo-page--1 .blog .card-img-top {
+  height: 100%;
 }
 
 .shards-app-promo-page--1 .section {
@@ -201,7 +207,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .shards-app-promo-page--1 .subscribe input, .shards-app-promo-page--1 .subscribe button {
     width: 100%;
   }
