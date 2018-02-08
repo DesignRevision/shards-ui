@@ -2,9 +2,11 @@
 // Shards Agency landing page styles.
 //
 
-// Shards dependencies.
-@import '../../scss/functions';
-@import '../../scss/mixins';
+// Bootstrap 4 dependencies.
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// Shards Variables
 @import '../../scss/variables';
 
 // Extra pages styles.
