@@ -89,7 +89,7 @@
 
         img {
           max-width: 300px;
-          position: relative;
+          position: absolute;
           z-index: 1;
           top: 50%;
           left: 100%;
@@ -98,8 +98,10 @@
                       0 60px 100px rgba(#C0C0C0, .5);
 
           @include media-breakpoint-down(md) {
-            left: 50%;
-            transform: translateX(-50%, 0);
+            display: table;
+            position: static;
+            transform: translate(0);
+            margin: 0 auto;
           }
         }
       }
@@ -119,6 +121,10 @@
             margin-right: $spacer !important;
           }
         }
+      }
+
+      .blog .card-img-top {
+        height: 100%;
       }
 
       // Better separation between sections.
