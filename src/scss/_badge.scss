@@ -1,8 +1,8 @@
-//
-// Badges adjustments
-//
-
 // Base class
+//
+// Requires one of the contextual, color modifier classes for `color` and
+// `background-color`.
+
 .badge {
   padding: $badge-padding-y $badge-padding-x;
   font-size: $badge-font-size;
@@ -10,16 +10,18 @@
   font-family: $badge-font-family;
   color: $badge-color;
 
-  @include border-radius();
+  @include border-radius($badge-border-radius);
 }
 
-// Add badge anchor transitions.
+// Badge anchor transitions
 a.badge {
   @include transition($transition-base);
 }
 
 // Pill badges
 .badge-pill {
+  padding-right: $badge-pill-padding-x;
+  padding-left: $badge-pill-padding-x;
   @include border-radius($badge-pill-border-radius);
 }
 
@@ -41,7 +43,7 @@ a.badge {
 
     // Fix light outlined badges
     @if ( $value == theme-color("light") ) {
-      @include color-yiq($value);
+      color: color-yiq($value);
     }
   }
 }

@@ -1,14 +1,17 @@
 /*
- * Shards v1.0.0 (https://designrevision.com/product/shards)
- * Based on: Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Shards v2.0.0 (https://designrevision.com/product/shards)
+ * Based on: Bootstrap v4.0.0 (final) (https://getbootstrap.com)
  * Copyright 2017-* DesignRevision (https://designrevision.com)
  * Copyright 2017-* Catalin Vasile (http://catalin.me)
  */
 
+// Bootstrap 4 dependencies
+@import "../../node_modules/bootstrap/scss/functions";
+
 // Core
-@import "functions";
-@import "variables";
 @import "mixins";
+@import "variables";
+@import "root";
 @import "reboot";
 @import "type";
 @import "images";

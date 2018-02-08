@@ -1,13 +1,13 @@
 {
   "name": "shards-ui",
   "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "main": "js/index.js",
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
     "copy-html": "copyfiles -f src/extras/*.html dist",
     "copy-images": "copyfiles -u 3 src/extras/images/**/**/**/* dist/images/",
-    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css": "npm-run-all css-compile css-prefix css-minify && npm run bundlesize",
     "css-compile": "npm-run-all css-compile:main css-compile:extras css-compile:demo",
     "css-compile:demo": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/extras/scss/shards-demo.scss dist/css/shards-demo.css",
     "css-compile:extras": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/extras/scss/shards-extras.scss dist/css/shards-extras.css",
@@ -27,8 +27,15 @@
     "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
     "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
     "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
-    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\""
+    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\"",
+    "bundlesize": "bundlesize"
   },
+  "bundlesize": [
+    {
+      "path": "./dist/css/shards.min.css",
+      "maxSize": "14 kB"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DesignRevision/shards-ui"
@@ -61,7 +68,9 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
+    "bootstrap": "4.0.0",
     "bootstrap-datepicker": "^1.7.1",
+    "bundlesize": "^0.15.3",
     "nouislider": "^10.1.0"
   }
 }

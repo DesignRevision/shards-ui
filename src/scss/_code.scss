@@ -10,16 +10,22 @@ samp {
 
 // Inline code
 code {
-  padding: $code-padding-y $code-padding-x;
   font-size: $code-font-size;
+  padding: $code-padding-y $code-padding-x;
 }
 
 // User input typically entered via keyboard
 kbd {
-  padding: $code-padding-y $code-padding-x;
-  font-size: $code-font-size;
+  padding: $kbd-padding-y $kbd-padding-x;
+  font-size: $kbd-font-size;
+  color: $kbd-color;
+  background-color: $kbd-bg;
   @include border-radius($kbd-border-radius);
   @include box-shadow($kbd-box-shadow);
+
+  kbd {
+    font-weight: $nested-kbd-font-weight;
+  }
 }
 
 // Blocks of code
@@ -28,4 +34,9 @@ pre {
   font-size: $code-font-size;
   color: $pre-color;
   line-height: $code-line-height;
+}
+
+// Scrollable blocks of code
+.pre-scrollable {
+  max-height: $pre-scrollable-max-height;
 }
