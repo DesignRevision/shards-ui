@@ -1,29 +1,11 @@
-// Contents
-//
-// Navbar
-// Navbar brand
-// Navbar nav
-// Navbar text
-// Navbar divider
-// Responsive navbar
-// Navbar position
-// Navbar themes
-
+// Navbar adjustments
 
 // Navbar
-//
-// Provide a static navbar from which we expand to create full-width, fixed, and
-// other navbar variations.
-
 .navbar {
   padding: $navbar-padding-y $navbar-padding-x;
 }
 
-
 // Navbar brand
-//
-// Used for brand, project, or site names.
-
 .navbar-brand {
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
@@ -60,8 +42,8 @@
       @include media-breakpoint-up($next) {
         .navbar-nav {
           .nav-link {
-            padding-right: .625rem;
-            padding-left: .625rem;
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
           }
         }
       }
@@ -70,8 +52,6 @@
 }
 
 // Navbar themes
-//
-// Styles for switching between navbars with light or dark background.
 
 // Dark links against a light background
 .navbar-light {
@@ -116,6 +96,13 @@
 
   .navbar-text {
     color: $navbar-light-color;
+    a {
+      color: $navbar-light-active-color;
+
+      @include hover-focus {
+        color: $navbar-light-active-color;
+      }
+    }
   }
 }
 
@@ -162,5 +149,12 @@
 
   .navbar-text {
     color: $navbar-dark-color;
+    a {
+      color: $navbar-dark-active-color;
+
+      @include hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
   }
 }

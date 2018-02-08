@@ -1,11 +1,28 @@
-//
 // Pagination adjustments
-//
 
 .pagination {
+  @include list-unstyled();
   @include border-radius();
   font-family: $font-family-poppins-first;
   font-size: $pagination-font-size;
+}
+
+.page-link {
+  padding: $pagination-padding-y $pagination-padding-x;
+  line-height: $pagination-line-height;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  border: none;
+  margin: 0;
+  
+  @include transition($transition-base);
+
+  &:hover,
+  &:focus {
+    color: $pagination-hover-color;
+    background-color: $pagination-hover-bg;
+    border-color: $pagination-hover-border-color;
+  }
 }
 
 .page-item {
@@ -35,25 +52,6 @@
     color: $pagination-disabled-color;
     background-color: $pagination-disabled-bg;
     border-color: $pagination-disabled-border-color;
-  }
-}
-
-.page-link {
-  padding: $pagination-padding-y $pagination-padding-x;
-  line-height: $pagination-line-height;
-  color: $pagination-color;
-  background-color: $pagination-bg;
-  border: none;
-  margin: 0;
-  border: none; // Override Bootstrap.
-  border-right: $pagination-border-width solid $pagination-border-color;
-
-  @include transition($transition-base);
-
-  @include hover-focus {
-    color: $pagination-hover-color;
-    background-color: $pagination-hover-bg;
-    border-color: $pagination-hover-border-color;
   }
 }
 

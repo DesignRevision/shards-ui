@@ -26,13 +26,13 @@
 
   &:focus,
   &.focus {
-    @include box-shadow();
+    @include box-shadow(none);
   }
 
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    box-shadow: none;
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    background-image: none;
+    @include box-shadow(none);
   }
 
   //
@@ -44,10 +44,9 @@
   }
 
   &.btn-pill {
-    border-radius: 50px;
+    border-radius: $btn-pill-border-radius;
   }
 }
-
 
 //
 // Alternate buttons
@@ -55,55 +54,46 @@
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @include button-variant(
-      $value,
-      $value,
-      0 4px 10px rgba($value, .25)
-    );
+    @include button-variant($value);
   }
 }
 
 // White buttons
 .btn-white {
-  @include button-variant(
-      $white,
-      $white,
-      0 4px 10px rgba($white, .25)
-  );
+  @include button-variant($white);
 }
 
 // Black buttons
 .btn-black {
-  @include button-variant(
-      $black,
-      $black,
-      0 4px 10px rgba($black, .25)
-  );
+  @include button-variant($black);
 }
 
+// Outlined default buttons
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    @include button-outline-variant($value, #fff);
+    @include button-outline-variant($value);
   }
 }
 
 // White outline buttons
 .btn-outline-white {
-  @include button-outline-variant($white, $white);
+  @include button-outline-variant($white);
   color: $white;
 
-  &:active {
-    @include color-yiq($white);
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    color: $black;
   }
 }
 
 // Black outline buttons
 .btn-outline-black {
-  @include button-outline-variant($black, $black);
+  @include button-outline-variant($black);
   color: $black;
 
-  &:active {
-    @include color-yiq($black);
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    color: $white;
   }
 }
 
@@ -117,8 +107,13 @@
   font-weight: $font-weight-normal;
   color: $link-color;
 
-  @include hover-focus {
+  @include hover {
     color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
     text-decoration: $link-hover-decoration;
   }
 
@@ -134,20 +129,20 @@
 
 .btn-lg {
   @include button-size(
-    $input-btn-padding-y-lg,
-    $input-btn-padding-x-lg,
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
     $btn-font-size-lg,
-    $line-height-lg,
+    $btn-line-height-lg,
     $btn-border-radius-lg
   );
 }
 
 .btn-sm {
   @include button-size(
-    $input-btn-padding-y-sm,
-    $input-btn-padding-x-sm,
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
     $btn-font-size-sm,
-    $line-height-sm,
+    $btn-line-height-sm,
     $btn-border-radius-sm
   );
 }

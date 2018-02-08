@@ -1,28 +1,27 @@
-//
 // Modal adjustments
-//
-
-// .modal-open      - body class for killing the scroll
-// .modal           - container to scroll within
-// .modal-dialog    - positioning shell for the actual modal
-// .modal-content   - actual modal w/ bg and corners and stuff
 
 .modal {
-  &.fade .modal-dialog {
-    @include transition($modal-transition);
-  }
+  z-index: $zindex-modal;
 }
 
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   margin: $modal-dialog-margin;
+  
+  // When fading in the modal, animate it to slide down
+  .modal.fade & {
+    @include transition($modal-transition);
+  }
+}
+
+.modal-dialog-centered {
+  min-height: calc(100% - (#{$modal-dialog-margin} * 2));
 }
 
 // Actual modal
 .modal-content {
   background-color: $modal-content-bg;
   border: none;
-
   @include border-radius($border-radius-lg);
   @include box-shadow($modal-content-box-shadow);
 }
@@ -32,7 +31,6 @@
   z-index: $zindex-modal-backdrop;
   background-color: $modal-backdrop-bg;
 
-  // Fade for backdrop
   &.show { opacity: $modal-backdrop-opacity; }
 }
 
@@ -62,10 +60,13 @@
 
 // Scale up the modal
 @include media-breakpoint-up(sm) {
-  // Automatically set modal's width for larger viewports
   .modal-dialog {
     max-width: $modal-md;
     margin: $modal-dialog-margin-y-sm-up auto;
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - (#{$modal-dialog-margin-y-sm-up} * 2));
   }
 
   .modal-content {
@@ -73,6 +74,7 @@
   }
 
   .modal-sm { max-width: $modal-sm; }
+
 }
 
 @include media-breakpoint-up(lg) {

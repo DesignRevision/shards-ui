@@ -1,8 +1,5 @@
-//
 // Carousel adjustments
-//
 
-// Wrapper for the slide container and indicators
 .carousel {
   box-shadow: $card-box-shadow;
 }
@@ -11,16 +8,14 @@
   @include transition($carousel-transition);
 }
 
-//
 // Left/right controls for nav
-//
-
 .carousel-control-prev,
 .carousel-control-next {
   width: $carousel-control-width;
   color: $carousel-control-color;
   opacity: $carousel-control-opacity;
 
+  // Hover/focus state
   @include hover-focus {
     color: $carousel-control-color;
   }
@@ -41,12 +36,7 @@
   background-image: $carousel-control-next-icon-bg;
 }
 
-
 // Optional indicator pips
-//
-// Add an ordered list with the following class and add a list item for each
-// slide your carousel holds.
-
 .carousel-indicators {
   margin-right: $carousel-control-width;
   margin-left: $carousel-control-width;
@@ -65,15 +55,9 @@
   }
 }
 
-
 // Optional captions
 .carousel-caption {
   right: ((100% - $carousel-caption-width) / 2);
   left: ((100% - $carousel-caption-width) / 2);
   color: $carousel-caption-color;
-
-  // Fix caption color.
-  * {
-    color: $carousel-caption-color;
-  }
 }

@@ -1,103 +1,146 @@
-// Input Groups Adjustments
+// stylelint-disable selector-no-qualifying-type
 
 //
-// Text input groups
+// Base styles
 //
 
-// Allow seamless input group integration using utility classes.
 .input-group {
-    &[class*="with-addon-icon"] {
-      position: relative;
+  > .form-control,
+  > .custom-select,
+  > .custom-file {
+    + .form-control,
+    + .custom-select,
+    + .custom-file {
+      margin-left: -$input-border-width;
+    }
+  }
 
-      .input-group-addon {
-        position: absolute;
-        background: none;
+  > .form-control,
+  > .custom-select {
+    &:not(:last-child) { @include border-right-radius(0); }
+    &:not(:first-child) { @include border-left-radius(0); }
+  }
+
+  // Custom file inputs have more complex markup, thus requiring different
+  // border-radius overrides.
+  > .custom-file {
+    &:not(:last-child) .custom-file-label,
+    &:not(:last-child) .custom-file-label::after { @include border-right-radius(0); }
+    &:not(:first-child) .custom-file-label,
+    &:not(:first-child) .custom-file-label::after { @include border-left-radius(0); }
+  }
+
+  // Seamless input groups
+  &.input-group-seamless {
+    > .form-control {
+      border-radius: $input-border-radius;
+    }
+
+    > .input-group-append,
+    > .input-group-prepend {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: $zindex-sticky;
+
+      .input-group-text {
+        padding: $input-group-padding-y $input-group-padding-x;
+        background: transparent;
         border: none;
-        z-index: 100;
-      }
-
-      .form-control {
-        border-radius: $input-border-radius;
       }
     }
 
-    &.with-addon-icon-left {
-      .form-control {
-        padding-left: 40px;
-      }
-
-      .input-group-addon {
-        left: 0;
-      }
+    > .input-group-append {
+      right: 0;
     }
 
-    &.with-addon-icon-right {
-      .form-control {
+    > .input-group-prepend {
+      left: 0;
+    }
+
+    > .form-control,
+    > .custom-select {
+      &:not(:last-child) {
         padding-right: 40px;
       }
 
-      .input-group-addon {
-        right: 0;
+      &:not(:first-child) {
+        padding-left: 40px;
       }
     }
   }
+}
 
-.input-group-addon {
-  padding: $input-group-padding-y $input-group-padding-x;
-  font-weight: $font-weight-normal;
-  line-height: $input-btn-line-height;
-  color: $input-group-color;
-  background-color: $input-group-addon-bg;
-  border: $input-btn-border-width solid $input-group-addon-border-color;
-  @include border-radius($input-border-radius);
 
-  // Sizing
-  &.form-control-sm {
-    padding: $input-btn-padding-y-sm $input-btn-padding-x-sm;
-    font-size: $font-size-sm;
-    @include border-radius($input-border-radius-sm);
-  }
+// Prepend and append
 
-  &.form-control-lg {
-    padding: $input-btn-padding-y-lg $input-btn-padding-x-lg;
-    font-size: $font-size-lg;
-    @include border-radius($input-border-radius-lg);
-  }
-
-  &.with-icon {
-    background: $white;
-  }
-
-  // Fix material icons display inside input groups.
-  i.material-icons {
-    top: 0;
+.input-group-prepend,
+.input-group-append {
+  .btn + .btn,
+  .btn + .input-group-text,
+  .input-group-text + .input-group-text,
+  .input-group-text + .btn {
+    margin-left: -$input-border-width;
   }
 }
 
+.input-group-prepend { margin-right: -$input-border-width; }
+.input-group-append { margin-left: -$input-border-width; }
+
+
+// Textual addons
+
+.input-group-text {
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $input-line-height;
+  color: $input-group-addon-color;
+  background-color: $input-group-addon-bg;
+  border: $input-border-width solid $input-group-addon-border-color;
+  @include border-radius($input-border-radius);
+}
+
+
+// Sizing
+
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-append > .btn {
+  @extend .form-control-lg;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-append > .btn {
+  @extend .form-control-sm;
+}
+
+
+// Prepend and append rounded corners
 //
-// Button input groups
-//
+// These rulesets must come after the sizing ones to properly override sm and lg
+// border-radius values when extending. They're more specific than we'd like
+// with the `.input-group >` part, but without it, we cannot override the sizing.
 
-.input-group-btn {
 
-  // Negative margin for spacing, position for bringing hovered/focused/actived
-  // element above the siblings.
-  > .btn + .btn {
-      margin-left: (-$input-btn-border-width);
-  }
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+  @include border-right-radius(0);
+}
 
-  // Negative margin to only have a single, shared border between the two
-  &:not(:last-child) {
-    > .btn,
-    > .btn-group {
-      margin-right: (-$input-btn-border-width);
-    }
-  }
-
-  &:not(:first-child) {
-    > .btn,
-    > .btn-group {
-      margin-left: (-$input-btn-border-width);
-    }
-  }
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  @include border-left-radius(0);
 }

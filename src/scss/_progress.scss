@@ -1,6 +1,4 @@
-//
-// Progress bar adjustments
-//
+// Progress bars adjustments
 
 .progress-wrapper {
   position: relative;
@@ -19,6 +17,7 @@
 }
 
 .progress {
+  height: $progress-height;
   font-size: $progress-font-size;
   line-height: $progress-height;
   background-color: $progress-bg;
@@ -27,12 +26,10 @@
   @include box-shadow($progress-box-shadow);
 }
 
-// Small progress bar helper.
 .progress-sm {
   height: $progress-sm-height;
 }
 
-// Large progress bar helper.
 .progress-lg {
   height: $progress-lg-height;
   .progress-bar { height: $progress-lg-height; }

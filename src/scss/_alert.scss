@@ -1,13 +1,12 @@
 //
-// Alerts adjustments
+// Base styles
 //
 
-// Base styles.
 .alert {
   padding: $alert-padding-y $alert-padding-x;
   margin-bottom: $alert-margin-bottom;
   border: none;
-  @include border-radius(0);
+  @include border-radius($alert-border-radius);
 }
 
 // Provide class for links that match alerts
@@ -15,11 +14,12 @@
   font-weight: $alert-link-font-weight;
 }
 
+
 // Dismissible alerts
 .alert-dismissible {
   .close {
-    top: -$alert-padding-y;
-    right: -$alert-padding-x;
+    top: 0;
+    right: 0;
     padding: $alert-padding-y $alert-padding-x;
     @include transition($transition-base);
 
@@ -29,6 +29,8 @@
   }
 }
 
+
+// Alternate styles
 // Override alert theme colors without mixin.
 @each $color, $value in $theme-colors {
   .alert-#{$color} {
@@ -41,10 +43,10 @@
 
     // Exception for alerts with a light background.
     @if $color == "light" {
-      @include color-yiq($value);
+      color: color-yiq($value);
 
       .alert-link {
-        @include color-yiq($value);
+        color: color-yiq($value);
       }
     }
   }

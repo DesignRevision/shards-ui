@@ -1,22 +1,33 @@
-// Dropdown menu adjustments
-
 // The dropdown menu
 .dropdown-menu {
+  z-index: $zindex-dropdown;
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
-  margin: $dropdown-spacer 0 0; // override default ul
-  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  margin: $dropdown-spacer 0 0;
+  font-size: $font-size-base;
   color: $body-color;
+  background-color: $dropdown-bg;
   border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($border-radius);
+  @include border-radius($dropdown-border-radius);
   @include box-shadow($dropdown-box-shadow);
 }
 
+.dropup .dropdown-menu {
+  margin-bottom: $dropdown-spacer;
+}
 
+.dropright .dropdown-menu {
+  margin-left: $dropdown-spacer;
+}
+
+.dropleft .dropdown-menu {
+    margin-right: $dropdown-spacer;
+}
+
+// Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   @include nav-divider($dropdown-divider-bg);
 }
-
 
 // Links, buttons, and more within the dropdown menu
 //
@@ -30,21 +41,25 @@
 
   @include hover-focus {
     color: $dropdown-link-hover-color;
-    background-color: $dropdown-link-hover-bg;
+    @include gradient-bg($dropdown-link-hover-bg);
   }
 
   &.active,
   &:active {
-    color: $dropdown-link-hover-color;
-    background-color: $dropdown-link-active-bg;
+    color: $dropdown-link-active-color;
+    @include gradient-bg($dropdown-link-active-bg);
   }
 
   &.disabled,
   &:disabled {
     color: $dropdown-link-disabled-color;
+    
+    &:hover {
+      background: none;
+      cursor: not-allowed;
+    }
   }
 }
-
 
 // Dropdown section headers
 .dropdown-header {

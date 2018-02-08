@@ -8,8 +8,12 @@
 .nav-link {
   padding: $nav-link-padding-y $nav-link-padding-x;
   @include transition($nav-transition);
-}
 
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+  }
+}
 
 //
 // Tabs
@@ -23,10 +27,11 @@
   }
 
   .nav-link {
+    border: $nav-tabs-border-width solid transparent;
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
-      border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+      border-color: $nav-tabs-link-hover-border-color;
     }
 
     &.disabled {
@@ -47,7 +52,14 @@
   .nav-item.show .nav-link {
     color: $nav-tabs-link-active-color;
     background-color: $nav-tabs-link-active-bg;
-    border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-bg;
+    border-color: $nav-tabs-link-active-border-color;
+  }
+
+  .dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
   }
 }
 
@@ -59,20 +71,18 @@
 .nav-pills {
   .nav-link {
     @include border-radius($nav-pills-border-radius);
+  }
 
-    &.active,
-    &.active:hover,
-    .show > & {
-      color: $nav-pills-link-active-color;
-      background-color: $nav-pills-link-active-bg;
-    }
+  .nav-link.active,
+  .show > .nav-link {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
 
-    &:hover {
-      background-color: lighten($nav-tabs-border-color, 16%);
-    }
+  &:hover {
+    background-color: lighten($nav-tabs-border-color, 16%);
   }
 }
-
 
 //
 // Nav Outlined Pills
@@ -96,19 +106,28 @@
   }
 }
 
-
 //
 // Color variations
 //
 
 @each $color, $value in $colors {
-
   .nav-#{$color} {
-    // Active pills
-    .nav-link.active {
-      background-color: $value;
-      border-color: darken($value, 3%);
-      @include color-yiq($value);
+    .nav-link {
+      // Active pills
+      &.active {
+        background-color: $value;
+        border-color: darken($value, 3%);
+        color: color-yiq($value);
+      }
+
+      &.disabled {
+        color: $nav-link-disabled-color;
+  
+        &:hover {
+          cursor: not-allowed;
+          border-color: transparent;
+        }
+      }
     }
 
     // Link color
@@ -118,7 +137,6 @@
 
     // Outlined pills color variations.
     &.nav-outlined-pills {
-
       // Active pills
       .nav-link.active {
         background: transparent;
@@ -136,5 +154,4 @@
       }
     }
   }
-
 }

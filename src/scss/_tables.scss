@@ -1,27 +1,89 @@
-// Adjusted Table Stylings
-
 //
-// Basic Bootstrap table
+// Bootstrap 4 tables adjustments
 //
 
 .table {
-  margin-bottom: $spacer;
-}
+  background-color: $table-bg;
 
-// Zebra-striping
-//
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+  th,
+  td {
+    padding: $table-cell-padding;
+  }
 
-.table-striped {
-  tbody tr:nth-of-type(odd) {
-    background-color: $table-accent-bg;
+  .table {
+    background-color: $body-bg;
   }
 }
 
+
 //
+// Condensed table w/ half padding
+//
+
+.table-sm {
+  th,
+  td {
+    padding: $table-cell-padding-sm;
+  }
+}
+
+
 // Table backgrounds
 //
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
   @include table-row-variant($color, theme-color-level($color, -9));
+}
+
+@include table-row-variant(active, $table-active-bg);
+
+
+// Dark styles
+//
+// Same table markup, but inverted color scheme: dark background and light text.
+
+// stylelint-disable-next-line no-duplicate-selectors
+.table {
+  .thead-dark {
+    th {
+      color: $table-dark-color;
+      background-color: $table-dark-bg;
+      border-color: $table-dark-border-color;
+    }
+  }
+
+  .thead-light {
+    th {
+      color: $table-head-color;
+      background-color: $table-head-bg;
+      border-color: $table-border-color;
+    }
+  }
+}
+
+.table-dark {
+  color: $table-dark-color;
+  background-color: $table-dark-bg;
+
+  th,
+  td,
+  thead th {
+    border-color: $table-dark-border-color;
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $table-dark-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        background-color: $table-dark-hover-bg;
+      }
+    }
+  }
 }
