@@ -10,6 +10,21 @@
   border: $dropdown-border-width solid $dropdown-border-color;
   @include border-radius($dropdown-border-radius);
   @include box-shadow($dropdown-box-shadow);
+
+  &-small {
+    @include box-shadow($dropdown-small-box-shadow);
+    padding: $dropdown-small-padding-y 0;
+    font-size: $dropdown-small-font-size;
+    
+    .dropdown-item {
+      padding: $dropdown-small-item-padding-y $dropdown-small-item-padding-x;
+      font-size: $dropdown-small-item-font-size;
+    }
+
+    .dropdown-divider {
+      margin: $dropdown-small-divider-margin-y $dropdown-small-divider-margin-x;
+    }
+  }
 }
 
 .dropup .dropdown-menu {
