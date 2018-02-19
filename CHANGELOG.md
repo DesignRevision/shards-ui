@@ -4,14 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## 📦 2.0.1 - YYYY-MM-DD
+## 📦 2.0.1 - 2018-02-19
 
 ### Added
 - Small dropdown menu modifier class.
 - Small card modifier.
 
 ### Changed
+- BS4 dependency import path.
 - Fixed the package entrypoint path so Shards' JavaScript package could be imported as a module.
+- Input group append/prepend z-index issue.
 
 ## 📦 2.0.0 - 2018-02-08
 
