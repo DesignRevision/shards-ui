@@ -5,7 +5,7 @@
 .card {
   background-color: $card-bg;
   border: none;
-  
+
   @include border-radius($card-border-radius);
   @include box-shadow($card-box-shadow);
 
@@ -33,6 +33,17 @@
   // Remove text decoration.
   a:hover {
     text-decoration: none;
+  }
+
+  // Small card modifier.
+  &-small {
+    .card-header,
+    .card-body,
+    .card-footer {
+      padding: $card-small-spacer-y $card-small-spacer-x;
+    }
+
+    box-shadow: $card-small-box-shadow;
   }
 }
 
@@ -180,7 +191,7 @@
 
     > .card {
       box-shadow: none;
-      
+
       // Handle rounded corners
       @if $enable-rounded {
         &:first-child {

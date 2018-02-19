@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 - Small dropdown menu modifier class.
+- Small card modifier.
 
 ### Changed
 - Fixed the package entrypoint path so Shards' JavaScript package could be imported as a module.
