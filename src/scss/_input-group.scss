@@ -41,7 +41,7 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      z-index: $zindex-sticky;
+      z-index: 4;
 
       .input-group-text {
         padding: $input-group-padding-y $input-group-padding-x;
