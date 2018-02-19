@@ -9,6 +9,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Small dropdown menu modifier class.
 
+### Changed
+- Fixed the package entrypoint path so Shards' JavaScript package could be imported as a module.
+
 ## 📦 2.0.0 - 2018-02-08
 
 - Skipped minor version due to changes that break backward compatibility.
