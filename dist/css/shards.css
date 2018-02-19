@@ -1,5 +1,5 @@
 /*
- * Shards v2.0.0 (https://designrevision.com/downloads/shards/)
+ * Shards v2.0.1 (https://designrevision.com/downloads/shards/)
  * Based on: Bootstrap v4.0.0 (final) (https://getbootstrap.com)
  * Copyright 2017-* DesignRevision (https://designrevision.com)
  * Copyright 2017-* Catalin Vasile (http://catalin.me)
@@ -1741,7 +1741,7 @@ i.material-icons {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1020;
+  z-index: 4;
 }
 
 .input-group.input-group-seamless > .input-group-append .input-group-text,
