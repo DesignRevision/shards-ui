@@ -542,7 +542,7 @@ $dropdown-header-color:          $gray-600 !default;
 $dropdown-small-padding-y: .25rem !default;
 $dropdown-small-font-size: 0.813rem !default;
 $dropdown-small-box-shadow: 0 0.5rem 2rem rgba(0,0,0,.11), 0 3px 10px rgba(0,0,0,.05), 0 2px 3px rgba(0,0,0,.06) !default;
-  
+
 $dropdown-small-item-padding-y: 0.375rem !default;
 $dropdown-small-item-padding-x: 0.875rem !default;
 
@@ -692,6 +692,12 @@ $card-columns-count:            3 !default;
 $card-columns-gap:              1.25rem !default;
 $card-columns-margin:           $card-spacer-y !default;
 
+$card-small-spacer-y:           1rem !default;
+$card-small-spacer-x:           1rem !default;
+$card-small-box-shadow:         0 2px 0 rgba($blueish-grey, 0.11),
+                                0 4px 8px rgba($blueish-grey, 0.12),
+                                0 10px 10px rgba($blueish-grey, 0.06),
+                                0 7px 70px rgba($blueish-grey, 0.1) !default;
 
 // Tooltips
 

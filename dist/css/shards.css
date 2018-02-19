@@ -2887,6 +2887,16 @@ i.material-icons {
   text-decoration: none;
 }
 
+.card-small {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+}
+
+.card-small .card-header,
+.card-small .card-body,
+.card-small .card-footer {
+  padding: 1rem 1rem;
+}
+
 .card-body {
   padding: 1.875rem;
 }
