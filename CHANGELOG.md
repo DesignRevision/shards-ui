@@ -10,7 +10,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - Add input-group-middle add-on
 
 ### Changed
-
 - Adjust small variable (sm resulted in padding larger than default)
 - Update demo page with new input-group-middle add-on
 
