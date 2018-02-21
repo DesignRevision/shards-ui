@@ -357,7 +357,7 @@
 // Custom toggle
 .custom-toggle {
   position: relative;
-  padding-left: ($custom-toggle-width + 10px);
+  padding-left: ($custom-toggle-width + 0.625rem);
 
   .custom-control-label {
     // Background
@@ -377,8 +377,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: 4px;
-      left: 4px;
+      top: 0.25rem;
+      left: 0.25rem;
       width: $custom-toggle-knob-width;
       height: $custom-toggle-knob-height;
       background: $input-border-color;
@@ -397,7 +397,7 @@
 
     // Knob
     &::after {
-      left: $custom-toggle-width - $custom-toggle-border-width - 3px;
+      left: $custom-toggle-width - $custom-toggle-border-width - 0.1875rem;
       transform: translateX(-100%);
       background: $custom-toggle-checked-knob-background;
     }
@@ -450,5 +450,45 @@
         box-shadow: $input-focus-box-shadow;
       }
     }
+  }
+
+  &.custom-toggle-sm{
+    padding-left: 2.625rem;
+
+    .custom-control-label {
+      // Background
+      &::before {
+        top: .1875rem;
+        position: absolute;
+        display: block;
+        width: $custom-toggle-width-sm;
+        height: $custom-toggle-height-sm;
+        // background: $custom-toggle-background-color;
+        // border-radius: $custom-toggle-border-radius;
+        // border: $custom-toggle-border;
+      }
+  
+      // Knob
+      &::after {
+        content: '';
+        position: absolute;
+        top: .375rem;
+        left: 0.1875rem;
+        width: $custom-toggle-knob-width-sm;
+        height: $custom-toggle-knob-height-sm;
+      }
+
+
+    }
+
+    // Checked state 
+    .custom-control-input:checked ~ .custom-control-label {
+      // Knob
+      &::after {
+        left: $custom-toggle-width-sm - $custom-toggle-border-width - 0.1875rem;
+      }
+    }
+
+  
   }
 }
