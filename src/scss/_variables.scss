@@ -482,9 +482,9 @@ $form-feedback-valid-color:         theme-color("success") !default;
 $form-feedback-invalid-color:       theme-color("danger") !default;
 
 // Custom toggle
-$custom-toggle-width: 50px !default;
-$custom-toggle-height: 28px !default;
-$custom-toggle-border-width: 1px !default;
+$custom-toggle-width: 3.125rem !default;
+$custom-toggle-height: 1.75rem !default;
+$custom-toggle-border-width: 0.0625rem !default;
 $custom-toggle-border: $custom-toggle-border-width solid $input-border-color !default;
 $custom-toggle-background-color: $white !default;
 $custom-toggle-border-radius: 100px !default;
@@ -495,14 +495,19 @@ $custom-toggle-checked-background: theme-color("success") !default;
 $custom-toggle-checked-border-color: $custom-toggle-checked-background !default;
 $custom-toggle-checked-knob-background: $white !default;
 
-$custom-toggle-knob-width: 20px !default;
-$custom-toggle-knob-height: 20px !default;
-$custom-toggle-knob-border-radius: 100px !default;
-$custom-toggle-knob-active-width: 26px !default;
+$custom-toggle-knob-width: 1.25rem !default;
+$custom-toggle-knob-height: 1.25rem !default;
+$custom-toggle-knob-border-radius: 6.25rem !default;
+$custom-toggle-knob-active-width: 1.625rem !default;
 
 $custom-toggle-invalid-knob-background-color: #eb8c95 !default;
 $custom-toggle-invalid-background-color: $white !default;
 
+$custom-toggle-width-sm : 2.1875rem !default;
+$custom-toggle-height-sm : 1.125rem !default;
+
+$custom-toggle-knob-width-sm: .75rem !default;
+$custom-toggle-knob-height-sm: .75rem !default;
 
 // Form validation
 $form-feedback-valid-color:   theme-color("success") !default;

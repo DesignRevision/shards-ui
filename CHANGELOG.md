@@ -4,14 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## 📦 2.0.2 - 2018-02-21
+## 📦 2.0.2 - YYYY/MM/DD
 
 ### Added
-- Add input-group-middle add-on
+- Added `.input-group-middle` input group add-on.
+- Added `.custom-toggle-sm` class modifier.
 
 ### Changed
-- Adjust small variable (sm resulted in padding larger than default)
-- Update demo page with new input-group-middle add-on
+- Added small toggle size variation to demo page
+- Adjusted small addon variable (sm resulted in padding larger than default).
+- Updated the demo page with new `.input-group-middle` add-on.
 
 ## 📦 2.0.1 - 2018-02-19
 
