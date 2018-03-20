@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Added `.input-group-middle` input group add-on.
 - Added `.custom-toggle-sm` class modifier.
+- Added `.list-group-sm` class modifier.
 
 ### Changed
 - Added small toggle size variation to demo page

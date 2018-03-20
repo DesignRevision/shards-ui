@@ -2,6 +2,13 @@
 // Base class .list-group inherited from Bootstrap
 
 
+// Small list group modifier
+.list-group-small .list-group-item {
+  padding: $list-group-sm-item-padding-y $list-group-sm-item-padding-x;
+  font-size: $list-group-sm-item-font-size;
+}
+
+
 // Interactive list items
 //
 // Use anchor or button elements instead of `li`s or `div`s to create interactive
