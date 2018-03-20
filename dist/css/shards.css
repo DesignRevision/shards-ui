@@ -516,10 +516,11 @@ form label:hover {
 
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .input-group-middle > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-  padding: 0.35rem 1rem;
+  padding: 0.35rem 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.35rem;
@@ -527,6 +528,7 @@ form label:hover {
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+.input-group-sm > .input-group-middle > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
@@ -535,6 +537,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-middle > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
@@ -546,6 +549,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+.input-group-lg > .input-group-middle > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
@@ -1755,6 +1759,11 @@ i.material-icons {
   right: 0;
 }
 
+.input-group.input-group-seamless > .input-group-middle {
+  right: 0;
+  left: 0;
+}
+
 .input-group.input-group-seamless > .input-group-prepend {
   left: 0;
 }
@@ -1816,6 +1825,18 @@ i.material-icons {
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.input-group > .input-group-middle > .btn,
+.input-group > .input-group-middle > .input-group-text {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.input-group-middle {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .custom-control {
@@ -2116,7 +2137,7 @@ i.material-icons {
 
 .custom-toggle {
   position: relative;
-  padding-left: 60px;
+  padding-left: 3.75rem;
 }
 
 .custom-toggle .custom-control-label::before {
@@ -2124,22 +2145,22 @@ i.material-icons {
   top: 0;
   left: 0;
   display: block;
-  width: 50px;
-  height: 28px;
+  width: 3.125rem;
+  height: 1.75rem;
   background: #fff;
   border-radius: 100px;
-  border: 1px solid #becad6;
+  border: 0.0625rem solid #becad6;
 }
 
 .custom-toggle .custom-control-label::after {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 20px;
-  height: 20px;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
   background: #becad6;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   transition: 350ms;
 }
 
@@ -2149,7 +2170,7 @@ i.material-icons {
 }
 
 .custom-toggle .custom-control-input:checked ~ .custom-control-label::after {
-  left: 46px;
+  left: 2.875rem;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   background: #fff;
@@ -2165,7 +2186,7 @@ i.material-icons {
 }
 
 .custom-toggle .custom-control-input:active:not(:disabled) ~ .custom-control-label::after {
-  width: 26px;
+  width: 1.625rem;
 }
 
 .custom-toggle .custom-control-input:active:not(:checked) ~ .custom-control-label::before {
@@ -2182,6 +2203,31 @@ i.material-icons {
 
 .custom-toggle .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   box-shadow: 0 0.313rem 0.719rem rgba(0, 123, 255, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+}
+
+.custom-toggle.custom-toggle-sm {
+  padding-left: 2.625rem;
+}
+
+.custom-toggle.custom-toggle-sm .custom-control-label::before {
+  top: .1875rem;
+  position: absolute;
+  display: block;
+  width: 2.1875rem;
+  height: 1.125rem;
+}
+
+.custom-toggle.custom-toggle-sm .custom-control-label::after {
+  content: '';
+  position: absolute;
+  top: .375rem;
+  left: 0.1875rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.custom-toggle.custom-toggle-sm .custom-control-input:checked ~ .custom-control-label::after {
+  left: 1.9375rem;
 }
 
 .nav {
