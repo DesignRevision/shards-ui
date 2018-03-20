@@ -3,7 +3,7 @@
 .pagination {
   @include list-unstyled();
   @include border-radius();
-  font-family: $font-family-poppins-first;
+  font-family: $pagination-font-family;
   font-size: $pagination-font-size;
 }
 
@@ -14,7 +14,7 @@
   background-color: $pagination-bg;
   border: none;
   margin: 0;
-  
+
   @include transition($transition-base);
 
   &:hover,

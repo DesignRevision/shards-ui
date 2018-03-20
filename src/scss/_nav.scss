@@ -2,7 +2,7 @@
 
 .nav {
   font-size: 0.875rem;
-  font-family: $font-family-poppins-first;
+  font-family: $nav-font-family;
 }
 
 .nav-link {
@@ -122,7 +122,7 @@
 
       &.disabled {
         color: $nav-link-disabled-color;
-  
+
         &:hover {
           cursor: not-allowed;
           border-color: transparent;

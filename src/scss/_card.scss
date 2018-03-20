@@ -65,7 +65,7 @@
 }
 
 .card-link {
-  font-family: $font-family-poppins-first;
+  font-family: $card-link-font-family;
 
   + .card-link {
     margin-left: $card-spacer-x;

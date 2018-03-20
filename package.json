@@ -33,7 +33,7 @@
   "bundlesize": [
     {
       "path": "./dist/css/shards.min.css",
-      "maxSize": "14 kB"
+      "maxSize": "14.5 kB"
     }
   ],
   "repository": {
