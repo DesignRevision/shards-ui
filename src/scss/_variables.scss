@@ -833,8 +833,12 @@ $list-group-border-width:        $border-width !default;
 $list-group-border-radius:       $border-radius !default;
 $list-group-transition:          $transition-base !default;
 
-$list-group-item-padding-y:      .75rem !default;
-$list-group-item-padding-x:      1.25rem !default;
+$list-group-item-padding-y:         .75rem !default;
+$list-group-item-padding-x:         1.25rem !default;
+$list-group-sm-item-padding-y:      0.625rem !default;
+$list-group-sm-item-padding-x:      1rem !default;
+
+$list-group-sm-item-font-size:      0.8125rem !default;
 
 $list-group-hover-bg:                 lighten($blueish-grey, 59%) !default;
 $list-group-active-color:             $component-active-color !default;
