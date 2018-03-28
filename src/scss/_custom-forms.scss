@@ -50,7 +50,7 @@
         background-color: $custom-control-indicator-disabled-bg;
       }
     }
-    
+
   }
 }
 
@@ -152,7 +152,7 @@
     &::after {
       border-color: $border-color;
     }
-  }  
+  }
 }
 
 // Radios
@@ -180,7 +180,7 @@
     opacity: 0;
     transform: scale(0);
   }
-  
+
   .custom-control-input:checked ~ .custom-control-label {
     &::before {
       @include gradient-bg($custom-control-indicator-checked-bg);
@@ -206,7 +206,7 @@
     &::after {
       background: $border-color;
     }
-  }   
+  }
 }
 
 // Select
@@ -284,7 +284,7 @@
 .custom-file {
   height: $custom-file-height;
   font-size: $input-font-size;
-  
+
   @include transition($input-transition);
 }
 
@@ -296,7 +296,7 @@
     border-color: $custom-file-focus-border-color;
     color: $input-focus-color;
     box-shadow: $custom-file-focus-box-shadow;
-    
+
     &::after {
       border-color: $custom-file-focus-border-color;
       color: theme-color("primary");
@@ -348,7 +348,7 @@
     line-height: $custom-file-line-height;
     color: $custom-file-button-color;
     border-left: $custom-file-border-width solid $custom-file-border-color;
-    
+
     @include gradient-bg($custom-file-button-bg);
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
@@ -387,7 +387,7 @@
     }
   }
 
-  // Checked state 
+  // Checked state
   .custom-control-input:checked ~ .custom-control-label {
     // Background
     &::before {
@@ -414,7 +414,7 @@
       background: $border-color;
     }
   }
-  
+
   // Active state
   .custom-control-input:active:not(:disabled) ~ .custom-control-label {
     // Knob
@@ -452,7 +452,7 @@
     }
   }
 
-  &.custom-toggle-sm{
+  &.custom-toggle-sm {
     padding-left: 2.625rem;
 
     .custom-control-label {
@@ -463,11 +463,11 @@
         display: block;
         width: $custom-toggle-width-sm;
         height: $custom-toggle-height-sm;
-        // background: $custom-toggle-background-color;
-        // border-radius: $custom-toggle-border-radius;
-        // border: $custom-toggle-border;
+        background: $custom-toggle-background-color;
+        border-radius: $custom-toggle-border-radius;
+        border: $custom-toggle-border;
       }
-  
+
       // Knob
       &::after {
         content: '';
@@ -477,11 +477,9 @@
         width: $custom-toggle-knob-width-sm;
         height: $custom-toggle-knob-height-sm;
       }
-
-
     }
 
-    // Checked state 
+    // Checked state
     .custom-control-input:checked ~ .custom-control-label {
       // Knob
       &::after {
@@ -489,6 +487,12 @@
       }
     }
 
-  
+    // Active state
+    .custom-control-input:active:not(:disabled) ~ .custom-control-label {
+      // Knob
+      &::after {
+        width: $custom-toggle-knob-active-width-sm;
+      }
+    }
   }
 }

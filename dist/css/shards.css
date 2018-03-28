@@ -2215,6 +2215,9 @@ i.material-icons {
   display: block;
   width: 2.1875rem;
   height: 1.125rem;
+  background: #fff;
+  border-radius: 100px;
+  border: 0.0625rem solid #becad6;
 }
 
 .custom-toggle.custom-toggle-sm .custom-control-label::after {
@@ -2228,6 +2231,10 @@ i.material-icons {
 
 .custom-toggle.custom-toggle-sm .custom-control-input:checked ~ .custom-control-label::after {
   left: 1.9375rem;
+}
+
+.custom-toggle.custom-toggle-sm .custom-control-input:active:not(:disabled) ~ .custom-control-label::after {
+  width: 1rem;
 }
 
 .nav {
