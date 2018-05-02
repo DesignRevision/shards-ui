@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 📦 2.0.3 - 2018/05/03
+
+### Added
+- Support for [noUiSlider 11.1.0](https://github.com/leongersen/noUiSlider#1110-2018-04-02).
+
+### Changed
+- Fixed `$popover-arrow-width` interpolation issue [(#32)](https://github.com/DesignRevision/shards-ui/issues/32).
+- Fixed demo page responsive display issues. [(#29)](https://github.com/DesignRevision/shards-ui/issues/29).
+- Updated dependencies.
+
+
 ## 📦 2.0.2 - 2018/03/28
 
 ### Added
