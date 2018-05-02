@@ -2,8 +2,8 @@
 <img src="logo.jpg" width="250" />
 </p>
 
-<p align="center" style="max-width: 550px; margin: 0 auto;">
-A modern UI kit packed with 2 custom page templates and 11 extra custom components built on top of Bootstrap 4 (final).
+<p align="center">
+A modern UI kit packed with 2 custom page templates and 11 extra <br />custom components built on top of Bootstrap 4 (final).
 </p>
 
 <br />
