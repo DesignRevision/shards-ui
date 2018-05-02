@@ -1,4 +1,5 @@
-// Custom sliders
+// Custom Sliders
+// Powered by nouislider - 11.1.0
 
 .noUi-target,
 .noUi-target * {
@@ -16,90 +17,90 @@
 
 .noUi-target {
   position: relative;
+  direction: ltr;
   background: $slider-base-background;
   border-radius: $slider-base-border-radius;
   box-shadow: $slider-base-box-shadow;
   margin: $slider-base-margin-top 0;
 
-  // Remove the default outline and apply custom styling.
-  :focus {
+  &:focus {
     outline: 0;
     box-shadow: $slider-handle-focus-box-shadow;
   }
 }
 
-.noUi-base {
+.noUi-base,
+.noUi-connects {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 1;
 }
 
-.noUi-connect {
+// Wrapper for all connect elements.
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+
+.noUi-connect,
+.noUi-origin {
   position: absolute;
-  right: 0;
+  will-change: transform;
+  z-index: 1;
   top: 0;
   left: 0;
-  bottom: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.noUi-connect {
   background: $slider-connect-color;
   border-radius: $slider-base-border-radius;
 }
 
-.noUi-origin {
-  position: absolute;
-  height: 0;
-  width: 0;
-}
+// LTR Adjustments
+html:not([dir="rtl"]) {
+  .noUi-horizontal {
+    .noUi-origin {
+      left: auto;
+      right: 0;
+    }
 
-.noUi-handle {
-  position: relative;
-  z-index: 1;
-  border: $slider-handle-border;
-  border-radius: $slider-handle-border-radius;
-  width: $slider-handle-width;
-  height: $slider-handle-height;
-  box-shadow: $slider-handle-box-shadow;
-  background: $slider-handle-background;
-  transition: $slider-handle-transition;
-
-  // Change the cursor to a grab hand on hover.
-  &:hover {
-    cursor: grab;
-    cursor: -webkit-grab;
-    cursor:-moz-grab;
-  }
-
-  // Change the cursor to a grabbing hand on active.
-  &:active {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-    cursor:-moz-grabbing;
-  }
-
-  &:after {
-    left: 17px;
+    .noUi-handle {
+      right: -17px;
+      left: auto;
+    }
   }
 }
 
-// Slider size and handle placement
-.noUi-horizontal {
-  height: $slider-base-size;
-
-  .noUi-handle {
-    left: -$slider-handle-width / 2;
-    top: -10px;
+// RTL Adjustments
+.noUi-rtl {
+  .noUi-value-horizontal {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
   }
 
-  .noUi-tooltip {
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    left: 50%;
-    bottom: 30px;
+ .noUi-value-vertical {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
   }
 }
 
+// Vertical
 .noUi-vertical {
   width: $slider-base-size;
+
+  .noUi-origin {
+    width: 0;
+  }
 
   .noUi-handle {
     left: -10px;
@@ -124,15 +125,86 @@
     top: 50%;
     right: 30px;
   }
+
+  .noUi-draggable {
+    cursor: ns-resize;
+  }
 }
 
-// Handles and cursors
+// Horizontal.
+.noUi-horizontal {
+  height: $slider-base-size;
+
+  .noUi-origin {
+    height: 0;
+  }
+
+  .noUi-handle {
+    left: -$slider-handle-width / 2;
+    top: -10px;
+  }
+
+  .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 30px;
+  }
+}
+
+.noUi-handle {
+  position: absolute;
+  border: $slider-handle-border;
+  border-radius: $slider-handle-border-radius;
+  width: $slider-handle-width;
+  height: $slider-handle-height;
+  box-shadow: $slider-handle-box-shadow;
+  background: $slider-handle-background;
+  transition: $slider-handle-transition;
+
+  // Change the cursor to a grab hand on hover.
+  &:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor:-moz-grab;
+  }
+
+  // Change the cursor to a grabbing hand on active.
+  &:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    cursor:-moz-grabbing;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: $slider-handle-focus-box-shadow;
+  }
+
+  &:after {
+    left: 17px;
+  }
+}
+
+// Tap and drag states.
+.noUi-state-tap {
+  .noUi-connect,
+  .noUi-origin {
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+  }
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+.noUi-connects {
+  border-radius: $slider-base-border-radius;
+}
+
 .noUi-draggable {
   cursor: ew-resize;
-}
-
-.noUi-vertical .noUi-draggable {
-  cursor: ns-resize;
 }
 
 .noUi-active {
@@ -140,26 +212,30 @@
 }
 
 // Disabled state
-[disabled] .noUi-connect {
-  background: #B8B8B8;
-}
+[disabled] {
+  .noUi-connect {
+    background: #B8B8B8;
+  }
 
-[disabled].noUi-target,
-[disabled].noUi-handle,
-[disabled] .noUi-handle {
-  cursor: not-allowed;
-}
+  &.noUi-target,
+  &.noUi-handle,
+  .noUi-handle {
+    cursor: not-allowed;
+  }
 
-[disabled] .noUi-handle {
-  background: $slider-handle-disabled-background;
+  .noUi-handle {
+    background: $slider-handle-disabled-background;
 
-  // Override to the default handle box shadow when the slider is disabled.
-  &:focus {
-    box-shadow: $slider-handle-box-shadow;
+    // Override to the default handle box shadow when the slider is disabled.
+    &:focus {
+      box-shadow: $slider-handle-box-shadow;
+    }
   }
 }
 
-// Base
+// Pips
+
+// Pips: Base
 .noUi-pips,
 .noUi-pips * {
   -moz-box-sizing: border-box;
@@ -172,7 +248,7 @@
   font-size: 12px;
 }
 
-// Values
+// Pips: Values
 .noUi-value {
   position: absolute;
   white-space: nowrap;
@@ -184,7 +260,7 @@
   font-size: 10px;
 }
 
-// Markings
+// Pips: Markings
 .noUi-marker {
   position: absolute;
   background: $slider-pips-color;
@@ -198,7 +274,7 @@
   background: $slider-pips-color;
 }
 
-// Horizontal layout
+// Pips: Horizontal
 .noUi-pips-horizontal {
   padding: 10px 0;
   height: auto;
@@ -227,7 +303,7 @@
   }
 }
 
-// Vertical layout
+// Pips: Vertical
 .noUi-pips-vertical {
   padding: 0 10px;
   height: 100%;
@@ -237,13 +313,13 @@
 
 .noUi-value-vertical {
   transform: translate3d(0, -50%, 0);
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 .noUi-marker-vertical {
   &.noUi-marker {
-    width: 5px;
-    height: 2px;
+    width: 4px;
+    height: 1px;
     margin-top: -1px;
   }
 
@@ -252,7 +328,7 @@
   }
 
   &.noUi-marker-large {
-    width: 15px;
+    width: 7px;
   }
 }
 
