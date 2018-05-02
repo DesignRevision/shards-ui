@@ -79,6 +79,7 @@
     margin-top: 35vh;
     margin-bottom: 20px;
     color: #1f2429;
+    line-height: 1;
 
     @include media-breakpoint-down(xs) {
       font-size: 5.90rem;
