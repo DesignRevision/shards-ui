@@ -42,7 +42,7 @@ Currently there are only two ways of downloading Shards:
 * [Official Website](https://designrevision.com/download/shards)
 * [Release Package](https://github.com/DesignRevision/shards-ui/releases)
 
-The distributed Shards assets are also available via CDN through [unpkg](https://unpkg.com/shards-ui@2.0.2/) and [jsDelivr](https://cdn.jsdelivr.net/npm/shards-ui@2.0.2/).
+The distributed Shards assets are also available via CDN through [unpkg](https://unpkg.com/shards-ui@2.0.3/) and [jsDelivr](https://cdn.jsdelivr.net/npm/shards-ui@2.0.3/).
 
 <br />
 
@@ -65,7 +65,7 @@ In order to take advantage of both Bootstrap and Shards' features you may want t
 
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/shards-ui@2.0.2/dist/css/shards.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/shards-ui@2.0.3/dist/css/shards.min.css">
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -75,7 +75,7 @@ In order to take advantage of both Bootstrap and Shards' features you may want t
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/shards-ui@2.0.2/dist/js/shards.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@2.0.3/dist/js/shards.min.js"></script>
   </body>
 </html>
 ```
@@ -104,7 +104,7 @@ Building better products is something I'm trying to get really good at. I’d lo
 
 ### Acknowledgments
 
-While building this project we used various free resources built and made 
+While building this project we used various free resources built and made
 available by some wonderful people around the world. See the [ATTRIB.md](ATTRIB.md) file for details.
 
 <br />
