@@ -15,6 +15,7 @@ A modern UI kit packed with 2 custom page templates and 11 extra <br />custom co
   <a href="#">
     <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" />
   </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FDesignRevision%2Fshards-ui?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FDesignRevision%2Fshards-ui.svg?type=shield"/></a>
   <a href="https://twitter.com/intent/tweet?url=https://designrevision.com/downloads/shards&text=I%20love%20the%20free%20Shards%20UI%20kit%20based%20on%20%23bootstrap%20by%20%40DesignRevision%20%23ui%20%23kit%20%23freebie%20">
     <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" />
   </a>
@@ -34,6 +35,9 @@ A modern UI kit packed with 2 custom page templates and 11 extra <br />custom co
 
 <br />
 
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDesignRevision%2Fshards-ui.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FDesignRevision%2Fshards-ui?ref=badge_large)
 
 ### Getting Started
 
