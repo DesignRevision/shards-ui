@@ -5,6 +5,7 @@
 //
 
 .form-control {
+  height: auto;
   padding: $input-padding-y $input-padding-x;
   font-size: $input-font-size; // $font-size-base
   line-height: $input-line-height;
