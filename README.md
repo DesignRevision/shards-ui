@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A modern UI kit packed with 2 custom page templates and 11 extra <br />custom components built on top of Bootstrap 4 (final).
+A modern UI kit packed with 2 custom page templates and 11 extra <br />custom components built on top of Bootstrap (4.1.3).
 </p>
 
 <br />
@@ -42,7 +42,7 @@ Currently there are only two ways of downloading Shards:
 * [Official Website](https://designrevision.com/download/shards)
 * [Release Package](https://github.com/DesignRevision/shards-ui/releases)
 
-The distributed Shards assets are also available via CDN through [unpkg](https://unpkg.com/shards-ui@2.0.3/) and [jsDelivr](https://cdn.jsdelivr.net/npm/shards-ui@2.0.3/).
+The distributed Shards assets are also available via CDN through [unpkg](https://unpkg.com/shards-ui@latest/) and [jsDelivr](https://cdn.jsdelivr.net/npm/shards-ui@latest/).
 
 <br />
 
@@ -64,18 +64,18 @@ In order to take advantage of both Bootstrap and Shards' features you may want t
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/shards-ui@2.0.3/dist/css/shards.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/shards-ui@latest/dist/css/shards.min.css">
   </head>
   <body>
     <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/shards-ui@2.0.3/dist/js/shards.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
   </body>
 </html>
 ```
@@ -93,11 +93,12 @@ In order to take advantage of both Bootstrap and Shards' features you may want t
 
 ### Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 <br />
 
 ### Feedback
+
 Building better products is something I'm trying to get really good at. I’d love to hear more about how you plan on using Shards and what features you consider important in similar products. If you could spare a few minutes, please fill out [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLScyj8F-fyVlb-AAeM-UFXSpDgrfdC81yWm1BNF8_gVCpXN8jw/viewform?usp=sf_link) to help me better understand your current context and what I could do to improve my products.
 
 <br />
