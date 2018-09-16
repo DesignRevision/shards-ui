@@ -59,6 +59,7 @@
 // Build the custom controls out of psuedo-elements.
 
 .custom-control-label {
+  position: static;
   &:hover {
     cursor: pointer;
   }
@@ -66,6 +67,7 @@
   // Background-color and (when enabled) gradient
   &::before {
     top: (($line-height-base - $custom-control-indicator-size) / 2);
+    left: 0;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     background-color: $custom-control-indicator-bg;

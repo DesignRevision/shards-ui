@@ -2,6 +2,8 @@
 // Text utilities adjustments
 //
 
+.text-monospace { font-family: $font-family-monospace; }
+
 // Weight and italics
 .font-weight-normal { font-weight: $font-weight-normal; }
 .font-weight-bold   { font-weight: $font-weight-bold; }
@@ -10,6 +12,8 @@
 @each $color, $value in $theme-colors {
   @include text-emphasis-variant('.text-#{$color}', $value);
 }
+
+.text-body { color: $body-color !important; }
 
 // Anchor white text hover adjustment
 a.text-white {
