@@ -115,10 +115,10 @@ import 'shards-ui/dist/css/shards.min.css';
 // Optional JavaScript
 // JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS
 // Install them with `npm` as well
-import 'jquery/dist/jquery.slim.min.js';
-import 'popper.js/dist/umd/popper.min.js';
-import 'bootstrap/dist/js/boostrap.min.js';
-import 'shards-ui/dist/js/shards.min.js';
+import 'jquery/dist/jquery.slim.min';
+import 'popper.js/dist/umd/popper.min';
+import 'bootstrap/dist/js/boostrap.min';
+import 'shards-ui/dist/js/shards.min';
 ```
 
 <br/>
