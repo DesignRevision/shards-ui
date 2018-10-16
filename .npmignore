@@ -1,0 +1,31 @@
+# Generated files
+.DS_Store
+
+# node_modules
+node_modules
+
+# Configs
+.editorconfig
+.gitignore
+.npmignore
+
+# Repo related files
+/logo.png
+/ATTRIB.md
+/CHANGELOG.md
+/CONTRIBUTING.md
+/ISSUE_TEMPLATE.md
+
+# Lockfiles
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
+
+# Source files
+/src
+
+# Builder files
+/build
+
+# Logs
+*.log
