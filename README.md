@@ -9,6 +9,12 @@ A modern UI kit packed with 2 custom page templates and 11 extra <br />custom co
 <br />
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/shards-ui">
+    <img src="https://img.shields.io/npm/v/shards-ui.svg" alt="`npm` version"/>
+  </a>
+  <a href="https://www.npmjs.com/package/shards-ui">
+    <img src="https://img.shields.io/npm/dm/shards-ui.svg" alt="`npm` downloads"/>
+  </a>
   <a href="#">
     <img src="https://img.shields.io/badge/Size-14.05_kb_min/gz-brightgreen.svg" />
   </a>
@@ -20,6 +26,13 @@ A modern UI kit packed with 2 custom page templates and 11 extra <br />custom co
   </a>
   <a href="https://twitter.com/designrevision">
     <img src="https://img.shields.io/twitter/follow/DesignRevision.svg?style=social&label=Follow" />
+  </a>
+  <br/>
+  <a href="https://david-dm.org/DesignRevision/shards-ui">
+    <img src="https://img.shields.io/david/DesignRevision/shards-ui.svg" alt="Dependencies"/>
+  </a>
+  <a href="https://david-dm.org/DesignRevision/shards-ui?type=dev">
+    <img src="https://img.shields.io/david/dev/DesignRevision/shards-ui.svg" alt="DevDependencies"/>
   </a>
 </p>
 
@@ -37,12 +50,19 @@ A modern UI kit packed with 2 custom page templates and 11 extra <br />custom co
 
 ### Getting Started
 
-Currently there are only two ways of downloading Shards:
+Currently there are only three ways of downloading Shards:
 
 * [Official Website](https://designrevision.com/download/shards)
 * [Release Package](https://github.com/DesignRevision/shards-ui/releases)
+* [`npm`](https://www.npmjs.com/package/shards-ui)
 
 The distributed Shards assets are also available via CDN through [unpkg](https://unpkg.com/shards-ui@latest/) and [jsDelivr](https://cdn.jsdelivr.net/npm/shards-ui@latest/).
+
+To install with `npm`:
+
+```bash
+npm install --save shards-ui boostrap
+```
 
 <br />
 
@@ -53,6 +73,8 @@ The only hard dependency is Bootstrap 4 (final) which needs to be included in yo
 <br />
 
 ### Quick Start
+
+If you're using a bundler like `webpack`, you should skip to [Usage with Bundlers](#usage-with-bundlers).
 
 In order to take advantage of both Bootstrap and Shards' features you may want to use the following starter template that includes all dependencies.
 
@@ -81,6 +103,25 @@ In order to take advantage of both Bootstrap and Shards' features you may want t
 ```
 
 <br />
+
+### Usage with Bundlers
+
+If you're using a bundler like [`webpack`](https://webpack.js.org) (with [`style-loader`](https://github.com/webpack-contrib/style-loader)/[`css-loader`](https://github.com/webpack-contrib/css-loader)) or [`parcel`](https://parceljs.org), you can [install `shards` with `npm`](#getting-started) and import it:
+
+```javascript
+// app.js
+import 'bootstrap/dist/css/boostrap.min.css';
+import 'shards-ui/dist/css/shards.min.css';
+// Optional JavaScript
+// JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS
+// Install them with `npm` as well
+import 'jquery/dist/jquery.slim.min.js';
+import 'popper.js/dist/umd/popper.min.js';
+import 'bootstrap/dist/js/boostrap.min.js';
+import 'shards-ui/dist/js/shards.min.js';
+```
+
+<br/>
 
 ### Built using
 
