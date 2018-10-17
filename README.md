@@ -61,7 +61,7 @@ The distributed Shards assets are also available via CDN through [unpkg](https:/
 To install with `npm`:
 
 ```bash
-npm install --save shards-ui boostrap
+npm install --save shards-ui bootstrap
 ```
 
 <br />
@@ -110,14 +110,14 @@ If you're using a bundler like [`webpack`](https://webpack.js.org) (with [`style
 
 ```javascript
 // app.js
-import 'bootstrap/dist/css/boostrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'shards-ui/dist/css/shards.min.css';
 // Optional JavaScript
 // JavaScript Dependencies: jQuery, Popper.js, Bootstrap JS, Shards JS
 // Install them with `npm` as well
 import 'jquery/dist/jquery.slim.min';
 import 'popper.js/dist/umd/popper.min';
-import 'bootstrap/dist/js/boostrap.min';
+import 'bootstrap/dist/js/bootstrap.min';
 import 'shards-ui/dist/js/shards.min';
 ```
 
