@@ -1,0 +1,28 @@
+// Main footer
+
+.main-footer {
+  height: $main-footer-height;
+
+  .copyright {
+    color: $main-footer-copyright-color;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+    height: auto;
+
+    .nav {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: $spacer / 2;
+    }
+
+    .copyright {
+      display: inline-block;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}

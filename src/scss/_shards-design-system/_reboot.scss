@@ -1,0 +1,83 @@
+// scss-lint:disable QualifyingElement, DuplicateProperty
+
+// Reboot Adjustments
+
+//
+// HTML (element)
+//
+html {
+  font-size: 15px;
+  font-weight: 300;
+
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi) {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 15px;
+  }
+}
+
+//
+// Body
+//
+
+body {
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  color: $body-color;
+  background-color: $body-bg;
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+
+//
+// Links
+//
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+//
+// Typography
+//
+
+// Remove top margins from headings
+//
+// By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
+// margin for easier control within type scales as it avoids margin collapsing.
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+// Datepicker adjustments
+.datepicker {
+  font-size: .75rem;
+  padding: 0.625rem;
+
+  table tr td,
+  table tr th {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+

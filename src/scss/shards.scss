@@ -1,46 +1,17 @@
-/*
- * Shards v2.1.0 (https://designrevision.com/downloads/shards/)
- * Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
- * Copyright 2017-* DesignRevision (https://designrevision.com)
- * Copyright 2017-* Catalin Vasile (http://catalin.me)
- */
+/*! Global Variables (Brutal Override Bootstrap) */
+@import './variables';
 
-// Bootstrap 4 dependencies
-@import "node_modules/bootstrap/scss/functions";
+/*! Bootstrap Base */
+@import './_bootstrap/bootstrap';
 
-// Core
-@import "mixins";
-@import "variables";
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
+/*! Shards Design System (@Override Bootstrap) */
+@import './_shards-design-system/shards';
 
-//  Components
-@import "icons";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "custom-sliders";
-@import "custom-datepicker";
-@import "utilities";
+/*! Vendor */
+@import './vendor/animate';
+
+/*! SCSS Application */
+@import './mixins/mixin';
+@import './elements/mixin';
+@import './layout/mixin';
+@import './template/mixin';

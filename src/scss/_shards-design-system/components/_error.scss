@@ -1,0 +1,33 @@
+// Error component
+// Used in: Error templates.
+
+.error {
+  height: $error-tpl-height;
+  display: flex;
+
+  &__content {
+    padding: $error-tpl-content-padding;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      color: $error-tpl-content-heading-color;
+      font-weight: $error-tpl-content-heading-font-weight;
+      font-size: $error-tpl-content-heading-font-size;
+      margin-bottom: $error-tpl-content-heading-margin-bottom;
+    }
+
+    h3 {
+      font-weight: $error-tpl-content-subheading-font-weight;
+      font-size: $error-tpl-content-subheading-font-size;
+      margin-bottom: $error-tpl-content-subheading-margin-bottom;
+    }
+
+    p {
+      color: $error-tpl-content-paragraph-color;
+    }
+  }
+}

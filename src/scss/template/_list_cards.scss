@@ -1,0 +1,15 @@
+.list-cards {
+  display: flex;
+	flex-wrap: wrap;
+	margin: 0 15px;
+
+  .card-product {
+		width: calc((100% / 4) - 15px);
+		flex-grow: 0;
+		margin-right: 15px;
+
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+  }
+}

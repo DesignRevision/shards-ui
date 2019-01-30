@@ -1,0 +1,142 @@
+// Main navbar adjustments
+
+.main-navbar .navbar {
+  height: $main-navbar-height;
+
+  > * {
+    display: flex;
+  }
+
+  .nav-link {
+    min-width: $main-navbar-nav-link-min-width;
+  }
+
+  // Notifications
+  .notifications {
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      position: static;
+
+      .dropdown-menu {
+        min-width: 100% !important;
+        border-left: none;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      padding: $notifications-badge-padding-y $notifications-badge-padding-x;
+      font-size: $notifications-badge-font-size;
+      left: 50%;
+      top: 50%;
+    }
+
+    .dropdown-menu {
+      padding: 0;
+      min-width: $notifications-dropdown-min-width;
+      border-right: 0;
+      left: auto;
+
+      // Adjust the dropdown menu on smaller screens.
+      @include media-breakpoint-down(sm) {
+        left: 0;
+        right: 0;
+      }
+
+      .dropdown-item {
+        white-space: normal;
+        display: flex;
+        flex-flow: row;
+        padding-top: $notifications-dropdown-item-padding-top;
+        padding-bottom: $notifications-dropdown-item-padding-bottom;
+        border-bottom: $notifications-dropdown-item-border-bottom;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+
+      .notification {
+        &__icon-wrapper {
+          display: flex;
+          padding: 0 5px;
+        }
+
+        &__icon {
+          background-color: $notifications-icon-background-color;
+          box-shadow: $notifications-icon-box-shadow;
+          width: $notifications-icon-width;
+          height: $notifications-icon-height;
+          line-height: 0;
+          display: block;
+          text-align: center;
+          margin: auto;
+          border-radius: 50%;
+
+          i {
+            color: $notifications-icon-color;
+            line-height: $notifications-icon-line-height;
+            font-size: $notifications-icon-font-size;
+            margin: 0;
+          }
+        }
+
+        &__content {
+          padding: $notification-content-padding;
+
+          p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: $notification-content-paragraph-font-size;
+          }
+        }
+
+        &__category {
+          font-size: $notification-category-font-size;
+          color: $notification-category-color;
+          letter-spacing: $notification-category-letter-spacing;
+          display: inline-block;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          font-weight: 500;
+        }
+
+        // All notifications link.
+        &__all {
+          display: block;
+          font-weight: 500;
+          font-size: 11px;
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+  }
+
+  // User avatar
+  .user-avatar {
+    max-width: $user-avatar-max-width;
+  }
+
+  // Navbar
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+  }
+
+  .nav-link-icon i {
+    line-height: $main-navbar-nav-link-icon-line-height;
+  }
+}
+
+// Main navbar shadow.
+.main-content > .main-navbar,
+.main-content .header-navbar {
+  box-shadow: $main-navbar-box-shadow;
+}
+

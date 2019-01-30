@@ -1,0 +1,29 @@
+// Page headers
+//
+// Used across the UI kit to emphasize each page by using a title
+// and optional description.
+
+.page-header {
+  .page-title {
+    font-size: $page-title-font-size;
+    font-weight: $page-title-font-weight;
+    line-height: $page-title-line-height;
+    margin: $page-title-margin;
+    padding: $page-title-padding;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $page-title-sm-font-size;
+    }
+  }
+
+  .page-subtitle {
+    letter-spacing: $page-subtitle-letter-spacing;
+    color: $page-subtitle-color;
+    font-size: $page-subtitle-font-size;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $page-subtitle-font-size-sm;
+      font-weight: $page-subtitle-font-weight-sm;
+    }
+  }
+}

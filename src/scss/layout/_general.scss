@@ -1,0 +1,38 @@
+a {
+  color: $primary;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($primary, 5%);
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#page-container {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+
+  main#main-container {
+    min-height: 100vh;
+
+    .wrapper {
+      animation: fadein 0.5s ease-in;
+
+      section {
+        margin-bottom: 35px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

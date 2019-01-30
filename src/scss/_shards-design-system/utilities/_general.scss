@@ -1,0 +1,14 @@
+// General utilities
+
+// Overflow helpers
+.overflow {
+  &-hidden { overflow: hidden; }
+  &-visible { overflow: visible; }
+  &-scroll { overflow: scroll; }
+  &-auto { overflow: auto; }
+}
+
+// Remove shadows
+.no-shadow {
+  box-shadow: none !important;
+}
