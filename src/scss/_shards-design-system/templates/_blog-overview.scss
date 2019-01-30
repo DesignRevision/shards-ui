@@ -1,0 +1,45 @@
+// Blog Overview Page Template
+
+// The `Quick Draft` component.
+.quick-post-form {
+  display: $qp-form-display;
+  flex-flow: $qp-form-flex-flow;
+  flex: $qp-form-flex;
+
+  // Select second form group el (which contains the textarea).
+  .form-group:nth-child(2) {
+    display: flex;
+    flex: 1;
+  }
+
+  textarea {
+    resize: none;
+    min-height: $qp-form-textarea-min-height;
+  }
+}
+
+// Blog comments component.
+.blog-comments {
+  &__avatar img {
+    width: $bc-avatar-img-width;
+    height: $bc-avatar-img-height;
+    border-radius: $bc-avatar-img-border-radius;
+  }
+
+  &__item {
+    padding: 0;
+    border-bottom: $bc-item-border-bottom;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &__actions {
+    font-size: $bc-actions-font-size;
+
+    .btn-group button {
+      padding: $bc-actions-button-group-padding;
+    }
+  }
+}

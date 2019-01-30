@@ -1,0 +1,197 @@
+.card {
+  &.card-product {
+    height: 465px;
+    margin-bottom: 15px;
+    color: $body-color;
+    transition: box-shadow 300ms;
+
+    .card-image {
+      padding-top: 30px;
+      padding-bottom: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0.625rem 0.625rem 0 0;
+      position: relative;
+
+      .card-product-type {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        border-radius: 0 0.625rem 0 0.625rem;
+        font-size: 1.2rem;
+
+        i {
+          color: #FFF;
+        }
+      }
+
+      .card-product-value {
+        position: absolute;
+        bottom: -12px;
+        left: 15px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+    }
+
+    .card-body {
+      .card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .card-text,
+      .card-date-expiration {
+        margin-bottom: 15px;
+      }
+
+      .card-date-expiration {
+        strong {
+          color: $danger;
+        }
+      }
+
+      .card-rules {
+        font-size: 0.8rem;
+        font-style: italic;
+        margin-bottom: 0;
+      }
+
+      .card-product-voucher {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+        padding: 6px 10px;
+				border-radius: 5px;
+        text-align: center;
+
+        .voucher-text {
+          font-size: 0.85rem;
+        }
+
+        .voucher-code {
+          font-size: 1.2rem;
+					font-weight: 700;
+					font-family: $font-family-monospace;
+					letter-spacing: 1px;
+        }
+      }
+    }
+
+    .card-footer {
+      align-items: center;
+      padding: 0 1.25rem 15px;
+      background-color: #FFF;
+
+      .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.475rem 0.75rem;
+
+        .btn-text,
+        .btn-icon {
+          display: inline-block;
+        }
+
+        .btn-text {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.is-reward {
+      .card-image {
+        border-bottom: solid 2px $info;
+
+        .card-product-type,
+        .card-product-value {
+          background-color: $info;
+        }
+
+        .card-product-type {
+          font-weight: 900;
+
+          i {
+            &:before {
+              content: "\f005";
+            }
+          }
+        }
+      }
+
+      .card-footer {
+        .btn {
+          @extend .btn-outline-info;
+        }
+      }
+    }
+
+    &.is-offer {
+      .card-image {
+        border-bottom: solid 2px $danger;
+
+        .card-product-type,
+        .card-product-value {
+          background-color: $danger;
+        }
+
+        .card-product-type {
+          font-weight: 900;
+
+          i {
+            &:before {
+              content: "\f06b";
+            }
+          }
+        }
+      }
+
+      .card-footer {
+        .btn {
+          @extend .btn-outline-danger;
+        }
+      }
+    }
+
+    &.is-voucher-generated {
+      .card-image {
+        border-bottom: solid 2px $success;
+
+        .card-product-value {
+          background-color: $success;
+        }
+			}
+
+			&.is-reward{
+				.card-body{
+					.card-product-voucher {
+						background-color: rgba($info, 0.15);
+						border: dashed thin rgba($info, 025);
+					}
+				}
+			}
+
+			&.is-offer{
+				.card-body{
+					.card-product-voucher {
+						background-color: rgba($danger, 0.15);
+						border: dashed thin rgba($danger, 0.25);
+					}
+				}
+			}
+    }
+
+    &:hover {
+      box-shadow: $card-box-shadow;
+    }
+  }
+}

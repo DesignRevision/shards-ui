@@ -1,0 +1,114 @@
+// Content Post Component
+// Used in templates: Components > Blog Posts
+
+// Blog Post Cards
+.card-post {
+
+  // Adjust the card post inner elements' paddings.
+  .card-body {
+    padding: $card-post-padding;
+  }
+
+  .card-footer,
+  .card-header {
+    padding-left: $card-post-padding-x;
+    padding-right: $card-post-padding-x;
+  }
+
+  // Card Post :: Image
+  &__image {
+    position: relative;
+    min-height: $card-post-image-min-height;
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  // Card Post :: Author :: Avatar
+  &__author-avatar {
+    width: $card-post-author-avatar-width;
+    height: $card-post-author-avatar-height;
+    box-shadow: $card-post-author-avatar-box-shadow;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    text-indent: -9999px;
+
+    // Author Avatar -- Small Modifier
+    &--small {
+      width: $card-post-author-avatar-small-width;
+      height: $card-post-author-avatar-small-height;
+    }
+  }
+
+  // Card Post :: Author :: Name
+  &__author-name {
+    font-weight: 500;
+  }
+
+  // Card Post -- Aside Modifier
+  &--aside {
+    display: flex;
+    flex-flow: row;
+
+    .card-post__image {
+      border-top-right-radius: 0;
+      border-top-left-radius: $card-border-radius;
+      border-bottom-left-radius: $card-border-radius;
+      min-width: 180px;
+    }
+  }
+
+  //
+  // Variations
+  //
+
+  // Variation 1
+  &--1 {
+    .card-post__author,
+    .card-post__category {
+      position: absolute;
+    }
+
+    .card-post__author {
+      transform: $card-post-v1-author-transform;
+      margin-left: $card-post-v1-author-margin-left;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .card-post__category {
+      top: $card-post-v1-category-top;
+      right: $card-post-v1-category-right;
+      position: absolute;
+      text-transform: uppercase;
+    }
+
+    .card-body {
+      padding-top: $card-post-v1-body-padding-top;
+    }
+
+    // Card Post Aside Adjustments
+    &.card-post--aside {
+      .card-body {
+        padding: $card-post-aside-v1-body-padding;
+      }
+
+      .card-post__author {
+        left: $card-post-aside-v1-author-left;
+        bottom: $card-post-aside-v1-author-bottom;
+        transform: none;
+        margin: 0;
+      }
+
+      .card-post__category {
+        right: initial;
+        top: $card-post-aside-v1-category-top;
+        left: $card-post-aside-v1-category-left;
+      }
+    }
+  }
+}

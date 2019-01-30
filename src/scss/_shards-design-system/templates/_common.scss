@@ -1,0 +1,119 @@
+// Common styles for blocks used across all templates.
+
+// Small stats
+// Used in all templates.
+
+// Default styles for the small stats.
+.stats-small {
+  min-height: $small-stats-min-height;
+  overflow: hidden !important;
+
+  canvas {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__data {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    max-width: 50%;
+    z-index: 1;
+  }
+
+  &__label {
+    font-size: $small-stats-label-font-size;
+    letter-spacing: $small-stats-label-letter-spacing;
+    color: $small-stats-label-color;
+  }
+
+  &__value {
+    font-family: $small-stats-value-font-family;
+    font-size: $small-stats-value-font-size;
+    font-weight: $small-stats-value-font-weight;
+  }
+
+  &__percentage {
+    position: relative;
+    display: table;
+    margin-left: auto;
+    padding-left: $small-stats-percentage-padding-left;
+
+    &--increase,
+    &--decrease {
+      font-size: $small-stats-percentage-font-size;
+
+      &::before {
+        content: "";
+        width: 0.75rem;
+        height: 0.375rem;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--increase {
+      color: theme-color('success');
+      &::before {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMTdjNjcxIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPHBhdGggZD0iTTcgMTRsNS01IDUgNXoiLz4gPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiA8L3N2Zz4=);
+      }
+    }
+
+    &--decrease {
+      color: theme-color('danger');
+      &::before {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjYzQxODNjIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTcgMTBsNSA1IDUtNXoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+      }
+    }
+  }
+
+  // Stats Small - Alternate 1
+  // Follow the same structure, but with the content centered.
+  &--1 {
+    .stats-small {
+      &__data {
+        max-width: $small-stats-1-data-max-width;
+      }
+
+      &__percentage {
+        margin: $small-stats-1-percentage-margin;
+      }
+
+      &__value {
+        font-size: $small-stats-1-value-font-size;
+      }
+
+      &__label {
+        font-size: $small-stats-1-label-font-size;
+      }
+
+      &__percentage {
+        font-size: $small-stats-1-percentage-font-size;
+      }
+    }
+
+    canvas {
+      opacity: $small-stats-1-chart-opacity;
+    }
+	}
+
+	&[href]{
+		box-shadow: none;
+		transition: all 300ms;
+
+		&:hover{
+    	box-shadow: $card-small-box-shadow;
+		}
+	}
+}
+
+// Adjust the small stats cards in case they're used inside card groups.
+.card-group .stats-small {
+  position: relative;
+  overflow: hidden;
+}
