@@ -16,12 +16,21 @@ footer#page-footer {
 
         img {
           display: inline-block;
+
+          @media (max-width: 992px - 1px) {
+            max-width: 220px;
+            max-height: 80px;
+          }
         }
       }
 
       p {
         line-height: 1.5;
         margin-bottom: 25px;
+      }
+
+      @media (max-width: 991px) {
+        text-align: center;
       }
     }
 
@@ -82,7 +91,7 @@ footer#page-footer {
             &:hover {
               .social-text {
                 strong {
-                  color: $primary !important;
+                  color: var(--primary) !important;
                 }
               }
 

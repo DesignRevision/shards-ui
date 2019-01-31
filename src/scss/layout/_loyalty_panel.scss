@@ -1,0 +1,206 @@
+.website-loyalty-panel {
+  section.loyalty-panel {
+    padding: 50px 0;
+    margin-bottom: 0 !important;
+
+    .card {
+      &.card-user-info {
+        box-shadow: $card-box-shadow;
+        margin-bottom: 24px;
+
+        .card-header {
+          height: 80px;
+          background-color: var(--primary);
+        }
+
+        .card-body {
+          padding-left: 0;
+          padding-right: 0;
+
+          .user-info-photo {
+            margin-top: -70px;
+            display: flex;
+            justify-content: center;
+
+            .user-photo-file {
+              width: 100px;
+              height: 100px;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              border-radius: 50%;
+              box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+            }
+          }
+
+          .user-info-main {
+            text-align: center;
+          }
+
+          .user-info-main,
+          .user-info-contact,
+          .user-info-personal {
+            padding: 20px;
+            border-bottom: solid thin #e1e5eb;
+
+            .user-name {
+              margin-bottom: 1px;
+            }
+
+            .user-date-begin-client {
+              font-size: 0.85rem;
+              font-weight: 400;
+              font-style: italic;
+              margin-bottom: 0;
+            }
+
+            .user-info-item {
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+
+              .item-icon {
+                margin-right: 15px;
+
+                i {
+                  font-size: 1.1rem;
+                  color: var(--primary);
+                }
+              }
+
+              .item-content {
+                span {
+                  display: block;
+
+                  &:first-child {
+                    color: #818ea3;
+                  }
+
+                  &:last-child {
+                    color: #3d5170;
+                    font-weight: 700;
+                  }
+                }
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .user-info-personal {
+            border: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      &.card-points-summary {
+        box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
+
+        .card-header,
+        .card-footer {
+          background-color: #fff;
+        }
+
+        .card-header {
+          .card-title {
+            font-weight: 500;
+          }
+        }
+
+        .card-body {
+          padding: 0;
+
+          .timeline-activity {
+            .activity-item {
+              display: flex;
+              margin-left: 1.875rem;
+              border-left: 1px solid #e9ecef;
+              border-bottom: 1px solid #e9ecef;
+              font-weight: 400;
+
+              .activity-item-icon {
+                text-align: center;
+                border-radius: 50%;
+                float: left;
+                width: 1.875rem;
+                height: 1.875rem;
+                min-width: 1.875rem;
+                background: #f5f6f8;
+                margin-top: 15px;
+                margin-left: -.9375rem;
+                margin-right: .9375rem;
+                box-shadow: 0 0 0 2px #fff, inset 0 0 3px rgba(0, 0, 0, 0.2);
+
+                i {
+                  font-size: 1rem;
+                  line-height: 1.875rem;
+                  color: $success;
+
+                  &:before {
+                    content: "\f067";
+                  }
+                }
+              }
+
+              .activity-item-content {
+                padding: 15px 0;
+
+                .activity-date {
+                  display: inline-block;
+                  margin-right: 10px;
+                  margin-bottom: 5px;
+                  font-style: italic;
+									font-size: .8rem;
+                }
+
+                .badge {
+                  @extend .badge-success;
+                }
+
+                p {
+                  font-size: 1.05rem;
+                  margin-top: 2.5px;
+                  margin-bottom: 0;
+                }
+              }
+
+              &:last-child {
+                border-bottom: 0;
+              }
+
+              &:after {
+                display: block;
+                clear: both;
+                content: "";
+              }
+
+              &.is-redeem {
+                .activity-item-icon {
+                  i {
+										color: $danger;
+										&:before{
+											content: "\f068";
+										}
+                  }
+                }
+
+                .activity-item-content {
+                  .badge {
+                    @extend .badge-danger;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .card-footer {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

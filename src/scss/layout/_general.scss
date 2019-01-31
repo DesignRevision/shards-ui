@@ -1,10 +1,36 @@
 a {
-  color: $primary;
-  text-decoration: none;
+	font-weight: 600;
+  color: var(--primary);
+  position: relative;
   cursor: pointer;
+  text-decoration: none;
+
+  &.link-effect {
+    &:before {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: "";
+      background-color: var(--primary);
+      visibility: hidden;
+      transform: translateY(6px);
+      transform-origin: 50% 50%;
+      opacity: 0;
+      transition: transform .12s ease-out, opacity .12s ease-out,
+    }
+
+    &:hover {
+      &:before {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
 
   &:hover {
-    color: darken($primary, 5%);
     text-decoration: none;
   }
 }
@@ -34,5 +60,11 @@ img {
         }
       }
     }
+  }
+}
+
+body {
+  &.is-menu-open {
+    overflow: hidden;
   }
 }

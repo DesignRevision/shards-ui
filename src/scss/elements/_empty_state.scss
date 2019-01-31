@@ -1,0 +1,44 @@
+.empty-state {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    max-width: 768px;
+    text-align: center;
+
+    .empty-state-icon {
+      margin-bottom: 25px;
+
+      i {
+        font-size: 8rem;
+        color: $info;
+
+        @media (max-width: 992px - 1px) {
+          font-size: 6rem;
+        }
+      }
+    }
+
+    .empty-state-content {
+      margin-bottom: 40px;
+
+      .empty-state-title {
+        margin-bottom: 5px;
+
+        @media (max-width: 992px - 1px) {
+          font-size: 1.6rem;
+        }
+      }
+
+      .empty-state-lead {
+        font-size: 1.2rem;
+        font-weight: 300;
+
+        @media (max-width: 992px - 1px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
