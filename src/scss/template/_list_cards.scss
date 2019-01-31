@@ -1,15 +1,53 @@
 .list-cards {
+  width: 100%;
   display: flex;
-	flex-wrap: wrap;
-	margin: 0 15px;
+  flex-wrap: wrap;
+  margin: 0 15px;
 
   .card-product {
-		width: calc((100% / 4) - 15px);
-		flex-grow: 0;
-		margin-right: 15px;
+    width: calc((100% / 4) - 15px);
+    flex-grow: 0;
+    margin-right: 15px;
 
-		&:nth-child(4n){
-			margin-right: 0;
-		}
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1200px - 1px) {
+      width: calc((100% / 3) - 15px);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(4n) {
+        margin-right: 15px;
+      }
+    }
+
+    @media (max-width: 992px - 1px) {
+      width: calc((100% / 2) - 15px);
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 15px;
+      }
+    }
+
+    @media (max-width: 768px - 1px) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-left: 0;
+
+      &:nth-child(2n),
+      &:nth-child(3n),
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
   }
 }

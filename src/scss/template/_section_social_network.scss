@@ -1,0 +1,17 @@
+section.social-network {
+  padding: 80px 0;
+
+  .intro {
+    h2 {
+      strong {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .card-social-link {
+    @media (max-width: 577px - 1px) {
+      margin-bottom: 15px;
+    }
+  }
+}

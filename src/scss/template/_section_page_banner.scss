@@ -1,0 +1,61 @@
+section.page-banner {
+  margin-bottom: 0 !important;
+
+  .jumbotron {
+    background-image: url("/assets/img/banner-intro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 2rem 10px;
+    margin-bottom: 0;
+    position: relative;
+
+    .container {
+      position: relative;
+      z-index: 10;
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 100%;
+      height: 100%;
+    }
+
+    &.no-bg-image {
+      background-image: inherit;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    @media (max-width: 1200px - 1px) {
+      padding: 80px 2rem 10px;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 576px - 1px) {
+      padding: 50px 15px 5px;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 401px - 1px) {
+      padding: 30px 15px 5px;
+    }
+  }
+}

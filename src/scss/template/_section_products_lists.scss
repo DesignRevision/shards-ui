@@ -1,0 +1,29 @@
+section.products-lists {
+	margin-bottom: 0 !important;
+
+	section {
+		padding: 50px 0;
+		margin-bottom: 0 !important;
+
+		&:nth-child(2n) {
+			background-color: #fff;
+		}
+
+		.products-list-header {
+			.product-list-title {
+				font-size: 1.85rem;
+				margin-bottom: 0;
+
+				strong {
+					font-weight: 600;
+					color: var(--primary);
+				}
+			}
+
+			.product-list-lead {
+				font-size: 1rem;
+				font-weight: 300;
+			}
+		}
+	}
+}
