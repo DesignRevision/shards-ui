@@ -5,11 +5,12 @@
   <meta charset="utf-8" />
   <title>Painel de Fidelidade | Deli - Valoriza.io</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/css/shards.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 </head>
 
-<body class="website-loyalty-panel">
-  <div id="page-container">
+<body>
+  <div id="page-container" class="website-loyalty-panel">
     <header id="page-header">
       <div class="content-header">
         <div class="content-header-section">
@@ -19,110 +20,110 @@
 
           <ul class="nav-header-menu d-none d-lg-flex">
             <li>
-              <a href="#">
-										Início
-									</a>
+              <a href="inicio.html">
+									Início
+								</a>
             </li>
             <li>
-              <a href="#">
-									Recompensas
-								</a>
+              <a href="recompensas.html">
+								Recompensas
+							</a>
             </li>
             <li>
               <a href="ofertas.html">
-									Ofertas
-								</a>
+								Ofertas
+							</a>
             </li>
             <li>
               <a href="#">
-										Regras
-									</a>
+								Regras
+							</a>
             </li>
             <li>
-              <a href="#">
-										Lojas
-									</a>
+              <a href="lojas.html">
+								Lojas
+							</a>
             </li>
           </ul>
         </div>
 
         <div class="content-header-section">
-          <a href="#" class="header-brand">
-								<img src="/assets/img/logo.png" />
-							</a>
+          <a href="index.html" class="header-brand">
+						<img src="/images/logo.png" />
+					</a>
         </div>
 
         <div class="content-header-section align-right">
           <ul class="nav-header-menu is-logged">
             <li class="menu-item-signin">
-              <a href="#">
-									Acessar conta
-								</a>
+              <a href="login.html">
+								Acessar conta
+							</a>
             </li>
             <li class="menu-item-signup">
-              <button type="button" class="btn btn-primary btn-noborder btn-rounded">
+              <a href="cadastro.html" class="btn btn-primary btn-noborder btn-rounded">
                 Cadastrar
-              </button>
+							</a>
             </li>
 
             <li class="menu-item-user-points dropdown">
               <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-points">
-									<i class="fas fa-trophy fa-fw points-icon"></i>
-									<span class="points-quantity">
-										5 pontos<br>
-										<small>Seu saldo</small>
-									</span>
-								</a>
+								<i class="fas fa-trophy fa-fw points-icon"></i>
+								<span class="points-quantity">
+									5 pontos<br>
+									<small>Seu saldo</small>
+								</span>
+							</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-points">
                 <a class="dropdown-item" href="#">
-										<div class="points__icon-wrapper">
-											<div class="points__icon">
-												<i class="material-icons"></i>
-											</div>
+									<div class="points__icon-wrapper">
+										<div class="points__icon">
+											<i class="material-icons"></i>
 										</div>
-										<div class="points__content">
-											<span class="points__category">Analytics</span>
-											<p>Your website’s active users count increased by <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
-										</div>
-									</a>
+									</div>
+									<div class="points__content">
+										<span class="points__category">Analytics</span>
+										<p>Your website’s active users count increased by <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+									</div>
+								</a>
                 <a class="dropdown-item" href="#">
-										<div class="points__icon-wrapper">
-											<div class="points__icon">
-												<i class="material-icons"></i>
-											</div>
+									<div class="points__icon-wrapper">
+										<div class="points__icon">
+											<i class="material-icons"></i>
 										</div>
-										<div class="points__content">
-											<span class="points__category">Sales</span>
-											<p>Last week your store’s sales count decreased by <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
-										</div>
-									</a>
-                <a class="dropdown-item points__all text-center" href="#">
-										Ver histórico de pontos
-									</a>
+									</div>
+									<div class="points__content">
+										<span class="points__category">Sales</span>
+										<p>Last week your store’s sales count decreased by <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+									</div>
+								</a>
+                <a class="dropdown-item points__all text-center" href="painel-fidelidade.html">
+									Ver histórico de pontos
+								</a>
               </div>
             </li>
 
             <li class="menu-item-user dropdown">
               <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
-									<img class="user-avatar rounded-circle" src="/assets/img/user/avatar.jpg">
-									<span class="user-info">
-										Jerônimo <br>
-										<small>048 99656-3619</small>
-									</span>
-								</a>
+								<img class="user-avatar rounded-circle" src="/images/user/avatar.jpg">
+								<span class="user-info">
+									Jerônimo <br>
+									<small>048 99656-3619</small>
+								</span>
+							</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+                <a class="dropdown-item" href="painel-fidelidade.html">
+									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
+								</a>
+                <a class="dropdown-item" href="meus-vouchers">
+									<i class="fas fa-receipt fa-fw mr-2"></i> Meus vouchers gerados
+								</a>
+                <a class="dropdown-item" href="editar-perfil.html">
+									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
+								</a>
                 <a class="dropdown-item" href="#">
-										<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
-									</a>
-                <a class="dropdown-item" href="#">
-										<i class="fas fa-receipt fa-fw mr-2"></i> Meus vouchers gerados
-									</a>
-                <a class="dropdown-item" href="#">
-										<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
-									</a>
-                <a class="dropdown-item" href="#">
-										<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
-									</a>
+									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
+								</a>
               </div>
             </li>
           </ul>
@@ -158,7 +159,7 @@
                   <div class="card-header"></div>
                   <div class="card-body">
                     <div class="user-info-photo">
-                      <div class="user-photo-file" style="background-image: url('/assets/img/user/avatar.jpg')"></div>
+                      <div class="user-photo-file" style="background-image: url('/images/user/avatar.jpg')"></div>
                     </div>
 
                     <div class="user-info-main">
@@ -184,6 +185,20 @@
                         <div class="item-content">
                           <span>E-mail</span>
                           <span>velasquez.2901@gmail.com</span>
+                        </div>
+											</div>
+
+                      <div class="user-info-item">
+                        <div class="item-icon">
+                          <i class="fab fa-facebook-square"></i>
+                        </div>
+                        <div class="item-content">
+                          <span>Facebook</span>
+                          <span>
+														<a href="#" class="link-effect">
+															facebook.com/velasquez2901
+														</a>
+													</span>
                         </div>
                       </div>
                     </div>
@@ -338,7 +353,7 @@
             <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 content-brand">
               <p>
                 <a href="http://www.1313cafe.valoriza.io/">
-											<img src="/assets/img/logo.png" height="auto" />
+											<img src="/images/logo.png" height="auto" />
 										</a>
               </p>
               <p>
@@ -428,6 +443,8 @@
       </div>
     </footer>
   </div>
+
+	<script src="/js/shards.js"></script>
 </body>
 
 </html>

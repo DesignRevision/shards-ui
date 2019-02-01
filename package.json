@@ -61,6 +61,7 @@
 		"eslint-plugin-jsx-a11y": "^6.1.1",
 		"eslint-plugin-prettier": "^3.0.1",
 		"eslint-plugin-react": "^7.11.0",
+		"exports-loader": "^0.7.0",
     "node-sass": "^4.9.3",
     "nodemon": "^1.18.4",
     "npm-run-all": "^4.1.2",
@@ -73,14 +74,18 @@
     "sass-unused": "^0.2.2",
 		"sass-loader": "^6.0.6",
     "uglify-js": "^3.3.23",
-    "webpack": "^3.11.0",
+		"uglifyjs-webpack-plugin": "^1.2.4",
+		"webpack": "^4.29.0",
 		"webpack-cli": "^3.1.1",
 		"webpack-dev-server": "^3.1.4",
 		"webpack-merge": "^4.1.1"
   },
   "dependencies": {
-    "bootstrap": "4.1.3",
+		"bootstrap": "^4.2.1",
     "bootstrap-datepicker": "^1.8.0",
+		"jquery": "^3.3.1",
+		"popper.js": "^1.14.6",
+		"stats.js": "^0.17.0",
     "bundlesize": "^0.17.0",
     "nouislider": "^11.1.0"
   }

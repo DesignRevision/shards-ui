@@ -22,7 +22,7 @@ header#page-header {
           width: 40px;
           height: 40px;
           border: 0;
-					margin-right: 5px;
+          margin-right: 5px;
         }
       }
 
@@ -102,6 +102,7 @@ header#page-header {
               align-items: center;
               opacity: 1;
               transition: all 300ms;
+              margin-left: 5px;
 
               .user-avatar {
                 max-height: 45px;
@@ -321,6 +322,7 @@ header#page-header {
           }
 
           @media (max-width: 992px - 1px) {
+
             .menu-item-signin,
             .menu-item-user {
               display: none;
@@ -328,6 +330,7 @@ header#page-header {
           }
 
           &.is-logged {
+
             .menu-item-user-points,
             .menu-item-user {
               display: inline-block;
@@ -338,11 +341,11 @@ header#page-header {
               display: none;
             }
 
-						@media (max-width: 992px - 1px) {
-							.menu-item-user {
-								display: none;
-							}
-						}
+            @media (max-width: 992px - 1px) {
+              .menu-item-user {
+                display: none;
+              }
+            }
           }
         }
       }

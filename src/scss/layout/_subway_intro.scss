@@ -1,0 +1,134 @@
+.website-subway-intro {
+  position: relative;
+  background-image: url('/images/subway-cover.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  header#page-header {
+    background-color: transparent;
+    box-shadow: none;
+
+    .content-header {
+      .content-header-section {
+        margin-top: auto;
+
+        a {
+          padding: 15px;
+          background-color: #fff;
+          border-radius: 0.625rem;
+          box-shadow: $card-box-shadow;
+
+          img {
+            max-width: 160px;
+            max-height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  main#main-container {
+    width: 100%;
+    min-height: inherit !important;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+      @include make-container();
+      @include make-container-max-widths();
+
+      .card {
+        width: 350px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: $card-box-shadow;
+
+        .card-header,
+        .card-footer {
+          background-color: #fff;
+        }
+
+        .card-header {
+          padding: 20px 20px 10px;
+
+          .card-title {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: #009222;
+          }
+        }
+
+        .card-body {
+          padding: 20px;
+
+          .form-group {
+            margin-bottom: 25px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .card-footer {
+          padding: 10px 20px 20px;
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(#057129, 0.85);
+    background-blend-mode: darken;
+  }
+
+  @media (max-width: 575px - 1px) {
+    background-color: #fff;
+    background-image: inherit;
+    border-top: solid 6px #009222;
+
+    header#page-header {
+      .content-header {
+        justify-content: center;
+
+        .content-header-section {
+          a {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    main#main-container {
+      .wrapper {
+        margin-top: 20px;
+        margin-bottom: auto;
+        text-align: center;
+
+        .card {
+          display: inline-block;
+          box-shadow: none;
+          text-align: left;
+
+          .card-header {
+            .card-title {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
