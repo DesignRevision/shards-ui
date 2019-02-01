@@ -17964,6 +17964,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
       align-items: center;
   opacity: 1;
   transition: all 300ms;
+  margin-left: 5px;
 }
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user > a .user-avatar {
@@ -18690,7 +18691,7 @@ body.is-menu-open {
 }
 
 .website-home section.page-intro .jumbotron {
-  background-image: url("/assets/img/banner-intro.jpg");
+  background-image: url("/images/banner-intro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19024,6 +19025,157 @@ body.is-menu-open {
   text-align: center;
 }
 
+.website-subway-intro {
+  position: relative;
+  background-image: url("/images/subway-cover.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.website-subway-intro header#page-header {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.website-subway-intro header#page-header .content-header .content-header-section {
+  margin-top: auto;
+}
+
+.website-subway-intro header#page-header .content-header .content-header-section a {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-subway-intro header#page-header .content-header .content-header-section a img {
+  max-width: 160px;
+  max-height: 50px;
+}
+
+.website-subway-intro main#main-container {
+  width: 100%;
+  min-height: inherit !important;
+  height: calc(100vh - 80px);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.website-subway-intro main#main-container .wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .website-subway-intro main#main-container .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .website-subway-intro main#main-container .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .website-subway-intro main#main-container .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .website-subway-intro main#main-container .wrapper {
+    max-width: 1140px;
+  }
+}
+
+.website-subway-intro main#main-container .wrapper .card {
+  width: 350px;
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-header,
+.website-subway-intro main#main-container .wrapper .card .card-footer {
+  background-color: #fff;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-header {
+  padding: 20px 20px 10px;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-header .card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #009222;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-body {
+  padding: 20px;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-body .form-group {
+  margin-bottom: 25px;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-body .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.website-subway-intro main#main-container .wrapper .card .card-footer {
+  padding: 10px 20px 20px;
+}
+
+.website-subway-intro:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(5, 113, 41, 0.85);
+  background-blend-mode: darken;
+}
+
+@media (max-width: 574px) {
+  .website-subway-intro {
+    background-color: #fff;
+    background-image: inherit;
+    border-top: solid 6px #009222;
+  }
+  .website-subway-intro header#page-header .content-header {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .website-subway-intro header#page-header .content-header .content-header-section a {
+    box-shadow: none;
+  }
+  .website-subway-intro main#main-container .wrapper {
+    margin-top: 20px;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  .website-subway-intro main#main-container .wrapper .card {
+    display: inline-block;
+    box-shadow: none;
+    text-align: left;
+  }
+  .website-subway-intro main#main-container .wrapper .card .card-header .card-title {
+    font-size: 1.2rem;
+  }
+  .website-subway-intro:before {
+    display: none;
+  }
+}
+
 .list-cards {
   width: 100%;
   display: -ms-flexbox;
@@ -19085,7 +19237,7 @@ section.page-banner {
 }
 
 section.page-banner .jumbotron {
-  background-image: url("/assets/img/banner-intro.jpg");
+  background-image: url("/images/banner-intro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
