@@ -6,7 +6,7 @@ module.exports = {
   },
   target: 'web',
   output: {
-    path: path.resolve(__dirname, '../dist/js'),
+    path: path.resolve(__dirname, 'dist/js'),
     filename: '[name].js'
   },
   externals: {
