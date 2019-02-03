@@ -17,13 +17,6 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:  #000 !default;
 
-// New grays
-$fiord-blue:   #3D5170 !default;
-$shuttle-gray: #5A6169 !default;
-$reagent-gray: #818EA3 !default;
-$mischka:      #CACEDB !default;
-$athens-gray:  #E9ECEF !default;
-
 $grays: () !default;
 $grays: map-merge((
   "100": $gray-100,
@@ -37,18 +30,7 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-// New grays map
-$new-grays: () !default;
-$new-grays: map-merge((
-  "fiord-blue"  : $fiord-blue,
-  "shuttle-gray": $shuttle-gray,
-  "reagent-gray": $reagent-gray,
-  "mischka"     : $mischka,
-  "athens-gray" : $athens-gray,
-), $new-grays);
-
-// $blue:    #007bff !default;
-$blue:    #2B5E1D !default;
+$blue:    #007bff !default;
 $indigo:  #674eec !default;
 $purple:  #8445f7 !default;
 $pink:    #ff4169 !default;
@@ -58,11 +40,6 @@ $yellow:  #ffb400 !default;
 $green:   #17c671 !default;
 $teal:    #1adba2 !default;
 $cyan:    #00b8d8 !default;
-
-// Brands
-$brand-facebook: #3b5998;
-$brand-instagram: #c13584;
-$brand-whatsapp: #25d366;
 
 // Shards Specific
 $blueish-grey: #5A6169 !default;
@@ -84,8 +61,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-// $primary:       $blue !default;
-$primary:       #2B5E1D;
+$primary:       $blue !default;
 $secondary:     $blueish-grey !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -117,9 +93,6 @@ $yiq-contrasted-threshold: 150 !default;
 $yiq-text-dark: $gray-900 !default;
 $yiq-text-light: $white !default;
 
-// Text color adjustments
-$text-light-color: $reagent-gray !default;
-
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -144,7 +117,7 @@ $spacer: 1.5rem !default; // ~ 24px
 
 // Body
 
-$body-bg:       #f5f6f7;
+$body-bg:       $white !default;
 $body-color:    $blueish-grey !default;
 
 
@@ -211,9 +184,6 @@ $transition-collapse:     height 350ms ease-in-out !default;
 
 
 // Fonts
-
-$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
 $font-size-base: 1rem !default;
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
@@ -232,9 +202,6 @@ $h5-font-size: 1.25rem !default;
 $h6-font-size: 1rem !default;
 
 $headings-margin-bottom: .75rem !default;
-
-$headings-font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$headings-font-weight:   300;
 $headings-color:         $gray-900 !default;
 $headings-letter-spacing: -.0625rem !default; // ~1px
 
@@ -326,7 +293,6 @@ $btn-font-weight:                 $font-weight-normal !default;
 $btn-font-size:                   .875rem !default;
 $btn-font-size-sm:                0.75rem !default;
 $btn-font-size-lg:                1.125rem !default;
-$btn-font-family:                 $font-family-base !default;
 $btn-box-shadow:                  none !default;
 
 $input-btn-focus-width:           .2rem !default;
@@ -417,7 +383,6 @@ $input-group-addon-color:        $input-frozen-color !default;
 $custom-control-gutter:   1.688rem !default;
 $custom-control-spacer-x: 1rem !default;
 
-$custom-control-disabled-color: #becad6 !default;
 $custom-control-indicator-size:       1.125rem !default;
 $custom-control-indicator-bg:         $white !default;
 $custom-control-indicator-bg-size:    50% 50% !default;
@@ -596,17 +561,10 @@ $zindex-tooltip:            1070 !default;
 // Navs
 
 $nav-transition:                 $transition-base !default;
-$nav-font-family:                $font-family-base !default;
 
 $nav-link-padding-y:            .625rem !default;
 $nav-link-padding-x:            1.125rem !default;
 $nav-link-disabled-color:       $gray-600 !default;
-$nav-link-color: $reagent-gray !default;
-$nav-link-icon-color: $nav-link-color !default;
-$nav-link-icon-font-size: 1.25rem !default;
-$nav-link-material-icons-font-size: 1.5625rem !default;
-$nav-link-font-size: 0.8125rem !default;
-$nav-link-font-weight: 400 !default;
 
 $nav-tabs-border-color:                       lighten($blueish-grey, 45%) !default;
 $nav-tabs-border-width:                       $border-width !default;
@@ -630,15 +588,11 @@ $navbar-padding-x:                  $spacer !default;
 
 $navbar-brand-font-size:            1rem !default;
 
-// Navbar search
-$navbar-search-padding-y: 23px !default;
-
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-height:               ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
 $navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) / 2 !default;
 
-$navbar-font-family:                $font-family-base !default;
 $navbar-toggler-padding-y:           .5rem !default;
 $navbar-toggler-padding-x:           .5rem !default;
 $navbar-toggler-font-size:           1rem !default;
@@ -667,7 +621,6 @@ $pagination-padding-x-sm:             .6875rem !default;
 $pagination-padding-y-lg:             .9375rem !default;
 $pagination-padding-x-lg:             1.5625rem !default;
 $pagination-line-height:              1.25 !default;
-$pagination-font-family:              $font-family-base !default;
 $pagination-font-size:                .875rem !default;
 $pagination-box-shadow:               0 .125rem .9375rem rgba($blueish-grey, 0.1), 0 .125rem .1875rem rgba($blueish-grey, 0.15) !default;
 
@@ -706,16 +659,14 @@ $card-header-spacer-y:          ($card-spacer-y / 2) !default;
 $card-footer-spacer-x:          $card-spacer-x !default;
 $card-footer-spacer-y:          ($card-spacer-y / 2) !default;
 
-$card-border-radius:            0.625rem;
-$card-inner-border-radius:      $card-border-radius;
+$card-border-radius:            0.625rem !default;
+$card-inner-border-radius:      $card-border-radius !default;
 
 $card-cap-bg:                   rgba($blueish-grey, .06) !default;
 $card-bg:                       $white !default;
 
-$card-title-font-weight:        300 !default;
 $card-title-margin-bottom:      .75rem !default;
 
-$card-link-font-family:         $headings-font-family !default;
 
 $card-paragraph-margin-bottom:  1.5625rem !default;
 
@@ -740,11 +691,6 @@ $card-small-box-shadow:         0 2px 0 rgba($blueish-grey, 0.11),
                                 0 4px 8px rgba($blueish-grey, 0.12),
                                 0 10px 10px rgba($blueish-grey, 0.06),
                                 0 7px 70px rgba($blueish-grey, 0.1) !default;
-
-// Card -> View Report Link
-$card-view-report-font-size: 0.75rem !default;
-$card-view-report-link-color: $fiord-blue !default;
-$card-view-report-link-color-hover: $primary !default;
 
 // Tooltips
 
@@ -786,7 +732,7 @@ $popover-body-color:               $body-color !default;
 $popover-body-padding-y:           15px !default;
 $popover-body-padding-x:           20px !default;
 
-$popover-arrow-width:                 10px;
+$popover-arrow-width:                 10px !default;
 $popover-arrow-height:                5px !default;
 $popover-arrow-color:                 $popover-bg !default;
 
@@ -801,7 +747,6 @@ $badge-font-size:             75% !default;
 $badge-font-weight:           $font-weight-bold !default;
 $badge-padding-y:             .375rem !default;
 $badge-padding-x:             .5rem !default;
-$badge-font-family:           $font-family-base !default;
 $badge-pill-border-radius:    10rem !default;
 $badge-border-radius:         .375rem !default;
 $badge-pill-padding-x:        $badge-padding-x !default;
@@ -842,7 +787,7 @@ $modal-transition:            transform .3s ease-out !default;
 $alert-padding-y:             .75rem !default;
 $alert-padding-x:             1.25rem !default;
 $alert-margin-bottom:         1rem !default;
-$alert-border-radius:         0 !default;
+// $alert-border-radius:         0 !default;
 $alert-link-font-weight:      $font-weight-bold !default;
 
 
@@ -1015,270 +960,3 @@ $datepicker-range-highlighted-bg: $gray-200 !default;
 $datepicker-dropdown-border: lighten($blueish-grey, 40%) !default;
 $datepicker-dropdown-bg: $white !default;
 $datepicker-highlighted-bg: $datepicker-active-background !default;
-
-
-$clear-white: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
-$check-white: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4xN0w0LjgzIDEybC0xLjQyIDEuNDFMOSAxOSAyMSA3bC0xLjQxLTEuNDF6Ii8+PC9zdmc+);
-
-
-// Shadows
-$side-shadow: 0 0.125rem 9.375rem rgba($shuttle-gray, .1),
-              0 0.25rem 0.5rem rgba($shuttle-gray, .12),
-              0 0.9375rem 1.375rem rgba($shuttle-gray, .10),
-              0 0.4375rem 2.1875rem rgba(#A5B6C9, .10);
-
-// Main Navbar
-$main-navbar-height: 3.75rem !default;
-$main-navbar-box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12) !default;
-$main-navbar-nav-link-min-width: 3.75rem !default;
-$main-navbar-actions-link-border: 1px solid #e3e6ec !default;
-$main-navbar-nav-link-icon-line-height: 2.5rem !default;
-$main-navbar-brand-font-size: 1rem !default;
-
-// Main Navbar -> Notifications
-$notifications-badge-padding-x: 0.375rem !default;
-$notifications-badge-padding-y: 0.25rem !default;
-$notifications-badge-font-size: 0.5rem !default;
-
-$notifications-dropdown-min-width: 25rem !default;
-$notifications-dropdown-item-padding-top: 0.625rem !default;
-$notifications-dropdown-item-padding-bottom: 0.625rem !default;
-$notifications-dropdown-item-border-bottom: 1px solid $border-color !default;
-
-$notifications-icon-background-color: $body-bg !default;
-$notifications-icon-width: 2.1875rem !default;
-$notifications-icon-height: 2.1875rem !default;
-$notifications-icon-color: $text-light-color !default;
-$notifications-icon-line-height: 2.0625rem !default;
-$notifications-icon-font-size: 1.0625rem !default;
-$notifications-icon-box-shadow: 0 0 0 1px white,
-                                inset 0 0 3px rgba(0, 0, 0, 0.2);
-
-$notification-content-padding: 0 0.625rem !default;
-$notification-content-paragraph-font-size: 0.75rem !default;
-
-$notification-category-font-size: 0.5625rem !default;
-$notification-category-color: $reagent-gray !default;
-$notification-category-letter-spacing: 0.0938rem !default;
-
-// Main Navbar -> User Avatar
-$user-avatar-max-width: 2.5rem !default;
-
-
-// Header Navigation
-$header-navbar-icon-font-size: 0.875rem !default;
-$header-navbar-icon-margin-right: 0.125rem !default;
-
-$header-navbar-dropdown-nav-link-padding-right: 1.25rem !default;
-
-$header-navbar-nav-link-color: $fiord-blue !default;
-$header-navbar-nav-link-border: none !default;
-$header-navbar-nav-link-padding: 1.125rem 0 !default;
-$header-navbar-nav-link-margin-right: 1.25rem !default;
-$header-navbar-nav-link-line-height: 1 !default;
-$header-navbar-nav-link-border-radius: 0 !default;
-$header-navbar-nav-link-font-size: 0.8125rem !default;
-$header-navbar-nav-link-background: transparent !default;
-$header-navbar-nav-link-border-bottom: 1px solid transparent !default;
-
-// ahs: active, hover, show
-$header-navbar-nav-item-ahs-border-bottom: 1px solid $primary !default;
-$header-navbar-nav-item-ahs-color: $primary !default;
-$header-navbar-nav-item-ahs-icon-color: $primary !default;
-
-$header-navbar-nav-link-md-font-size: 0.875rem !default;
-
-$header-navbar-dropdown-item-md-border-radius: 5px !default;
-$header-navbar-dropdown-item-md-font-size: 0.875rem !default;
-$header-navbar-dropdown-item-md-padding: 0.625rem 1.375rem !default;
-$header-navbar-dropdown-item-md-font-weight: 400 !default;
-
-
-// Page Header
-$page-title-font-size: 1.625rem !default;
-$page-title-sm-font-size: 2rem !default;
-$page-title-font-weight: 500 !default;
-$page-title-line-height: 1 !default;
-$page-title-margin: 0 !default;
-$page-title-padding: 0 !default;
-
-$page-subtitle-letter-spacing: 0.125rem !default;
-$page-subtitle-color: $reagent-gray !default;
-$page-subtitle-font-size: 0.625rem !default;
-$page-subtitle-font-size-sm: 0.8125rem !default;
-$page-subtitle-font-weight-sm: 400 !default;
-
-// Main footer
-$main-footer-height: $main-navbar-height !default;
-$main-footer-copyright-color: $reagent-gray !default;
-
-
-// Main sidebar
-$dropdown-icon-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTcuNDEgNy44NEwxMiAxMi40Mmw0LjU5LTQuNThMMTggOS4yNWwtNiA2LTYtNnoiLz4gICAgPHBhdGggZD0iTTAtLjc1aDI0djI0SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+);
-$dropdown-icon-width: 0.875rem;
-$dropdown-icon-height: 0.5625rem;
-$dropdown-icon-background-position: center center;
-$dropdown-icon-transition: transform $transition-duration ease-in-out;
-
-$main-sidebar-height: calc(100vh) !default;
-$main-sidebar-zindex: 1070 !default;
-$main-sidebar-background: $white !default;
-$main-sidebar-will-change: transform !default;
-$main-sidebar-transition: transform 200ms ease-in-out !default;
-
-$main-sidebar-toggle-font-size: 1.25rem !default;
-$main-sidebar-toggle-padding: 1.25rem !default;
-$main-sidebar-toggle-border-left: 1px solid $border-color !default;
-
-$main-sidebar-nav-wrapper-height: calc(100vh - 3.75rem - 1px) !default;
-$main-sidebar-nav-border-bottom: 1px solid $border-color !default;
-
-$main-sidebar-nav-link-active-background-color: #FBFBFB !default;
-$main-sidebar-nav-link-active-color: $primary !default;
-$main-sidebar-nav-link-active-box-shadow: inset 0.1875rem 0 0 $primary !default;
-$main-sidebar-nav-link-active-icon-color: $primary !default;
-
-$main-sidebar-nav-link-border: 1px solid $border-color !default;
-$main-sidebar-nav-link-font-weight: 400 !default;
-$main-sidebar-nav-link-font-size: 0.85rem !default;
-$main-sidebar-nav-link-padding-x: 1.5625rem !default;
-$main-sidebar-nav-link-padding-y: 0.9375rem !default;
-$main-sidebar-nav-link-color: $fiord-blue !default;
-$main-sidebar-nav-link-font-family: $font-family-base !default;
-$main-sidebar-nav-link-will-change: background-color, box-shadow, color !default;
-$main-sidebar-nav-link-transition: box-shadow 200ms ease,
-                                   color 200ms ease,
-                                   background-color 200ms ease !default;
-
-$main-sidebar-nav-link-icon-transition: color 200ms ease !default;
-$main-sidebar-nav-link-icon-margin-right: 0.375rem !default;
-$main-sidebar-nav-link-icon-color: $primary !default;
-$main-sidebar-nav-link-icon-will-change: color !default;
-
-$main-sidebar-dropdown-menu-box-shadow: inset 0 -0.1875rem 0.1875rem rgba($fiord-blue, .08) !default;
-
-$main-sidebar-dropdown-item-background-color-active: $main-sidebar-nav-link-active-background-color !default;
-$main-sidebar-dropdown-item-background-hover: none !default;
-$main-sidebar-dropdown-item-padding-x: 1.75rem !default;
-$main-sidebar-dropdown-item-padding-y: 0.75rem !default;
-$main-sidebar-dropdown-item-border: 1px solid lighten($border-color, 5) !default;
-$main-sidebar-dropdown-item-last-border: 1px solid $border-color !default;
-$main-sidebar-dropdown-item-color: $fiord-blue !default;
-$main-sidebar-dropdown-item-active-color: $primary !default;
-
-$main-sidebar-nav-no-borders-nav-link-border-bottom: 0 !default;
-$main-sidebar-nav-no-borders-dropdown-menu-box-shadow: inset 0 0 0.4375rem rgba($fiord-blue, .2) !default;
-$main-sidebar-nav-no-borders-dropdown-item-first-border-top: $main-sidebar-dropdown-item-last-border !default;
-
-$main-sidebar-dropdown-item-font-size: 0.8125rem !default;
-$main-sidebar-dropdown-item-font-weight: 400 !default;
-$main-sidebar-dropdown-item-font-weight-retina: 300 !default;
-
-
-// Components -> Card Post
-$card-post-padding-x: 1.5625rem !default;
-$card-post-padding-y: 1.5625rem !default;
-$card-post-padding: $card-post-padding-y $card-post-padding-x !default;
-
-$card-post-image-min-height: 10.3125rem !default;
-
-$card-post-author-avatar-width: 2.8125rem !default;        // 45px
-$card-post-author-avatar-height: 2.8125rem !default;       // 45px
-$card-post-author-avatar-small-width: 2.1875rem !default;  // 35px
-$card-post-author-avatar-small-height: 2.1875rem !default; // 35px
-$card-post-author-avatar-box-shadow: 0 0 0 0.125rem $white, 0 0.1875rem 0.4375rem rgba($blueish-grey, 0.5) !default;
-
-
-// Components -> Card Post -> Variation 1
-$card-post-v1-author-transform: translateY(50%) !default;
-$card-post-v1-author-margin-left: 1.5625rem !default;       // 25px
-$card-post-v1-category-top: 0.9375rem !default;             // 15px
-$card-post-v1-category-right: 0.9375rem !default;           // 15px
-$card-post-v1-body-padding-top: 2.1875rem !default;         // 35px
-
-$card-post-aside-v1-body-padding: $card-post-padding !default;
-$card-post-aside-v1-author-left: 0.9375rem !default;        // 15px
-$card-post-aside-v1-author-bottom: 0.9375rem !default;      // 15px
-$card-post-aside-v1-category-top: 0.9375rem !default;       // 15px
-$card-post-aside-v1-category-left: 0.9375rem !default;      // 15px
-
-
-// Components -> Sliders
-// Core Shards UI sliders adjustments.
-$slider-accent-background: $primary !default;
-$slider-pips-font-size: 0.625rem !default;                  // 10px
-$slider-tooltip-font-size: 0.6875rem !default;              // 11px
-$slider-tooltip-padding: 0.1875rem 0.5rem !default;         // 3,8px
-$slider-horizontal-tooltip-bottom: 1.625rem !default;       // 26px
-$slider-horizontal-handle-left: -0.625rem !default;         // -10px
-$slider-horizontal-handle-top: -0.5rem !default;            // -8px
-$slider-handle-width: 1.1875rem !default;                   // 19px
-$slider-handle-height: 1.1875rem !default;                  // 19px
-
-
-//
-// Statistics Blocks and Charts Styles
-//
-
-
-// Small stats block
-// Used in: Blog overview page templates.
-$small-stats-min-height: 8.7rem !default;
-
-$small-stats-value-font-family: $font-family-base !default;
-$small-stats-value-font-size: 1.5rem !default;
-$small-stats-value-font-weight: 500 !default;
-$small-stats-value-color: $fiord-blue !default;
-
-$small-stats-label-font-size: 0.625rem !default;
-$small-stats-label-color: $reagent-gray !default;
-$small-stats-label-letter-spacing: normal !default;
-
-$small-stats-percentage-font-size: 0.75rem !default;
-$small-stats-percentage-padding-left: 0.9375rem !default;
-
-// Small Stats -- 1
-$small-stats-1-data-max-width: 100% !default;
-$small-stats-1-percentage-margin: 0 auto !default;
-$small-stats-1-value-font-size: 2.0625rem !default;     // 33px
-$small-stats-1-label-font-size: 0.75rem !default;       // 12px
-$small-stats-1-percentage-font-size: 0.75rem !default;  // 12px
-$small-stats-1-chart-opacity: 0.5 !default;
-
-
-// Quick Post Form
-// Used in: Blog Overview
-$qp-form-display: flex !default;
-$qp-form-flex-flow: column !default;
-$qp-form-flex: 1 !default;
-
-$qp-form-textarea-min-height: 100px !default;
-
-
-// Blog Comments Component
-// Used in: Blog Overview
-$bc-avatar-img-width: 3.125rem !default;          // 50px
-$bc-avatar-img-height: 3.125rem !default;         // 50px
-$bc-avatar-img-border-radius: 0.25rem !default;   // 4px
-
-$bc-item-border-bottom: 1px solid $border-color !default;
-
-$bc-actions-font-size: 95% !default;
-$bc-actions-button-group-padding: 0.25rem 0.5625rem !default;
-
-
-// Error(s) templates
-$error-tpl-height: calc(100vh - #{$main-navbar-height}) !default;
-
-$error-tpl-content-padding: 0 0.9375rem !default;               // 0,15px
-
-$error-tpl-content-heading-color: $mischka !default;
-$error-tpl-content-heading-font-weight: 700 !default;
-$error-tpl-content-heading-font-size: 3.75rem !default;         // 60px
-$error-tpl-content-heading-margin-bottom: 1.5625rem !default;   // 25px
-
-$error-tpl-content-subheading-font-weight: 500 !default;
-$error-tpl-content-subheading-font-size: 2.1875rem !default;    // 35px
-$error-tpl-content-subheading-margin-bottom: 0.625rem !default; // 10px
-
-$error-tpl-content-paragraph-color: $reagent-gray !default;

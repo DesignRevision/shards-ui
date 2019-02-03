@@ -1,17 +1,109 @@
 /*! Global Variables (Brutal Override Bootstrap) */
 @import './variables';
 
+/*! Bootstrap functions (original) */
+@import './_bootstrap/functions';
+
+/*! Shards functions/variables and Bootstrap overrides */
+@import './_shards-design-system/functions';
+@import './_shards-design-system/variables';
+@import './_shards-design-system/variables-dashboard';
+
+/*! Bootstrap variables and mixins (original) */
+@import './_bootstrap/variables';
+@import './_bootstrap/mixins';
+@import './_shards-design-system/root';
+@import './_shards-design-system/reboot';
+
+/*! Shards mixins and Bootstrap overrides */
+@import './_shards-design-system/mixins';
+
 /*! Bootstrap Base */
-@import './_bootstrap/bootstrap';
+@import './_bootstrap/root';
+@import './_bootstrap/reboot';
+@import './_bootstrap/type';
+@import './_bootstrap/images';
+@import './_bootstrap/code';
+@import './_bootstrap/grid';
+@import './_bootstrap/tables';
+@import './_bootstrap/forms';
+@import './_bootstrap/buttons';
+@import './_bootstrap/transitions';
+@import './_bootstrap/dropdown';
+@import './_bootstrap/button-group';
+@import './_bootstrap/input-group';
+@import './_bootstrap/custom-forms';
+@import './_bootstrap/nav';
+@import './_bootstrap/navbar';
+@import './_bootstrap/card';
+@import './_bootstrap/breadcrumb';
+@import './_bootstrap/pagination';
+@import './_bootstrap/badge';
+@import './_bootstrap/jumbotron';
+@import './_bootstrap/alert';
+@import './_bootstrap/progress';
+@import './_bootstrap/media';
+@import './_bootstrap/list-group';
+@import './_bootstrap/close';
+@import './_bootstrap/modal';
+@import './_bootstrap/tooltip';
+@import './_bootstrap/popover';
+@import './_bootstrap/carousel';
+@import './_bootstrap/utilities';
+@import './_bootstrap/print';
 
 /*! Shards Design System (@Override Bootstrap) */
-@import './_shards-design-system/shards';
+@import './_shards-design-system/type';
+@import './_shards-design-system/images';
+@import './_shards-design-system/code';
+@import './_shards-design-system/tables';
+@import './_shards-design-system/forms';
+@import './_shards-design-system/buttons';
+@import './_shards-design-system/transitions';
+
+@import './_shards-design-system/icons';
+@import './_shards-design-system/dropdown';
+@import './_shards-design-system/button-group';
+@import './_shards-design-system/input-group';
+@import './_shards-design-system/custom-forms';
+@import './_shards-design-system/nav';
+@import './_shards-design-system/navbar';
+@import './_shards-design-system/card';
+@import './_shards-design-system/pagination';
+@import './_shards-design-system/badge';
+@import './_shards-design-system/jumbotron';
+@import './_shards-design-system/alert';
+@import './_shards-design-system/progress';
+@import './_shards-design-system/list-group';
+@import './_shards-design-system/close';
+@import './_shards-design-system/modal';
+@import './_shards-design-system/tooltip';
+@import './_shards-design-system/popover';
+@import './_shards-design-system/carousel';
+@import './_shards-design-system/custom-sliders';
+@import './_shards-design-system/custom-datepicker';
+@import './_shards-design-system/utilities';
+
+
+@import './_shards-design-system/blocks/main-navbar';
+@import './_shards-design-system/blocks/main-sidebar';
+@import './_shards-design-system/blocks/main-content';
+@import './_shards-design-system/blocks/main-footer';
+@import './_shards-design-system/blocks/page-header';
+
+@import './_shards-design-system/templates/common';
+
+@import './_shards-design-system/templates/blog-overview';
+@import './_shards-design-system/templates/blog-add-new-post';
+
+@import './_shards-design-system/components/card-post';
+@import './_shards-design-system/components/error';
+
+/*! Whitelabel Application */
+@import './whitelabel/mixins/mixin';
+@import './whitelabel/elements/mixin';
+@import './whitelabel/layout/mixin';
+@import './whitelabel/template/mixin';
 
 /*! Vendor */
 @import './vendor/animate';
-
-/*! SCSS Application */
-@import './mixins/mixin';
-@import './elements/mixin';
-@import './layout/mixin';
-@import './template/mixin';

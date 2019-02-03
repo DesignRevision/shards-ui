@@ -1,0 +1,69 @@
+.website-review {
+  section.review-store {
+    padding: 50px 0;
+
+    .card {
+      max-width: 100%;
+      background-color: #fff;
+      box-shadow: $card-box-shadow;
+
+      .card-header,
+      .card-footer {
+        background-color: #fff;
+      }
+
+      .card-header {
+        padding: 20px 20px 10px;
+
+        .card-title {
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+
+      .card-body {
+        padding: 20px;
+
+        .form-group {
+          margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .card-footer {
+        padding: 10px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &.card-review-store,
+      &.card-review-rating {
+        display: none;
+      }
+    }
+
+    &.is-review-store-active {
+      .card-review-store {
+        display: flex;
+      }
+
+      .card-review-rating {
+        display: none;
+      }
+    }
+
+    &.is-review-rating-active {
+      .card-review-store {
+        display: none;
+      }
+
+      .card-review-rating {
+        display: flex;
+      }
+    }
+  }
+}

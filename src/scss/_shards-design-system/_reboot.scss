@@ -6,17 +6,17 @@
 // HTML (element)
 //
 html {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 
   @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi) {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
   }
 
   @include media-breakpoint-down(xs) {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
