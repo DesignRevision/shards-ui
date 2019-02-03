@@ -15628,7 +15628,7 @@ body.is-menu-open {
 }
 
 .website-home section.page-intro .jumbotron {
-  background-image: url("/images/banner-intro.jpg");
+  background-image: url("../images/banner-intro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16031,7 +16031,7 @@ body.is-menu-open {
 
 .website-subway-intro {
   position: relative;
-  background-image: url("/images/subway-cover.jpeg");
+  background-image: url("../images/subway-cover.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

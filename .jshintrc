@@ -1,6 +1,7 @@
 {
 	"browser": true,
 	"jquery": true,
+	"jQuery": true,
 	"node": true,
 	"esversion": 6,
 	"camelcase": true,

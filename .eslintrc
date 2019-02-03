@@ -1,7 +1,18 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": ["error"]
-  }
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"extends": ["airbnb", "prettier"],
+	"plugins": ["prettier"],
+	"rules": {
+		"prettier/prettier": ["error"],
+		"func-names": ["error", "never"]
+	},
+	"globals": {
+			"jQuery": true
+	}
 }

@@ -10,6 +10,17 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist/js'),
 		filename: '[name].js'
 	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				loader: 'babel-loader',
+				query: {
+					presets: ['es2015']
+				}
+			}
+		]
+	},
 	plugins: [
 		new webpack.ProvidePlugin({
 			$: 'jquery',
