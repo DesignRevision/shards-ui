@@ -1,12 +1,69 @@
-/*! Google Fonts Import */
+/*! Fonts Import and Variable */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
-$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+/*! Whitelabel Color (Override Bootstrap) */
+$primary: #2B5E1D !default;
 
-$primary: #2B5E1D;
+/*! Whitelabel Settings (Override Bootstrap) */
+$body-bg: #f5f6f7 !default;
 
-$dropdown-min-width: 250px;
-$dropdown-padding-y: 0;
-$dropdown-item-padding-y: .875rem;
-$dropdown-item-padding-x: .875rem;
+/*! Brand Colors */
+$brand-facebook: #3b5998 !default;
+$brand-instagram: #c13584 !default;
+$brand-whatsapp: #25d366 !default;
+
+/*! Shards Dashboard Colors */
+// New grays
+$fiord-blue: #3D5170 !default;
+$shuttle-gray: #5A6169 !default;
+$reagent-gray: #818EA3 !default;
+$mischka: #CACEDB !default;
+$athens-gray: #E9ECEF !default;
+
+// New grays map
+$new-grays: () !default;
+$new-grays: map-merge(("fiord-blue" : $fiord-blue,
+											 "shuttle-gray": $shuttle-gray,
+											 "reagent-gray": $reagent-gray,
+											 "mischka" : $mischka,
+											 "athens-gray" : $athens-gray,
+											), $new-grays);
+
+/*! Fonts variables (Override Bootstrap) */
+$font-family-sans-serif: "Lato",
+-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$headings-font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-weight: 300 !default;
+
+/*! Button Variables */
+$btn-font-family: $headings-font-family !default;
+
+/*! Nav Variables */
+$nav-font-family: $font-family-base !default;
+
+/*! Navbar Variables */
+$navbar-font-family: $font-family-base !default;
+
+/*! Pagination Variables */
+$pagination-font-family: $font-family-base !default;
+
+/*! Card Variables */
+$card-title-font-weight: 300 !default;
+$card-link-font-family: $headings-font-family !default;
+$card-spacer-y:                     1.25rem !default;
+$card-spacer-x:                     1.25rem !default;
+
+/*! Badge Variables */
+$badge-font-family: $font-family-base !default;
+
+/*! Text Variables */
+$text-light-color: $reagent-gray !default;
+
+/*! Dropdown Variables */
+$dropdown-min-width: 250px !default;
+$dropdown-padding-y: 0 !default;
+$dropdown-item-padding-y: .875rem !default;
+$dropdown-item-padding-x: .875rem !default;
