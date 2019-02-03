@@ -9,4 +9,4 @@ import 'raty-js';
 import './sliderPlugin';
 
 // Internal Scripts
-import './script';
+import './components/reviewRating';

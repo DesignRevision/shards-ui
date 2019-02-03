@@ -15708,16 +15708,7 @@ body.is-menu-open {
 }
 
 .website-home section.messages-system .alert .alert-content .alert-container-text {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-text {
-  margin-right: 65px;
+  width: 100%;
 }
 
 .website-home section.messages-system .alert .alert-content .alert-container-text .alert-text .alert-heading {
@@ -15733,8 +15724,41 @@ body.is-menu-open {
   }
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action i {
-  font-size: 1.4rem;
+.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: solid thin rgba(0, 0, 0, 0.15);
+}
+
+.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating {
+  margin-right: 10px;
+}
+
+.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating i {
+  font-size: 1.8rem;
+}
+
+.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+  font-weight: 600;
+}
+
+@media (max-width: 425px) {
+  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a {
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center;
+  }
+  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating,
+  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+    width: 100%;
+  }
+  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+    margin-top: 8px;
+  }
 }
 
 @media (max-width: 991px) {

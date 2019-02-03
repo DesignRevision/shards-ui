@@ -1,28 +1,29 @@
-const BeCompRating = (function() {
+const reviewRating = (function() {
 	// jQuery Raty, for more examples you can check out https://github.com/wbotelhos/raty
 
 	// Init Rating
 	const initRating = function() {
-		// Set Default options
 		jQuery.fn.raty.defaults.starType = 'i';
 		jQuery.fn.raty.defaults.hints = [
-			'Just Bad!',
-			'Almost There!',
-			'It’s ok!',
-			'That’s nice!',
-			'Incredible!'
+			'Péssima!',
+			'Não muito boa.',
+			'Legal!',
+			'Muito boa!',
+			'Excelente!'
 		];
 
 		// Init Raty on .js-rating class
-		jQuery('.js-rating').each(function() {
+		jQuery('.js--review-rating').each(function() {
 			const ratingEl = jQuery(this);
 
 			ratingEl.raty({
-				score: ratingEl.data('score') || 0,
+				score: ratingEl.data('score') || null,
 				number: ratingEl.data('number') || 5,
 				cancel: ratingEl.data('cancel') || false,
 				target: ratingEl.data('target') || false,
+				targetKeep: ratingEl.data('target-keep') || false,
 				targetScore: ratingEl.data('target-score') || false,
+				noRatedMsg: ratingEl.data('no-rated-msg') || '',
 				precision: ratingEl.data('precision') || false,
 				cancelOff:
 					ratingEl.data('cancel-off') || 'fa fa-fw fa-times-circle text-danger',
@@ -32,8 +33,7 @@ const BeCompRating = (function() {
 				starOff: ratingEl.data('star-off') || 'fa fa-fw fa-star text-muted',
 				starOn: ratingEl.data('star-on') || 'fa fa-fw fa-star text-warning',
 				click(score, evt) {
-					// Here you could add your logic on rating click
-					// console.log('ID: ' + this.id + "\nscore: " + score + "\nevent: " + evt);
+					console.log(`ID: ${this.id}\nscore: ${score}\nevent: ${evt}`);
 				}
 			});
 		});
@@ -41,13 +41,11 @@ const BeCompRating = (function() {
 
 	return {
 		init() {
-			// Init all Ratings
 			initRating();
 		}
 	};
 })();
 
-// Initialize when page loads
 jQuery(function() {
-	BeCompRating.init();
+	reviewRating.init();
 });

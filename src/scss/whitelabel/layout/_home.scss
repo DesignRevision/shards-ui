@@ -77,13 +77,9 @@
         color: #333;
 
         .alert-container-text {
-          display: flex;
-          align-items: center;
-          flex-grow: 1;
+          width: 100%;
 
           .alert-text {
-            margin-right: 65px;
-
             .alert-heading {
               font-size: 1.2rem;
               font-weight: 600;
@@ -97,8 +93,38 @@
           }
 
           .alert-action {
-            i {
-              font-size: 1.4rem;
+            a {
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 12px;
+              padding-top: 12px;
+              border-top: solid thin rgba(0, 0, 0, 0.15);
+
+              .js--review-rating {
+                margin-right: 10px;
+
+                i {
+                  font-size: 1.8rem;
+                }
+              }
+
+              .js--review-rating-hint-text {
+                font-weight: 600;
+              }
+
+              @media (max-width: 425px) {
+                justify-content: center;
+                text-align: center;
+
+                .js--review-rating,
+                .js--review-rating-hint-text {
+                  width: 100%;
+                }
+
+                .js--review-rating-hint-text {
+                  margin-top: 8px;
+                }
+              }
             }
           }
 
