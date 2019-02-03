@@ -1,5 +1,5 @@
 a {
-	font-weight: 600;
+  font-weight: 600;
   color: var(--primary);
   position: relative;
   cursor: pointer;
@@ -45,6 +45,7 @@ img {
   margin: 0 auto;
   width: 100%;
   min-width: 320px;
+  background-color: $body-bg;
 
   main#main-container {
     min-height: 100vh;
@@ -64,6 +65,8 @@ img {
 }
 
 body {
+  position: relative;
+
   &.is-menu-open {
     overflow: hidden;
   }
