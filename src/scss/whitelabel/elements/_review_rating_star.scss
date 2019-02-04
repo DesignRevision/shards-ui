@@ -1,0 +1,32 @@
+.review-rating-star {
+  display: flex;
+  align-items: center;
+	flex-wrap: wrap;
+
+  .js--review-rating {
+    margin-right: 15px;
+
+    i {
+      font-size: 2.4rem;
+    }
+  }
+
+  .js--review-rating-hint-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+	@media (max-width: 450px) {
+		justify-content: center;
+		text-align: center;
+
+		.js--review-rating,
+		.js--review-rating-hint-text {
+			width: 100%;
+		}
+
+		.js--review-rating-hint-text {
+			margin-top: 8px;
+		}
+	}
+}

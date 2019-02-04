@@ -1,9 +1,72 @@
-.text-facebook{
-	color: $brand-facebook
+.text-facebook {
+  color: $brand-facebook
 }
-.text-instagram{
-	color: $brand-instagram;
+
+.text-instagram {
+  color: $brand-instagram;
 }
-.text-whastapp{
-	color: $brand-whatsapp;
+
+.text-whastapp {
+  color: $brand-whatsapp;
+}
+
+.font-w300 {
+  font-weight: 300 !important;
+}
+
+.font-w400 {
+  font-weight: 400 !important;
+}
+
+.font-w600 {
+  font-weight: 600 !important;
+}
+
+.font-w700 {
+  font-weight: 700 !important;
+}
+
+.font-size-default {
+  font-size: $font-size-base !important;
+}
+
+.font-size-xl {
+  font-size: $font-size-xl !important;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg !important;
+}
+
+.font-size-md {
+  font-size: $font-size-md !important;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm !important;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs !important;
+}
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+	@each $size, $lengths in $space-breaks {
+			$length-x: map-get($lengths, x);
+			$length-y: map-get($lengths, y);
+
+			.#{$abbrev}-#{$size}  { #{$prop}:        $length-y $length-x !important; }
+			.#{$abbrev}t-#{$size} { #{$prop}-top:    $length-y !important; }
+			.#{$abbrev}r-#{$size} { #{$prop}-right:  $length-x !important; }
+			.#{$abbrev}b-#{$size} { #{$prop}-bottom: $length-y !important; }
+			.#{$abbrev}l-#{$size} { #{$prop}-left:   $length-x !important; }
+			.#{$abbrev}x-#{$size} {
+					#{$prop}-right: $length-x !important;
+					#{$prop}-left:  $length-x !important;
+			}
+			.#{$abbrev}y-#{$size} {
+					#{$prop}-top:    $length-y !important;
+					#{$prop}-bottom: $length-y !important;
+			}
+	}
 }

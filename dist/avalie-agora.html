@@ -4,17 +4,24 @@
 <head>
   <meta charset="utf-8" />
   <title>Avalie nossa loja / Avalie sua experiência | Deli - Valoriza.io</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/shards.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="./css/shards.css">
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous" />
 </head>
 
 <body>
-  <div id="page-container" class="website-review">
+  <div id="page-container"
+       class="website-review">
     <header id="page-header">
       <div class="content-header">
         <div class="content-header-section">
-          <button type="button" class="btn d-lg-none btn-pill btn-outline-primary btn-menu">
+          <button type="button"
+                  class="btn d-lg-none btn-pill btn-outline-primary btn-menu">
             <i class="fas fa-bars fa-fw"></i>
           </button>
 
@@ -74,7 +81,8 @@
 									<small>Seu saldo</small>
 								</span>
 							</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-points">
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-points">
                 <a class="dropdown-item" href="#">
 									<div class="points__icon-wrapper">
 										<div class="points__icon">
@@ -111,7 +119,8 @@
 									<small>048 99656-3619</small>
 								</span>
 							</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-dropdown">
                 <a class="dropdown-item" href="painel-fidelidade.html">
 									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
 								</a>
@@ -163,8 +172,12 @@
                   <div class="card-body">
                     <div class="form-group">
                       <label for="location-state">Em qual estado foi a visita?</label>
-                      <select name="" id="location-state" class="form-control">
-                        <option value="0" disabled selected>Selecione um estado</option>
+                      <select name=""
+                              id="location-state"
+                              class="form-control form-control-lg">
+                        <option value="0"
+                                disabled
+                                selected>Selecione um estado</option>
                         <option value="1">Só</option>
                         <option value="2">vai</option>
                         <option value="3">nego</option>
@@ -172,26 +185,38 @@
                       </select>
                     </div>
 
-										<div class="form-group">
-											<label for="location-city">E em qual cidade?</label>
-											<select name="" id="location-city" class="form-control">
-												<option value="0" disabled selected>Selecione uma cidade</option>
-												<option value="1">Só</option>
-												<option value="2">vai</option>
-												<option value="3">nego</option>
-												<option value="4">veio</option>
-											</select>
-										</div>
+                    <div class="form-group">
+                      <label for="location-city">E em qual cidade?</label>
+                      <select name=""
+                              id="location-city"
+                              class="form-control form-control-lg">
+                        <option value="0"
+                                disabled
+                                selected>Selecione uma cidade</option>
+                        <option value="1">Só</option>
+                        <option value="2">vai</option>
+                        <option value="3">nego</option>
+                        <option value="4">veio</option>
+                      </select>
+                    </div>
 
                     <div class="form-group">
-											<label for="review-date">Quando foi a visita?</label>
-											<input type="date" id="review-date" class="form-control">
-										</div>
+                      <label for="review-date">Quando foi a visita?</label>
+                      <input type="text"
+                             id="review-date"
+                             class="form-control form-control-lg"
+                             data-provide="datepicker"
+                             placeholder="dd/mm/aaaa">
+                    </div>
 
                     <div class="form-group">
                       <label for="location-state">E para finalizar... qual o período você visitou?</label>
-                      <select name="" id="location-state" class="form-control">
-                        <option value="0" disabled selected>Selecione um estado</option>
+                      <select name=""
+                              id="location-state"
+                              class="form-control form-control-lg">
+                        <option value="0"
+                                disabled
+                                selected>Selecione um estado</option>
                         <option value="1">Só</option>
                         <option value="2">vai</option>
                         <option value="3">nego</option>
@@ -201,64 +226,132 @@
                   </div>
 
                   <div class="card-footer">
-                    <button type="button" class="btn btn-outline-secondary btn-pill">
+                    <button type="button"
+                            class="btn btn-outline-secondary btn-pill">
                       <i class="fas fa-times fa-fw mr-1"></i>
                       Cancelar
                     </button>
 
-                    <button type="button" class="btn btn-success btn-pill">
+                    <button type="button"
+                            class="btn btn-success btn-pill">
                       Continuar
                       <i class="fas fa-arrow-right fa-fw ml-1"></i>
                     </button>
                   </div>
-								</div>
+                </div>
 
                 <div class="card card-review-rating">
                   <div class="card-header">
                     <h3 class="card-title">
-											<i class="fas fa-star fa-fw mr-2"></i>
-											Como foi a sua experiência?
-										</h3>
+												<i class="fas fa-star fa-fw mr-2"></i>
+												Como foi a sua experiência?
+											</h3>
                   </div>
 
                   <div class="card-body">
+                    <div class="row mb-20">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <label>Qual a nota que você avalia?</label>
+                        <div class="review-rating-star">
+                          <div class="js--review-rating"
+                               data-star-on="fas fa-fw fa-2x fa-star text-warning"
+                               data-star-off="far fa-fw fa-2x fa-star text-warning"
+                               data-target-keep="true"
+                               data-target=".js--review-rating-hint-text"></div>
+                          <span class="js--review-rating-hint-text"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-20">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <label>O que você mais gostou?</label>
+                        <div class="review-rating-category">
+                          <div class="category-item is-attendance">
+                            <input id="category-1"
+                                   type="checkbox"
+                                   value="accepted">
+                            <label for="category-1">
+                              <span class="category-text">
+																Atendimento
+															</span>
+                            </label>
+                          </div>
+
+                          <div class="category-item is-cleaning">
+                            <input id="category-2"
+                                   type="checkbox">
+                            <label for="category-2">
+                              <span class="category-text">
+																Limpeza
+															</span>
+                            </label>
+                          </div>
+
+                          <div class="category-item is-price">
+                            <input id="category-3"
+                                   type="checkbox">
+                            <label for="category-3">
+                              <span class="category-text">
+																Preço
+															</span>
+                            </label>
+                          </div>
+
+                          <div class="category-item is-product">
+                            <input id="category-4"
+                                   type="checkbox">
+                            <label for="category-4">
+                              <span class="category-text">
+																Produto
+															</span>
+                            </label>
+                          </div>
+
+                          <div class="category-item is-time">
+                            <input id="category-5"
+                                   type="checkbox">
+                            <label for="category-5">
+                              <span class="category-text">
+																Tempo
+															</span>
+                            </label>
+                          </div>
+
+                          <div class="category-item is-variety">
+                            <input id="category-6"
+                                   type="checkbox">
+                            <label for="category-6">
+                              <span class="category-text">
+																Variedade
+															</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="row">
-											<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-												<p class="m-1">Qual a nota que você avalia?</p>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="far fa-star fa-2x mr-1 text-warning"></i>
-												<i class="far fa-star fa-2x mr-1 text-warning"></i>
-											</div>
-										</div>
-                    <div class="row">
-											<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-												<p class="m-1">Qual a nota que você avalia?</p>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="fas fa-star fa-2x mr-1 text-warning"></i>
-												<i class="far fa-star fa-2x mr-1 text-warning"></i>
-												<i class="far fa-star fa-2x mr-1 text-warning"></i>
-											</div>
-										</div>
-                    <div class="row">
-											<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-												<div class="form-group mb-0">
-													<label for="review-comment">Quando foi a visita?</label>
-													<textarea id="review-comment" class="form-control"></textarea>
-												</div>
-											</div>
-										</div>
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="form-group mb-0">
+                          <label for="review-comment">Gostaria de comentar algo? <span class="text-italic">(Opcional)</span></label>
+                          <textarea id="review-comment"
+                                    class="form-control form-control-lg"
+                                    rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="card-footer">
-                    <button type="button" class="btn btn-outline-secondary btn-pill">
+                    <button type="button"
+                            class="btn btn-outline-secondary btn-pill">
                       <i class="fas fa-arrow-left fa-fw mr-1"></i>
                       Anterior
                     </button>
 
-                    <button type="button" class="btn btn-success btn-pill">
+                    <button type="button"
+                            class="btn btn-success btn-pill">
                       Avaliar
                       <i class="fas fa-check fa-fw ml-1"></i>
                     </button>

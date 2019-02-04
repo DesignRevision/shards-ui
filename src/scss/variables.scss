@@ -34,6 +34,11 @@ $new-grays: map-merge(("fiord-blue" : $fiord-blue,
 $font-family-sans-serif: "Lato",
 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-base: $font-family-sans-serif !default;
+$font-size-xl: 1.428571429rem !default;
+$font-size-lg: 1.285714286rem !default;
+$font-size-md: 1.142857143rem !default;
+$font-size-sm: 0.928571429rem !default;
+$font-size-xs: 0.857142857rem !default;
 
 $headings-font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $headings-font-weight: 300 !default;
@@ -67,3 +72,53 @@ $dropdown-min-width: 250px !default;
 $dropdown-padding-y: 0 !default;
 $dropdown-item-padding-y: .875rem !default;
 $dropdown-item-padding-x: .875rem !default;
+
+$space-base: 24px !default;
+$space-mobile: 10px !default;
+$space-side: 18px !default;
+$space-row-gutter-tiny: 6px !default;
+$space-block: 18px !default;
+$space-boxed:  1200px !default;
+$space-narrow:  92% !default;
+$space-breaks: (
+  5: (
+    x: 5px,
+    y: 5px
+  ),
+  10: (
+    x: 10px,
+    y: 10px
+  ),
+  15: (
+    x: 15px,
+    y: 15px
+  ),
+  20: (
+    x: 20px,
+    y: 20px
+  ),
+  30: (
+    x: 30px,
+    y: 30px
+  ),
+  50: (
+    x: 50px,
+    y: 50px
+  ),
+  100: (
+    x: 100px,
+    y: 100px
+  ),
+  150: (
+    x: 150px,
+    y: 150px
+  ),
+  200: (
+    x: 200px,
+    y: 200px
+  ),
+  300: (
+    x: 300px,
+    y: 300px
+  )
+) !default;

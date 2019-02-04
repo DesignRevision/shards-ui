@@ -1,0 +1,115 @@
+.review-rating-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .category-item {
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms;
+
+    input[type="checkbox"] {
+      display: none;
+
+      &:checked~label {
+
+        &:before {
+          box-shadow: $card-box-shadow;
+          border-color: $success;
+          border-width: 4px;
+        }
+      }
+    }
+
+    label {
+			position: relative;
+      transition: all 300ms;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        border-radius: 50%;
+        border: solid thin rgba($black, .125);
+        transition: all 300ms;
+      }
+    }
+
+    .category-text {
+      display: block;
+      margin-top: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 300ms;
+    }
+
+    &.is-attendance {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/attendance.svg');
+        }
+      }
+    }
+
+    &.is-cleaning {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/cleaning.svg');
+        }
+      }
+    }
+
+    &.is-price {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/price.svg');
+        }
+      }
+    }
+
+    &.is-product {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/product.svg');
+        }
+      }
+    }
+
+    &.is-time {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/time.svg');
+        }
+      }
+    }
+
+    &.is-variety {
+      label {
+        &:before {
+          background-image: url('../icons/review-category/variety.svg');
+        }
+      }
+    }
+
+    &:hover {
+      label {
+        &:before {
+          box-shadow: $card-box-shadow;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
