@@ -16911,7 +16911,7 @@ nav#page-menu-mobile {
 }
 
 .empty-state .wrapper {
-  max-width: 768px;
+  max-width: 600px;
   text-align: center;
 }
 
@@ -16921,7 +16921,7 @@ nav#page-menu-mobile {
 
 .empty-state .wrapper .empty-state-icon i {
   font-size: 8rem;
-  color: #00b8d8;
+  color: #868e96;
 }
 
 @media (max-width: 991px) {
@@ -16936,6 +16936,7 @@ nav#page-menu-mobile {
 
 .empty-state .wrapper .empty-state-content .empty-state-title {
   margin-bottom: 5px;
+  font-size: 2.2rem;
 }
 
 @media (max-width: 991px) {
@@ -17792,6 +17793,11 @@ label {
   .list-cards .card-product:nth-child(2n), .list-cards .card-product:nth-child(3n), .list-cards .card-product:nth-child(4n) {
     margin-right: 0;
   }
+}
+
+.empty-state-wrapper {
+  padding: 40px 0;
+  margin-bottom: 0;
 }
 
 section.page-banner {

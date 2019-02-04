@@ -4,7 +4,7 @@
   justify-content: center;
 
   .wrapper {
-    max-width: 768px;
+    max-width: 600px;
     text-align: center;
 
     .empty-state-icon {
@@ -12,7 +12,7 @@
 
       i {
         font-size: 8rem;
-        color: $info;
+        color: $gray-600;
 
         @media (max-width: 992px - 1px) {
           font-size: 6rem;
@@ -25,6 +25,7 @@
 
       .empty-state-title {
         margin-bottom: 5px;
+        font-size: 2.2rem;
 
         @media (max-width: 992px - 1px) {
           font-size: 1.6rem;
