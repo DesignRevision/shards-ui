@@ -14602,6 +14602,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .error__content {
+  max-width: 500px;
   padding: 0 .9375rem;
   display: -ms-flexbox;
   display: flex;
