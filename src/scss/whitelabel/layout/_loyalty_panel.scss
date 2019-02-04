@@ -1,6 +1,6 @@
 .website-loyalty-panel {
   section.loyalty-panel {
-    padding: 50px 0;
+    padding: 30px 0;
     margin-bottom: 0 !important;
 
     .card {
@@ -72,12 +72,7 @@
                 span {
                   display: block;
 
-                  &:first-child {
-                    color: #818ea3;
-                  }
-
                   &:last-child {
-                    color: #3d5170;
                     font-weight: 700;
                   }
                 }

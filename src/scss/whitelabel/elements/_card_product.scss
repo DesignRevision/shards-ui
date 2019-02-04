@@ -66,11 +66,11 @@
       }
 
       .card-product-voucher {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 6px 10px;
-				border-radius: 5px;
+        border-radius: 5px;
         text-align: center;
 
         .voucher-text {
@@ -79,9 +79,9 @@
 
         .voucher-code {
           font-size: 1.2rem;
-					font-weight: 700;
-					font-family: $font-family-monospace;
-					letter-spacing: 1px;
+          font-weight: 700;
+          font-family: $font-family-monospace;
+          letter-spacing: 1px;
         }
       }
     }
@@ -90,6 +90,7 @@
       align-items: center;
       padding: 0 1.25rem 15px;
       background-color: #FFF;
+      border-top: 0;
 
       .btn {
         display: flex;
@@ -168,25 +169,25 @@
         .card-product-value {
           background-color: $success;
         }
-			}
+      }
 
-			&.is-reward{
-				.card-body{
-					.card-product-voucher {
-						background-color: rgba($info, 0.15);
-						border: dashed thin rgba($info, 025);
-					}
-				}
-			}
+      &.is-reward {
+        .card-body {
+          .card-product-voucher {
+            background-color: rgba($info, 0.15);
+            border: dashed thin rgba($info, 025);
+          }
+        }
+      }
 
-			&.is-offer{
-				.card-body{
-					.card-product-voucher {
-						background-color: rgba($danger, 0.15);
-						border: dashed thin rgba($danger, 0.25);
-					}
-				}
-			}
+      &.is-offer {
+        .card-body {
+          .card-product-voucher {
+            background-color: rgba($danger, 0.15);
+            border: dashed thin rgba($danger, 0.25);
+          }
+        }
+      }
     }
 
     &:hover {
