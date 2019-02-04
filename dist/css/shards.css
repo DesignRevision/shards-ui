@@ -16979,7 +16979,7 @@ nav#page-menu-mobile {
 .review-rating-category .category-item input[type="checkbox"]:checked ~ label:before {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
   border-color: #17c671;
-  border-width: 4px;
+  border-width: 2.5px;
 }
 
 .review-rating-category .category-item label {
@@ -16991,8 +16991,8 @@ nav#page-menu-mobile {
 .review-rating-category .category-item label:before {
   content: '';
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
@@ -17542,11 +17542,6 @@ label {
 
 .website-review section.review-store .card .card-body {
   padding: 20px;
-}
-
-.website-review section.review-store .card .card-body label {
-  margin-bottom: 14px;
-  font-size: 1.25rem;
 }
 
 .website-review section.review-store .card .card-body .form-group {
