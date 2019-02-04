@@ -56,10 +56,11 @@ $navbar-font-family: $font-family-base !default;
 $pagination-font-family: $font-family-base !default;
 
 /*! Card Variables */
+$card-cap-bg: #FFF;
 $card-title-font-weight: 300 !default;
 $card-link-font-family: $headings-font-family !default;
-$card-spacer-y:                     1.25rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.25rem !default;
 
 /*! Badge Variables */
 $badge-font-family: $font-family-base !default;

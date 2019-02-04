@@ -79,7 +79,7 @@
 .card-header {
   padding: $card-header-spacer-y $card-header-spacer-x;
   background-color: $card-cap-bg;
-  border-bottom: none;
+  border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
@@ -89,7 +89,7 @@
 .card-footer {
   padding: $card-footer-spacer-y $card-footer-spacer-x;
   background-color: $card-cap-bg;
-  border-top: none;
+  border-top: $card-border-width solid $card-border-color;
 
   &:last-child {
     @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);

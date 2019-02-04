@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Editar perfil | Deli - Valoriza.io</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="./css/shards.css">
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id="page-container"
+       class="website-user-edit">
+    <header id="page-header">
+      <div class="content-header">
+        <div class="content-header-section">
+          <button type="button"
+                  class="btn d-lg-none btn-pill btn-outline-primary btn-menu">
+            <i class="fas fa-bars fa-fw"></i>
+          </button>
+
+          <ul class="nav-header-menu d-none d-lg-flex">
+            <li>
+              <a href="inicio.html">
+									Início
+								</a>
+            </li>
+            <li>
+              <a href="recompensas.html">
+								Recompensas
+							</a>
+            </li>
+            <li>
+              <a href="ofertas.html">
+								Ofertas
+							</a>
+            </li>
+            <li>
+              <a href="#">
+								Regras
+							</a>
+            </li>
+            <li>
+              <a href="lojas.html">
+								Lojas
+							</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-header-section">
+          <a href="index.html" class="header-brand">
+						<img src="./images/logo.png" />
+					</a>
+        </div>
+
+        <div class="content-header-section align-right">
+          <ul class="nav-header-menu is-logged">
+            <li class="menu-item-signin">
+              <a href="login.html">
+								Acessar conta
+							</a>
+            </li>
+            <li class="menu-item-signup">
+              <a href="cadastro.html" class="btn btn-primary btn-noborder btn-rounded">
+                Cadastrar
+							</a>
+            </li>
+
+            <li class="menu-item-user-points dropdown">
+              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-points">
+								<i class="fas fa-trophy fa-fw points-icon"></i>
+								<span class="points-quantity">
+									5 pontos<br>
+									<small>Seu saldo</small>
+								</span>
+							</a>
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-points">
+                <a class="dropdown-item" href="#">
+									<div class="points__icon-wrapper">
+										<div class="points__icon">
+											<i class="material-icons"></i>
+										</div>
+									</div>
+									<div class="points__content">
+										<span class="points__category">Analytics</span>
+										<p>Your website’s active users count increased by <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+									</div>
+								</a>
+                <a class="dropdown-item" href="#">
+									<div class="points__icon-wrapper">
+										<div class="points__icon">
+											<i class="material-icons"></i>
+										</div>
+									</div>
+									<div class="points__content">
+										<span class="points__category">Sales</span>
+										<p>Last week your store’s sales count decreased by <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+									</div>
+								</a>
+                <a class="dropdown-item points__all text-center" href="painel-fidelidade.html">
+									Ver histórico de pontos
+								</a>
+              </div>
+            </li>
+
+            <li class="menu-item-user dropdown">
+              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
+								<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+								<span class="user-info">
+									Jerônimo <br>
+									<small>048 99656-3619</small>
+								</span>
+							</a>
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-dropdown">
+                <a class="dropdown-item" href="painel-fidelidade.html">
+									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
+								</a>
+                <a class="dropdown-item" href="meus-vouchers.html">
+									<i class="fas fa-receipt fa-fw mr-2"></i> Meus vouchers gerados
+								</a>
+                <a class="dropdown-item" href="editar-perfil.html">
+									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
+								</a>
+                <a class="dropdown-item" href="#">
+									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
+								</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div class="wrapper">
+        <section class="page-banner">
+          <div class="jumbotron bg-secondary jumbotron-style no-bg-image text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                  <h1 class="display-5 text-white">Editar perfil</h1>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="user-edit">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Suas informações</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row ">
+                      <div class="col-lg-8">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label class="mb-0"
+                                   for="cpf">CPF</label>
+                            <input type="text"
+                                   class="form-control-plaintext"
+                                   id="cpf"
+                                   value="000.000.000-00"
+                                   readonly>
+                          </div>
+
+                          <div class="form-group col-md-6">
+                            <label class="mb-0"
+                                   for="cpf">Data de nascimento</label>
+                            <input type="text"
+                                   class="form-control-plaintext"
+                                   id="cpf"
+                                   value="29 de janeiro de 1996"
+                                   readonly>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label for="name">Nome completo</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="name"
+                                   value="Jerônimo Velasquez">
+                          </div>
+
+                          <div class="form-group col-md-5">
+                            <label for="displayEmail">Gênero</label>
+                            <select class="custom-select">
+                              <option value="1"
+                                      selected="">Masculino</option>
+                              <option value="2">Feminino</option>
+                              <option value="3">Outro</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <label for="userProfilePicture"
+                               class="text-center w-100 mb-4">Foto de Perfil</label>
+                        <div class="edit-user-details__avatar m-auto">
+                          <img src="./images/user/avatar.jpg" alt="User Avatar">
+                          <label class="edit-user-details__avatar__change">
+                            <i class="fas fa-cloud-upload-alt mr-1 text-secondary"></i>
+                            <input type="file"
+                                   id="userProfilePicture"
+                                   class="d-none">
+                          </label>
+                        </div>
+                        <button class="btn btn-sm btn-outline-dark d-table mx-auto mt-4">
+                          <i class="fas fa-cloud-upload-alt fa-fw mr-1"></i> Alterar foto
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-outline-secondary ml-10">
+                      <i class="fas fa-times fa-fw mr-5"></i>
+                      Cancelar
+                    </button>
+                    <button type="button"
+                            class="btn btn-success ml-10">
+                      <i class="fas fa-check fa-fw mr-5"></i>
+                      Salvar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Informações de contato</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="form-group col-md-5">
+                        <label for="phone">Telefone</label>
+                        <div class="input-group input-group-seamless">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fas fa-phone"></i>
+                            </div>
+                          </div>
+                          <input type="text"
+                                 class="form-control"
+                                 id="phone"
+                                 value="(00) 00000-0000">
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-5">
+                        <label for="email">E-mail</label>
+                        <div class="input-group input-group-seamless">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fas fa-envelope"></i>
+                            </div>
+                          </div>
+                          <input type="email"
+                                 class="form-control"
+                                 id="email"
+                                 value="jeronimo.velasquez@sumone.com.br">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-outline-secondary ml-10">
+                      <i class="fas fa-times fa-fw mr-5"></i>
+                      Cancelar
+                    </button>
+                    <button type="button"
+                            class="btn btn-success ml-10">
+                      <i class="fas fa-check fa-fw mr-5"></i>
+                      Salvar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Redes Sociais</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="m-0">
+                          <strong class="font-w500">Vincular Facebook</strong>
+                          <small class="form-text text-muted">
+														Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+													</small>
+                        </p>
+                      </div>
+                      <div class="col-auto ml-10 d-flex">
+                        <button type="button"
+                                class="btn btn-facebook">
+                          <i class="fab fa-facebook fa-fw mr-5"></i> Conectar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Notificações e Permissões</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row">
+                      <label for="emailMessages"
+                             class="col col-form-label">
+                        Receber comunicações e ofertas por e-mail
+                        <small class="form-text text-muted">
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+												</small>
+                      </label>
+                      <div class="col-auto ml-10 d-flex">
+                        <div class="custom-control custom-toggle ml-auto my-auto">
+                          <input type="checkbox"
+                                 id="emailMessages"
+                                 class="custom-control-input"
+                                 checked="">
+                          <label class="custom-control-label"
+                                 for="emailMessages"></label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <label for="smsMessages"
+                             class="col col-form-label">
+                        Receber comunicações e ofertas por SMS
+                        <small class="form-text text-muted">
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+												</small>
+                      </label>
+                      <div class="col-auto ml-10 d-flex">
+                        <div class="custom-control custom-toggle ml-auto my-auto">
+                          <input type="checkbox"
+                                 id="smsMessages"
+                                 class="custom-control-input"
+                                 checked="">
+                          <label class="custom-control-label"
+                                 for="smsMessages"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Alterar minha senha</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row ">
+                      <div class="form-group col-md-8">
+                        <label for="oldPasswd">Senha antiga</label>
+                        <input type="text"
+                               class="form-control"
+                               id="oldPasswd"
+                               placeholder="* * * * * *">
+                      </div>
+                    </div>
+                    <div class="form-row ">
+                      <div class="form-group col-md-5">
+                        <label for="newPasswd">Nova senha</label>
+                        <input type="text"
+                               class="form-control"
+                               id="newPasswd"
+                               placeholder="* * * * * *">
+                      </div>
+                      <div class="form-group col-md-5">
+                        <label for="confirmNewPasswd">Confirme a nova senha</label>
+                        <input type="email"
+                               class="form-control"
+                               id="confirmNewPasswd"
+                               placeholder="* * * * * *">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-outline-secondary ml-10">
+                      <i class="fas fa-times fa-fw mr-5"></i>
+                      Cancelar
+                    </button>
+                    <button type="button"
+                            class="btn btn-success ml-10">
+                      <i class="fas fa-check fa-fw mr-5"></i>
+                      Salvar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0 text-danger">
+													<span class="font-w700">ATENÇÃO!</span> Excluir minha conta
+												</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Tem certeza que você deseja <strong>excluir sua conta</strong> no programa de fidelidade da marca <strong>Deli</strong>? <strong>Todos os seus dados pessoais, saldo de pontos e vouchers de ofertas serão removidos.</strong>
+                    </p>
+
+                    <div class="alert alert-danger mb-20">
+                      <div class="list-group list-group-flush">
+                        <div class="list-group-item bg-transparent px-0 border-bottom-0">
+                          Saldo de pontos: <strong>100 pontos</strong>
+                        </div>
+                        <div class="list-group-item bg-transparent px-0">
+                          Ofertas disponíveis para resgate: <strong>Pontuou, cadastrou, ganhou!</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox"
+                             class="custom-control-input"
+                             id="removeAccount">
+                      <label class="custom-control-label font-italic"
+                             for="removeAccount">Estou ciente que ao <strong class="text-danger">excluir minha conta</strong>, todos os meus dados, pontuação, ofertas, entre outros serão <strong class="text-danger">deletados permanentemente</strong> sem a possibilidade de voltar átras.</label>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-secondary ml-10">
+                      Vou continuar usando a minha conta
+                    </button>
+                    <button type="button"
+                            class="btn btn-danger ml-10">
+                      Quero excluir minha conta
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="page-footer">
+      <div class="content-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 content-brand">
+              <p>
+                <a href="http://www.1313cafe.valoriza.io/">
+											<img src="./images/logo.png" height="auto" />
+										</a>
+              </p>
+              <p>
+                Todos os direitos reservados <br />
+                <small>Copyright © 2010 - 2019</small>
+              </p>
+            </div>
+
+            <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 content-business-info">
+              <p>
+                Endereço: <br />
+                <strong>
+									Av. Me. Benvenuta, 1313 - Santa Monica, Florianópolis - SC,
+									88035-001 Hours
+								</strong>
+              </p>
+              <p>
+                Horário: <br />
+                <strong>Segunda à Sexta: 08:00 - 20:00</strong> <br />
+                <strong>Aos sábados: 09:00 - 15:00</strong>
+              </p>
+              <p>
+                Telefone: <br />
+                <strong>(48) 99193-1314</strong>
+              </p>
+            </div>
+
+            <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 content-social-networks">
+              <ul class="list-social-links">
+                <li>
+                  <a
+												href="#"
+												target="_blank"
+												class="link-social link-whatsapp"
+											>
+												<span class="social-brand">
+													<i class="fab fa-whatsapp"></i>
+												</span>
+												<span class="social-text">
+													Whatsapp: <br />
+													<strong>(48) 99193-1314</strong>
+												</span>
+											</a>
+                </li>
+                <li>
+                  <a
+												href="https://facebook.com/1313.cafe/"
+												target="_blank"
+												class="link-social link-facebook"
+											>
+												<span class="social-brand">
+													<i class="fab fa-facebook"></i>
+												</span>
+												<span class="social-text">
+													Facebook: <br />
+													<strong>@1313.cafe</strong>
+												</span>
+											</a>
+                </li>
+                <li>
+                  <a
+												href="https://www.instagram.com/1313.cafe/"
+												target="_blank"
+												class="link-social link-instagram"
+											>
+												<span class="social-brand">
+													<i class="fab fa-instagram"></i>
+												</span>
+												<span class="social-text">
+													Instagram: <br />
+													<strong>@1313.cafe</strong>
+												</span>
+											</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-copyright font-size-xs">
+        <div class="container">
+          Desenvolvido com
+          <strong class="text-danger">❤</strong> por
+          <a href="#">Zygo</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/shards.js"></script>
+</body>
+
+</html>
