@@ -16557,6 +16557,10 @@ header#page-header .content-header .content-header-section.align-right .nav-head
   }
 }
 
+header#page-header.is-brand-only .content-header .content-header-section {
+  text-align: center;
+}
+
 footer#page-footer {
   background-color: #fff;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.075);

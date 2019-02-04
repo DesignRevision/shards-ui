@@ -359,4 +359,12 @@ header#page-header {
       justify-content: inherit;
     }
   }
+
+  &.is-brand-only {
+    .content-header {
+      .content-header-section {
+        text-align: center;
+      }
+    }
+  }
 }
