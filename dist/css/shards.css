@@ -17243,6 +17243,10 @@ nav#page-menu-mobile {
   font-weight: 300;
 }
 
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .alert.alert-success {
+  color: #fff;
+}
+
 .website-auth .wrapper .auth-container .card.card-auth .card-footer {
   display: -ms-flexbox;
   display: flex;

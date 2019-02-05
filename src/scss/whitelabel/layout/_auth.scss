@@ -120,6 +120,12 @@
                   font-weight: 300;
                 }
               }
+
+              .alert {
+                &.alert-success {
+                  color: #fff;
+                }
+              }
             }
           }
 
