@@ -60,22 +60,27 @@ header#page-header {
           }
 
           >a {
-            color: #656565;
             position: relative;
             display: inline-block;
             padding: 9px 10px;
             line-height: 16px;
-            border-radius: 3px;
             text-decoration: none;
             outline: 0;
-            opacity: 0.7;
             font-size: 1rem;
             transition: all 300ms;
 
+            &:not(.btn) {
+              opacity: 0.7;
+              color: #656565;
+              border-radius: 3px;
+            }
+
             &:focus,
             &:hover {
-              color: darken(#656565, 25%);
-              opacity: 1;
+              &:not(.btn) {
+                color: darken(#656565, 25%);
+                opacity: 1;
+              }
             }
           }
 
@@ -364,6 +369,11 @@ header#page-header {
     .content-header {
       .content-header-section {
         text-align: center;
+
+        .nav-header-menu,
+        .btn-menu {
+          display: none !important;
+        }
       }
     }
   }

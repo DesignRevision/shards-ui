@@ -51,14 +51,16 @@ img {
     min-height: 100vh;
 
     .wrapper {
-      animation: fadein 0.5s ease-in;
-
       section {
         margin-bottom: 35px;
 
         &:last-child {
           margin-bottom: 0;
         }
+      }
+
+      &.load-content-animated {
+        animation: fadein 0.5s ease-in;
       }
     }
   }
@@ -73,5 +75,5 @@ body {
 }
 
 label {
-	font-weight: 400;
+  font-weight: 400;
 }
