@@ -16,7 +16,7 @@
 
 <body>
   <div id="page-container"
-       class="website-auth">
+       class="website-auth is-register">
     <header id="page-header" class="is-brand-only">
       <div class="content-header">
         <div class="content-header-section">
@@ -141,107 +141,135 @@
     </header>
 
     <main id="main-container">
-      <div class="wrapper">
-        <div class="card card-auth card-small">
-          <div class="card-header">
-            <div class="card-header-content">
-              <h4>Sua primeira vez aqui?</h4>
-              <p>Bem vindo! Vamos <strong>criar uma conta para você</strong> aproveitar todos os nossos benefícios. </p>
-            </div>
-            <div class="card-header-icon">
-              <i class="far fa-smile-wink"></i>
-            </div>
-          </div>
-          <div class="card-body">
-						<div class="auth-social-connection"></div>
-						<div class="auth-divider"></div>
-            <div class="auth-form">
-              <div class="form-group">
-                <label for="name">Qual é o seu nome?</label>
-                <input type="text"
-                       class="form-control"
-                       id="name"
-                       placeholder="Ex: Carlos Alberto Menezes">
-              </div>
+			<div class="wrapper">
+				<div class="auth-container">
+					<div class="card card-auth card-small">
+						<div class="card-header">
+							<div class="card-header-content">
+								<h4>Sua primeira vez aqui?</h4>
+								<p>Bem vindo! Vamos <strong>criar uma conta para você</strong> aproveitar todos os nossos benefícios. </p>
+							</div>
+							<div class="card-header-icon">
+								<i class="far fa-smile-wink"></i>
+							</div>
+						</div>
 
-              <div class="form-group">
-                <label for="email">Qual é o seu e-mail?</label>
-                <input type="text"
-                       class="form-control"
-                       id="email"
-                       placeholder="nome@email.com">
-              </div>
+						<div class="card-body">
+							<div class="auth-social-connection">
+								<a href="inicio.html"
+														class="btn btn-lg btn-facebook btn-block">
+									<span class="btn-icon">
+										<i class="fab fa-facebook-square"></i>
+									</span>
+									<span class="btn-text">
+										Cadastrar com <strong>Facebook</strong>
+									</span>
+								</a>
+							</div>
 
-              <div class="form-group">
-                <label for="phone">E o seu telefone?</label>
-                <input type="text"
-                       class="form-control"
-                       id="phone"
-                       placeholder="(00) 00000-0000">
-              </div>
+							<div class="auth-divider">
+								<div class="auth-divider-wrapper">
+									<span class="auth-divider-text">
+										OU
+									</span>
+								</div>
+							</div>
 
-              <div class="form-group">
-                <label for="name">Crie uma senha para a sua conta</label>
-                <input type="text"
-                       class="form-control"
-                       id="name"
-                       placeholder="* * * * * *">
-                <small id="passwordHelpBlock" class="form-text text-muted">
-											Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-										</small>
-              </div>
+							<div class="auth-form-container">
+								<div class="form-group">
+									<label for="name">Qual é o seu nome?</label>
+									<input type="text"
+													class="form-control"
+													id="name"
+													placeholder="Ex: Carlos Alberto Menezes">
+								</div>
 
-              <div class="custom-control custom-checkbox d-block my-2">
-                <input type="checkbox"
-                       id="acceptTerms"
-                       name="acceptTerms"
-                       class="custom-control-input">
-                <label class="custom-control-label"
-                       for="acceptTerms">
-                  Li e aceito os <a href="#" class="link-effect">termos de uso</a>
-                </label>
-              </div>
+								<div class="form-group">
+									<label for="email">Qual é o seu e-mail?</label>
+									<input type="text"
+													class="form-control"
+													id="email"
+													placeholder="nome@email.com">
+								</div>
 
-              <div class="custom-control custom-checkbox d-block my-2">
-                <input type="checkbox"
-                       id="acceptEmailMessages"
-                       name="acceptEmailMessages"
-                       class="custom-control-input"
-                       checked="checked">
-                <label class="custom-control-label"
-                       for="acceptEmailMessages">
-                  Aceito receber comunicações e ofertas por email
-                </label>
-              </div>
+								<div class="form-group">
+									<label for="phone">E o seu telefone?</label>
+									<input type="text"
+													class="form-control"
+													id="phone"
+													placeholder="(00) 00000-0000">
+								</div>
 
-              <div class="custom-control custom-checkbox d-block my-2">
-                <input type="checkbox"
-                       id="acceptSmsMessages"
-                       name="acceptSmsMessages"
-                       class="custom-control-input"
-                       checked="checked">
-                <label class="custom-control-label"
-                       for="acceptSmsMessages">
-                  Aceito receber comunicações e ofertas por SMS
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="card-footer-section">
-              Já possui uma conta? <a href="#" class="link-effect">Acesse aqui.</a>
-            </div>
-            <div class="card-footer-section">
-              <button type="button"
-                      class="btn btn-success btn-pill">
-                Criar minha conta
-                <i class="fas fa-arrow-right ml-5"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+								<div class="form-group">
+									<label for="name">Crie uma senha para a sua conta</label>
+									<input type="text"
+													class="form-control"
+													id="name"
+													placeholder="* * * * * *">
+									<small id="passwordHelpBlock" class="form-text text-muted">
+										Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+									</small>
+								</div>
+
+								<div class="custom-control custom-checkbox d-block my-2">
+									<input type="checkbox"
+													id="acceptEmailMessages"
+													name="acceptEmailMessages"
+													class="custom-control-input"
+													checked="checked">
+									<label class="custom-control-label"
+													for="acceptEmailMessages">
+										Aceito receber comunicações e ofertas por email
+									</label>
+								</div>
+
+								<div class="custom-control custom-checkbox d-block my-2">
+									<input type="checkbox"
+													id="acceptSmsMessages"
+													name="acceptSmsMessages"
+													class="custom-control-input"
+													checked="checked">
+									<label class="custom-control-label"
+													for="acceptSmsMessages">
+										Aceito receber comunicações e ofertas por SMS
+									</label>
+								</div>
+
+								<div class="custom-control custom-checkbox d-block my-2">
+									<input type="checkbox"
+													id="acceptTerms"
+													name="acceptTerms"
+													class="custom-control-input">
+									<label class="custom-control-label"
+													for="acceptTerms">
+										Li e aceito os <a href="#" class="link-effect">termos de uso</a>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-footer-section">
+								<small>Já possui uma conta?</small> <br>
+								<a href="acessar.html" class="link-effect">Acesse ela aqui.</a>
+							</div>
+							<div class="card-footer-section">
+								<a href="inicio.html"
+														class="btn btn-success btn-pill">
+									Criar minha conta
+									<i class="fas fa-arrow-right ml-5"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="auth-actions">
+						<a href="inicio.html" class="btn btn-outline-primary btn-pill">
+									<i class="fas fa-arrow-left fa-fw mr-5"></i> Voltar para o início
+								</a>
+					</div>
+				</div>
+			</div>
+		</main>
 
     <footer id="page-footer" class="d-none">
       <div class="content-footer">
