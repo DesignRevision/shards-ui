@@ -16569,6 +16569,19 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   display: none !important;
 }
 
+@media (max-width: 991px) {
+  header#page-header.is-brand-only .content-header .content-header-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  header#page-header.is-brand-only .content-header {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 footer#page-footer {
   background-color: #fff;
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.075);
@@ -17103,60 +17116,130 @@ nav#page-menu-mobile {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.website-auth .wrapper .card.card-auth {
-  margin: 50px 15px;
-  width: 500px;
+.website-auth .wrapper .auth-container {
+  width: 450px;
   max-width: 100%;
+  margin: 50px 15px 0;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth {
+  margin: 0 0 30px;
   border-top: solid 3px var(--primary);
 }
 
-.website-auth .wrapper .card.card-auth .card-header {
+.website-auth .wrapper .auth-container .card.card-auth .card-header {
   padding: 20px;
   display: -ms-flexbox;
   display: flex;
 }
 
-.website-auth .wrapper .card.card-auth .card-header .card-header-icon {
+.website-auth .wrapper .auth-container .card.card-auth .card-header .card-header-icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 15px;
 }
 
-.website-auth .wrapper .card.card-auth .card-header .card-header-icon i {
+.website-auth .wrapper .auth-container .card.card-auth .card-header .card-header-icon i {
   color: var(--primary);
   font-size: 3rem;
 }
 
-.website-auth .wrapper .card.card-auth .card-header .card-header-content {
+.website-auth .wrapper .auth-container .card.card-auth .card-header .card-header-content {
   -ms-flex-positive: 1;
       flex-grow: 1;
 }
 
-.website-auth .wrapper .card.card-auth .card-header .card-header-content h4,
-.website-auth .wrapper .card.card-auth .card-header .card-header-content p {
+.website-auth .wrapper .auth-container .card.card-auth .card-header .card-header-content h4,
+.website-auth .wrapper .auth-container .card.card-auth .card-header .card-header-content p {
   margin-bottom: 0;
 }
 
-.website-auth .wrapper .card.card-auth .card-body {
+.website-auth .wrapper .auth-container .card.card-auth .card-body {
   padding: 20px;
 }
 
-.website-auth .wrapper .card.card-auth .card-body .form-group {
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 20px;
+  justify-self: start;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-icon i {
+  font-size: 1.5rem;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-text {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-text strong {
+  font-weight: 500;
+}
+
+@media (max-width: 575px) {
+  .website-auth .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-text {
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-divider {
+  padding: 20px 0;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-divider .auth-divider-wrapper {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-divider .auth-divider-wrapper .auth-divider-text {
+  background-color: #fff;
+  padding: 5px 10px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-divider .auth-divider-wrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group {
   margin-bottom: 20px;
 }
 
-.website-auth .wrapper .card.card-auth .card-body .form-group:last-child {
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group:last-child {
   margin-bottom: 0;
 }
 
-.website-auth .wrapper .card.card-auth .card-body .custom-control .custom-control-label {
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .custom-control .custom-control-label {
   font-style: italic;
   font-weight: 300;
 }
 
-.website-auth .wrapper .card.card-auth .card-footer {
+.website-auth .wrapper .auth-container .card.card-auth .card-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -17166,9 +17249,42 @@ nav#page-menu-mobile {
   padding: 20px;
 }
 
-.website-auth .wrapper .card.card-auth .card-footer .card-footer-section {
+.website-auth .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
   -ms-flex-positive: 0;
       flex-grow: 0;
+}
+
+@media (max-width: 575px) {
+  .website-auth .wrapper .auth-container .card.card-auth .card-footer {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .website-auth .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
+    width: 100%;
+    text-align: center;
+  }
+  .website-auth .wrapper .auth-container .card.card-auth .card-footer .card-footer-section:first-child {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 990px) {
+  .website-auth .wrapper .auth-container .card.card-auth {
+    margin: 0 0 20px;
+  }
+}
+
+.website-auth .wrapper .auth-container .auth-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .website-auth .wrapper .auth-container {
+    margin: 20px 15px 0;
+  }
 }
 
 a {

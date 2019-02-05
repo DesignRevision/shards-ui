@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Obrigado pela resposta | Deli - Valoriza.io</title>
+  <title>Cadastre-se no Programa de Fidelidade | Deli - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
@@ -16,8 +16,8 @@
 
 <body>
   <div id="page-container"
-       class="website-review-thanks">
-    <header id="page-header">
+       class="website-auth">
+    <header id="page-header" class="is-brand-only">
       <div class="content-header">
         <div class="content-header-section">
           <button type="button"
@@ -63,7 +63,7 @@
         <div class="content-header-section align-right">
           <ul class="nav-header-menu">
             <li class="menu-item-signin">
-              <a href="acessar.html">
+              <a href="login.html">
 								Acessar conta
 							</a>
             </li>
@@ -130,7 +130,7 @@
                 <a class="dropdown-item" href="editar-perfil.html">
 									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
 								</a>
-                <a class="dropdown-item" href="inicio.html">
+                <a class="dropdown-item" href="#">
 									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
 								</a>
               </div>
@@ -142,40 +142,108 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <section class="empty-state-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="empty-state">
-                  <div class="wrapper">
-                    <div class="empty-state-icon">
-                      <i class="fas fa-star text-warning"></i>
-                    </div>
-                    <div class="empty-state-content">
-                      <h2 class="empty-state-title">
-												Obrigado pela sua avaliação
-											</h2>
-                      <p class="empty-state-lead">
-                        Agradecemos a sua avaliação. Seu feedback é muito importante para nós!
-                      </p>
-                    </div>
-                    <div class="empty-state-action">
-                      <button type="button"
-                              class="btn btn-primary btn-pill">
-												<i class="fas fa-arrow-left fa-fw mr-5"></i>
-                        Voltar para o início
-                      </button>
-                    </div>
-                  </div>
-                </div>
+        <div class="card card-auth card-small">
+          <div class="card-header">
+            <div class="card-header-content">
+              <h4>Sua primeira vez aqui?</h4>
+              <p>Bem vindo! Vamos <strong>criar uma conta para você</strong> aproveitar todos os nossos benefícios. </p>
+            </div>
+            <div class="card-header-icon">
+              <i class="far fa-smile-wink"></i>
+            </div>
+          </div>
+          <div class="card-body">
+						<div class="auth-social-connection"></div>
+						<div class="auth-divider"></div>
+            <div class="auth-form">
+              <div class="form-group">
+                <label for="name">Qual é o seu nome?</label>
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       placeholder="Ex: Carlos Alberto Menezes">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Qual é o seu e-mail?</label>
+                <input type="text"
+                       class="form-control"
+                       id="email"
+                       placeholder="nome@email.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">E o seu telefone?</label>
+                <input type="text"
+                       class="form-control"
+                       id="phone"
+                       placeholder="(00) 00000-0000">
+              </div>
+
+              <div class="form-group">
+                <label for="name">Crie uma senha para a sua conta</label>
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       placeholder="* * * * * *">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+											Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+										</small>
+              </div>
+
+              <div class="custom-control custom-checkbox d-block my-2">
+                <input type="checkbox"
+                       id="acceptTerms"
+                       name="acceptTerms"
+                       class="custom-control-input">
+                <label class="custom-control-label"
+                       for="acceptTerms">
+                  Li e aceito os <a href="#" class="link-effect">termos de uso</a>
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox d-block my-2">
+                <input type="checkbox"
+                       id="acceptEmailMessages"
+                       name="acceptEmailMessages"
+                       class="custom-control-input"
+                       checked="checked">
+                <label class="custom-control-label"
+                       for="acceptEmailMessages">
+                  Aceito receber comunicações e ofertas por email
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox d-block my-2">
+                <input type="checkbox"
+                       id="acceptSmsMessages"
+                       name="acceptSmsMessages"
+                       class="custom-control-input"
+                       checked="checked">
+                <label class="custom-control-label"
+                       for="acceptSmsMessages">
+                  Aceito receber comunicações e ofertas por SMS
+                </label>
               </div>
             </div>
           </div>
-        </section>
+          <div class="card-footer">
+            <div class="card-footer-section">
+              Já possui uma conta? <a href="#" class="link-effect">Acesse aqui.</a>
+            </div>
+            <div class="card-footer-section">
+              <button type="button"
+                      class="btn btn-success btn-pill">
+                Criar minha conta
+                <i class="fas fa-arrow-right ml-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer id="page-footer">
+    <footer id="page-footer" class="d-none">
       <div class="content-footer">
         <div class="container">
           <div class="row">

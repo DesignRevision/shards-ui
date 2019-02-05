@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Obrigado pela resposta | Deli - Valoriza.io</title>
+  <title>Acessar Programa de Fidelidade | Deli - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
@@ -16,8 +16,9 @@
 
 <body>
   <div id="page-container"
-       class="website-review-thanks">
-    <header id="page-header">
+       class="website-auth">
+    <header id="page-header"
+            class="is-brand-only">
       <div class="content-header">
         <div class="content-header-section">
           <button type="button"
@@ -130,7 +131,7 @@
                 <a class="dropdown-item" href="editar-perfil.html">
 									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
 								</a>
-                <a class="dropdown-item" href="inicio.html">
+                <a class="dropdown-item" href="#">
 									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
 								</a>
               </div>
@@ -142,40 +143,82 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <section class="empty-state-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="empty-state">
-                  <div class="wrapper">
-                    <div class="empty-state-icon">
-                      <i class="fas fa-star text-warning"></i>
-                    </div>
-                    <div class="empty-state-content">
-                      <h2 class="empty-state-title">
-												Obrigado pela sua avaliação
-											</h2>
-                      <p class="empty-state-lead">
-                        Agradecemos a sua avaliação. Seu feedback é muito importante para nós!
-                      </p>
-                    </div>
-                    <div class="empty-state-action">
-                      <button type="button"
-                              class="btn btn-primary btn-pill">
-												<i class="fas fa-arrow-left fa-fw mr-5"></i>
-                        Voltar para o início
-                      </button>
-                    </div>
-                  </div>
+        <div class="auth-container">
+          <div class="card card-auth card-small">
+            <div class="card-header">
+              <div class="card-header-content">
+                <h4>Que legal que você voltou...</h4>
+                <p>Insira seus dados de e-mail e senha e aproveite as recompensas e ofertas disponíveis especialmente para você.</p>
+              </div>
+              <div class="card-header-icon">
+                <i class="far fa-smile-beam"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="auth-social-connection">
+                <button type="button"
+                        class="btn btn-lg btn-facebook btn-block">
+                  <span class="btn-icon">
+															<i class="fab fa-facebook-square"></i>
+														</span>
+                  <span class="btn-text">
+												Acessar com <strong>Facebook</strong>
+											</span>
+                </button>
+              </div>
+
+              <div class="auth-divider">
+                <div class="auth-divider-wrapper">
+                  <span class="auth-divider-text">
+												OU
+											</span>
+                </div>
+              </div>
+
+              <div class="auth-form-container">
+                <div class="form-group">
+                  <label for="email">Qual é o seu e-mail?</label>
+                  <input type="text"
+                         class="form-control"
+                         id="email"
+                         placeholder="nome@email.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Qual a sua senha?</label>
+                  <input type="text"
+                         class="form-control"
+                         id="name"
+                         placeholder="* * * * * *">
                 </div>
               </div>
             </div>
+            <div class="card-footer">
+              <div class="card-footer-section">
+                <small>Não possui conta ainda?</small> <br>
+                <a href="cadastrar.html" class="link-effect">Crie uma agora.</a>
+              </div>
+              <div class="card-footer-section">
+                <button type="button"
+                        class="btn btn-success btn-pill">
+                  Acessar minha conta
+                  <i class="fas fa-arrow-right ml-5"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </section>
+
+          <div class="auth-actions">
+            <a href="inicio.html" class="btn btn-outline-primary btn-pill">
+									<i class="fas fa-arrow-left fa-fw mr-5"></i> Voltar para o início
+								</a>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer id="page-footer">
+    <footer id="page-footer"
+            class="d-none">
       <div class="content-footer">
         <div class="container">
           <div class="row">

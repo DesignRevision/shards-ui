@@ -374,6 +374,14 @@ header#page-header {
         .btn-menu {
           display: none !important;
         }
+
+        @media (max-width: 992px - 1px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 992px - 1px) {
+        justify-content: center;
       }
     }
   }

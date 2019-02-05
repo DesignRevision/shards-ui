@@ -2,67 +2,161 @@
   .wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
-    .card {
-      &.card-auth {
-        margin: 50px 15px;
-        width: 500px;
-				max-width: 100%;
-				border-top: solid 3px var(--primary);
+    .auth-container {
+      width: 450px;
+      max-width: 100%;
+      margin: 50px 15px 0;
 
-        .card-header {
-          padding: 20px;
-          display: flex;
+      .card {
+        &.card-auth {
+          margin: 0 0 30px;
+          border-top: solid 3px var(--primary);
 
-          .card-header-icon {
-            flex-shrink: 0;
-            margin-left: 15px;
+          .card-header {
+            padding: 20px;
+            display: flex;
 
-            i {
-							color: var(--primary);
-              font-size: 3rem;
+            .card-header-icon {
+              flex-shrink: 0;
+              margin-left: 15px;
+
+              i {
+                color: var(--primary);
+                font-size: 3rem;
+              }
+            }
+
+            .card-header-content {
+              flex-grow: 1;
+
+              h4,
+              p {
+                margin-bottom: 0;
+              }
             }
           }
 
-          .card-header-content {
-            flex-grow: 1;
+          .card-body {
+            padding: 20px;
 
-            h4,
-            p {
-              margin-bottom: 0;
+            .auth-social-connection {
+              .btn {
+                display: flex;
+                align-items: center;
+
+                .btn-icon {
+                  flex-shrink: 0;
+                  width: 20px;
+                  justify-self: start;
+
+                  i {
+                    font-size: 1.5rem;
+                  }
+                }
+
+                .btn-text {
+                  flex-grow: 1;
+                  text-align: center;
+                  margin-right: 20px;
+
+                  strong {
+                    font-weight: 500;
+                  }
+
+                  @media (max-width: 576px - 1px) {
+                    font-size: 0.9rem;
+                    margin-right: 0;
+                  }
+                }
+              }
             }
+
+            .auth-divider {
+              padding: 20px 0;
+
+              .auth-divider-wrapper {
+                position: relative;
+                text-align: center;
+                z-index: 10;
+
+                .auth-divider-text {
+                  background-color: #fff;
+                  padding: 5px 10px;
+                  font-weight: 700;
+                  color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 1px;
+                  left: 0;
+                  top: 10px;
+                  background-color: rgba(0, 0, 0, 0.3);
+                  z-index: -1;
+                }
+              }
+            }
+
+            .auth-form-container {
+              .form-group {
+                margin-bottom: 20px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+
+              .custom-control {
+                .custom-control-label {
+                  font-style: italic;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+
+          .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+            .card-footer-section {
+              flex-grow: 0;
+            }
+
+            @media (max-width: 576px - 1px) {
+              flex-direction: column-reverse;
+              flex-wrap: wrap;
+
+              .card-footer-section {
+                width: 100%;
+                text-align: center;
+
+                &:first-child {
+                  margin-top: 25px;
+                }
+              }
+            }
+          }
+
+          @media (max-width: 991px - 1px) {
+            margin: 0 0 20px;
           }
         }
+      }
 
-        .card-body {
-          padding: 20px;
+      .auth-actions {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-          .form-group {
-            margin-bottom: 20px;
-
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }
-
-          .custom-control {
-            .custom-control-label {
-              font-style: italic;
-              font-weight: 300;
-            }
-          }
-        }
-
-        .card-footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px;
-
-          .card-footer-section {
-            flex-grow: 0;
-          }
-        }
+      @media (max-width: 991px - 1px) {
+        margin: 20px 15px 0;
       }
     }
   }
