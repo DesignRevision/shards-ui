@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Recuperar acesso | Deli - Valoriza.io</title>
+  <title>Redefinir senha | Deli - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
@@ -16,7 +16,7 @@
 
 <body>
   <div id="page-container"
-       class="website-auth is-recover-passwd">
+       class="website-auth is-redefine-passwd">
     <header id="page-header"
             class="is-brand-only">
       <div class="content-header">
@@ -29,8 +29,8 @@
           <ul class="nav-header-menu d-none d-lg-flex">
             <li>
               <a href="inicio.html">
-									Início
-								</a>
+								Início
+							</a>
             </li>
             <li>
               <a href="recompensas.html">
@@ -147,46 +147,40 @@
           <div class="card card-auth card-small">
             <div class="card-header">
               <div class="card-header-content">
-                <h4>Perdeu sua senha?</h4>
-                <p>Não tem problema, isso acontece com todo mundo. Antes de você definir uma nova senha, precisamos quem é você.</p>
+                <h4>Yeah! Você recuperou seu acesso</h4>
+                <p>Agora vamos definir uma nova senha a sua conta. Lembre-se de aguardar em um local seguro e que você consigo se lembrar :)</p>
               </div>
               <div class="card-header-icon">
-                <i class="far fa-sad-cry"></i>
+                <i class="fas fa-rocket"></i>
               </div>
             </div>
             <div class="card-body">
               <div class="auth-form-container">
                 <div class="form-group">
-                  <label for="email">Qual é o seu e-mail?</label>
-                  <input type="text"
+                  <label for="newPassword">Digite sua nova senha</label>
+                  <input type="password"
                          class="form-control"
-                         id="email"
-                         placeholder="nome@email.com">
+                         id="newPassword"
+                         placeholder="* * * * * *">
                 </div>
-                <div class="alert alert-success mt-20 mb-0">
-                  <strong>Bibidi babidi boo! Encontramos a sua conta.</strong> Enviamos um link para o seu e-mail para você definir sua nova senha. Basta acessa-lo e clicar no link :)
+                <div class="form-group">
+                  <label for="confirmNewPassowrd">Confirme sua nova senha</label>
+                  <input type="password"
+                         class="form-control"
+                         id="confirmNewPassowrd"
+                         placeholder="* * * * * *">
                 </div>
               </div>
             </div>
             <div class="card-footer">
+              <div class="card-footer-section d-none d-sm-block"></div>
               <div class="card-footer-section">
-                <small>Lembrou da sua senha?</small> <br>
-                <a href="acessar.html" class="link-effect">Acesse sua conta aqui.</a>
-              </div>
-              <div class="card-footer-section">
-                <a href="redefinir-senha.html"
+                <a href="inicio.html"
                         class="btn btn-success btn-pill">
-                  Recuperar acesso
-                  <i class="fas fa-arrow-right ml-5"></i>
-								</a>
+                  Salvar nova senha
+							</a>
               </div>
             </div>
-          </div>
-
-          <div class="auth-actions">
-            <a href="inicio.html" class="btn btn-outline-primary btn-pill">
-									<i class="fas fa-arrow-left fa-fw mr-5"></i> Voltar para o início
-								</a>
           </div>
         </div>
       </div>
