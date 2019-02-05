@@ -17234,6 +17234,10 @@ nav#page-menu-mobile {
   margin-bottom: 0;
 }
 
+.website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-actions {
+  text-align: right;
+}
+
 .website-auth .wrapper .auth-container .card.card-auth .card-body .auth-form-container .custom-control .custom-control-label {
   font-style: italic;
   font-weight: 300;
