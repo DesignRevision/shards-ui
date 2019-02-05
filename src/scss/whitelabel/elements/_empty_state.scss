@@ -39,7 +39,12 @@
         @media (max-width: 992px - 1px) {
           font-size: 1rem;
         }
-      }
+			}
+
+			.empty-state-snippet{
+				display: inline-block;
+				max-width: 500px;
+			}
     }
   }
 }
