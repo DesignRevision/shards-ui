@@ -69,6 +69,10 @@ header#page-header {
             font-size: 1rem;
             transition: all 300ms;
 
+            &.btn {
+              font-weight: 500;
+            }
+
             &:not(.btn) {
               opacity: 0.7;
               color: #656565;
