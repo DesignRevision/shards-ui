@@ -25333,6 +25333,8 @@ nav#page-menu-mobile {
   padding: 20px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-icon {

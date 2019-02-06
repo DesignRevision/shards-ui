@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Qual é o seu telefone? | Deli - Valoriza.io</title>
+  <title>Valide seu telefone | Deli - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
@@ -12,8 +12,9 @@
 
 <body>
   <div id="page-container"
-       class="website-auth is-search-number">
-    <header id="page-header" class="is-brand-only">
+       class="website-auth is-user-phone-confirmation">
+    <header id="page-header"
+            class="is-brand-only">
       <div class="content-header">
         <div class="content-header-section">
           <button type="button"
@@ -137,55 +138,85 @@
     </header>
 
     <main id="main-container">
-			<div class="wrapper">
-				<div class="auth-container">
-					<div class="card card-auth card-small">
-						<div class="card-header">
-							<div class="card-header-content">
-								<h4>Sua primeira vez aqui?</h4>
-								<p><strong>Bem vindo!</strong> Antes de começar a criar uma conta, vamos precisar do seu <strong>número de telefone</strong> para <strong>verificarmos se você já possui uma conta</strong>.</p>
-							</div>
-							<div class="card-header-icon">
-								<i class="far fa-mobile"></i>
-							</div>
-						</div>
+      <div class="wrapper">
+        <div class="auth-container">
+          <div class="card card-auth card-small">
+            <div class="card-header">
+              <div class="card-header-content">
+								<h4>Valide seu telefone</h4>
+								<p>
+									Valide seu número de telefone para prosseguir com o seu cadastro
+								</p>
+              </div>
+              <div class="card-header-icon">
+                <i class="fas fa-sms"></i>
+              </div>
+            </div>
 
-						<div class="card-body">
-							<div class="auth-form-container">
+            <div class="card-body">
+              <div class="auth-form-container">
+                <div class="form-row align-items-center mb-15">
+                  <div class="col form-text">
+                    <strong>E-mail vinculado:</strong> <br>
+                    ve***********@****.com
+                  </div>
+                  <div class="col-auto ml-10 d-flex">
+										<i class="fal fa-envelope fa-fw fa-2x"></i>
+									</div>
+								</div>
+                <div class="form-row align-items-center mb-15">
+                  <div class="col form-text">
+                    <strong>Facebook vinculado:</strong> <br>
+                    ve***********@****.com
+                  </div>
+                  <div class="col-auto ml-10 d-flex">
+										<i class="fab fa-facebook fa-fw fa-2x text-facebook"></i>
+									</div>
+								</div>
+
 								<div class="form-group">
-									<label for="name">Qual é o seu telefone?</label>
-									<input type="text"
+									<label for="name">Digite a sua senha</label>
+									<input type="password"
 													class="form-control"
 													id="name"
-													placeholder="(00) 00000-0000">
+													placeholder="••••••">
 								</div>
-							</div>
-						</div>
-						<div class="card-footer">
-							<div class="card-footer-section">
-								<small>Já possui uma conta?</small> <br>
-								<a href="acessar.html" class="link-effect">Acesse ela aqui.</a>
-							</div>
-							<div class="card-footer-section">
-								<a href="esta-conta-e-sua.html"
+
+								<a href="inicio.html"
+														class="btn btn-lg btn-facebook btn-block">
+									<span class="btn-icon">
+										<i class="fab fa-facebook-square"></i>
+									</span>
+									<span class="btn-text">
+										Acessar com <strong>Facebook</strong>
+									</span>
+								</a>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-footer-section"></div>
+
+              <div class="card-footer-section">
+                <a href="confirme-seu-acesso.html"
 														class="btn btn-success btn-pill">
-									Verificar número
+									Acessar minha conta
 									<i class="fas fa-arrow-right ml-5"></i>
 								</a>
-							</div>
-						</div>
-					</div>
+              </div>
+            </div>
+          </div>
 
 					<div class="auth-actions">
-						<a href="inicio.html" class="btn btn-outline-primary btn-pill">
-							<i class="fas fa-arrow-left fa-fw mr-5"></i> Voltar para o início
+						<a href="cadastrar.html" class="btn btn-outline-danger btn-pill">
+							Ops! Essa conta não é minha
 						</a>
 					</div>
-				</div>
-			</div>
-		</main>
+        </div>
+      </div>
+    </main>
 
-    <footer id="page-footer" class="d-none">
+    <footer id="page-footer"
+            class="d-none">
       <div class="content-footer">
         <div class="container">
           <div class="row">
