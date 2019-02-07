@@ -13,8 +13,7 @@
 <body>
   <div id="page-container"
        class="website-auth is-user-phone-confirmation">
-    <header id="page-header"
-            class="is-brand-only">
+    <header id="page-header">
       <div class="content-header">
         <div class="content-header-section">
           <button type="button"
@@ -121,7 +120,7 @@
             <div class="card-body">
               <div class="auth-form-container">
                 <p>
-                  Como você marcou que está conta não é sua, precisamos validar seu número de telefone antes de prosseguir o cadastro. Você receberá um SMS com o código de confirmação.
+									Para validar seu telefone, vamos enviar um código de confirmação via SMS para você. Após receber esse código, digite ele na caixa de texto abaixo. Simples assim :)
                 </p>
 
                 <div class="form-row align-items-center mb-15">
@@ -137,35 +136,62 @@
                 <div class="form-group">
                   <label for="name">Digite o código de confirmação</label>
                   <div class="input-group">
-                    <input type="password"
+                    <input type="number"
                            class="form-control"
                            id="name"
-                           placeholder="••••••">
+                           placeholder="••••••" disabled>
                     <div class="input-group-append">
-                      <a href="bem-vindo.html" class="btn btn-outline-success"
+                      <a href="bem-vindo.html" class="btn btn-primary"
                               id="button-addon1">Enviar código</a>
                     </div>
                   </div>
 								</div>
 
+                <div class="form-group">
+                  <label for="name">Digite o código de confirmação</label>
+                  <div class="input-group">
+                    <input type="number"
+                           class="form-control"
+                           id="name"
+                           placeholder="••••••">
+                    <div class="input-group-append">
+                      <a href="bem-vindo.html" class="btn btn-outline-success"
+                              id="button-addon1">Reenviar código</a>
+                    </div>
+                  </div>
+								</div>
+
+                <div class="form-group">
+                  <label for="name">Digite o código de confirmação</label>
+                  <div class="input-group">
+                    <input type="number"
+                           class="form-control"
+                           id="name"
+                           placeholder="••••••" value="1234">
+                    <div class="input-group-append">
+                      <a href="bem-vindo.html" class="btn btn-success"
+                              id="button-addon1">Confirmar</a>
+                    </div>
+                  </div>
+								</div>
+
                 <div class="alert alert-success mt-20 mb-0">
-                  <strong>TCHARAMM!</strong> Código de confirmação enviado via SMS para o seu celular.
+                  <strong>TCHARAMM!</strong> Código de confirmação enviado via SMS para o seu celular. Caso o você não receba o SMS, clique em <strong>reenviar</strong> para enviar uma novo código.
                 </div>
               </div>
             </div>
           </div>
 
           <div class="auth-actions">
-            <a href="cadastrar.html" class="btn btn-outline-danger btn-pill">
-							Ops! Esse telefone não é o meu
+            <a href="editar-perfil.html" class="btn btn-outline-secondary btn-pill">
+							Ops! Preciso alterar esse número cadastro
 						</a>
           </div>
         </div>
       </div>
     </main>
 
-    <footer id="page-footer"
-            class="d-none">
+    <footer id="page-footer">
       <div class="content-footer">
         <div class="container">
           <div class="row">
