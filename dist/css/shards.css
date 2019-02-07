@@ -24319,38 +24319,49 @@ a.text-black:hover, a.text-black:focus {
   padding-bottom: 300px !important;
 }
 
-.btn-facebook {
+.btn.btn-facebook {
   color: #fff;
   border-color: #3b5998;
   background-color: #3b5998;
   box-shadow: none;
 }
 
-.btn-facebook:hover {
+.btn.btn-facebook:hover {
   color: #fff;
   background-color: #344e86;
   border-color: #344e86;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(59, 89, 152, 0.25);
 }
 
-.btn-facebook:focus, .btn-facebook.focus {
+.btn.btn-facebook:focus, .btn.btn-facebook.focus {
   box-shadow: 0 0 0 3px rgba(59, 89, 152, 0.15), 0 3px 15px rgba(59, 89, 152, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-facebook.disabled, .btn-facebook:disabled {
+.btn.btn-facebook.disabled, .btn.btn-facebook:disabled {
   background-color: #3b5998;
   border-color: #3b5998;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn-facebook:not(:disabled):not(.disabled):active, .btn-facebook:not(:disabled):not(.disabled).active,
-.show > .btn-facebook.dropdown-toggle {
+.btn.btn-facebook:not(:disabled):not(.disabled):active, .btn.btn-facebook:not(:disabled):not(.disabled).active,
+.show > .btn.btn-facebook.dropdown-toggle {
   color: #fff;
   background-color: #344e86;
   border-color: #2d4373;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+
+.btn.btn-circle {
+  padding: 9px 0;
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: inherit;
+  min-width: 34px;
+  height: 34px;
+  text-align: center;
+  border-radius: 50% !important;
 }
 
 header#page-header {
@@ -24868,6 +24879,33 @@ footer#page-footer .content-copyright a {
 
 footer#page-footer .content-copyright a:hover {
   color: #04c9a1;
+}
+
+.card.card-toggle .card-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.card.card-toggle .card-header h1,
+.card.card-toggle .card-header h2,
+.card.card-toggle .card-header h3,
+.card.card-toggle .card-header h4,
+.card.card-toggle .card-header h5,
+.card.card-toggle .card-header h6,
+.card.card-toggle .card-header .card-title {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+}
+
+.card.card-toggle .card-header .card-actions {
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
 }
 
 .card.card-product {

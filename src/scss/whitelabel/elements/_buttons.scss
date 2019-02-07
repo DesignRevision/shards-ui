@@ -1,3 +1,16 @@
-.btn-facebook {
-  @include button-variant($brand-facebook);
+.btn {
+  &.btn-facebook {
+    @include button-variant($brand-facebook);
+  }
+
+  &.btn-circle {
+    padding: 9px 0;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: inherit;
+    min-width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 50% !important;
+  }
 }
