@@ -26314,6 +26314,18 @@ section.products-lists section .products-list-header .product-list-lead {
   font-weight: 300;
 }
 
+section.products-lists section.products-list-offers .product-list-title strong {
+  color: #c4183c;
+}
+
+section.products-lists section.products-list-features .product-list-title strong, section.products-lists section.products-list-vouchers .product-list-title strong {
+  color: var(--primary);
+}
+
+section.products-lists section.products-list-rewards .product-list-title strong {
+  color: #00b8d8;
+}
+
 section.social-network {
   padding: 80px 0;
 }
