@@ -25118,14 +25118,12 @@ nav#page-menu-mobile {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
 .review-rating-category .category-item {
   position: relative;
   display: inline-block;
-  padding: 8px 12px;
+  margin-right: 8px;
   text-align: center;
   cursor: pointer;
   transition: all 300ms;
@@ -25135,10 +25133,10 @@ nav#page-menu-mobile {
   display: none;
 }
 
-.review-rating-category .category-item input[type="checkbox"]:checked ~ label:before {
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+.review-rating-category .category-item input[type="checkbox"]:checked ~ label .category-text {
   border-color: #17c671;
-  border-width: 2.5px;
+  color: #17c671;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
 
 .review-rating-category .category-item label {
@@ -25147,54 +25145,19 @@ nav#page-menu-mobile {
   cursor: pointer;
 }
 
-.review-rating-category .category-item label:before {
-  content: '';
-  display: inline-block;
-  width: 65px;
-  height: 65px;
-  background-color: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 65%;
-  border-radius: 50%;
-  border: solid thin rgba(0, 0, 0, 0.125);
-  transition: all 300ms;
-}
-
-.review-rating-category .category-item .category-text {
+.review-rating-category .category-item label .category-text {
   display: block;
+  padding: 5px 10px;
+  border: solid 2px #CBCBCB;
+  border-radius: 0.625rem;
   margin-top: 5px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 300ms;
 }
 
-.review-rating-category .category-item.is-attendance label:before {
-  background-image: url("../icons/review-category/attendance.svg");
-}
-
-.review-rating-category .category-item.is-cleaning label:before {
-  background-image: url("../icons/review-category/cleaning.svg");
-}
-
-.review-rating-category .category-item.is-price label:before {
-  background-image: url("../icons/review-category/price.svg");
-}
-
-.review-rating-category .category-item.is-product label:before {
-  background-image: url("../icons/review-category/product.svg");
-}
-
-.review-rating-category .category-item.is-time label:before {
-  background-image: url("../icons/review-category/time.svg");
-}
-
-.review-rating-category .category-item.is-variety label:before {
-  background-image: url("../icons/review-category/variety.svg");
-}
-
-.review-rating-category .category-item:hover label:before {
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+.review-rating-category .category-item:hover label .category-text {
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .review-rating-category .category-item:last-child {

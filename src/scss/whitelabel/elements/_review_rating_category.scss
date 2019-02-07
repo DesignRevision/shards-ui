@@ -1,12 +1,11 @@
 .review-rating-category {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 
   .category-item {
     position: relative;
     display: inline-block;
-    padding: 8px 12px;
+    margin-right: 8px;
     text-align: center;
     cursor: pointer;
     transition: all 300ms;
@@ -15,95 +14,35 @@
       display: none;
 
       &:checked~label {
-
-        &:before {
-          box-shadow: $card-box-shadow;
-          border-color: $success;
-          border-width: 2.5px;
+        .category-text {
+					border-color: $success;
+					color: $success;
+					box-shadow: $card-box-shadow;
         }
       }
     }
 
     label {
-			position: relative;
+      position: relative;
       transition: all 300ms;
       cursor: pointer;
 
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 65px;
-        height: 65px;
-        background-color: #fff;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 65%;
-        border-radius: 50%;
-        border: solid thin rgba($black, .125);
+      .category-text {
+        display: block;
+        padding: 5px 10px;
+        border: solid 2px #CBCBCB;
+        border-radius: 0.625rem;
+        margin-top: 5px;
+        font-size: 1rem;
+        cursor: pointer;
         transition: all 300ms;
-      }
-    }
-
-    .category-text {
-      display: block;
-      margin-top: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 300ms;
-    }
-
-    &.is-attendance {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/attendance.svg');
-        }
-      }
-    }
-
-    &.is-cleaning {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/cleaning.svg');
-        }
-      }
-    }
-
-    &.is-price {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/price.svg');
-        }
-      }
-    }
-
-    &.is-product {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/product.svg');
-        }
-      }
-    }
-
-    &.is-time {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/time.svg');
-        }
-      }
-    }
-
-    &.is-variety {
-      label {
-        &:before {
-          background-image: url('../icons/review-category/variety.svg');
-        }
       }
     }
 
     &:hover {
       label {
-        &:before {
-          box-shadow: $card-box-shadow;
+        .category-text {
+          background-color: rgba(0, 0, 0, 0.08);
         }
       }
     }
