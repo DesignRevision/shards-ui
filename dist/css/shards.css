@@ -25563,6 +25563,10 @@ img {
           animation: fadein 0.5s ease-in;
 }
 
+#page-container main#main-container.is-height-auto {
+  min-height: auto;
+}
+
 body {
   position: relative;
 }

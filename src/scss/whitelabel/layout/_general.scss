@@ -63,6 +63,10 @@ img {
         animation: fadein 0.5s ease-in;
       }
     }
+
+    &.is-height-auto {
+      min-height: auto;
+    }
   }
 }
 
