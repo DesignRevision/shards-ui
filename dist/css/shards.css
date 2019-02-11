@@ -24921,7 +24921,6 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .card.card-product {
-  height: 465px;
   margin-bottom: 15px;
   color: #212529;
   transition: box-shadow 300ms;
@@ -24964,6 +24963,10 @@ footer#page-footer .content-copyright a:hover {
   font-size: 0.85rem;
   font-weight: 500;
   padding: 5px 10px;
+}
+
+.card.card-product .card-body {
+  padding: 1.25rem 1.25rem 2rem;
 }
 
 .card.card-product .card-body .card-title {
@@ -25907,10 +25910,7 @@ label {
 }
 
 .website-home section.page-intro .jumbotron {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 140px 2rem;
+  padding: 60px 2rem;
   margin-bottom: 0;
   position: relative;
 }
@@ -25961,91 +25961,146 @@ label {
 
 .website-home section.messages-system .alert {
   padding: 15px;
-  margin-bottom: 0;
-  transition: box-shadow 300ms;
+  transition: all 300ms;
+  text-align: center;
 }
 
-.website-home section.messages-system .alert .close {
-  color: #333;
+.website-home section.messages-system .alert.alert-review-experience {
+  text-align: left;
 }
 
-.website-home section.messages-system .alert .alert-content {
+.website-home section.messages-system .alert.alert-review-experience .close {
+  color: #fff;
+  background-color: #212529;
+  top: -10px;
+  right: -10px;
+  opacity: 1;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0 0 4px 0;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-home section.messages-system .alert.alert-review-experience .close i {
+  opacity: .6;
+  font-size: 1.1rem;
+}
+
+.website-home section.messages-system .alert.alert-review-experience .close:hover i {
+  opacity: 1;
+}
+
+.website-home section.messages-system .alert.alert-review-experience .alert-content {
   display: -ms-flexbox;
   display: flex;
-  max-width: 90%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   color: #333;
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text {
-  width: 100%;
-}
-
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-text .alert-heading {
+.website-home section.messages-system .alert.alert-review-experience .alert-content .alert-text .alert-heading {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 2.5px;
+  margin-bottom: 3px;
   line-height: 1.2;
 }
 
 @media (max-width: 767px) {
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-text {
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-text {
     margin-right: 0;
   }
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a {
+.website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: solid thin rgba(0, 0, 0, 0.15);
+  color: #212529;
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating {
-  margin-right: 10px;
+.website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating {
+  margin: 0px;
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating i {
-  font-size: 1.8rem;
+.website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating i {
+  font-size: 1.6rem;
 }
 
-.website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+.website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating-hint-text {
   font-weight: 600;
+  margin: 2px 10px 0 0;
 }
 
-@media (max-width: 425px) {
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a {
+@media (max-width: 991px) {
+  .website-home section.messages-system .alert.alert-review-experience .alert-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: inherit;
+        justify-content: inherit;
+  }
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .close {
+    color: #fff;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0 0 4px 0;
+    box-shadow: none;
+  }
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-text,
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action {
+    width: 100%;
+  }
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action {
+    margin-top: 15px;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating-hint-text {
+    margin: 2px 0 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action {
     -ms-flex-pack: center;
         justify-content: center;
     text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating,
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating,
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating-hint-text {
     width: 100%;
   }
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action a .js--review-rating-hint-text {
+  .website-home section.messages-system .alert.alert-review-experience .alert-content .alert-action .js--review-rating-hint-text {
     margin-top: 8px;
   }
 }
 
-@media (max-width: 991px) {
-  .website-home section.messages-system .alert .alert-content .alert-container-text {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-container-text,
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action {
-    width: 100%;
-  }
-  .website-home section.messages-system .alert .alert-content .alert-container-text .alert-action {
-    margin-top: 15px;
-  }
+.website-home section.messages-system .alert.alert-verify-phone a, .website-home section.messages-system .alert.alert-user-info a {
+  color: #FFF;
+}
+
+.website-home section.messages-system .alert.alert-verify-phone a:before, .website-home section.messages-system .alert.alert-user-info a:before {
+  background-color: #FFF;
 }
 
 .website-home section.messages-system .alert:hover {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-home section.messages-system .alert:last-child {
+  margin-bottom: 0;
 }
 
 .website-loyalty-panel section.loyalty-panel {
