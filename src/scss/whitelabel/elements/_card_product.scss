@@ -1,6 +1,5 @@
 .card {
   &.card-product {
-    height: 465px;
     margin-bottom: 15px;
     color: $body-color;
     transition: box-shadow 300ms;
@@ -42,6 +41,8 @@
     }
 
     .card-body {
+      padding: 1.25rem 1.25rem 2rem;
+
       .card-title {
         font-size: 1.2rem;
         font-weight: 600;
