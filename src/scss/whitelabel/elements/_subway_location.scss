@@ -1,0 +1,22 @@
+nav#subway-location {
+  padding: 6px 0;
+  background-color: #f3f3f3;
+
+  .subway-location-current {
+    strong {
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px - 1px) {
+      font-size: 0.85rem;
+    }
+  }
+
+  .subway-location-switch {
+    text-align: right;
+
+    .btn {
+      font-weight: 600;
+    }
+  }
+}

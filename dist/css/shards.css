@@ -25254,6 +25254,29 @@ nav#page-menu-mobile {
   }
 }
 
+nav#subway-location {
+  padding: 6px 0;
+  background-color: #f3f3f3;
+}
+
+nav#subway-location .subway-location-current strong {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  nav#subway-location .subway-location-current {
+    font-size: 0.85rem;
+  }
+}
+
+nav#subway-location .subway-location-switch {
+  text-align: right;
+}
+
+nav#subway-location .subway-location-switch .btn {
+  font-weight: 600;
+}
+
 .website-auth main#main-container {
   min-height: inherit !important;
 }
