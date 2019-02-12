@@ -1,7 +1,7 @@
 {
   "name": "shards-ui",
   "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "dist/js/shards",
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
@@ -17,7 +17,7 @@
     "css-prefix": "postcss --config postcss.config.js --replace dist/css/*.css",
     "js": "npm-run-all js-compile",
     "js-compile": "webpack --config webpack.config.js",
-    "serve-dist": "browser-sync start --server \"./dist\" --files \".\" --no-open --no-online --no-notify",
+    "serve-dist": "browser-sync start --server \"./dist\" --files \".\" --no-online --no-notify",
     "watch": "npm-run-all --parallel watch-css watch-html watch-images watch-icons watch-fonts watch-js",
     "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
     "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
