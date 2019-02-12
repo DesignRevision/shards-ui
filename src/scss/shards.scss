@@ -104,8 +104,9 @@
 /*! Whitelabel Application */
 @import './whitelabel/mixins/mixin';
 @import './whitelabel/elements/mixin';
-@import './whitelabel/layout/mixin';
+@import './whitelabel/page/mixin';
 @import './whitelabel/template/mixin';
+@import './whitelabel/theme';
 
 /*! Vendor */
 @import './vendor/animate';

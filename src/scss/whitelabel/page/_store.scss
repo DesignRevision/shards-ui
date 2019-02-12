@@ -1,0 +1,12 @@
+.website-stores {
+  section.page-banner {
+    .jumbotron {
+      background-color: var(--primary);
+
+      h1,
+      p {
+        color: var(--brand-text-contrast);
+      }
+    }
+  }
+}

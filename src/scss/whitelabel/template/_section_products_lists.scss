@@ -17,7 +17,7 @@ section.products-lists {
 
         strong {
           font-weight: 600;
-          color: var(--primary);
+          color: #333;
         }
       }
 
@@ -30,16 +30,23 @@ section.products-lists {
     &.products-list-offers {
       .product-list-title {
         strong {
-          color: $danger;
+          color: $product-offer;
         }
       }
     }
 
-    &.products-list-features,
+    &.products-list-features {
+      .product-list-title {
+        strong {
+          color: $product-reward;
+        }
+      }
+    }
+
     &.products-list-vouchers {
       .product-list-title {
         strong {
-          color: var(--primary);
+          color: #333;
         }
       }
     }
@@ -47,7 +54,7 @@ section.products-lists {
     &.products-list-rewards {
       .product-list-title {
         strong {
-          color: $info;
+          color: $product-reward;
         }
       }
     }

@@ -1,0 +1,32 @@
+// Badge
+.badge {
+  &.badge-primary {
+    background-color: var(--primary);
+    color: var(--brand-text-contrast);
+  }
+}
+
+
+// Button
+// .btn {
+//   &.btn-primary {
+//     background-color: var(--primary);
+//     border-color: var(--primary);
+//     color: var(--brand-text-contrast);
+
+//     &:active {}
+
+//     &:focus {
+//       background-color: var(--primary-darken);
+//       border-color: var(--primary-darken);
+//       color: var(--brand-text-contrast);
+//     }
+
+//     &:hover {
+//       background-color: var(--primary-darken);
+//       border-color: var(--primary-darken);
+//       color: var(--brand-text-contrast);
+//       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(var(--primary), 0.25);
+//     }
+//   }
+// }

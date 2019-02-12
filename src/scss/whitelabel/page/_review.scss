@@ -1,4 +1,14 @@
 .website-review {
+  section.page-banner {
+    .jumbotron {
+      background-color: $warning;
+
+      h1,
+      p {
+        color: #333;
+      }
+    }
+  }
   section.review-store {
     padding: 30px 0;
 

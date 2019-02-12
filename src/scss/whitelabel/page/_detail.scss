@@ -126,15 +126,15 @@
 
         &.is-reward {
           .card-body {
-            border-top: solid 4px $info;
+            border-top: solid 4px $product-reward;
 
             .card-product-value {
-              background-color: $info;
+              background-color: $product-reward;
             }
 
             .card-product-type {
               font-weight: 900;
-              background-color: $info;
+              background-color: $product-reward;
 
               i {
                 &:before {
@@ -145,20 +145,20 @@
           }
 
           .btn-get-product {
-            @extend .btn-outline-info;
+            @extend .btn-outline-product-reward;
           }
         }
 
         &.is-offer {
           .card-body {
-            border-top: solid 4px $danger;
+            border-top: solid 4px $product-offer;
 
             .card-product-value {
-              background-color: $danger;
+              background-color: $product-offer;
             }
 
             .card-product-type {
-              background-color: $danger;
+              background-color: $product-offer;
               font-weight: 900;
 
               i {
@@ -170,24 +170,24 @@
           }
 
           .btn-get-product {
-            @extend .btn-outline-danger;
+            @extend .btn-outline-product-offer;
           }
         }
 
         &.is-voucher-generated {
-          .card-body {
-            border-top: solid 4px $success;
+          // .card-body {
+          //   border-top: solid 4px $success;
 
-            .card-product-value {
-              background-color: $success;
-            }
-          }
+          //   .card-product-value {
+          //     background-color: $success;
+          //   }
+          // }
 
           &.is-reward {
             .card-body {
               .voucher-generated-block {
-                background-color: rgba($info, 0.15);
-                border: dashed thin rgba($info, 025);
+                background-color: rgba($product-reward, 0.15);
+                border: dashed thin rgba($product-reward, 025);
               }
             }
           }
@@ -195,8 +195,8 @@
           &.is-offer {
             .card-body {
               .voucher-generated-block {
-                background-color: rgba($danger, 0.15);
-                border: dashed thin rgba($danger, 0.25);
+                background-color: rgba($product-offer, 0.15);
+                border: dashed thin rgba($product-offer, 0.25);
               }
             }
           }
@@ -342,8 +342,8 @@
         &.is-reward {
           .card-body {
             .voucher-generated-block {
-              background-color: rgba($info, 0.15);
-              border: dashed thin rgba($info, 025);
+              background-color: rgba($product-reward, 0.15);
+              border: dashed thin rgba($product-reward, 025);
             }
           }
         }
@@ -351,8 +351,8 @@
         &.is-offer {
           .card-body {
             .voucher-generated-block {
-              background-color: rgba($danger, 0.15);
-              border: dashed thin rgba($danger, 0.25);
+              background-color: rgba($product-offer, 0.15);
+              border: dashed thin rgba($product-offer, 0.25);
             }
           }
         }

@@ -1,0 +1,25 @@
+.website-offers {
+  section.page-banner {
+    .jumbotron {
+      background-color: $product-offer;
+
+      h1,
+      p {
+        color: color-yiq($product-offer);
+      }
+    }
+  }
+
+  section.products-lists {
+    section {
+      .products-list-header {
+        .product-list-title {
+          strong {
+            font-weight: 600;
+            color: $product-offer;
+          }
+        }
+      }
+    }
+  }
+}

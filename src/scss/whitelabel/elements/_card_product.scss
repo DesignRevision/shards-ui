@@ -111,11 +111,11 @@
 
     &.is-reward {
       .card-image {
-        border-bottom: solid 2px $info;
+        border-bottom: solid 2px $product-reward;
 
         .card-product-type,
         .card-product-value {
-          background-color: $info;
+          background-color: $product-reward;
         }
 
         .card-product-type {
@@ -131,18 +131,18 @@
 
       .card-footer {
         .btn {
-          @extend .btn-outline-info;
+          @extend .btn-outline-product-reward;
         }
       }
     }
 
     &.is-offer {
       .card-image {
-        border-bottom: solid 2px $danger;
+        border-bottom: solid 2px $product-offer;
 
         .card-product-type,
         .card-product-value {
-          background-color: $danger;
+          background-color: $product-offer;
         }
 
         .card-product-type {
@@ -158,25 +158,25 @@
 
       .card-footer {
         .btn {
-          @extend .btn-outline-danger;
+          @extend .btn-outline-product-offer;
         }
       }
     }
 
     &.is-voucher-generated {
-      .card-image {
-        border-bottom: solid 2px $success;
+      // .card-image {
+      //   border-bottom: solid 2px $success;
 
-        .card-product-value {
-          background-color: $success;
-        }
-      }
+      //   .card-product-value {
+      //     background-color: $success;
+      //   }
+      // }
 
       &.is-reward {
         .card-body {
           .card-product-voucher {
-            background-color: rgba($info, 0.15);
-            border: dashed thin rgba($info, 025);
+            background-color: rgba($product-reward, 0.15);
+            border: dashed thin rgba($product-reward, 025);
           }
         }
       }
@@ -184,8 +184,8 @@
       &.is-offer {
         .card-body {
           .card-product-voucher {
-            background-color: rgba($danger, 0.15);
-            border: dashed thin rgba($danger, 0.25);
+            background-color: rgba($product-offer, 0.15);
+            border: dashed thin rgba($product-offer, 0.25);
           }
         }
       }

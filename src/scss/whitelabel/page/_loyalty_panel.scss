@@ -1,4 +1,15 @@
 .website-loyalty-panel {
+  section.page-banner {
+    .jumbotron {
+      background-color: var(--primary);
+
+      h1,
+      p {
+        color: var(--brand-text-contrast);
+      }
+    }
+  }
+
   section.loyalty-panel {
     padding: 30px 0;
     margin-bottom: 0 !important;
@@ -148,7 +159,7 @@
                   margin-right: 10px;
                   margin-bottom: 5px;
                   font-style: italic;
-									font-size: .8rem;
+                  font-size: .8rem;
                 }
 
                 .badge {
@@ -175,10 +186,11 @@
               &.is-redeem {
                 .activity-item-icon {
                   i {
-										color: $danger;
-										&:before{
-											content: "\f068";
-										}
+                    color: $danger;
+
+                    &:before {
+                      content: "\f068";
+                    }
                   }
                 }
 

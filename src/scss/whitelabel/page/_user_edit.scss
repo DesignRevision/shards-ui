@@ -1,0 +1,16 @@
+.website-user-edit {
+  section.page-banner {
+    .jumbotron {
+      background-color: var(--primary);
+
+      h1,
+      p {
+        color: var(--brand-text-contrast);
+      }
+    }
+  }
+
+  section.user-edit {
+    padding: 30px 0;
+  }
+}

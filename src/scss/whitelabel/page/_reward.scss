@@ -1,0 +1,25 @@
+.website-rewards {
+  section.page-banner {
+    .jumbotron {
+      background-color: $product-reward;
+
+      h1,
+      p {
+        color: color-yiq($product-reward);
+      }
+    }
+  }
+
+  section.products-lists {
+    section {
+      .products-list-header {
+        .product-list-title {
+          strong {
+            font-weight: 600;
+            color: $product-reward;
+          }
+        }
+      }
+    }
+  }
+}

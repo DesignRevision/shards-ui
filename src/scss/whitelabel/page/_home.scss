@@ -6,15 +6,21 @@
       padding: 60px 2rem;
       margin-bottom: 0;
       position: relative;
+			background-color: var(--primary);
+			border-radius: 0;
 
       .container {
         position: relative;
         z-index: 10;
 
+        h1,
+        p {
+          color: var(--brand-text-contrast);
+        }
+
         p {
           font-size: 1.1rem;
           font-weight: 300;
-          color: #FFF;
         }
       }
 

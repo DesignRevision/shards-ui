@@ -121,7 +121,7 @@ header#page-header {
               }
 
               .user-info {
-                color: var(--primary);
+                color: #333;
                 text-align: left;
                 line-height: 1.2;
                 font-size: 1rem;
@@ -188,71 +188,6 @@ header#page-header {
                 background-color: rgba(0, 0, 0, 0.04);
               }
             }
-
-            .dropdown-menu {
-              min-width: 400px;
-
-              .dropdown-item {
-                white-space: normal;
-                display: flex;
-                flex-flow: row;
-                align-items: center;
-                padding-top: .875rem;
-                padding-bottom: .875rem;
-                border-bottom: 1px solid #e1e5eb;
-
-                .points__icon-wrapper {
-                  display: flex;
-                  padding: 0 5px;
-
-                  .points__icon {
-                    background-color: #f5f6f8;
-                    box-shadow: 0 0 0 1px #fff, inset 0 0 3px rgba(0, 0, 0, .2);
-                    width: 2.1875rem;
-                    height: 2.1875rem;
-                    line-height: 0;
-                    display: block;
-                    text-align: center;
-                    margin-right: 15px;
-                    border-radius: 50%;
-
-                    i {
-                      color: #818ea3;
-                      line-height: 2.0625rem;
-                      font-size: 1.0625rem;
-                      margin: 0;
-                    }
-                  }
-                }
-
-                .points__content {
-                  .points__category {
-                    font-size: .5625rem;
-                    color: #818ea3;
-                    letter-spacing: .0938rem;
-                    display: inline-block;
-                    text-transform: uppercase;
-                    margin-bottom: 5px;
-                    font-weight: 500;
-                  }
-
-                  p {
-                    margin: 0;
-                    line-height: 1.5;
-                  }
-                }
-
-                &.points__all {
-                  display: block;
-                  font-weight: 700;
-                  font-size: 11px;
-                  color: var(--primary);
-                  border-bottom-left-radius: .375rem;
-                  border-bottom-right-radius: .375rem;
-                  text-align: center;
-                }
-              }
-            }
           }
 
           &:first-child {
@@ -272,7 +207,7 @@ header#page-header {
           &.active {
             a {
               opacity: 1;
-              color: var(--primary);
+              color: #333;
               font-weight: 700;
             }
           }
