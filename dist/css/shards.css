@@ -25099,16 +25099,22 @@ aside.main-sidebar {
   width: 100%;
 }
 
-aside.main-sidebar div.main-navbar .navbar .navbar-brand img {
+aside.main-sidebar .main-navbar .navbar {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.075);
+}
+
+aside.main-sidebar .main-navbar .navbar .navbar-brand img {
   max-height: 35px;
   max-width: 150px;
 }
 
-aside.main-sidebar div.main-navbar .navbar .navbar-brand .toggle-sidebar {
+aside.main-sidebar .main-navbar .navbar .toggle-sidebar {
   right: inherit;
   left: 0;
   border-left: 0;
-  border-right: 1px solid #becad6;
 }
 
 aside.main-sidebar .nav-wrapper {
@@ -25151,6 +25157,58 @@ aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link.active {
 
 aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link.active i {
   font-weight: 700;
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet {
+  box-shadow: none;
+  opacity: 1;
+  margin-left: 0;
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  opacity: 1;
+  margin-left: 0;
+  transition: all 300ms;
+  box-shadow: none;
+  opacity: 1;
+  cursor: pointer;
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a .user-avatar {
+  max-height: 45px;
+  margin-right: 10px;
+  border: solid thin #cbcbcb;
+  transition: all 300ms;
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a .user-info {
+  text-align: left;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 300ms;
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a .user-info small {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a:hover, aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a:active {
+  box-shadow: none;
+  opacity: 1;
+  margin-left: 0;
+}
+
+aside.main-sidebar:not(.open) {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .empty-state {

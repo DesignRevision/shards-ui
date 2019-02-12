@@ -10,6 +10,7 @@
         href="./css/shards.css">
 
 </head>
+<!-- TODO: No MOBILE, quando o usuário clicar para abrir/expandir o MENU, é necessário adicionar a classe "is-menu-open" no elemento abaixo para não haver double scroll no página -->
 
 <body>
   <div id="page-container"
@@ -121,9 +122,10 @@
       </div>
     </header>
 
-    <aside class="main-sidebar w-100 px-0 open">
+    <!-- TODO: Para abrir/expandir o MENU MOBILE, é necessário adicionar a class "open" no elemento abaixo -->
+    <aside class="main-sidebar px-0">
       <div class="main-navbar">
-        <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+        <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
           <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
 						<i class="fal fa-times"></i>
 					</a>
@@ -137,6 +139,29 @@
 
       <div class="nav-wrapper"
            style="overflow-y: auto;">
+        <ul class="nav nav--no-borders flex-column">
+          <!-- CONTEXTO: Usuário NÃO LOGADO -->
+          <li class="nav-item nav-item-user-snippet">
+            <a class="nav-link" href="acessar.html">
+							<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+							<span class="user-info">
+								Jerônimo <br>
+								<small>048 99656-3619</small>
+							</span>
+						</a>
+          </li>
+          <!-- CONTEXTO: Usuário NÃO LOGADO -->
+          <li class="nav-item nav-item-user-snippet is-logged">
+            <a class="nav-link" href="acessar.html">
+							<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+							<span class="user-info">
+								Já possui conta? <br>
+								<small>Clique aqui para acessar</small>
+							</span>
+						</a>
+          </li>
+        </ul>
+
         <ul class="nav nav--no-borders flex-column">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">
@@ -168,8 +193,9 @@
 							<span>Lojas</span>
 						</a>
           </li>
-				</ul>
+        </ul>
 
+        <!-- CONTEXTO: Usuário NÃO LOGADO -->
         <h6 class="main-sidebar__nav-title">Vamos começar?</h6>
         <ul class="nav nav--no-borders flex-column">
           <li class="nav-item">
@@ -186,6 +212,7 @@
           </li>
         </ul>
 
+        <!-- CONTEXTO: Usuário LOGADO -->
         <h6 class="main-sidebar__nav-title">Meu dados</h6>
         <ul class="nav nav--no-borders flex-column">
           <li class="nav-item">
