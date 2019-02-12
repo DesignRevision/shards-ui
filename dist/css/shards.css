@@ -26071,7 +26071,7 @@ label {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .website-home section.page-intro .jumbotron {
     padding: 40px 15PX;
   }
