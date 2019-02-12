@@ -6,11 +6,11 @@
 $brand-text-contrast: #FFFFFF;
 
 /*! Bootstrap Color (Override Bootstrap) */
-$primary: #f50057;
+$primary: #36255D;
 $primary-darken: #dc004e;
 
 /*! Whitelabel Product Type Color (Override Bootstrap) */
-$product-reward: #00b8d8;
+$product-reward: #05E2B5;
 $product-offer: #fb7906;
 
 /*! Adding new colors to Map */
@@ -18,7 +18,7 @@ $theme-colors: (
 	"primary-darken": $primary-darken,
 	"brand-text-contrast": $brand-text-contrast,
 	"product-reward": $product-reward,
-	"product-offer": $product-offer
+	"product-offer": $product-offer,
 );
 
 /*! Whitelabel Settings (Override Bootstrap) */

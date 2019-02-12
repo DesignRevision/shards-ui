@@ -6,8 +6,8 @@
       padding: 60px 2rem;
       margin-bottom: 0;
       position: relative;
-			background-color: var(--primary);
-			border-radius: 0;
+      background-color: var(--primary);
+      border-radius: 0;
 
       .container {
         position: relative;
@@ -18,17 +18,17 @@
           color: var(--brand-text-contrast);
         }
 
+        h1 {
+          font-size: 2.4rem;
+
+          strong {
+            font-weight: 600;
+          }
+        }
+
         p {
           font-size: 1.1rem;
           font-weight: 300;
-        }
-      }
-
-      @media (max-width: 1200px - 1px) {
-        padding: 90px 2rem;
-
-        h1 {
-          font-size: 2.5rem;
         }
       }
 

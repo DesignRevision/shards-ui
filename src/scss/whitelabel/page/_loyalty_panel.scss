@@ -102,7 +102,9 @@
         }
       }
 
+      &.card-points-validation,
       &.card-points-summary {
+        margin-bottom: 15px;
         box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 
         .card-header,
@@ -123,6 +125,7 @@
             .activity-item {
               display: flex;
               margin-left: 1.875rem;
+              margin-right: 15px;
               border-left: 1px solid #e9ecef;
               border-bottom: 1px solid #e9ecef;
               font-weight: 400;
@@ -206,6 +209,19 @@
 
         .card-footer {
           text-align: center;
+        }
+      }
+
+      &.card-points-validation {
+        .card-header {
+          .card-title {
+						color: $danger;
+						font-weight: 400;
+
+            strong {
+              font-weight: 600;
+            }
+          }
         }
       }
     }

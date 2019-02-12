@@ -8225,7 +8225,7 @@ readers do not read off random characters that represent icons */
   --white: #fff;
   --gray: #868e96;
   --gray-dark: #343a40;
-  --primary: #f50057;
+  --primary: #36255D;
   --secondary: #5A6169;
   --success: #17c671;
   --info: #00b8d8;
@@ -8235,7 +8235,7 @@ readers do not read off random characters that represent icons */
   --dark: #212529;
   --primary-darken: #dc004e;
   --brand-text-contrast: #FFFFFF;
-  --product-reward: #00b8d8;
+  --product-reward: #05E2B5;
   --product-offer: #fb7906;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -8279,12 +8279,12 @@ body {
 }
 
 a {
-  color: #f50057;
+  color: #36255D;
   text-decoration: none;
 }
 
 a:hover {
-  color: #a9003c;
+  color: #160f26;
   text-decoration: underline;
 }
 
@@ -8324,7 +8324,7 @@ h1, h2, h3, h4, h5, h6 {
   --white: #fff;
   --gray: #868e96;
   --gray-dark: #343a40;
-  --primary: #f50057;
+  --primary: #36255D;
   --secondary: #5A6169;
   --success: #17c671;
   --info: #00b8d8;
@@ -8334,7 +8334,7 @@ h1, h2, h3, h4, h5, h6 {
   --dark: #212529;
   --primary-darken: #dc004e;
   --brand-text-contrast: #FFFFFF;
-  --product-reward: #00b8d8;
+  --product-reward: #05E2B5;
   --product-offer: #fb7906;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -8470,14 +8470,14 @@ sup {
 }
 
 a {
-  color: #f50057;
+  color: #36255D;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #a9003c;
+  color: #160f26;
   text-decoration: underline;
 }
 
@@ -9889,16 +9889,16 @@ pre code {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #fcb8d0;
+  background-color: #c7c2d2;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #fba0c0;
+  background-color: #bab3c7;
 }
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #fba0c0;
+  background-color: #bab3c7;
 }
 
 .table-secondary,
@@ -10039,16 +10039,16 @@ pre code {
 .table-product-reward,
 .table-product-reward > th,
 .table-product-reward > td {
-  background-color: #b8ebf4;
+  background-color: #b9f7ea;
 }
 
 .table-hover .table-product-reward:hover {
-  background-color: #a2e5f1;
+  background-color: #a2f4e3;
 }
 
 .table-hover .table-product-reward:hover > td,
 .table-hover .table-product-reward:hover > th {
-  background-color: #a2e5f1;
+  background-color: #a2f4e3;
 }
 
 .table-product-offer,
@@ -10203,12 +10203,12 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #f50057;
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  border-color: #36255D;
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .form-control:focus:hover {
-  border-color: #f50057;
+  border-color: #36255D;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -10665,7 +10665,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(245, 0, 87, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(54, 37, 93, 0.25);
 }
 
 .btn.disabled, .btn:disabled {
@@ -10683,7 +10683,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(245, 0, 87, 0.25), inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 0 0.2rem rgba(54, 37, 93, 0.25), inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 a.btn.disabled,
@@ -10693,25 +10693,25 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  border-color: #f50057;
-  background-color: #f50057;
+  border-color: #36255D;
+  background-color: #36255D;
   box-shadow: none;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #dc004e;
-  border-color: #dc004e;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(245, 0, 87, 0.25);
+  background-color: #2b1e4b;
+  border-color: #2b1e4b;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(54, 37, 93, 0.25);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 3px rgba(245, 0, 87, 0.15), 0 3px 15px rgba(245, 0, 87, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -10719,8 +10719,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #dc004e;
-  border-color: #c20045;
+  background-color: #2b1e4b;
+  border-color: #211639;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -11032,26 +11032,26 @@ fieldset:disabled a.btn {
 }
 
 .btn-product-reward {
-  color: #fff;
-  border-color: #00b8d8;
-  background-color: #00b8d8;
+  color: #212529;
+  border-color: #05E2B5;
+  background-color: #05E2B5;
   box-shadow: none;
 }
 
 .btn-product-reward:hover {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #00a2bf;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  background-color: #04c9a1;
+  border-color: #04c9a1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn-product-reward:focus, .btn-product-reward.focus {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-product-reward.disabled, .btn-product-reward:disabled {
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -11059,8 +11059,8 @@ fieldset:disabled a.btn {
 .btn-product-reward:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active,
 .show > .btn-product-reward.dropdown-toggle {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #008da5;
+  background-color: #04c9a1;
+  border-color: #04b08d;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -11102,23 +11102,23 @@ fieldset:disabled a.btn {
 .btn-outline-primary {
   background-color: transparent;
   background-image: none;
-  border-color: #f50057;
-  color: #f50057;
+  border-color: #36255D;
+  color: #36255D;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(245, 0, 87, 0.25);
+  background-color: #36255D;
+  border-color: #36255D;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(54, 37, 93, 0.25);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 3px rgba(245, 0, 87, 0.15), 0 3px 15px rgba(245, 0, 87, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #f50057;
+  color: #36255D;
   background-color: transparent;
   box-shadow: none;
 }
@@ -11126,8 +11126,8 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -11464,23 +11464,23 @@ fieldset:disabled a.btn {
 .btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #00b8d8;
-  color: #00b8d8;
+  border-color: #05E2B5;
+  color: #05E2B5;
 }
 
 .btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:hover {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:disabled {
-  color: #00b8d8;
+  color: #05E2B5;
   background-color: transparent;
   box-shadow: none;
 }
@@ -11489,9 +11489,9 @@ fieldset:disabled a.btn {
 .show > .btn-outline-product-reward.dropdown-toggle,
 .card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
 .website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
 }
 
 .btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -11543,12 +11543,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 300;
-  color: #f50057;
+  color: #36255D;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #a9003c;
+  color: #160f26;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -12110,17 +12110,17 @@ tbody.collapse.show {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
   box-shadow: none;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #ffa9c7;
+  background-color: #896fc6;
   box-shadow: none;
 }
 
@@ -12171,7 +12171,7 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
@@ -12179,7 +12179,7 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  background-color: #f50057;
+  background-color: #36255D;
   box-shadow: none;
 }
 
@@ -12188,11 +12188,11 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(245, 0, 87, 0.5);
+  background-color: rgba(54, 37, 93, 0.5);
 }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(245, 0, 87, 0.5);
+  background-color: rgba(54, 37, 93, 0.5);
 }
 
 .custom-radio .custom-control-label::before {
@@ -12200,7 +12200,7 @@ tbody.collapse.show {
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
@@ -12208,7 +12208,7 @@ tbody.collapse.show {
 }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(245, 0, 87, 0.5);
+  background-color: rgba(54, 37, 93, 0.5);
 }
 
 .custom-select {
@@ -12229,9 +12229,9 @@ tbody.collapse.show {
 }
 
 .custom-select:focus {
-  border-color: #f50057;
+  border-color: #36255D;
   outline: 0;
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-select:focus::-ms-value {
@@ -12286,12 +12286,12 @@ tbody.collapse.show {
 }
 
 .custom-file-input:focus ~ .custom-file-control {
-  border-color: #f50057;
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  border-color: #36255D;
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-file-input:focus ~ .custom-file-control::before {
-  border-color: #f50057;
+  border-color: #36255D;
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -12398,7 +12398,7 @@ tbody.collapse.show {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .nav-fill .nav-item {
@@ -13160,13 +13160,13 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #f50057;
+  color: #36255D;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
 .page-link:hover {
-  color: #a9003c;
+  color: #160f26;
   text-decoration: none;
   background-color: #f5f5f6;
   border-color: #dfe1e3;
@@ -13175,7 +13175,7 @@ tbody.collapse.show {
 .page-link:focus {
   z-index: 2;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(245, 0, 87, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(54, 37, 93, 0.25);
 }
 
 .page-link:not(:disabled):not(.disabled) {
@@ -13196,8 +13196,8 @@ tbody.collapse.show {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .page-item.disabled .page-link {
@@ -13269,13 +13269,13 @@ tbody.collapse.show {
 
 .badge-primary {
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .badge-primary[href]:hover, .badge-primary[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #c20045;
+  background-color: #211639;
 }
 
 .badge-secondary {
@@ -13289,12 +13289,12 @@ tbody.collapse.show {
   background-color: #42484e;
 }
 
-.badge-success, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge {
+.badge-success, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge {
   color: #fff;
   background-color: #17c671;
 }
 
-.badge-success[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .badge-success[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus {
+.badge-success[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .badge-success[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus {
   color: #fff;
   text-decoration: none;
   background-color: #129857;
@@ -13322,12 +13322,12 @@ tbody.collapse.show {
   background-color: #cc9000;
 }
 
-.badge-danger, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge {
+.badge-danger, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge {
   color: #fff;
   background-color: #c4183c;
 }
 
-.badge-danger[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .badge-danger[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus {
+.badge-danger[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .badge-danger[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus {
   color: #fff;
   text-decoration: none;
   background-color: #97122e;
@@ -13378,14 +13378,14 @@ tbody.collapse.show {
 }
 
 .badge-product-reward {
-  color: #fff;
-  background-color: #00b8d8;
+  color: #212529;
+  background-color: #05E2B5;
 }
 
 .badge-product-reward[href]:hover, .badge-product-reward[href]:focus {
-  color: #fff;
+  color: #212529;
   text-decoration: none;
-  background-color: #008da5;
+  background-color: #04b08d;
 }
 
 .badge-product-offer {
@@ -13447,17 +13447,17 @@ tbody.collapse.show {
 }
 
 .alert-primary {
-  color: #7f002d;
-  background-color: #fdccdd;
-  border-color: #fcb8d0;
+  color: #1c1330;
+  background-color: #d7d3df;
+  border-color: #c7c2d2;
 }
 
 .alert-primary hr {
-  border-top-color: #fba0c0;
+  border-top-color: #bab3c7;
 }
 
 .alert-primary .alert-link {
-  color: #4c001b;
+  color: #07050b;
 }
 
 .alert-secondary {
@@ -13587,17 +13587,17 @@ tbody.collapse.show {
 }
 
 .alert-product-reward {
-  color: #006070;
-  background-color: #ccf1f7;
-  border-color: #b8ebf4;
+  color: #03765e;
+  background-color: #cdf9f0;
+  border-color: #b9f7ea;
 }
 
 .alert-product-reward hr {
-  border-top-color: #a2e5f1;
+  border-top-color: #a2f4e3;
 }
 
 .alert-product-reward .alert-link {
-  color: #00343d;
+  color: #024436;
 }
 
 .alert-product-offer {
@@ -13652,7 +13652,7 @@ tbody.collapse.show {
       justify-content: center;
   color: #fff;
   text-align: center;
-  background-color: #f50057;
+  background-color: #36255D;
   transition: width 0.6s ease;
 }
 
@@ -13737,8 +13737,8 @@ tbody.collapse.show {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .list-group-flush .list-group-item {
@@ -13756,26 +13756,26 @@ tbody.collapse.show {
 }
 
 .list-group-item-primary {
-  color: #7f002d;
-  background-color: #fcb8d0;
+  color: #1c1330;
+  background-color: #c7c2d2;
 }
 
 a.list-group-item-primary,
 button.list-group-item-primary {
-  color: #7f002d;
+  color: #1c1330;
 }
 
 a.list-group-item-primary:hover, a.list-group-item-primary:focus,
 button.list-group-item-primary:hover,
 button.list-group-item-primary:focus {
-  color: #7f002d;
-  background-color: #fba0c0;
+  color: #1c1330;
+  background-color: #bab3c7;
 }
 
 a.list-group-item-primary.active,
 button.list-group-item-primary.active {
-  background-color: #7f002d;
-  border-color: #7f002d;
+  background-color: #1c1330;
+  border-color: #1c1330;
 }
 
 .list-group-item-secondary {
@@ -13986,26 +13986,26 @@ button.list-group-item-brand-text-contrast.active {
 }
 
 .list-group-item-product-reward {
-  color: #006070;
-  background-color: #b8ebf4;
+  color: #03765e;
+  background-color: #b9f7ea;
 }
 
 a.list-group-item-product-reward,
 button.list-group-item-product-reward {
-  color: #006070;
+  color: #03765e;
 }
 
 a.list-group-item-product-reward:hover, a.list-group-item-product-reward:focus,
 button.list-group-item-product-reward:hover,
 button.list-group-item-product-reward:focus {
-  color: #006070;
-  background-color: #a2e5f1;
+  color: #03765e;
+  background-color: #a2f4e3;
 }
 
 a.list-group-item-product-reward.active,
 button.list-group-item-product-reward.active {
-  background-color: #006070;
-  border-color: #006070;
+  background-color: #03765e;
+  border-color: #03765e;
 }
 
 .list-group-item-product-offer {
@@ -14737,23 +14737,23 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #f50057 !important;
+  background-color: #36255D !important;
 }
 
 .bg-primary.card .card-title,
 .bg-primary.card .card-body,
 .bg-primary.card .card-header,
 .bg-primary.card .card-footer {
-  background-color: #c20045 !important;
+  background-color: #211639 !important;
 }
 
 .bg-primary.card .card-header,
 .bg-primary.card .card-footer {
-  background: #e60052;
+  background: #302152;
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-  background-color: #c20045 !important;
+  background-color: #211639 !important;
 }
 
 .bg-secondary {
@@ -14937,23 +14937,23 @@ a.bg-brand-text-contrast:hover, a.bg-brand-text-contrast:focus {
 }
 
 .bg-product-reward {
-  background-color: #00b8d8 !important;
+  background-color: #05E2B5 !important;
 }
 
 .bg-product-reward.card .card-title,
 .bg-product-reward.card .card-body,
 .bg-product-reward.card .card-header,
 .bg-product-reward.card .card-footer {
-  background-color: #008da5 !important;
+  background-color: #04b08d !important;
 }
 
 .bg-product-reward.card .card-header,
 .bg-product-reward.card .card-footer {
-  background: #00abc9;
+  background: #05d3a9;
 }
 
 a.bg-product-reward:hover, a.bg-product-reward:focus {
-  background-color: #008da5 !important;
+  background-color: #04b08d !important;
 }
 
 .bg-product-offer {
@@ -15025,7 +15025,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-primary {
-  border-color: #f50057 !important;
+  border-color: #36255D !important;
 }
 
 .border-secondary {
@@ -15065,7 +15065,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-product-reward {
-  border-color: #00b8d8 !important;
+  border-color: #05E2B5 !important;
 }
 
 .border-product-offer {
@@ -17565,11 +17565,11 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .text-primary {
-  color: #f50057 !important;
+  color: #36255D !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #c20045 !important;
+  color: #211639 !important;
 }
 
 .text-secondary {
@@ -17645,11 +17645,11 @@ a.text-brand-text-contrast:hover, a.text-brand-text-contrast:focus {
 }
 
 .text-product-reward {
-  color: #00b8d8 !important;
+  color: #05E2B5 !important;
 }
 
 a.text-product-reward:hover, a.text-product-reward:focus {
-  color: #008da5 !important;
+  color: #04b08d !important;
 }
 
 .text-product-offer {
@@ -17927,16 +17927,16 @@ pre {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #fcb8d0;
+  background-color: #c7c2d2;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #fba0c0;
+  background-color: #bab3c7;
 }
 
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #fba0c0;
+  background-color: #bab3c7;
 }
 
 .table-secondary,
@@ -18077,16 +18077,16 @@ pre {
 .table-product-reward,
 .table-product-reward > th,
 .table-product-reward > td {
-  background-color: #b8ebf4;
+  background-color: #b9f7ea;
 }
 
 .table-hover .table-product-reward:hover {
-  background-color: #a2e5f1;
+  background-color: #a2f4e3;
 }
 
 .table-hover .table-product-reward:hover > td,
 .table-hover .table-product-reward:hover > th {
-  background-color: #a2e5f1;
+  background-color: #a2f4e3;
 }
 
 .table-product-offer,
@@ -18184,25 +18184,25 @@ pre {
 
 .btn-primary {
   color: #fff;
-  border-color: #f50057;
-  background-color: #f50057;
+  border-color: #36255D;
+  background-color: #36255D;
   box-shadow: none;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #dc004e;
-  border-color: #dc004e;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(245, 0, 87, 0.25);
+  background-color: #2b1e4b;
+  border-color: #2b1e4b;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(54, 37, 93, 0.25);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 3px rgba(245, 0, 87, 0.15), 0 3px 15px rgba(245, 0, 87, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -18210,8 +18210,8 @@ pre {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #dc004e;
-  border-color: #c20045;
+  background-color: #2b1e4b;
+  border-color: #211639;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -18523,26 +18523,26 @@ pre {
 }
 
 .btn-product-reward {
-  color: #fff;
-  border-color: #00b8d8;
-  background-color: #00b8d8;
+  color: #212529;
+  border-color: #05E2B5;
+  background-color: #05E2B5;
   box-shadow: none;
 }
 
 .btn-product-reward:hover {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #00a2bf;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  background-color: #04c9a1;
+  border-color: #04c9a1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn-product-reward:focus, .btn-product-reward.focus {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-product-reward.disabled, .btn-product-reward:disabled {
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -18550,8 +18550,8 @@ pre {
 .btn-product-reward:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active,
 .show > .btn-product-reward.dropdown-toggle {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #008da5;
+  background-color: #04c9a1;
+  border-color: #04b08d;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -18661,23 +18661,23 @@ pre {
 .btn-outline-primary {
   background-color: transparent;
   background-image: none;
-  border-color: #f50057;
-  color: #f50057;
+  border-color: #36255D;
+  color: #36255D;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(245, 0, 87, 0.25);
+  background-color: #36255D;
+  border-color: #36255D;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(54, 37, 93, 0.25);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 3px rgba(245, 0, 87, 0.15), 0 3px 15px rgba(245, 0, 87, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #f50057;
+  color: #36255D;
   background-color: transparent;
   box-shadow: none;
 }
@@ -18685,8 +18685,8 @@ pre {
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -19023,23 +19023,23 @@ pre {
 .btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #00b8d8;
-  color: #00b8d8;
+  border-color: #05E2B5;
+  color: #05E2B5;
 }
 
 .btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:hover {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:disabled {
-  color: #00b8d8;
+  color: #05E2B5;
   background-color: transparent;
   box-shadow: none;
 }
@@ -19048,9 +19048,9 @@ pre {
 .show > .btn-outline-product-reward.dropdown-toggle,
 .card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
 .website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
 }
 
 .btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -19184,11 +19184,11 @@ pre {
 
 .btn-link {
   font-weight: 300;
-  color: #f50057;
+  color: #36255D;
 }
 
 .btn-link:hover {
-  color: #a9003c;
+  color: #160f26;
   text-decoration: underline;
 }
 
@@ -19564,17 +19564,17 @@ i.material-icons {
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
   border-color: transparent;
-  background-color: #f50057;
+  background-color: #36255D;
   box-shadow: none;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
   color: #fff;
-  background-color: #ffa9c7;
+  background-color: #896fc6;
   box-shadow: none;
 }
 
@@ -19651,7 +19651,7 @@ i.material-icons {
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
   border: none;
-  background-color: #f50057;
+  background-color: #36255D;
   box-shadow: none;
 }
 
@@ -19703,7 +19703,7 @@ i.material-icons {
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
@@ -19740,8 +19740,8 @@ i.material-icons {
 }
 
 .custom-select:focus {
-  border-color: #f50057;
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  border-color: #36255D;
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-select:focus::-ms-value {
@@ -19789,19 +19789,19 @@ i.material-icons {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #f50057;
+  border-color: #36255D;
   color: #495057;
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-file-input:focus ~ .custom-file-label::after {
-  border-color: #f50057;
-  color: #f50057;
-  background: #ffdce8;
+  border-color: #36255D;
+  color: #36255D;
+  background: #a793d4;
 }
 
 .custom-file-input:focus ~ .custom-file-label:hover {
-  border-color: #f50057;
+  border-color: #36255D;
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -19912,7 +19912,7 @@ i.material-icons {
 }
 
 .custom-toggle .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  box-shadow: 0 0.313rem 0.719rem rgba(245, 0, 87, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.313rem 0.719rem rgba(54, 37, 93, 0.1), 0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
 }
 
 .custom-toggle.custom-toggle-sm {
@@ -20012,7 +20012,7 @@ i.material-icons {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .nav-pills:hover {
@@ -20027,8 +20027,8 @@ i.material-icons {
 .nav-outlined-pills .nav-link.active,
 .show > .nav-outlined-pills .nav-link {
   background: none;
-  color: #f50057;
-  border-color: #f50057;
+  color: #36255D;
+  border-color: #36255D;
 }
 
 .nav-outlined-pills .nav-link:hover {
@@ -20859,7 +20859,7 @@ i.material-icons {
 }
 
 .card .view-report a:hover {
-  color: #f50057;
+  color: #36255D;
 }
 
 .pagination {
@@ -20873,7 +20873,7 @@ i.material-icons {
 .page-link {
   padding: 0.5rem 0.75rem;
   line-height: 1.25;
-  color: #f50057;
+  color: #36255D;
   background-color: #fff;
   border: none;
   margin: 0;
@@ -20881,7 +20881,7 @@ i.material-icons {
 }
 
 .page-link:hover, .page-link:focus {
-  color: #a9003c;
+  color: #160f26;
   background-color: #f5f5f6;
   border-color: #dfe1e3;
 }
@@ -20908,8 +20908,8 @@ i.material-icons {
 
 .page-item.active .page-link {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .page-item.disabled .page-link {
@@ -20975,19 +20975,19 @@ a.badge {
 
 .badge-primary {
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
 }
 
 .badge-primary[href]:hover, .badge-primary[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #c20045;
+  background-color: #211639;
 }
 
 .badge-outline-primary {
   background: none;
-  border: 1px solid #f50057;
-  color: #f50057;
+  border: 1px solid #36255D;
+  color: #36255D;
 }
 
 .badge-secondary {
@@ -21007,12 +21007,12 @@ a.badge {
   color: #5A6169;
 }
 
-.badge-success, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge {
+.badge-success, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge {
   color: #fff;
   background-color: #17c671;
 }
 
-.badge-success[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .badge-success[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus {
+.badge-success[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:hover, .badge-success[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .badge[href]:focus {
   color: #fff;
   text-decoration: none;
   background-color: #129857;
@@ -21058,12 +21058,12 @@ a.badge {
   color: #ffb400;
 }
 
-.badge-danger, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge {
+.badge-danger, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge {
   color: #fff;
   background-color: #c4183c;
 }
 
-.badge-danger[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .badge-danger[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus {
+.badge-danger[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:hover, .badge-danger[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-content .badge[href]:focus {
   color: #fff;
   text-decoration: none;
   background-color: #97122e;
@@ -21145,20 +21145,20 @@ a.badge {
 }
 
 .badge-product-reward {
-  color: #fff;
-  background-color: #00b8d8;
+  color: #212529;
+  background-color: #05E2B5;
 }
 
 .badge-product-reward[href]:hover, .badge-product-reward[href]:focus {
-  color: #fff;
+  color: #212529;
   text-decoration: none;
-  background-color: #008da5;
+  background-color: #04b08d;
 }
 
 .badge-outline-product-reward {
   background: none;
-  border: 1px solid #00b8d8;
-  color: #00b8d8;
+  border: 1px solid #05E2B5;
+  color: #05E2B5;
 }
 
 .badge-product-offer {
@@ -21214,12 +21214,12 @@ a.badge {
 }
 
 .alert-primary {
-  color: #ffebf2;
-  background-color: #f50057;
+  color: #b09ed9;
+  background-color: #36255D;
 }
 
 .alert-primary .alert-link {
-  color: #ffebf2;
+  color: #b09ed9;
 }
 
 .alert-secondary {
@@ -21309,12 +21309,12 @@ a.badge {
 }
 
 .alert-product-reward {
-  color: #cef8ff;
-  background-color: #00b8d8;
+  color: #defef8;
+  background-color: #05E2B5;
 }
 
 .alert-product-reward .alert-link {
-  color: #cef8ff;
+  color: #defef8;
 }
 
 .alert-product-offer {
@@ -21368,7 +21368,7 @@ a.badge {
   height: 0.625rem;
   line-height: 0.625rem;
   color: #fff;
-  background-color: #f50057;
+  background-color: #36255D;
   transition: width 0.6s ease;
 }
 
@@ -21427,31 +21427,31 @@ a.badge {
 
 .list-group-item.active {
   color: #fff;
-  background-color: #f50057;
-  border-color: #f50057;
+  background-color: #36255D;
+  border-color: #36255D;
 }
 
 .list-group-item-primary {
-  color: #7f002d;
-  background-color: #fcb8d0;
+  color: #1c1330;
+  background-color: #c7c2d2;
 }
 
 a.list-group-item-primary,
 button.list-group-item-primary {
-  color: #7f002d;
+  color: #1c1330;
 }
 
 a.list-group-item-primary:hover, a.list-group-item-primary:focus,
 button.list-group-item-primary:hover,
 button.list-group-item-primary:focus {
-  color: #7f002d;
-  background-color: #fba0c0;
+  color: #1c1330;
+  background-color: #bab3c7;
 }
 
 a.list-group-item-primary.active,
 button.list-group-item-primary.active {
-  background-color: #7f002d;
-  border-color: #7f002d;
+  background-color: #1c1330;
+  border-color: #1c1330;
 }
 
 .list-group-item-secondary {
@@ -21662,26 +21662,26 @@ button.list-group-item-brand-text-contrast.active {
 }
 
 .list-group-item-product-reward {
-  color: #006070;
-  background-color: #b8ebf4;
+  color: #03765e;
+  background-color: #b9f7ea;
 }
 
 a.list-group-item-product-reward,
 button.list-group-item-product-reward {
-  color: #006070;
+  color: #03765e;
 }
 
 a.list-group-item-product-reward:hover, a.list-group-item-product-reward:focus,
 button.list-group-item-product-reward:hover,
 button.list-group-item-product-reward:focus {
-  color: #006070;
-  background-color: #a2e5f1;
+  color: #03765e;
+  background-color: #a2f4e3;
 }
 
 a.list-group-item-product-reward.active,
 button.list-group-item-product-reward.active {
-  background-color: #006070;
-  border-color: #006070;
+  background-color: #03765e;
+  border-color: #03765e;
 }
 
 .list-group-item-product-offer {
@@ -22129,7 +22129,7 @@ button.list-group-item-product-offer.active {
 
 .noUi-target:focus {
   outline: 0;
-  box-shadow: 0 0 8px rgba(245, 0, 87, 0.65), 0 3px 15px rgba(90, 97, 105, 0.1), 0 2px 3px rgba(90, 97, 105, 0.2);
+  box-shadow: 0 0 8px rgba(54, 37, 93, 0.65), 0 3px 15px rgba(90, 97, 105, 0.1), 0 2px 3px rgba(90, 97, 105, 0.2);
 }
 
 .noUi-base,
@@ -22164,7 +22164,7 @@ button.list-group-item-product-offer.active {
 }
 
 .noUi-connect {
-  background: #f50057;
+  background: #36255D;
   border-radius: 5px;
 }
 
@@ -22268,7 +22268,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .noUi-handle:focus {
   outline: 0;
-  box-shadow: 0 0 8px rgba(245, 0, 87, 0.65), 0 3px 15px rgba(90, 97, 105, 0.1), 0 2px 3px rgba(90, 97, 105, 0.2);
+  box-shadow: 0 0 8px rgba(54, 37, 93, 0.65), 0 3px 15px rgba(90, 97, 105, 0.1), 0 2px 3px rgba(90, 97, 105, 0.2);
 }
 
 .noUi-handle:after {
@@ -22420,7 +22420,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .slider-primary .noUi-connect {
-  background: #f50057;
+  background: #36255D;
 }
 
 .slider-secondary .noUi-connect {
@@ -22460,7 +22460,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .slider-product-reward .noUi-connect {
-  background: #00b8d8;
+  background: #05E2B5;
 }
 
 .slider-product-offer .noUi-connect {
@@ -22601,16 +22601,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .datepicker table tr td.highlighted.focused {
-  background: #f50057;
+  background: #36255D;
 }
 
 .datepicker table tr td.highlighted.disabled, .datepicker table tr td.highlighted.disabled:active {
-  background: #f50057;
+  background: #36255D;
   color: #5A6169;
 }
 
 .datepicker table tr td.today {
-  background: #ffdce8;
+  background: #a793d4;
 }
 
 .datepicker table tr td.today.focused {
@@ -22623,18 +22623,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .datepicker table tr td.range {
-  background: #f50057;
+  background: #36255D;
   color: #fff;
   border-radius: 0;
 }
 
 .datepicker table tr td.range.focused {
-  background: #cc0049;
+  background: #251940;
 }
 
 .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:active, .datepicker table tr td.range.day.disabled:hover {
-  background: #c20045;
-  color: #ff2975;
+  background: #211639;
+  color: #4b3481;
 }
 
 .datepicker table tr td.range.highlighted.focused {
@@ -22666,12 +22666,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .datepicker table tr td.selected, .datepicker table tr td.selected.highlighted, .datepicker table tr td.selected:hover, .datepicker table tr td.selected.highlighted:hover, .datepicker table tr td.day.range:hover {
-  background: #f50057;
+  background: #36255D;
   color: #fff;
 }
 
 .datepicker table tr td.active, .datepicker table tr td.active.highlighted, .datepicker table tr td.active:hover, .datepicker table tr td.active.highlighted:hover {
-  background: #f50057;
+  background: #36255D;
   color: #fff;
 }
 
@@ -22738,23 +22738,23 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .bg-primary {
-  background-color: #f50057 !important;
+  background-color: #36255D !important;
 }
 
 .bg-primary.card .card-title,
 .bg-primary.card .card-body,
 .bg-primary.card .card-header,
 .bg-primary.card .card-footer {
-  background-color: #c20045 !important;
+  background-color: #211639 !important;
 }
 
 .bg-primary.card .card-header,
 .bg-primary.card .card-footer {
-  background: #e60052;
+  background: #302152;
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-  background-color: #c20045 !important;
+  background-color: #211639 !important;
 }
 
 .bg-secondary {
@@ -22938,23 +22938,23 @@ a.bg-brand-text-contrast:hover, a.bg-brand-text-contrast:focus {
 }
 
 .bg-product-reward {
-  background-color: #00b8d8 !important;
+  background-color: #05E2B5 !important;
 }
 
 .bg-product-reward.card .card-title,
 .bg-product-reward.card .card-body,
 .bg-product-reward.card .card-header,
 .bg-product-reward.card .card-footer {
-  background-color: #008da5 !important;
+  background-color: #04b08d !important;
 }
 
 .bg-product-reward.card .card-header,
 .bg-product-reward.card .card-footer {
-  background: #00abc9;
+  background: #05d3a9;
 }
 
 a.bg-product-reward:hover, a.bg-product-reward:focus {
-  background-color: #008da5 !important;
+  background-color: #04b08d !important;
 }
 
 .bg-product-offer {
@@ -22998,7 +22998,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-primary {
-  border-color: #f50057 !important;
+  border-color: #36255D !important;
 }
 
 .border-secondary {
@@ -23038,7 +23038,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-product-reward {
-  border-color: #00b8d8 !important;
+  border-color: #05E2B5 !important;
 }
 
 .border-product-offer {
@@ -23082,11 +23082,11 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .text-primary {
-  color: #f50057 !important;
+  color: #36255D !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #c20045 !important;
+  color: #211639 !important;
 }
 
 .text-secondary {
@@ -23162,11 +23162,11 @@ a.text-brand-text-contrast:hover, a.text-brand-text-contrast:focus {
 }
 
 .text-product-reward {
-  color: #00b8d8 !important;
+  color: #05E2B5 !important;
 }
 
 a.text-product-reward:hover, a.text-product-reward:focus {
-  color: #008da5 !important;
+  color: #04b08d !important;
 }
 
 .text-product-offer {
@@ -24496,7 +24496,7 @@ a.text-black:hover, a.text-black:focus {
   text-align: center;
   vertical-align: middle;
   will-change: color;
-  color: #f50057;
+  color: #36255D;
   transition: color 200ms ease;
   margin-right: 0.375rem;
 }
@@ -24507,13 +24507,13 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .main-sidebar .nav .nav-item.active, .main-sidebar .nav .nav-item .nav-link.active, .main-sidebar .nav .nav-item:hover, .main-sidebar .nav .nav-item .nav-link:hover {
-  box-shadow: inset 0.1875rem 0 0 #f50057;
+  box-shadow: inset 0.1875rem 0 0 #36255D;
   background-color: #FBFBFB;
-  color: #f50057;
+  color: #36255D;
 }
 
 .main-sidebar .nav .nav-item.active i, .main-sidebar .nav .nav-item .nav-link.active i, .main-sidebar .nav .nav-item:hover i, .main-sidebar .nav .nav-item .nav-link:hover i {
-  color: #f50057;
+  color: #36255D;
 }
 
 .main-sidebar .nav--no-borders .nav-item .nav-link {
@@ -24555,7 +24555,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .main-sidebar .dropdown-menu .dropdown-item:hover, .main-sidebar .dropdown-menu .dropdown-item.active {
-  color: #f50057;
+  color: #36255D;
 }
 
 .main-sidebar .dropdown-menu .dropdown-item:hover {
@@ -25683,26 +25683,26 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .btn.btn-product-reward {
-  color: #fff;
-  border-color: #00b8d8;
-  background-color: #00b8d8;
+  color: #212529;
+  border-color: #05E2B5;
+  background-color: #05E2B5;
   box-shadow: none;
 }
 
 .btn.btn-product-reward:hover {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #00a2bf;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  background-color: #04c9a1;
+  border-color: #04c9a1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn.btn-product-reward:focus, .btn.btn-product-reward.focus {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn.btn-product-reward.disabled, .btn.btn-product-reward:disabled {
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -25710,8 +25710,8 @@ a.text-black:hover, a.text-black:focus {
 .btn.btn-product-reward:not(:disabled):not(.disabled):active, .btn.btn-product-reward:not(:disabled):not(.disabled).active,
 .show > .btn.btn-product-reward.dropdown-toggle {
   color: #fff;
-  background-color: #00a2bf;
-  border-color: #008da5;
+  background-color: #04c9a1;
+  border-color: #04b08d;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -25719,23 +25719,23 @@ a.text-black:hover, a.text-black:focus {
 .btn.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #00b8d8;
-  color: #00b8d8;
+  border-color: #05E2B5;
+  color: #05E2B5;
 }
 
 .btn.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:hover {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 184, 216, 0.25);
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(5, 226, 181, 0.25);
 }
 
 .btn.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:focus, .btn.btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .btn.focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(0, 184, 216, 0.15), 0 3px 15px rgba(0, 184, 216, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(5, 226, 181, 0.15), 0 3px 15px rgba(5, 226, 181, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .btn.disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.disabled.btn-get-product, .btn.btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:disabled {
-  color: #00b8d8;
+  color: #05E2B5;
   background-color: transparent;
   box-shadow: none;
 }
@@ -25744,9 +25744,9 @@ a.text-black:hover, a.text-black:focus {
 .show > .btn.btn-outline-product-reward.dropdown-toggle,
 .card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle,
 .website-detail section.product-detail .card.card-product-infos.is-reward .show > .btn.dropdown-toggle.btn-get-product {
-  color: #fff;
-  background-color: #00b8d8;
-  border-color: #00b8d8;
+  color: #212529;
+  background-color: #05E2B5;
+  border-color: #05E2B5;
 }
 
 .btn.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -26508,12 +26508,12 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .card.card-product.is-reward .card-image {
-  border-bottom: solid 2px #00b8d8;
+  border-bottom: solid 2px #05E2B5;
 }
 
 .card.card-product.is-reward .card-image .card-product-type,
 .card.card-product.is-reward .card-image .card-product-value {
-  background-color: #00b8d8;
+  background-color: #05E2B5;
 }
 
 .card.card-product.is-reward .card-image .card-product-type {
@@ -26542,8 +26542,8 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .card.card-product.is-voucher-generated.is-reward .card-body .card-product-voucher {
-  background-color: rgba(0, 184, 216, 0.15);
-  border: dashed thin #00b8d8;
+  background-color: rgba(5, 226, 181, 0.15);
+  border: dashed thin #05e2b5;
 }
 
 .card.card-product.is-voucher-generated.is-offer .card-body .card-product-voucher {
@@ -27177,16 +27177,16 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body {
-  border-top: solid 4px #00b8d8;
+  border-top: solid 4px #05E2B5;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-value {
-  background-color: #00b8d8;
+  background-color: #05E2B5;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-type {
   font-weight: 900;
-  background-color: #00b8d8;
+  background-color: #05E2B5;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-type i:before {
@@ -27211,8 +27211,8 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-voucher-generated.is-reward .card-body .voucher-generated-block {
-  background-color: rgba(0, 184, 216, 0.15);
-  border: dashed thin #00b8d8;
+  background-color: rgba(5, 226, 181, 0.15);
+  border: dashed thin #05e2b5;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-voucher-generated.is-offer .card-body .voucher-generated-block {
@@ -27366,8 +27366,8 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-voucher-generated.is-reward .card-body .voucher-generated-block {
-  background-color: rgba(0, 184, 216, 0.15);
-  border: dashed thin #00b8d8;
+  background-color: rgba(5, 226, 181, 0.15);
+  border: dashed thin #05e2b5;
 }
 
 .website-detail section.product-detail .card.card-product-voucher-generated.is-offer .card-body .voucher-generated-block {
@@ -27422,18 +27422,17 @@ nav#subway-location .subway-location-switch .btn {
   color: var(--brand-text-contrast);
 }
 
+.website-home section.page-intro .jumbotron .container h1 {
+  font-size: 2.4rem;
+}
+
+.website-home section.page-intro .jumbotron .container h1 strong {
+  font-weight: 600;
+}
+
 .website-home section.page-intro .jumbotron .container p {
   font-size: 1.1rem;
   font-weight: 300;
-}
-
-@media (max-width: 1199px) {
-  .website-home section.page-intro .jumbotron {
-    padding: 90px 2rem;
-  }
-  .website-home section.page-intro .jumbotron h1 {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 575px) {
@@ -27723,33 +27722,36 @@ nav#subway-location .subway-location-switch .btn {
   padding-bottom: 0;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation, .website-loyalty-panel section.loyalty-panel .card.card-points-summary {
+  margin-bottom: 15px;
   box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 4px 8px rgba(90, 97, 105, 0.12), 0 10px 10px rgba(90, 97, 105, 0.06), 0 7px 70px rgba(90, 97, 105, 0.1);
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-header,
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-header,
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-footer, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-header,
 .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-footer {
   background-color: #fff;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-header .card-title {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-header .card-title, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-header .card-title {
   font-weight: 500;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body {
   padding: 0;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item {
   display: -ms-flexbox;
   display: flex;
   margin-left: 1.875rem;
+  margin-right: 15px;
   border-left: 1px solid #e9ecef;
   border-bottom: 1px solid #e9ecef;
   font-weight: 400;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-icon, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon {
   text-align: center;
   border-radius: 50%;
   float: left;
@@ -27763,21 +27765,21 @@ nav#subway-location .subway-location-switch .btn {
   box-shadow: 0 0 0 2px #fff, inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon i {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-icon i, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon i {
   font-size: 1rem;
   line-height: 1.875rem;
   color: #17c671;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon i:before {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-icon i:before, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-icon i:before {
   content: "\f067";
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content {
   padding: 15px 0;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .activity-date {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content .activity-date, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content .activity-date {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -27785,32 +27787,41 @@ nav#subway-location .subway-location-switch .btn {
   font-size: .8rem;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content p {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item .activity-item-content p, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item .activity-item-content p {
   font-size: 1.05rem;
   margin-top: 2.5px;
   margin-bottom: 0;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item:last-child {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item:last-child, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item:last-child {
   border-bottom: 0;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item:after {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item:after, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item:after {
   display: block;
   clear: both;
   content: "";
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i {
   color: #c4183c;
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i:before {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i:before, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-body .timeline-activity .activity-item.is-redeem .activity-item-icon i:before {
   content: "\f068";
 }
 
-.website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-footer {
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-footer, .website-loyalty-panel section.loyalty-panel .card.card-points-summary .card-footer {
   text-align: center;
+}
+
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-header .card-title {
+  color: #c4183c;
+  font-weight: 400;
+}
+
+.website-loyalty-panel section.loyalty-panel .card.card-points-validation .card-header .card-title strong {
+  font-weight: 600;
 }
 
 .website-offers section.page-banner .jumbotron {
@@ -27904,17 +27915,17 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-rewards section.page-banner .jumbotron {
-  background-color: #00b8d8;
+  background-color: #05E2B5;
 }
 
 .website-rewards section.page-banner .jumbotron h1,
 .website-rewards section.page-banner .jumbotron p {
-  color: #fff;
+  color: #212529;
 }
 
 .website-rewards section.products-lists section .products-list-header .product-list-title strong {
   font-weight: 600;
-  color: #00b8d8;
+  color: #05E2B5;
 }
 
 .website-stores section.page-banner .jumbotron {
@@ -28424,7 +28435,7 @@ section.products-lists section.products-list-offers .product-list-title strong {
 }
 
 section.products-lists section.products-list-features .product-list-title strong {
-  color: #00b8d8;
+  color: #05E2B5;
 }
 
 section.products-lists section.products-list-vouchers .product-list-title strong {
@@ -28432,7 +28443,7 @@ section.products-lists section.products-list-vouchers .product-list-title strong
 }
 
 section.products-lists section.products-list-rewards .product-list-title strong {
-  color: #00b8d8;
+  color: #05E2B5;
 }
 
 section.social-network {
