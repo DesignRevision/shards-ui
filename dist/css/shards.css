@@ -8236,7 +8236,7 @@ readers do not read off random characters that represent icons */
   --primary-darken: #dc004e;
   --brand-text-contrast: #FFFFFF;
   --product-reward: #05E2B5;
-  --product-offer: #fb7906;
+  --product-offer: #FF7200;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -8335,7 +8335,7 @@ h1, h2, h3, h4, h5, h6 {
   --primary-darken: #dc004e;
   --brand-text-contrast: #FFFFFF;
   --product-reward: #05E2B5;
-  --product-offer: #fb7906;
+  --product-offer: #FF7200;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -10054,16 +10054,16 @@ pre code {
 .table-product-offer,
 .table-product-offer > th,
 .table-product-offer > td {
-  background-color: #fed9b9;
+  background-color: #ffd8b8;
 }
 
 .table-hover .table-product-offer:hover {
-  background-color: #fecba0;
+  background-color: #ffca9f;
 }
 
 .table-hover .table-product-offer:hover > td,
 .table-hover .table-product-offer:hover > th {
-  background-color: #fecba0;
+  background-color: #ffca9f;
 }
 
 .table-active,
@@ -11067,25 +11067,25 @@ fieldset:disabled a.btn {
 
 .btn-product-offer {
   color: #fff;
-  border-color: #fb7906;
-  background-color: #fb7906;
+  border-color: #FF7200;
+  background-color: #FF7200;
   box-shadow: none;
 }
 
 .btn-product-offer:hover {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #e46d04;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #e66700;
+  border-color: #e66700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn-product-offer:focus, .btn-product-offer.focus {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-product-offer.disabled, .btn-product-offer:disabled {
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -11093,8 +11093,8 @@ fieldset:disabled a.btn {
 .btn-product-offer:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active,
 .show > .btn-product-offer.dropdown-toggle {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #cb6103;
+  background-color: #e66700;
+  border-color: #cc5b00;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -11504,23 +11504,23 @@ fieldset:disabled a.btn {
 .btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #fb7906;
-  color: #fb7906;
+  border-color: #FF7200;
+  color: #FF7200;
 }
 
 .btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:hover {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #FF7200;
+  border-color: #FF7200;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:disabled {
-  color: #fb7906;
+  color: #FF7200;
   background-color: transparent;
   box-shadow: none;
 }
@@ -11530,8 +11530,8 @@ fieldset:disabled a.btn {
 .card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
 .website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
 }
 
 .btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -13390,13 +13390,13 @@ tbody.collapse.show {
 
 .badge-product-offer {
   color: #fff;
-  background-color: #fb7906;
+  background-color: #FF7200;
 }
 
 .badge-product-offer[href]:hover, .badge-product-offer[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #cb6103;
+  background-color: #cc5b00;
 }
 
 .jumbotron {
@@ -13601,17 +13601,17 @@ tbody.collapse.show {
 }
 
 .alert-product-offer {
-  color: #833f03;
-  background-color: #fee4cd;
-  border-color: #fed9b9;
+  color: #853b00;
+  background-color: #ffe3cc;
+  border-color: #ffd8b8;
 }
 
 .alert-product-offer hr {
-  border-top-color: #fecba0;
+  border-top-color: #ffca9f;
 }
 
 .alert-product-offer .alert-link {
-  color: #512702;
+  color: #522400;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -14009,26 +14009,26 @@ button.list-group-item-product-reward.active {
 }
 
 .list-group-item-product-offer {
-  color: #833f03;
-  background-color: #fed9b9;
+  color: #853b00;
+  background-color: #ffd8b8;
 }
 
 a.list-group-item-product-offer,
 button.list-group-item-product-offer {
-  color: #833f03;
+  color: #853b00;
 }
 
 a.list-group-item-product-offer:hover, a.list-group-item-product-offer:focus,
 button.list-group-item-product-offer:hover,
 button.list-group-item-product-offer:focus {
-  color: #833f03;
-  background-color: #fecba0;
+  color: #853b00;
+  background-color: #ffca9f;
 }
 
 a.list-group-item-product-offer.active,
 button.list-group-item-product-offer.active {
-  background-color: #833f03;
-  border-color: #833f03;
+  background-color: #853b00;
+  border-color: #853b00;
 }
 
 .close {
@@ -14957,23 +14957,23 @@ a.bg-product-reward:hover, a.bg-product-reward:focus {
 }
 
 .bg-product-offer {
-  background-color: #fb7906 !important;
+  background-color: #FF7200 !important;
 }
 
 .bg-product-offer.card .card-title,
 .bg-product-offer.card .card-body,
 .bg-product-offer.card .card-header,
 .bg-product-offer.card .card-footer {
-  background-color: #cb6103 !important;
+  background-color: #cc5b00 !important;
 }
 
 .bg-product-offer.card .card-header,
 .bg-product-offer.card .card-footer {
-  background: #ee7204;
+  background: #f06b00;
 }
 
 a.bg-product-offer:hover, a.bg-product-offer:focus {
-  background-color: #cb6103 !important;
+  background-color: #cc5b00 !important;
 }
 
 .bg-white {
@@ -15069,7 +15069,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-product-offer {
-  border-color: #fb7906 !important;
+  border-color: #FF7200 !important;
 }
 
 .border-white {
@@ -17653,11 +17653,11 @@ a.text-product-reward:hover, a.text-product-reward:focus {
 }
 
 .text-product-offer {
-  color: #fb7906 !important;
+  color: #FF7200 !important;
 }
 
 a.text-product-offer:hover, a.text-product-offer:focus {
-  color: #cb6103 !important;
+  color: #cc5b00 !important;
 }
 
 .text-muted {
@@ -18092,16 +18092,16 @@ pre {
 .table-product-offer,
 .table-product-offer > th,
 .table-product-offer > td {
-  background-color: #fed9b9;
+  background-color: #ffd8b8;
 }
 
 .table-hover .table-product-offer:hover {
-  background-color: #fecba0;
+  background-color: #ffca9f;
 }
 
 .table-hover .table-product-offer:hover > td,
 .table-hover .table-product-offer:hover > th {
-  background-color: #fecba0;
+  background-color: #ffca9f;
 }
 
 .table-active,
@@ -18558,25 +18558,25 @@ pre {
 
 .btn-product-offer {
   color: #fff;
-  border-color: #fb7906;
-  background-color: #fb7906;
+  border-color: #FF7200;
+  background-color: #FF7200;
   box-shadow: none;
 }
 
 .btn-product-offer:hover {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #e46d04;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #e66700;
+  border-color: #e66700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn-product-offer:focus, .btn-product-offer.focus {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-product-offer.disabled, .btn-product-offer:disabled {
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -18584,8 +18584,8 @@ pre {
 .btn-product-offer:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active,
 .show > .btn-product-offer.dropdown-toggle {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #cb6103;
+  background-color: #e66700;
+  border-color: #cc5b00;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -19063,23 +19063,23 @@ pre {
 .btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #fb7906;
-  color: #fb7906;
+  border-color: #FF7200;
+  color: #FF7200;
 }
 
 .btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:hover {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #FF7200;
+  border-color: #FF7200;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:disabled {
-  color: #fb7906;
+  color: #FF7200;
   background-color: transparent;
   box-shadow: none;
 }
@@ -19089,8 +19089,8 @@ pre {
 .card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
 .website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
 }
 
 .btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -21163,19 +21163,19 @@ a.badge {
 
 .badge-product-offer {
   color: #fff;
-  background-color: #fb7906;
+  background-color: #FF7200;
 }
 
 .badge-product-offer[href]:hover, .badge-product-offer[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #cb6103;
+  background-color: #cc5b00;
 }
 
 .badge-outline-product-offer {
   background: none;
-  border: 1px solid #fb7906;
-  color: #fb7906;
+  border: 1px solid #FF7200;
+  color: #FF7200;
 }
 
 .jumbotron {
@@ -21318,12 +21318,12 @@ a.badge {
 }
 
 .alert-product-offer {
-  color: #fffbf7;
-  background-color: #fb7906;
+  color: #fff9f5;
+  background-color: #FF7200;
 }
 
 .alert-product-offer .alert-link {
-  color: #fffbf7;
+  color: #fff9f5;
 }
 
 .progress-wrapper {
@@ -21685,26 +21685,26 @@ button.list-group-item-product-reward.active {
 }
 
 .list-group-item-product-offer {
-  color: #833f03;
-  background-color: #fed9b9;
+  color: #853b00;
+  background-color: #ffd8b8;
 }
 
 a.list-group-item-product-offer,
 button.list-group-item-product-offer {
-  color: #833f03;
+  color: #853b00;
 }
 
 a.list-group-item-product-offer:hover, a.list-group-item-product-offer:focus,
 button.list-group-item-product-offer:hover,
 button.list-group-item-product-offer:focus {
-  color: #833f03;
-  background-color: #fecba0;
+  color: #853b00;
+  background-color: #ffca9f;
 }
 
 a.list-group-item-product-offer.active,
 button.list-group-item-product-offer.active {
-  background-color: #833f03;
-  border-color: #833f03;
+  background-color: #853b00;
+  border-color: #853b00;
 }
 
 .close {
@@ -22464,7 +22464,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .slider-product-offer .noUi-connect {
-  background: #fb7906;
+  background: #FF7200;
 }
 
 .datepicker {
@@ -22958,23 +22958,23 @@ a.bg-product-reward:hover, a.bg-product-reward:focus {
 }
 
 .bg-product-offer {
-  background-color: #fb7906 !important;
+  background-color: #FF7200 !important;
 }
 
 .bg-product-offer.card .card-title,
 .bg-product-offer.card .card-body,
 .bg-product-offer.card .card-header,
 .bg-product-offer.card .card-footer {
-  background-color: #cb6103 !important;
+  background-color: #cc5b00 !important;
 }
 
 .bg-product-offer.card .card-header,
 .bg-product-offer.card .card-footer {
-  background: #ee7204;
+  background: #f06b00;
 }
 
 a.bg-product-offer:hover, a.bg-product-offer:focus {
-  background-color: #cb6103 !important;
+  background-color: #cc5b00 !important;
 }
 
 .border {
@@ -23042,7 +23042,7 @@ a.bg-product-offer:hover, a.bg-product-offer:focus {
 }
 
 .border-product-offer {
-  border-color: #fb7906 !important;
+  border-color: #FF7200 !important;
 }
 
 .rounded {
@@ -23170,11 +23170,11 @@ a.text-product-reward:hover, a.text-product-reward:focus {
 }
 
 .text-product-offer {
-  color: #fb7906 !important;
+  color: #FF7200 !important;
 }
 
 a.text-product-offer:hover, a.text-product-offer:focus {
-  color: #cb6103 !important;
+  color: #cc5b00 !important;
 }
 
 .text-body {
@@ -25758,25 +25758,25 @@ a.text-black:hover, a.text-black:focus {
 
 .btn.btn-product-offer {
   color: #fff;
-  border-color: #fb7906;
-  background-color: #fb7906;
+  border-color: #FF7200;
+  background-color: #FF7200;
   box-shadow: none;
 }
 
 .btn.btn-product-offer:hover {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #e46d04;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #e66700;
+  border-color: #e66700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn.btn-product-offer:focus, .btn.btn-product-offer.focus {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn.btn-product-offer.disabled, .btn.btn-product-offer:disabled {
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
   box-shadow: none;
   cursor: not-allowed;
 }
@@ -25784,8 +25784,8 @@ a.text-black:hover, a.text-black:focus {
 .btn.btn-product-offer:not(:disabled):not(.disabled):active, .btn.btn-product-offer:not(:disabled):not(.disabled).active,
 .show > .btn.btn-product-offer.dropdown-toggle {
   color: #fff;
-  background-color: #e46d04;
-  border-color: #cb6103;
+  background-color: #e66700;
+  border-color: #cc5b00;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
@@ -25793,23 +25793,23 @@ a.text-black:hover, a.text-black:focus {
 .btn.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product {
   background-color: transparent;
   background-image: none;
-  border-color: #fb7906;
-  color: #fb7906;
+  border-color: #FF7200;
+  color: #FF7200;
 }
 
 .btn.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:hover {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(251, 121, 6, 0.25);
+  background-color: #FF7200;
+  border-color: #FF7200;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(255, 114, 0, 0.25);
 }
 
 .btn.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:focus, .btn.btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .btn.focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.focus.btn-get-product {
-  box-shadow: 0 0 0 3px rgba(251, 121, 6, 0.15), 0 3px 15px rgba(251, 121, 6, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.15), 0 3px 15px rgba(255, 114, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .btn.disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.disabled.btn-get-product, .btn.btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:disabled {
-  color: #fb7906;
+  color: #FF7200;
   background-color: transparent;
   box-shadow: none;
 }
@@ -25819,8 +25819,8 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle,
 .website-detail section.product-detail .card.card-product-infos.is-offer .show > .btn.dropdown-toggle.btn-get-product {
   color: #fff;
-  background-color: #fb7906;
-  border-color: #fb7906;
+  background-color: #FF7200;
+  border-color: #FF7200;
 }
 
 .btn.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
@@ -26525,12 +26525,12 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .card.card-product.is-offer .card-image {
-  border-bottom: solid 2px #fb7906;
+  border-bottom: solid 2px #FF7200;
 }
 
 .card.card-product.is-offer .card-image .card-product-type,
 .card.card-product.is-offer .card-image .card-product-value {
-  background-color: #fb7906;
+  background-color: #FF7200;
 }
 
 .card.card-product.is-offer .card-image .card-product-type {
@@ -26547,8 +26547,8 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .card.card-product.is-voucher-generated.is-offer .card-body .card-product-voucher {
-  background-color: rgba(251, 121, 6, 0.15);
-  border: dashed thin rgba(251, 121, 6, 0.25);
+  background-color: rgba(255, 114, 0, 0.15);
+  border: dashed thin rgba(255, 114, 0, 0.25);
 }
 
 .card.card-product:hover {
@@ -27194,15 +27194,15 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-offer .card-body {
-  border-top: solid 4px #fb7906;
+  border-top: solid 4px #FF7200;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-offer .card-body .card-product-value {
-  background-color: #fb7906;
+  background-color: #FF7200;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-offer .card-body .card-product-type {
-  background-color: #fb7906;
+  background-color: #FF7200;
   font-weight: 900;
 }
 
@@ -27216,8 +27216,8 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-voucher-generated.is-offer .card-body .voucher-generated-block {
-  background-color: rgba(251, 121, 6, 0.15);
-  border: dashed thin rgba(251, 121, 6, 0.25);
+  background-color: rgba(255, 114, 0, 0.15);
+  border: dashed thin rgba(255, 114, 0, 0.25);
 }
 
 @media (max-width: 991px) {
@@ -27371,8 +27371,8 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-voucher-generated.is-offer .card-body .voucher-generated-block {
-  background-color: rgba(251, 121, 6, 0.15);
-  border: dashed thin rgba(251, 121, 6, 0.25);
+  background-color: rgba(255, 114, 0, 0.15);
+  border: dashed thin rgba(255, 114, 0, 0.25);
 }
 
 .website-detail section.product-detail .btn-get-product {
@@ -27825,7 +27825,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-offers section.page-banner .jumbotron {
-  background-color: #fb7906;
+  background-color: #FF7200;
 }
 
 .website-offers section.page-banner .jumbotron h1,
@@ -27835,7 +27835,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-offers section.products-lists section .products-list-header .product-list-title strong {
   font-weight: 600;
-  color: #fb7906;
+  color: #FF7200;
 }
 
 .website-review section.page-banner .jumbotron {
@@ -28431,7 +28431,7 @@ section.products-lists section .products-list-header .product-list-lead {
 }
 
 section.products-lists section.products-list-offers .product-list-title strong {
-  color: #fb7906;
+  color: #FF7200;
 }
 
 section.products-lists section.products-list-features .product-list-title strong {
