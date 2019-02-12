@@ -26652,6 +26652,119 @@ label {
   padding: 30px 0;
 }
 
+.website-voucher-generate main#main-container {
+  min-height: inherit !important;
+}
+
+.website-voucher-generate main#main-container .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container {
+  width: 450px;
+  max-width: 100%;
+  margin: 50px 15px 0;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth {
+  margin: 0 0 30px;
+  border-top: solid 3px var(--primary);
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header {
+  padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-icon i {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content h4,
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content p {
+  margin-bottom: 0;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body {
+  padding: 20px;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group {
+  margin-bottom: 20px;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px;
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+@media (max-width: 575px) {
+  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
+    width: 100%;
+    text-align: center;
+  }
+  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section:first-child {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 990px) {
+  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth {
+    margin: 0 0 20px;
+  }
+}
+
+.website-voucher-generate main#main-container .wrapper .auth-container .auth-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .website-voucher-generate main#main-container .wrapper .auth-container {
+    margin: 20px 15px 0;
+  }
+}
+
 .list-cards {
   width: 100%;
   display: -ms-flexbox;
