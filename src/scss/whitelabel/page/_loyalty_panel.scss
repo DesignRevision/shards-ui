@@ -120,91 +120,6 @@
 
         .card-body {
           padding: 0;
-
-          .timeline-activity {
-            .activity-item {
-              display: flex;
-              margin-left: 1.875rem;
-              margin-right: 15px;
-              border-left: 1px solid #e9ecef;
-              border-bottom: 1px solid #e9ecef;
-              font-weight: 400;
-
-              .activity-item-icon {
-                text-align: center;
-                border-radius: 50%;
-                float: left;
-                width: 1.875rem;
-                height: 1.875rem;
-                min-width: 1.875rem;
-                background: #f5f6f8;
-                margin-top: 15px;
-                margin-left: -.9375rem;
-                margin-right: .9375rem;
-                box-shadow: 0 0 0 2px #fff, inset 0 0 3px rgba(0, 0, 0, 0.2);
-
-                i {
-                  font-size: 1rem;
-                  line-height: 1.875rem;
-                  color: $success;
-
-                  &:before {
-                    content: "\f067";
-                  }
-                }
-              }
-
-              .activity-item-content {
-                padding: 15px 0;
-
-                .activity-date {
-                  display: inline-block;
-                  margin-right: 10px;
-                  margin-bottom: 5px;
-                  font-style: italic;
-                  font-size: .8rem;
-                }
-
-                .badge {
-                  @extend .badge-success;
-                }
-
-                p {
-                  font-size: 1.05rem;
-                  margin-top: 2.5px;
-                  margin-bottom: 0;
-                }
-              }
-
-              &:last-child {
-                border-bottom: 0;
-              }
-
-              &:after {
-                display: block;
-                clear: both;
-                content: "";
-              }
-
-              &.is-redeem {
-                .activity-item-icon {
-                  i {
-                    color: $danger;
-
-                    &:before {
-                      content: "\f068";
-                    }
-                  }
-                }
-
-                .activity-item-content {
-                  .badge {
-                    @extend .badge-danger;
-                  }
-                }
-              }
-            }
-          }
         }
 
         .card-footer {
@@ -215,7 +130,6 @@
       &.card-points-validation {
         .card-header {
           .card-title {
-						color: $danger;
 						font-weight: 400;
 
             strong {
