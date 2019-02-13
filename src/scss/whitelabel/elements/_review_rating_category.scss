@@ -15,6 +15,7 @@
 
       &:checked~label {
         .category-text {
+					background-color: #fff;
 					border-color: $success;
 					color: $success;
 					box-shadow: $card-box-shadow;

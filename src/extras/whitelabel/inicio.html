@@ -15,7 +15,8 @@
 <body>
   <div id="page-container"
        class="website-home">
-    <nav id="subway-location" class="d-none">
+    <nav id="subway-location"
+         class="d-none">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 subway-location-current">
@@ -239,37 +240,73 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <section class="page-intro">
-          <div class="jumbotron">
-            <div class="container">
-              <div class="row d-none">
-                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-                  <h1 class="display-5">Bem-vindo ao <strong>Fidelidade Zygo</strong></h1>
-                  <p>
-                    Faça o cadastro e aproveite as nossas recompensas e ofertas feitas especialmente para você!
-                  </p>
-                  <a class="btn btn-white btn-lg mr-2" href="cadastrar.html" role="button">
-										Quero me cadastrar
-									</a>
-                  <a class="btn btn-lg btn-outline-white" href="entrar.html" role="button">
-										Já sou cliente.
-									</a>
-                </div>
-							</div>
-
-              <div class="row">
-                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-                  <h1 class="display-5">
-										<strong>Olá Jerônimo</strong>, tudo jóia?
-									</h1>
-                  <p>
-										Temos algumas recompensas e ofertas que você pode resgatar agora. Vamos lá?
-                  </p>
-                </div>
-              </div>
+        <div class="page-header-intro page-header-intro-lg">
+          <!-- CONTEXTO: Usuário NÃO LOGADO -->
+          <div class="wrapper">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">
+								Bem-vindo ao <strong>Fidelidade Zygo</strong>
+							</h1>
+              <p class="header-intro-description">
+                Faça o cadastro e aproveite as nossas recompensas e ofertas feitas especialmente para você!
+              </p>
+            </div>
+            <div class="page-header-action">
+              <a class="btn btn-pill btn-white mr-2" href="cadastrar.html" role="button">
+								Quero me cadastrar
+							</a>
+              <a class="btn btn-pill btn-outline-white" href="entrar.html" role="button">
+								Já sou cliente.
+							</a>
             </div>
           </div>
-        </section>
+
+          <!-- CONTEXTO: Usuário LOGADO E NÃO É O MÊS DE ANIVERSÁRIO DELE -->
+          <div class="wrapper d-none">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">
+								<strong>Olá Jerônimo</strong>, como está você?
+							</h1>
+              <p class="header-intro-description">
+                Temos algumas recompensas e ofertas que você pode resgatar agora. Vamos lá?
+              </p>
+            </div>
+					</div>
+
+          <!-- CONTEXTO: Usuário LOGADO E É O MÊS DE ANIVERSÁRIO DELE -->
+          <div class="wrapper d-none">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">
+								<strong>Feliz aniversário Jerônimo!</strong>
+							</h1>
+              <p class="header-intro-description">
+                Temos algumas ofertas especiais para comemorar seu aniversário juntos :)
+              </p>
+            </div>
+            <div class="page-header-action">
+              <a class="btn btn-pill btn-white mr-2" href="cadastrar.html" role="button">
+								Confira agora essas ofertas
+								<i class="fas fa-arrow-right fa-fw ml-5"></i>
+							</a>
+            </div>
+          </div>
+				</div>
+
+				<section class="review-store">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 review-store-lead">
+								Já visitou uma de nossas lojas?
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 review-store-action">
+								<a href="avalie-agora.html" class="btn btn-pill btn-outline-white">
+									<i class="fas fa-star fa-fw mr-5"></i>
+									Deixe uma avaliação
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
 
         <section class="messages-system">
           <div class="container">
@@ -522,7 +559,7 @@
                 </div>
               </div>
             </div>
-					</section>
+          </section>
 
           <section class="products-list-offers">
             <div class="container">

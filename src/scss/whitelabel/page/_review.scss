@@ -1,14 +1,17 @@
 .website-review {
-  section.page-banner {
-    .jumbotron {
-      background-color: $review;
+  .page-header-intro {
+    background-color: $review;
 
-      h1,
-      p {
-        color: #333;
+    .wrapper {
+      .page-header-content {
+        .header-intro-title,
+        .header-intro-description {
+          color: color-yiq($review);
+        }
       }
     }
-  }
+	}
+
   section.review-store {
     padding: 30px 0;
 

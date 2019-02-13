@@ -1,22 +1,37 @@
 .page-header-intro {
   height: 120px;
+  background-color: $light;
 
   .wrapper {
     height: 100%;
     display: flex;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
     @include make-container();
     @include make-container-max-widths();
 
+    .page-header-content,
+    .page-header-action {
+      width: 100%;
+    }
+
     .page-header-content {
+
       .header-intro-title,
       .header-intro-description {
         margin-bottom: 0;
       }
 
       .header-intro-title {
-				font-size: 2.4rem;
-				font-weight: 500;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.35;
+
+        strong {
+          font-weight: 600;
+        }
 
         @media (max-width: 992px - 1px) {
           font-size: 2rem;
@@ -33,5 +48,21 @@
         margin-bottom: 0;
       }
     }
+
+    .page-header-action {
+      margin-top: 20px;
+    }
+  }
+
+  &.page-header-intro-lg {
+    height: 200px;
+
+    @media (max-width: 576px - 1px) {
+      height: inherit;
+    }
+  }
+
+  @media (max-width: 576px - 1px) {
+    height: inherit;
   }
 }

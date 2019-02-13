@@ -8267,7 +8267,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #212529;
   background-color: #f5f6f7;
 }
@@ -8373,7 +8373,7 @@ body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -8740,7 +8740,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 mark,
@@ -10644,7 +10644,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -11543,7 +11543,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link {
-  font-weight: 300;
+  font-weight: 400;
   color: #36255D;
   background-color: transparent;
 }
@@ -11766,7 +11766,7 @@ tbody.collapse.show {
   width: 100%;
   padding: 0.875rem 0.875rem;
   clear: both;
-  font-weight: 300;
+  font-weight: 400;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -12055,7 +12055,7 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #abb6bf;
   text-align: center;
@@ -14228,7 +14228,7 @@ button.close {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -14341,7 +14341,7 @@ button.close {
   max-width: 276px;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -17550,7 +17550,7 @@ a.bg-review:hover, a.bg-review:focus {
 }
 
 .font-weight-normal {
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 .font-weight-bold {
@@ -17836,7 +17836,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 mark,
@@ -18152,7 +18152,7 @@ pre {
 }
 
 .btn {
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   border: 1px solid transparent;
   padding: 0.75rem 1.25rem;
@@ -19184,7 +19184,7 @@ pre {
 }
 
 .btn-link {
-  font-weight: 300;
+  font-weight: 400;
   color: #36255D;
 }
 
@@ -19282,7 +19282,7 @@ i.material-icons {
 
 .dropdown-item {
   padding: 0.875rem 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #212529;
   font-size: 0.9375rem;
   transition: background-color 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06), color 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
@@ -19496,7 +19496,7 @@ i.material-icons {
 
 .input-group-text {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: #abb6bf;
   background-color: #f9fafb;
@@ -19734,7 +19734,7 @@ i.material-icons {
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
   border: 1px solid #becad6;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.95rem;
   transition: box-shadow 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06), border 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
   border-radius: 0.375rem;
@@ -19830,7 +19830,7 @@ i.material-icons {
   color: #495057;
   background-color: #fff;
   border: 1px solid #becad6;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: none;
   transition: box-shadow 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06), border-color 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
   border-radius: 0.375rem;
@@ -21799,7 +21799,7 @@ button.list-group-item-review.active {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -21883,7 +21883,7 @@ button.list-group-item-review.active {
   max-width: 276px;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -23075,7 +23075,7 @@ a.bg-review:hover, a.bg-review:focus {
 }
 
 .font-weight-normal {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .font-weight-bold {
@@ -26684,6 +26684,7 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
 
 .page-header-intro {
   height: 120px;
+  background-color: #e9ecef;
 }
 
 .page-header-intro .wrapper {
@@ -26692,6 +26693,11 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -26723,6 +26729,11 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   }
 }
 
+.page-header-intro .wrapper .page-header-content,
+.page-header-intro .wrapper .page-header-action {
+  width: 100%;
+}
+
 .page-header-intro .wrapper .page-header-content .header-intro-title,
 .page-header-intro .wrapper .page-header-content .header-intro-description {
   margin-bottom: 0;
@@ -26731,6 +26742,11 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
 .page-header-intro .wrapper .page-header-content .header-intro-title {
   font-size: 2.4rem;
   font-weight: 500;
+  line-height: 1.35;
+}
+
+.page-header-intro .wrapper .page-header-content .header-intro-title strong {
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -26749,6 +26765,26 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 0;
+}
+
+.page-header-intro .wrapper .page-header-action {
+  margin-top: 20px;
+}
+
+.page-header-intro.page-header-intro-lg {
+  height: 200px;
+}
+
+@media (max-width: 575px) {
+  .page-header-intro.page-header-intro-lg {
+    height: inherit;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-header-intro {
+    height: inherit;
+  }
 }
 
 footer#page-footer {
@@ -26866,6 +26902,7 @@ footer#page-footer .content-copyright a:hover {
 }
 
 .review-rating-category .category-item input[type="checkbox"]:checked ~ label .category-text {
+  background-color: #fff;
   border-color: #17c671;
   color: #17c671;
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
@@ -27582,6 +27619,27 @@ nav#subway-location .subway-location-switch .btn {
   text-align: right;
 }
 
+.website-home .page-header-intro {
+  background-color: var(--primary);
+}
+
+.website-home .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-home .page-header-intro .wrapper .page-header-content .header-intro-description {
+  color: var(--brand-text-contrast);
+}
+
+@media (max-width: 500px) {
+  .website-home .page-header-intro .wrapper .page-header-action .btn {
+    width: 100%;
+  }
+  .website-home .page-header-intro .wrapper .page-header-action .btn:first-child {
+    margin-top: 0 !important;
+  }
+  .website-home .page-header-intro .wrapper .page-header-action .btn:last-child {
+    margin-top: 15px;
+  }
+}
+
 .website-home section.page-intro {
   margin-bottom: 0 !important;
 }
@@ -27636,8 +27694,40 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.website-home section.review-store {
+  padding: 10px 0;
+  margin-bottom: 0 !important;
+  background-color: #271B43;
+  color: #fff;
+}
+
+.website-home section.review-store .review-store-lead {
+  font-weight: 600;
+}
+
+.website-home section.review-store .review-store-action {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  .website-home section.review-store .review-store-action {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .website-home section.review-store .review-store-action .btn {
+    padding: 0.35rem 1rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 575px) {
+  .website-home section.review-store {
+    text-align: center;
+  }
+}
+
 .website-home section.messages-system {
-  margin-top: 25px;
   margin-bottom: 0 !important;
 }
 
@@ -27779,6 +27869,10 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-home section.messages-system .alert:hover {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-home section.messages-system .alert:first-child {
+  margin-top: 25px;
 }
 
 .website-home section.messages-system .alert:last-child {
@@ -27944,13 +28038,13 @@ nav#subway-location .subway-location-switch .btn {
   color: #fd7e14;
 }
 
-.website-review section.page-banner .jumbotron {
+.website-review .page-header-intro {
   background-color: #ffb400;
 }
 
-.website-review section.page-banner .jumbotron h1,
-.website-review section.page-banner .jumbotron p {
-  color: #333;
+.website-review .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-review .page-header-intro .wrapper .page-header-content .header-intro-description {
+  color: #212529;
 }
 
 .website-review section.review-store {
@@ -28465,48 +28559,6 @@ label {
   margin-bottom: 0;
 }
 
-section.page-banner {
-  margin-bottom: 0 !important;
-}
-
-section.page-banner .jumbotron {
-  padding: 35px 2rem;
-  margin-bottom: 0;
-  position: relative;
-  border-radius: 0;
-}
-
-section.page-banner .jumbotron .container {
-  position: relative;
-  z-index: 10;
-}
-
-section.page-banner .jumbotron .container h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0;
-}
-
-section.page-banner .jumbotron .container p {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-@media (max-width: 575px) {
-  section.page-banner .jumbotron {
-    padding: 35px 15px;
-  }
-  section.page-banner .jumbotron h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 400px) {
-  section.page-banner .jumbotron {
-    padding: 30px 15px;
-  }
-}
-
 section.products-lists {
   margin-bottom: 0 !important;
 }
@@ -28533,7 +28585,7 @@ section.products-lists section .products-list-header .product-list-title strong 
 
 section.products-lists section .products-list-header .product-list-lead {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 section.products-lists section.products-list-offers .product-list-title strong {

@@ -1,4 +1,34 @@
 .website-home {
+  .page-header-intro {
+    background-color: var(--primary);
+
+    .wrapper {
+      .page-header-content {
+
+        .header-intro-title,
+        .header-intro-description {
+          color: var(--brand-text-contrast);
+        }
+      }
+
+      .page-header-action {
+        @media (max-width: 501px - 1px) {
+          .btn {
+            width: 100%;
+
+            &:first-child {
+              margin-top: 0 !important;
+            }
+
+            &:last-child {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   section.page-intro {
     margin-bottom: 0 !important;
 
@@ -51,8 +81,37 @@
     }
   }
 
+  section.review-store {
+    padding: 10px 0;
+    margin-bottom: 0 !important;
+    background-color: #271B43;
+    color: #fff;
+
+    .review-store-lead {
+      font-weight: 600;
+    }
+
+    .review-store-action {
+      text-align: right;
+
+      @media (max-width: 576px - 1px) {
+        text-align: center;
+        margin-top: 8px;
+
+        .btn {
+          padding: 0.35rem 1rem;
+          font-size: 0.75rem;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    @media (max-width: 576px - 1px) {
+      text-align: center;
+    }
+  }
+
   section.messages-system {
-    margin-top: 25px;
     margin-bottom: 0 !important;
 
     .alert {
@@ -190,6 +249,10 @@
 
       &:hover {
         box-shadow: $card-box-shadow;
+      }
+
+      &:first-child {
+        margin-top: 25px;
       }
 
       &:last-child {
