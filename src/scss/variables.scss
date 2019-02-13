@@ -7,18 +7,23 @@ $brand-text-contrast: #FFFFFF;
 
 /*! Bootstrap Color (Override Bootstrap) */
 $primary: #36255D;
-$primary-darken: #dc004e;
+$info: #0EC4D3;
+$warning: #FFD41E;
+$danger: #FF140E;
 
-/*! Whitelabel Product Type Color (Override Bootstrap) */
+/*! Whitelabel Product Type Color */
 $product-reward: #05E2B5;
 $product-offer: #FF7200;
 
+/*! Whitelabel Context Color */
+$review: #ffb400;
+
 /*! Adding new colors to Map */
 $theme-colors: (
-	"primary-darken": $primary-darken,
 	"brand-text-contrast": $brand-text-contrast,
 	"product-reward": $product-reward,
 	"product-offer": $product-offer,
+	"review": $review
 );
 
 /*! Whitelabel Settings (Override Bootstrap) */

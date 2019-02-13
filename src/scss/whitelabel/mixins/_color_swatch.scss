@@ -1,0 +1,28 @@
+.color-wrapper {
+  .color-swatch {
+    padding: 25px 20px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(40, 47, 60, 0.05), 0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .swatch {
+      position: relative;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+      width: 110px;
+      height: 110px;
+    }
+
+    .title {
+      display: inline-block;
+      width: 100%;
+			font-size: 1.1rem;
+			font-weight: 500;
+    }
+  }
+}

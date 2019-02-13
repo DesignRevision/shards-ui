@@ -10,6 +10,10 @@
   color: $brand-whatsapp;
 }
 
+.text-review {
+  color: $review !important;
+}
+
 .font-w300 {
   font-weight: 300 !important;
 }
@@ -50,23 +54,42 @@
   font-size: $font-size-xs !important;
 }
 
-@each $prop, $abbrev in (margin: m, padding: p) {
-	@each $size, $lengths in $space-breaks {
-			$length-x: map-get($lengths, x);
-			$length-y: map-get($lengths, y);
+@each $prop,
+$abbrev in (margin: m, padding: p) {
 
-			.#{$abbrev}-#{$size}  { #{$prop}:        $length-y $length-x !important; }
-			.#{$abbrev}t-#{$size} { #{$prop}-top:    $length-y !important; }
-			.#{$abbrev}r-#{$size} { #{$prop}-right:  $length-x !important; }
-			.#{$abbrev}b-#{$size} { #{$prop}-bottom: $length-y !important; }
-			.#{$abbrev}l-#{$size} { #{$prop}-left:   $length-x !important; }
-			.#{$abbrev}x-#{$size} {
-					#{$prop}-right: $length-x !important;
-					#{$prop}-left:  $length-x !important;
-			}
-			.#{$abbrev}y-#{$size} {
-					#{$prop}-top:    $length-y !important;
-					#{$prop}-bottom: $length-y !important;
-			}
-	}
+  @each $size,
+  $lengths in $space-breaks {
+    $length-x: map-get($lengths, x);
+    $length-y: map-get($lengths, y);
+
+    .#{$abbrev}-#{$size} {
+      #{$prop}: $length-y $length-x !important;
+    }
+
+    .#{$abbrev}t-#{$size} {
+      #{$prop}-top: $length-y !important;
+    }
+
+    .#{$abbrev}r-#{$size} {
+      #{$prop}-right: $length-x !important;
+    }
+
+    .#{$abbrev}b-#{$size} {
+      #{$prop}-bottom: $length-y !important;
+    }
+
+    .#{$abbrev}l-#{$size} {
+      #{$prop}-left: $length-x !important;
+    }
+
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length-x !important;
+      #{$prop}-left: $length-x !important;
+    }
+
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top: $length-y !important;
+      #{$prop}-bottom: $length-y !important;
+    }
+  }
 }
