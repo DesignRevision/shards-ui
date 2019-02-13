@@ -1,11 +1,14 @@
 .website-stores {
-  section.page-banner {
-    .jumbotron {
-      background-color: var(--primary);
+  .page-header-intro {
+    background-color: var(--primary);
 
-      h1,
-      p {
-        color: var(--brand-text-contrast);
+    .wrapper {
+      .page-header-content {
+
+        .header-intro-title,
+        .header-intro-description {
+          color: var(--brand-text-contrast);
+        }
       }
     }
   }

@@ -24248,7 +24248,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .user-details__tags .badge {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .user-teams__info span:first-child {
@@ -26196,7 +26196,7 @@ a.text-black:hover, a.text-black:focus {
 
 .empty-state .wrapper .empty-state-content .empty-state-lead {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (max-width: 991px) {
@@ -26312,7 +26312,7 @@ aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a .user-inf
 
 aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a .user-info small {
   font-size: 80%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a:hover, aside.main-sidebar .nav-wrapper .nav .nav-item.nav-item-user-snippet a:active {
@@ -26495,7 +26495,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user > a .user-info small {
   font-size: 80%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (max-width: 991px) {
@@ -26541,7 +26541,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user-points > a .points-quantity small {
   font-size: 80%;
-  font-weight: 300;
+  font-weight: 400;
   color: #656565;
 }
 
@@ -26682,7 +26682,12 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   }
 }
 
+.page-header-intro {
+  height: 120px;
+}
+
 .page-header-intro .wrapper {
+  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -26716,6 +26721,34 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   .page-header-intro .wrapper {
     max-width: 1140px;
   }
+}
+
+.page-header-intro .wrapper .page-header-content .header-intro-title,
+.page-header-intro .wrapper .page-header-content .header-intro-description {
+  margin-bottom: 0;
+}
+
+.page-header-intro .wrapper .page-header-content .header-intro-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .page-header-intro .wrapper .page-header-content .header-intro-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-header-intro .wrapper .page-header-content .header-intro-title {
+    font-size: 1.75rem;
+  }
+}
+
+.page-header-intro .wrapper .page-header-content .header-intro-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 footer#page-footer {
@@ -27131,7 +27164,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .custom-control .custom-control-label {
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .alert.alert-success {
@@ -27581,7 +27614,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-home section.page-intro .jumbotron .container p {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (max-width: 575px) {
@@ -27752,12 +27785,12 @@ nav#subway-location .subway-location-switch .btn {
   margin-bottom: 0;
 }
 
-.website-loyalty-panel section.page-banner .jumbotron {
+.website-loyalty-panel .page-header-intro {
   background-color: var(--primary);
 }
 
-.website-loyalty-panel section.page-banner .jumbotron h1,
-.website-loyalty-panel section.page-banner .jumbotron p {
+.website-loyalty-panel .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-loyalty-panel .page-header-intro .wrapper .page-header-content .header-intro-description {
   color: var(--brand-text-contrast);
 }
 
@@ -27902,13 +27935,8 @@ nav#subway-location .subway-location-switch .btn {
   font-weight: 600;
 }
 
-.website-offers section.page-banner .jumbotron {
+.website-offers .page-header-intro {
   background-color: #fd7e14;
-}
-
-.website-offers section.page-banner .jumbotron h1,
-.website-offers section.page-banner .jumbotron p {
-  color: #212529;
 }
 
 .website-offers section.products-lists section .products-list-header .product-list-title strong {
@@ -27992,12 +28020,12 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
 }
 
-.website-rewards section.page-banner .jumbotron {
+.website-rewards .page-header-intro {
   background-color: #4472F3;
 }
 
-.website-rewards section.page-banner .jumbotron h1,
-.website-rewards section.page-banner .jumbotron p {
+.website-rewards .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-rewards .page-header-intro .wrapper .page-header-content .header-intro-description {
   color: #fff;
 }
 
@@ -28006,12 +28034,12 @@ nav#subway-location .subway-location-switch .btn {
   color: #4472F3;
 }
 
-.website-stores section.page-banner .jumbotron {
+.website-stores .page-header-intro {
   background-color: var(--primary);
 }
 
-.website-stores section.page-banner .jumbotron h1,
-.website-stores section.page-banner .jumbotron p {
+.website-stores .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-stores .page-header-intro .wrapper .page-header-content .header-intro-description {
   color: var(--brand-text-contrast);
 }
 
@@ -28166,12 +28194,12 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
-.website-user-edit section.page-banner .jumbotron {
+.website-user-edit .page-header-intro {
   background-color: var(--primary);
 }
 
-.website-user-edit section.page-banner .jumbotron h1,
-.website-user-edit section.page-banner .jumbotron p {
+.website-user-edit .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-user-edit .page-header-intro .wrapper .page-header-content .header-intro-description {
   color: var(--brand-text-contrast);
 }
 
@@ -28460,7 +28488,7 @@ section.page-banner .jumbotron .container h1 {
 
 section.page-banner .jumbotron .container p {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0;
 }
 

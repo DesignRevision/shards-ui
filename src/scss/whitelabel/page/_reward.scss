@@ -1,14 +1,17 @@
 .website-rewards {
-  section.page-banner {
-    .jumbotron {
-      background-color: $product-reward;
+  .page-header-intro {
+    background-color: $product-reward;
 
-      h1,
-      p {
-        color: color-yiq($product-reward);
+    .wrapper {
+      .page-header-content {
+        .header-intro-title,
+        .header-intro-description {
+          color: color-yiq($product-reward);
+        }
       }
     }
   }
+
 
   section.products-lists {
     section {

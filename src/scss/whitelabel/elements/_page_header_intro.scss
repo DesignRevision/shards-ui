@@ -1,0 +1,37 @@
+.page-header-intro {
+  height: 120px;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include make-container();
+    @include make-container-max-widths();
+
+    .page-header-content {
+      .header-intro-title,
+      .header-intro-description {
+        margin-bottom: 0;
+      }
+
+      .header-intro-title {
+				font-size: 2.4rem;
+				font-weight: 500;
+
+        @media (max-width: 992px - 1px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 576px - 1px) {
+          font-size: 1.75rem;
+        }
+      }
+
+      .header-intro-description {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

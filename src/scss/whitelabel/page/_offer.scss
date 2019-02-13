@@ -1,13 +1,6 @@
 .website-offers {
-  section.page-banner {
-    .jumbotron {
-      background-color: $product-offer;
-
-      h1,
-      p {
-        color: color-yiq($product-offer);
-      }
-    }
+  .page-header-intro {
+    background-color: $product-offer;
   }
 
   section.products-lists {
