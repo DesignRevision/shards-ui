@@ -26976,7 +26976,7 @@ nav#subway-location .subway-location-switch .btn {
 .website-auth main#main-container .wrapper .auth-container {
   width: 450px;
   max-width: 100%;
-  margin: 50px 15px 0;
+  margin: 20px 15px 0;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth {
@@ -27142,12 +27142,6 @@ nav#subway-location .subway-location-switch .btn {
 .website-auth main#main-container .wrapper .auth-container .auth-actions {
   text-align: center;
   margin-bottom: 20px;
-}
-
-@media (max-width: 990px) {
-  .website-auth main#main-container .wrapper .auth-container {
-    margin: 20px 15px 0;
-  }
 }
 
 .website-detail section.product-detail {

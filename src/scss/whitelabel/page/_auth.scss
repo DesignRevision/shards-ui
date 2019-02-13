@@ -10,7 +10,7 @@
       .auth-container {
         width: 450px;
         max-width: 100%;
-        margin: 50px 15px 0;
+        margin: 20px 15px 0;
 
         .card {
           &.card-auth {
@@ -167,10 +167,6 @@
         .auth-actions {
           text-align: center;
           margin-bottom: 20px;
-        }
-
-        @media (max-width: 991px - 1px) {
-          margin: 20px 15px 0;
         }
       }
     }
