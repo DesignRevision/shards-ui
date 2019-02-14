@@ -29,58 +29,6 @@
     }
   }
 
-  section.page-intro {
-    margin-bottom: 0 !important;
-
-    .jumbotron {
-      padding: 60px 2rem;
-      margin-bottom: 0;
-      position: relative;
-      background-color: var(--primary);
-      border-radius: 0;
-
-      .container {
-        position: relative;
-        z-index: 10;
-
-        h1,
-        p {
-          color: var(--brand-text-contrast);
-        }
-
-        h1 {
-          font-size: 2.4rem;
-
-          strong {
-            font-weight: 600;
-          }
-        }
-
-        p {
-          font-size: 1.1rem;
-          font-weight: 400;
-        }
-      }
-
-      @media (max-width: 576px - 1px) {
-        padding: 60px 15PX;
-
-        h1 {
-          font-size: 2rem;
-        }
-      }
-
-      @media (max-width: 501px - 1px) {
-        padding: 40px 15PX;
-
-        .btn {
-          width: 100%;
-          margin-top: 15px;
-        }
-      }
-    }
-  }
-
   section.review-store {
     padding: 10px 0;
     margin-bottom: 0 !important;
