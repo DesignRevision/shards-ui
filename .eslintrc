@@ -14,5 +14,8 @@
 	},
 	"globals": {
 			"jQuery": true
+	},
+	"env": {
+		"browser": true
 	}
 }

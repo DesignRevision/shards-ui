@@ -17,6 +17,7 @@ const reviewRating = (function() {
 			const ratingEl = jQuery(this);
 
 			ratingEl.raty({
+				scoreName: ratingEl.data('score-name') || 'score',
 				score: ratingEl.data('score') || null,
 				number: ratingEl.data('number') || 5,
 				cancel: ratingEl.data('cancel') || false,
@@ -32,9 +33,7 @@ const reviewRating = (function() {
 					ratingEl.data('star-half') || 'fa fa-fw fa-star-half-o text-warning',
 				starOff: ratingEl.data('star-off') || 'fa fa-fw fa-star text-muted',
 				starOn: ratingEl.data('star-on') || 'fa fa-fw fa-star text-warning',
-				click(score, evt) {
-					console.log(`ID: ${this.id}\nscore: ${score}\nevent: ${evt}`);
-				}
+				click: ratingEl.data('on-click') || function() {}
 			});
 		});
 	};
@@ -46,6 +45,4 @@ const reviewRating = (function() {
 	};
 })();
 
-jQuery(function() {
-	reviewRating.init();
-});
+window.reviewRating = reviewRating;
