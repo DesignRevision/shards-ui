@@ -28084,6 +28084,58 @@ nav#subway-location .subway-location-switch .btn {
   color: var(--brand-text-contrast);
 }
 
+.website-stores section.stores-list {
+  padding: 30px 0;
+}
+
+.website-stores section.stores-list .alert.alert-stores-info {
+  margin-bottom: 20px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-stores section.stores-list .alert.alert-stores-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.website-stores section.stores-list .alert.alert-stores-info ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.website-stores section.stores-list .alert.alert-stores-info ul li:before {
+  content: '\f111';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item {
+  border-radius: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.website-stores section.stores-list .stores-list-map {
+  width: 100%;
+  min-height: 40vh;
+}
+
 .website-subway-intro {
   position: relative;
   background-image: url("../images/subway-cover.jpeg");

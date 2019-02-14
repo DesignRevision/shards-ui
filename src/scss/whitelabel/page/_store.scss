@@ -12,4 +12,64 @@
       }
     }
   }
+
+  section.stores-list {
+    padding: 30px 0;
+
+    .alert {
+      &.alert-stores-info {
+        margin-bottom: 20px;
+        box-shadow: $card-box-shadow;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 0;
+
+          li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            font-size: 1.05rem;
+            line-height: 1.5;
+
+            &:before {
+              content: '\f111';
+              position: absolute;
+              top: 5px;
+              left: 0;
+              font-family: 'Font Awesome 5 Pro';
+              font-size: 8px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    .card {
+      &.card-stores-list {
+        .list-group {
+          .list-group-item {
+            border-radius: 0;
+            border-right: 0;
+            border-left: 0;
+
+            &:first-child {
+              border-top: 0;
+            }
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .stores-list-map {
+			width: 100%;
+      min-height: 40vh;
+    }
+  }
 }
