@@ -19,8 +19,8 @@
 
             .card-header {
               padding: 20px;
-							display: flex;
-							align-items: center;
+              display: flex;
+              align-items: center;
 
               .card-header-icon {
                 flex-shrink: 0;
@@ -49,6 +49,7 @@
                 .btn {
                   display: flex;
                   align-items: center;
+                  margin-bottom: 2.5px;
 
                   .btn-icon {
                     flex-shrink: 0;

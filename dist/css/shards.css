@@ -24969,7 +24969,7 @@ a.text-black:hover, a.text-black:focus {
 .error__content h2 {
   color: #CACEDB;
   font-weight: 700;
-  font-size: 3.75rem;
+  font-size: 6.75rem;
   margin-bottom: 1.5625rem;
 }
 
@@ -27128,6 +27128,7 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  margin-bottom: 2.5px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn .btn-icon {
