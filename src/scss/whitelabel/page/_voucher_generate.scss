@@ -1,19 +1,17 @@
 .website-voucher-generate {
   main#main-container {
-    min-height: inherit !important;
-
     .wrapper {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
 
-      .auth-container {
+      .voucher-container {
         width: 450px;
         max-width: 100%;
         margin: 50px 15px 0;
 
         .card {
-          &.card-auth {
+          &.card-voucher {
             margin: 0 0 30px;
             border-top: solid 3px var(--primary);
 
@@ -45,7 +43,7 @@
             .card-body {
 							padding: 20px;
 
-              .auth-form-container {
+              .voucher-form-container {
                 .form-group {
                   margin-bottom: 20px;
 
@@ -87,7 +85,7 @@
           }
         }
 
-        .auth-actions {
+        .voucher-actions {
           text-align: center;
           margin-bottom: 20px;
         }
