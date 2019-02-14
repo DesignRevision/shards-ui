@@ -28248,8 +28248,113 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px 0;
 }
 
-.website-voucher-generate main#main-container {
-  min-height: inherit !important;
+.website-user-infos-complete main#main-container .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container {
+  width: 450px;
+  max-width: 100%;
+  margin: 50px 15px 0;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos {
+  margin: 0 0 30px;
+  border-top: solid 3px var(--primary);
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header {
+  padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header .card-header-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header .card-header-icon i {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header .card-header-content {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header .card-header-content h4,
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header .card-header-content p {
+  margin-bottom: 0;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body {
+  padding: 20px;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body .user-infos-form-container .form-group {
+  margin-bottom: 20px;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body .user-infos-form-container .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px;
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer .card-footer-section {
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+@media (max-width: 575px) {
+  .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer .card-footer-section {
+    width: 100%;
+    text-align: center;
+  }
+  .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer .card-footer-section:first-child {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 990px) {
+  .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos {
+    margin: 0 0 20px;
+  }
+}
+
+.website-user-infos-complete main#main-container .wrapper .user-infos-container .user-infos-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .website-user-infos-complete main#main-container .wrapper .user-infos-container {
+    margin: 20px 15px 0;
+  }
 }
 
 .website-voucher-generate main#main-container .wrapper {
@@ -28261,18 +28366,18 @@ nav#subway-location .subway-location-switch .btn {
       flex-wrap: wrap;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container {
+.website-voucher-generate main#main-container .wrapper .voucher-container {
   width: 450px;
   max-width: 100%;
   margin: 50px 15px 0;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher {
   margin: 0 0 30px;
   border-top: solid 3px var(--primary);
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header {
   padding: 20px;
   display: -ms-flexbox;
   display: flex;
@@ -28280,40 +28385,40 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-icon {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header .card-header-icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: 15px;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-icon i {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header .card-header-icon i {
   color: var(--primary);
   font-size: 3rem;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header .card-header-content {
   -ms-flex-positive: 1;
       flex-grow: 1;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content h4,
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-header .card-header-content p {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header .card-header-content h4,
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-header .card-header-content p {
   margin-bottom: 0;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-body {
   padding: 20px;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-body .voucher-form-container .form-group {
   margin-bottom: 20px;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group:last-child {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-body .voucher-form-container .form-group:last-child {
   margin-bottom: 0;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -28323,40 +28428,40 @@ nav#subway-location .subway-location-switch .btn {
   padding: 20px;
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
+.website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-footer .card-footer-section {
   -ms-flex-positive: 0;
       flex-grow: 0;
 }
 
 @media (max-width: 575px) {
-  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer {
+  .website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-footer {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
+  .website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-footer .card-footer-section {
     width: 100%;
     text-align: center;
   }
-  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section:first-child {
+  .website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher .card-footer .card-footer-section:first-child {
     margin-top: 25px;
   }
 }
 
 @media (max-width: 990px) {
-  .website-voucher-generate main#main-container .wrapper .auth-container .card.card-auth {
+  .website-voucher-generate main#main-container .wrapper .voucher-container .card.card-voucher {
     margin: 0 0 20px;
   }
 }
 
-.website-voucher-generate main#main-container .wrapper .auth-container .auth-actions {
+.website-voucher-generate main#main-container .wrapper .voucher-container .voucher-actions {
   text-align: center;
   margin-bottom: 20px;
 }
 
 @media (max-width: 990px) {
-  .website-voucher-generate main#main-container .wrapper .auth-container {
+  .website-voucher-generate main#main-container .wrapper .voucher-container {
     margin: 20px 15px 0;
   }
 }
@@ -29105,8 +29210,8 @@ section.social-network .intro h2 strong {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
   88.8% {
-    -webkit-transform: skewX(-0.195313deg) skewY(-0.195313deg);
-    transform: skewX(-0.195313deg) skewY(-0.195313deg);
+    -webkit-transform: skewX(-0.195312deg) skewY(-0.195312deg);
+    transform: skewX(-0.195312deg) skewY(-0.195312deg);
   }
 }
 
@@ -29142,8 +29247,8 @@ section.social-network .intro h2 strong {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
   88.8% {
-    -webkit-transform: skewX(-0.195313deg) skewY(-0.195313deg);
-    transform: skewX(-0.195313deg) skewY(-0.195313deg);
+    -webkit-transform: skewX(-0.195312deg) skewY(-0.195312deg);
+    transform: skewX(-0.195312deg) skewY(-0.195312deg);
   }
 }
 
