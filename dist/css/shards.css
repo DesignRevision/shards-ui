@@ -27640,60 +27640,6 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
-.website-home section.page-intro {
-  margin-bottom: 0 !important;
-}
-
-.website-home section.page-intro .jumbotron {
-  padding: 60px 2rem;
-  margin-bottom: 0;
-  position: relative;
-  background-color: var(--primary);
-  border-radius: 0;
-}
-
-.website-home section.page-intro .jumbotron .container {
-  position: relative;
-  z-index: 10;
-}
-
-.website-home section.page-intro .jumbotron .container h1,
-.website-home section.page-intro .jumbotron .container p {
-  color: var(--brand-text-contrast);
-}
-
-.website-home section.page-intro .jumbotron .container h1 {
-  font-size: 2.4rem;
-}
-
-.website-home section.page-intro .jumbotron .container h1 strong {
-  font-weight: 600;
-}
-
-.website-home section.page-intro .jumbotron .container p {
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-@media (max-width: 575px) {
-  .website-home section.page-intro .jumbotron {
-    padding: 60px 15PX;
-  }
-  .website-home section.page-intro .jumbotron h1 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .website-home section.page-intro .jumbotron {
-    padding: 40px 15PX;
-  }
-  .website-home section.page-intro .jumbotron .btn {
-    width: 100%;
-    margin-top: 15px;
-  }
-}
-
 .website-home section.review-store {
   padding: 10px 0;
   margin-bottom: 0 !important;
