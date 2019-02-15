@@ -48,6 +48,25 @@
           border-top-right-radius: .625rem;
           border-bottom-right-radius: .625rem;
 
+          .card-content-infos {
+            .card-product-points {}
+
+            .card-product-points-missing {}
+
+            .card-product-type {
+              border-top-right-radius: .425rem;
+              border-bottom-left-radius: .625rem;
+
+              i {
+                color: #FFF;
+              }
+
+              @media (max-width: 992px - 1px) {
+                border-top-right-radius: 0;
+              }
+            }
+          }
+
           .card-product-type {
             position: absolute;
             width: 35px;
@@ -60,14 +79,6 @@
             border-top-right-radius: .425rem;
             border-bottom-left-radius: .625rem;
             font-size: 1.2rem;
-
-            i {
-              color: #FFF;
-            }
-
-            @media (max-width: 992px - 1px) {
-              border-top-right-radius: 0;
-            }
           }
 
           .card-content-main,
@@ -150,6 +161,9 @@
         }
 
         &.is-offer {
+					.card-content-infos{
+						background-color: $product-offer;
+					}
           .card-body {
             border-top: solid 4px $product-offer;
 
@@ -253,7 +267,7 @@
                 &:before {
                   content: '\f111';
                   position: absolute;
-                  top: 4px;
+                  top: 4.5px;
                   left: 0;
                   font-family: 'Font Awesome 5 Pro';
                   font-size: 8px;
@@ -325,8 +339,8 @@
 
           @media (max-width: 992px - 1px) {
             flex-wrap: wrap;
-						justify-content: center;
-						text-align: center;
+            justify-content: center;
+            text-align: center;
 
             .voucher-generated-countdown,
             .voucher-generated-block {

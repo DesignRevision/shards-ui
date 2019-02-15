@@ -8703,7 +8703,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .display-1 {
@@ -27351,6 +27351,21 @@ nav#subway-location .subway-location-switch .btn {
   border-bottom-right-radius: .625rem;
 }
 
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type {
+  border-top-right-radius: .425rem;
+  border-bottom-left-radius: .625rem;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type i {
+  color: #FFF;
+}
+
+@media (max-width: 991px) {
+  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type {
+    border-top-right-radius: 0;
+  }
+}
+
 .website-detail section.product-detail .card.card-product-infos .card-body .card-product-type {
   position: absolute;
   width: 35px;
@@ -27366,16 +27381,6 @@ nav#subway-location .subway-location-switch .btn {
   border-top-right-radius: .425rem;
   border-bottom-left-radius: .625rem;
   font-size: 1.2rem;
-}
-
-.website-detail section.product-detail .card.card-product-infos .card-body .card-product-type i {
-  color: #FFF;
-}
-
-@media (max-width: 991px) {
-  .website-detail section.product-detail .card.card-product-infos .card-body .card-product-type {
-    border-top-right-radius: 0;
-  }
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-main,
@@ -27451,6 +27456,10 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-type i:before {
   content: "\f005";
+}
+
+.website-detail section.product-detail .card.card-product-infos.is-offer .card-content-infos {
+  background-color: #fd7e14;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-offer .card-body {
@@ -27543,7 +27552,7 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item:before {
   content: '\f111';
   position: absolute;
-  top: 4px;
+  top: 4.5px;
   left: 0;
   font-family: 'Font Awesome 5 Pro';
   font-size: 8px;
