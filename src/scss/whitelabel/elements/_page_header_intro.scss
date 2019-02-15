@@ -1,6 +1,7 @@
 .page-header-intro {
   height: 120px;
   background-color: $light;
+  position: relative;
 
   .wrapper {
     height: 100%;
@@ -54,8 +55,35 @@
     }
   }
 
-  &.page-header-intro-lg {
+  &.page-header-intro-home {
     height: 200px;
+
+    &.is-user-logged {
+      .wrapper {
+        .page-header-content {
+          position: relative;
+
+          &:after {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: "\f582";
+						font-family: "Font Awesome 5 Pro";
+						font-weight: 700;
+            font-size: 7rem;
+            color: #fff;
+            top: 0;
+            bottom: 0;
+            right: 0;
+
+						@media (max-width: 576px - 1px) {
+							display: none;
+						}
+          }
+        }
+      }
+    }
 
     @media (max-width: 576px - 1px) {
       height: inherit;

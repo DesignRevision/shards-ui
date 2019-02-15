@@ -240,7 +240,7 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <div class="page-header-intro page-header-intro-lg">
+        <div class="page-header-intro page-header-intro-home is-user-not-logged">
           <!-- CONTEXTO: Usuário NÃO LOGADO -->
           <div class="wrapper">
             <div class="page-header-content">
@@ -248,7 +248,7 @@
 								Bem-vindo ao <strong>Fidelidade Zygo</strong>
 							</h1>
               <p class="header-intro-description">
-                Faça o cadastro e aproveite as nossas recompensas e ofertas feitas especialmente para você!
+                Cadastre-se e aproveite as nossas recompensas e ofertas feitas especialmente para você!
               </p>
             </div>
             <div class="page-header-action">
@@ -260,56 +260,48 @@
 							</a>
             </div>
           </div>
-				</div>
+        </div>
 
-        <div class="page-header-intro page-header-intro-lg">
+        <div class="page-header-intro page-header-intro-home is-user-logged">
           <!-- CONTEXTO: Usuário LOGADO E NÃO É O MÊS DE ANIVERSÁRIO DELE -->
           <div class="wrapper">
             <div class="page-header-content">
               <h1 class="header-intro-title">
-								<strong>Olá Jerônimo</strong>, como está você?
+								<strong>Olá Jerônimo</strong>
 							</h1>
               <p class="header-intro-description">
-                Temos algumas recompensas e ofertas que você pode resgatar agora. Vamos lá?
+                Que bom que você voltou!
               </p>
             </div>
-					</div>
-				</div>
+          </div>
+        </div>
 
-        <div class="page-header-intro page-header-intro-lg">
+        <div class="page-header-intro page-header-intro-home is-user-birthday-month">
           <div class="wrapper">
             <div class="page-header-content">
               <h1 class="header-intro-title">
 								<strong>Feliz aniversário Jerônimo!</strong>
 							</h1>
               <p class="header-intro-description">
-                Temos algumas ofertas especiais para comemorar seu aniversário juntos :)
+                Que seu mês seja tão especial quanto os nossos benefícios.
               </p>
             </div>
-            <div class="page-header-action">
-              <a class="btn btn-pill btn-white mr-2" href="cadastrar.html" role="button">
-								Confira agora essas ofertas
-								<i class="fas fa-arrow-right fa-fw ml-5"></i>
-							</a>
-            </div>
           </div>
-				</div>
+        </div>
 
-				<section class="review-store">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 review-store-lead">
-								Já visitou uma de nossas lojas?
-							</div>
-							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 review-store-action">
-								<a href="avalie-agora.html" class="btn btn-pill btn-outline-white">
-									<i class="fas fa-star fa-fw mr-5"></i>
+        <section class="review-store">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 review-store-action">
+                <span class="review-store-lead">Visitou uma de nossas lojas?</span>
+                <a href="avalie-agora.html" class="link-effect text-white">
+									<i class="fas fa-star fa-fw"></i>
 									Deixe uma avaliação
 								</a>
-							</div>
-						</div>
-					</div>
-				</section>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="messages-system">
           <div class="container">
@@ -351,7 +343,7 @@
                 <div class="alert alert-secondary alert-user-info"
                      role="alert">
                   <i class="fas fa-info-circle fa-fw mr-5"></i>
-                  Aparemente você não completou seu cadastro.
+                  Você ainda não <strong>finalizou o seu cadastro</strong>. Que tal finaliza-ló agora?
                   <strong>
 										<a href="editar-perfil.html" class="link-effect">Clique aqui</a> para finalizar.
 									</strong>
@@ -927,10 +919,10 @@
     </footer>
   </div>
 
-	<script src="./js/shards.js"></script>
-	<script>
-		window.reviewRating.init();
-	</script>
+  <script src="./js/shards.js"></script>
+  <script>
+  window.reviewRating.init();
+  </script>
 </body>
 
 </html>

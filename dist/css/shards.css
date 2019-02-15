@@ -26696,6 +26696,7 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
 .page-header-intro {
   height: 120px;
   background-color: #e9ecef;
+  position: relative;
 }
 
 .page-header-intro .wrapper {
@@ -26782,12 +26783,40 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   margin-top: 20px;
 }
 
-.page-header-intro.page-header-intro-lg {
+.page-header-intro.page-header-intro-home {
   height: 200px;
 }
 
+.page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content {
+  position: relative;
+}
+
+.page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content:after {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  content: "\f582";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 700;
+  font-size: 7rem;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
 @media (max-width: 575px) {
-  .page-header-intro.page-header-intro-lg {
+  .page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content:after {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-header-intro.page-header-intro-home {
     height: inherit;
   }
 }
@@ -27659,23 +27688,32 @@ nav#subway-location .subway-location-switch .btn {
   color: #fff;
 }
 
-.website-home section.review-store .review-store-lead {
+.website-home section.review-store .review-store-action {
+  text-align: right;
+}
+
+.website-home section.review-store .review-store-action .review-store-lead {
+  margin-right: 4px;
+}
+
+.website-home section.review-store .review-store-action a {
+  color: #FFF;
   font-weight: 600;
 }
 
-.website-home section.review-store .review-store-action {
-  text-align: right;
+.website-home section.review-store .review-store-action a:before {
+  background-color: #fff;
 }
 
 @media (max-width: 575px) {
   .website-home section.review-store .review-store-action {
     text-align: center;
-    margin-top: 8px;
   }
-  .website-home section.review-store .review-store-action .btn {
-    padding: 0.35rem 1rem;
-    font-size: 0.75rem;
-    line-height: 1.5;
+}
+
+@media (max-width: 412px) {
+  .website-home section.review-store .review-store-action {
+    font-size: 0.8rem;
   }
 }
 

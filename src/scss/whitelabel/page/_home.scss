@@ -35,23 +35,29 @@
     background-color: #271B43;
     color: #fff;
 
-    .review-store-lead {
-      font-weight: 600;
-    }
-
     .review-store-action {
       text-align: right;
 
+			.review-store-lead {
+				margin-right: 4px;
+			}
+
+			a {
+				color: #FFF;
+				font-weight: 600;
+
+				&:before {
+					background-color: #fff;
+				}
+			}
+
       @media (max-width: 576px - 1px) {
         text-align: center;
-        margin-top: 8px;
-
-        .btn {
-          padding: 0.35rem 1rem;
-          font-size: 0.75rem;
-          line-height: 1.5;
-        }
       }
+
+			@media (max-width: 413px - 1px) {
+				font-size: 0.8rem;
+			}
     }
 
     @media (max-width: 576px - 1px) {
