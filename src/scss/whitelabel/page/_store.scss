@@ -50,8 +50,9 @@
     .card {
       &.card-stores-list {
         .list-group {
+          border-radius: 0.625rem;
+
           .list-group-item {
-            border-radius: 0;
             border-right: 0;
             border-left: 0;
 
@@ -68,8 +69,11 @@
     }
 
     .stores-list-map {
-			width: 100%;
-      min-height: 40vh;
+      width: 100%;
+      height: 80vh;
+      border-radius: 0.625rem;
+      overflow: hidden;
+      box-shadow: $card-box-shadow;
     }
   }
 }

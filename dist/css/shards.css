@@ -25714,6 +25714,17 @@ a.text-black:hover, a.text-black:focus {
   padding-bottom: 300px !important;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .alert.alert-review {
   color: #ffb400;
   background-color: #ffb400;
@@ -28117,8 +28128,11 @@ nav#subway-location .subway-location-switch .btn {
   font-weight: 500;
 }
 
+.website-stores section.stores-list .card.card-stores-list .list-group {
+  border-radius: 0.625rem;
+}
+
 .website-stores section.stores-list .card.card-stores-list .list-group .list-group-item {
-  border-radius: 0;
   border-right: 0;
   border-left: 0;
 }
@@ -28133,7 +28147,10 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-stores section.stores-list .stores-list-map {
   width: 100%;
-  min-height: 40vh;
+  height: 80vh;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
 
 .website-subway-intro {
