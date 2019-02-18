@@ -28508,6 +28508,56 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.website-user-password .page-header-intro {
+  background-color: var(--primary);
+}
+
+.website-user-password .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-user-password .page-header-intro .wrapper .page-header-content .header-intro-description {
+  color: var(--brand-text-contrast);
+}
+
+.website-user-password section.user-password {
+  padding: 30px 0;
+}
+
+.website-user-password section.user-password .card {
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-user-password section.user-password .card .card-header,
+.website-user-password section.user-password .card .card-footer {
+  background-color: #fff;
+}
+
+.website-user-password section.user-password .card .card-header {
+  padding: 20px 20px 10px;
+}
+
+.website-user-password section.user-password .card .card-header .card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.website-user-password section.user-password .card .card-body {
+  padding: 20px;
+}
+
+.website-user-password section.user-password .card .card-body .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.website-user-password section.user-password .card .card-footer {
+  padding: 10px 20px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
 .website-voucher-generate .wrapper {
   display: -ms-flexbox;
   display: flex;
