@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Obrigado pela resposta | Deli - Valoriza.io</title>
+  <title>Remover conta | Deli - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
@@ -12,7 +12,7 @@
 
 <body>
   <div id="page-container"
-       class="website-review-thanks">
+       class="website-user-account-remove">
     <header id="page-header">
       <div class="content-header">
         <div class="content-header-section">
@@ -87,7 +87,8 @@
 									<small>048 99656-3619</small>
 								</span>
 							</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-dropdown">
                 <a class="dropdown-item" href="painel-fidelidade.html">
 									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
 								</a>
@@ -106,32 +107,54 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <section class="empty-state-wrapper">
+        <div class="page-header-intro">
+          <div class="wrapper">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">Remover minha conta</h1>
+            </div>
+          </div>
+        </div>
+
+        <section class="user-account-remove">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="empty-state">
-                  <div class="wrapper">
-                    <div class="empty-state-icon">
-                      <i class="fas fa-star text-review"></i>
-                    </div>
-                    <div class="empty-state-content">
-                      <h2 class="empty-state-title">
-												Obrigado pela sua avaliação
-											</h2>
-                      <p class="empty-state-lead">
-                        Seu feedback é muito importante para nós!
-                      </p>
-                    </div>
-                    <div class="empty-state-action">
-                      <button type="button"
-                              class="btn btn-primary btn-pill">
-												<i class="fas fa-arrow-left fa-fw mr-5"></i>
-												Voltar para o início
-                      </button>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+								<div class="card card-small">
+									<div class="card-body">
+										<p>
+											Tem certeza que você deseja <strong>excluir sua conta</strong> no programa de fidelidade da marca <strong>Deli</strong>? <strong>Todos os seus dados pessoais, saldo de pontos e vouchers de ofertas serão removidos.</strong>
+										</p>
+
+										<div class="alert alert-danger mb-20">
+											<div class="list-group list-group-flush">
+												<div class="list-group-item bg-transparent px-0 border-bottom-0">
+													Saldo de pontos: <strong>100 pontos</strong>
+												</div>
+												<div class="list-group-item bg-transparent px-0">
+													Ofertas disponíveis para resgate: <strong>Pontuou, cadastrou, ganhou!</strong>
+												</div>
+											</div>
+										</div>
+
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox"
+															class="custom-control-input"
+															id="removeAccount">
+											<label class="custom-control-label font-italic"
+															for="removeAccount">Estou ciente que ao <strong class="text-danger">excluir minha conta</strong>, todos os meus dados, pontuação, ofertas, entre outros serão <strong class="text-danger">deletados permanentemente</strong> sem a possibilidade de voltar átras.</label>
+										</div>
+									</div>
+									<div class="card-footer text-right">
+										<button type="button"
+														class="btn btn-secondary">
+											Vou continuar usando a minha conta
+										</button>
+										<button type="button"
+														class="btn btn-danger ml-10">
+											Quero excluir minha conta
+										</button>
+									</div>
+								</div>
               </div>
             </div>
           </div>
@@ -168,6 +191,9 @@
   </div>
 
   <script src="./js/shards.js"></script>
+  <script>
+  window.reviewRating.init();
+  </script>
 </body>
 
 </html>

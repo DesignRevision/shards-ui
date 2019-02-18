@@ -28386,6 +28386,30 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.website-user-account-remove .page-header-intro {
+  background-color: #dc3545;
+}
+
+.website-user-account-remove .page-header-intro .wrapper .page-header-content .header-intro-title,
+.website-user-account-remove .page-header-intro .wrapper .page-header-content .header-intro-description {
+  color: #fff;
+}
+
+.website-user-account-remove section.user-account-remove {
+  padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .website-user-account-remove section.user-account-remove .btn {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+  }
+  .website-user-account-remove section.user-account-remove .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .website-user-edit .page-header-intro {
   background-color: var(--primary);
 }
