@@ -11426,83 +11426,79 @@ fieldset:disabled a.btn {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product {
+.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:hover {
+.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .focus.btn-get-product {
+.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:disabled {
+.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product {
+.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:hover {
+.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .focus.btn-get-product {
+.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:disabled {
+.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -18985,83 +18981,79 @@ pre {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product {
+.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:hover {
+.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .focus.btn-get-product {
+.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-reward .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:disabled {
+.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product {
+.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:hover {
+.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .focus.btn-get-product {
+.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail section.product-detail .card.card-product-infos.is-offer .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:disabled {
+.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -25773,43 +25765,41 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product {
+.btn.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:hover {
+.btn.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:focus, .btn.btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .btn.focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.focus.btn-get-product {
+.btn.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn.btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .btn.focus {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .btn.disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.disabled.btn-get-product, .btn.btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:disabled {
+.btn.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .btn.disabled, .btn.btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn.btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .btn.dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-reward .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn.btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle:focus,
-.website-detail section.product-detail .card.card-product-infos.is-reward .show > .btn.dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -25847,43 +25837,41 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product {
+.btn.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:hover {
+.btn.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:focus, .btn.btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .btn.focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.focus.btn-get-product {
+.btn.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn.btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .btn.focus {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .btn.disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.disabled.btn-get-product, .btn.btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:disabled {
+.btn.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .btn.disabled, .btn.btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn.btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .btn.dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail section.product-detail .card.card-product-infos.is-offer .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn.btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle:focus,
-.website-detail section.product-detail .card.card-product-infos.is-offer .show > .btn.dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -27341,46 +27329,61 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
-  -ms-flex-flow: row;
-      flex-flow: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-flow: column;
+      flex-flow: column;
   position: relative;
   padding: 0;
   border-top-right-radius: .625rem;
   border-bottom-right-radius: .625rem;
 }
 
-.website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type {
-  border-top-right-radius: .425rem;
-  border-bottom-left-radius: .625rem;
-}
-
-.website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type i {
-  color: #FFF;
-}
-
-@media (max-width: 991px) {
-  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-infos .card-product-type {
-    border-top-right-radius: 0;
-  }
-}
-
-.website-detail section.product-detail .card.card-product-infos .card-body .card-product-type {
-  position: absolute;
-  width: 35px;
-  height: 35px;
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  top: 0;
-  right: 0;
-  border-top-right-radius: .425rem;
-  border-bottom-left-radius: .625rem;
+  color: #FFF;
+  border-top-right-radius: .625rem;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points,
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-missing,
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
+  padding: 5px 15px;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #f57102;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-missing {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-missing strong {
+  font-weight: 700;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
+  margin-left: auto;
+  background-color: #f57102;
+  border-top-right-radius: .625rem;
+}
+
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type i {
   font-size: 1.2rem;
+  color: #FFF;
+}
+
+@media (max-width: 991px) {
+  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
+    border-top-right-radius: 0;
+  }
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-main,
@@ -27410,12 +27413,9 @@ nav#subway-location .subway-location-switch .btn {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  margin-top: auto;
   border-top: 1px solid #e1e5eb;
   font-weight: 600;
   color: #666;
@@ -27441,52 +27441,16 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
-.website-detail section.product-detail .card.card-product-infos.is-reward .card-body {
-  border-top: solid 4px #4472F3;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-value {
-  background-color: #4472F3;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-type {
-  font-weight: 900;
-  background-color: #4472F3;
-}
-
 .website-detail section.product-detail .card.card-product-infos.is-reward .card-body .card-product-type i:before {
   content: "\f005";
 }
 
-.website-detail section.product-detail .card.card-product-infos.is-offer .card-content-infos {
+.website-detail section.product-detail .card.card-product-infos.is-offer .card-content-info {
   background-color: #fd7e14;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-offer .card-body {
-  border-top: solid 4px #fd7e14;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-offer .card-body .card-product-value {
-  background-color: #fd7e14;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-offer .card-body .card-product-type {
-  background-color: #fd7e14;
-  font-weight: 900;
 }
 
 .website-detail section.product-detail .card.card-product-infos.is-offer .card-body .card-product-type i:before {
   content: "\f06b";
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-voucher-generated.is-reward .card-body .voucher-generated-block {
-  background-color: rgba(68, 114, 243, 0.15);
-  border: dashed thin #4472f3;
-}
-
-.website-detail section.product-detail .card.card-product-infos.is-voucher-generated.is-offer .card-body .voucher-generated-block {
-  background-color: rgba(253, 126, 20, 0.15);
-  border: dashed thin rgba(253, 126, 20, 0.25);
 }
 
 @media (max-width: 991px) {
@@ -27494,6 +27458,39 @@ nav#subway-location .subway-location-switch .btn {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body {
+  padding: 15px 1.5625rem;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item .countdown-value,
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item .countdown-text {
+  display: inline-block;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item .countdown-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item:first-child {
+  padding-left: 0;
+}
+
+.website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item:last-child {
+  padding-right: 0;
 }
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body {
@@ -27582,66 +27579,6 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item:last-child {
   border-bottom: 0;
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated .card-body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-block {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 6px 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-block .voucher-text {
-  font-size: 0.85rem;
-  margin-right: 10px;
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-block .voucher-code {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 991px) {
-  .website-detail section.product-detail .card.card-product-voucher-generated .card-body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    text-align: center;
-  }
-  .website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-countdown,
-  .website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-block {
-    width: 100%;
-  }
-  .website-detail section.product-detail .card.card-product-voucher-generated .card-body .voucher-generated-countdown {
-    margin-bottom: 10px;
-  }
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated.is-reward .card-body .voucher-generated-block {
-  background-color: rgba(68, 114, 243, 0.15);
-  border: dashed thin #4472f3;
-}
-
-.website-detail section.product-detail .card.card-product-voucher-generated.is-offer .card-body .voucher-generated-block {
-  background-color: rgba(253, 126, 20, 0.15);
-  border: dashed thin rgba(253, 126, 20, 0.25);
 }
 
 .website-detail section.product-detail .btn-get-product {
@@ -28768,7 +28705,7 @@ section.products-lists section.products-list-vouchers .product-list-title strong
   color: #333;
 }
 
-section.products-lists section.products-list-rewards .product-list-title strong {
+section.products-lists section.products-list-reward .product-list-title strong {
   color: #4472F3;
 }
 
