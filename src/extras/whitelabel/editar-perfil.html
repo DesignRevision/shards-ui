@@ -107,14 +107,14 @@
 
     <main id="main-container">
       <div class="wrapper">
-				<div class="page-header-intro">
-					<div class="wrapper">
-						<div class="page-header-content">
-							<h1 class="header-intro-title">Editar perfil</h1>
-							<p class="header-intro-description">Complete e atualize suas informações de perfil, contato e preferências.</p>
-						</div>
-					</div>
-				</div>
+        <div class="page-header-intro">
+          <div class="wrapper">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">Editar perfil</h1>
+              <p class="header-intro-description">Complete e atualize suas informações de perfil, contato e preferências.</p>
+            </div>
+          </div>
+        </div>
 
         <section class="user-edit">
           <div class="container">
@@ -336,104 +336,30 @@
                   </div>
                 </div>
 
-                <div class="card card-small card-toggle mb-20">
+                <div class="card card-small card-action mb-20">
                   <div class="card-header">
                     <h5 class="m-0">Alterar minha senha</h5>
 
                     <div class="card-actions">
-                      <button type="button"
+                      <a href="alterar-senha.html"
                               class="btn btn-outline-secondary btn-circle">
-                        <i class="fas fa-chevron-down"></i>
-                      </button>
+												<i class="fas fa-arrow-right"></i>
+                      </a>
                     </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-row ">
-                      <div class="form-group col-md-8">
-                        <label for="oldPasswd">Senha antiga</label>
-                        <input type="text"
-                               class="form-control"
-                               id="oldPasswd"
-                               placeholder="••••••">
-                      </div>
-                    </div>
-                    <div class="form-row ">
-                      <div class="form-group col-md-5">
-                        <label for="newPasswd">Nova senha</label>
-                        <input type="text"
-                               class="form-control"
-                               id="newPasswd"
-                               placeholder="••••••">
-                        <small class="form-text">A senha deve conter no mínimo seis letras, números e/ou símbolos.</small>
-                      </div>
-                      <div class="form-group col-md-5">
-                        <label for="confirmNewPasswd">Confirme a nova senha</label>
-                        <input type="email"
-                               class="form-control"
-                               id="confirmNewPasswd"
-                               placeholder="••••••">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-right">
-                    <button type="button"
-                            class="btn btn-outline-secondary ml-10">
-                      <i class="fas fa-times fa-fw mr-5"></i>
-                      Cancelar
-                    </button>
-                    <button type="button"
-                            class="btn btn-success ml-10">
-                      <i class="fas fa-check fa-fw mr-5"></i>
-                      Salvar
-                    </button>
                   </div>
                 </div>
 
-                <div class="card card-small card-toggle mb-20">
+                <div class="card card-small card-action mb-20">
                   <div class="card-header">
                     <h5 class="m-0 text-danger">
-											<span class="font-w700">ATENÇÃO!</span> Excluir minha conta
+											Excluir minha conta
 										</h5>
                     <div class="card-actions">
-                      <button type="button"
+                      <a href="remover-conta.html"
                               class="btn btn-outline-secondary btn-circle">
-                        <i class="fas fa-chevron-down"></i>
-                      </button>
+												<i class="fas fa-arrow-right"></i>
+                      </a>
                     </div>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Tem certeza que você deseja <strong>excluir sua conta</strong> no programa de fidelidade da marca <strong>Deli</strong>? <strong>Todos os seus dados pessoais, saldo de pontos e vouchers de ofertas serão removidos.</strong>
-                    </p>
-
-                    <div class="alert alert-danger mb-20">
-                      <div class="list-group list-group-flush">
-                        <div class="list-group-item bg-transparent px-0 border-bottom-0">
-                          Saldo de pontos: <strong>100 pontos</strong>
-                        </div>
-                        <div class="list-group-item bg-transparent px-0">
-                          Ofertas disponíveis para resgate: <strong>Pontuou, cadastrou, ganhou!</strong>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox"
-                             class="custom-control-input"
-                             id="removeAccount">
-                      <label class="custom-control-label font-italic"
-                             for="removeAccount">Estou ciente que ao <strong class="text-danger">excluir minha conta</strong>, todos os meus dados, pontuação, ofertas, entre outros serão <strong class="text-danger">deletados permanentemente</strong> sem a possibilidade de voltar átras.</label>
-                    </div>
-                  </div>
-                  <div class="card-footer text-right">
-                    <button type="button"
-                            class="btn btn-secondary ml-10">
-                      Vou continuar usando a minha conta
-                    </button>
-                    <button type="button"
-                            class="btn btn-danger ml-10">
-                      Quero excluir minha conta
-                    </button>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,7 @@
 .card {
-  &.card-toggle {
+
+  &.card-toggle,
+  &.card-action {
     .card-header {
       display: flex;
       flex-direction: row;

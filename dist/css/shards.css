@@ -25974,7 +25974,7 @@ a.text-black:hover, a.text-black:focus {
   border-radius: 50% !important;
 }
 
-.card.card-toggle .card-header {
+.card.card-toggle .card-header, .card.card-action .card-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -25991,12 +25991,18 @@ a.text-black:hover, a.text-black:focus {
 .card.card-toggle .card-header h4,
 .card.card-toggle .card-header h5,
 .card.card-toggle .card-header h6,
-.card.card-toggle .card-header .card-title {
+.card.card-toggle .card-header .card-title, .card.card-action .card-header h1,
+.card.card-action .card-header h2,
+.card.card-action .card-header h3,
+.card.card-action .card-header h4,
+.card.card-action .card-header h5,
+.card.card-action .card-header h6,
+.card.card-action .card-header .card-title {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
 }
 
-.card.card-toggle .card-header .card-actions {
+.card.card-toggle .card-header .card-actions, .card.card-action .card-header .card-actions {
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
 }
