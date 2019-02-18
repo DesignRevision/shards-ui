@@ -199,9 +199,17 @@
                 font-size: 2.5rem;
                 font-weight: 600;
                 margin-right: 5px;
+
+                @media (max-width: 511px - 1px) {
+                  font-size: 2rem;
+                }
               }
 
-              .countdown-text {}
+              .countdown-text {
+                @media (max-width: 511px - 1px) {
+                  font-size: .9rem;
+                }
+              }
 
               &:first-child {
                 padding-left: 0;

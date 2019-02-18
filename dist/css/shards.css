@@ -27485,6 +27485,18 @@ nav#subway-location .subway-location-switch .btn {
   margin-right: 5px;
 }
 
+@media (max-width: 510px) {
+  .website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item .countdown-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item .countdown-text {
+    font-size: .9rem;
+  }
+}
+
 .website-detail section.product-detail .card.card-voucher-countdown .card-body .voucher-countdown .countdown-item:first-child {
   padding-left: 0;
 }
