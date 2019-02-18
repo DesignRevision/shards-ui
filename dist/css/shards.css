@@ -27593,6 +27593,23 @@ nav#subway-location .subway-location-switch .btn {
   border-bottom: 0;
 }
 
+.website-detail section.product-detail .card.card-voucher-code .card-body {
+  text-align: center;
+  padding: 30px;
+}
+
+.website-detail section.product-detail .card.card-voucher-code .card-body small {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.website-detail section.product-detail .card.card-voucher-code .card-body .voucher-code {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 1px;
+}
+
 .website-detail section.product-detail .btn-get-product {
   display: -ms-flexbox;
   display: flex;

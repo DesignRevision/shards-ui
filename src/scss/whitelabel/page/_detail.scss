@@ -311,6 +311,25 @@
           }
         }
       }
+
+      &.card-voucher-code {
+        .card-body {
+					text-align: center;
+					padding: 30px;
+
+          small {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+          }
+
+          .voucher-code {
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: $font-family-monospace;
+            letter-spacing: 1px;
+          }
+        }
+      }
     }
 
     .btn-get-product {
