@@ -19,10 +19,16 @@ header#page-header {
 
       .btn {
         &.btn-menu {
-          width: 40px;
-          height: 40px;
+          width: 35px;
+          height: 35px;
           border: 0;
-          margin-right: 5px;
+          border-radius: 50%;
+          padding: 0;
+          margin-right: 10px;
+
+          i {
+            font-size: 18px;
+          }
         }
       }
 
@@ -32,11 +38,6 @@ header#page-header {
         img {
           max-width: 180px;
           max-height: 60px;
-
-          @media (max-width: 992px - 1px) {
-            max-width: 100px;
-            max-height: 40px;
-          }
         }
       }
 
@@ -157,25 +158,32 @@ header#page-header {
               opacity: 1;
               transition: all 300ms;
 
-              .points-icon {
-                font-size: 1.5rem;
-                margin-right: 10px;
+              .points-quantity {
+                text-align: left;
+                line-height: 1;
+                font-size: 2.3rem;
+                font-weight: 800;
                 color: $review;
-                transition: all 300ms;
+                margin-right: 10px;
               }
 
-              .points-quantity {
+              .points-text {
                 text-align: left;
                 line-height: 1.2;
                 font-size: 1rem;
-                font-weight: 600;
-                color: $review;
-                transition: all 300ms;
+                font-weight: 400;
+                color: #656565;
 
-                small {
-                  font-size: 80%;
-                  font-weight: 400;
-                  color: #656565;
+                strong {
+                  color: $review;
+                }
+
+                @media (max-width: 992px - 1px) {
+                  text-align: center;
+
+                  strong {
+                    font-size: 1.8rem;
+                  }
                 }
               }
 
@@ -186,6 +194,11 @@ header#page-header {
 
               &:hover {
                 background-color: rgba(0, 0, 0, 0.04);
+              }
+
+              @media (max-width: 992px - 1px) {
+                margin-right: 0;
+                padding-right: 0;
               }
             }
           }
@@ -240,10 +253,6 @@ header#page-header {
       &:last-child {
         width: calc((100% - 200px) / 2);
         flex-grow: 1;
-
-        @media (max-width: 992px - 1px) {
-          width: auto;
-        }
       }
 
       &:nth-child(2) {
@@ -292,10 +301,6 @@ header#page-header {
             }
           }
         }
-      }
-
-      @media (max-width: 992px - 1px) {
-        flex-grow: 0 !important;
       }
     }
 
