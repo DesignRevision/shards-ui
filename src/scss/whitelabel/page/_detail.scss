@@ -280,6 +280,20 @@
         }
       }
 
+      &.card-alert-infos {
+        @media (max-width: 769px - 1px) {
+          .btn {
+            width: 100%;
+            margin-bottom: 5px;
+            margin-left: 0 !important;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
       &.card-voucher-code {
         .card-body {
           text-align: center;
@@ -344,6 +358,13 @@
         width: calc(100% - 30px);
         font-weight: 400;
         text-align: center;
+				white-space: normal;
+				margin-left: 30px;
+
+				@media (max-width: 769px - 1px) {
+					margin-left: 0;
+					text-align: left;
+				}
       }
 
       .btn-icon {

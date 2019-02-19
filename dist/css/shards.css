@@ -27597,6 +27597,17 @@ nav#subway-location .subway-location-switch .btn {
   border-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .website-detail section.product-detail .card.card-alert-infos .btn {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+  }
+  .website-detail section.product-detail .card.card-alert-infos .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .website-detail section.product-detail .card.card-voucher-code .card-body {
   text-align: center;
   padding: 30px 15px;
@@ -27661,6 +27672,15 @@ nav#subway-location .subway-location-switch .btn {
   width: calc(100% - 30px);
   font-weight: 400;
   text-align: center;
+  white-space: normal;
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .website-detail section.product-detail .btn-get-product .btn-text {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .website-detail section.product-detail .btn-get-product .btn-icon {
