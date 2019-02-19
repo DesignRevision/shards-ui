@@ -10669,7 +10669,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   box-shadow: 0 0 0 0.2rem rgba(54, 37, 93, 0.25);
 }
 
-.btn.disabled, .btn:disabled {
+.btn.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .btn:disabled {
   opacity: 0.65;
   box-shadow: none;
 }
@@ -10687,7 +10687,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   box-shadow: 0 0 0 0.2rem rgba(54, 37, 93, 0.25), inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-a.btn.disabled,
+a.btn.disabled, .website-detail.is-offer.is-not-available section.product-detail a.btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail a.btn.btn-get-product,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
@@ -10710,7 +10710,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-primary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-primary.btn-get-product, .btn-primary:disabled {
   background-color: #36255D;
   border-color: #36255D;
   box-shadow: none;
@@ -10744,7 +10744,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(90, 97, 105, 0.15), 0 3px 15px rgba(90, 97, 105, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-secondary.disabled, .btn-secondary:disabled {
+.btn-secondary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-secondary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-secondary.btn-get-product, .btn-secondary:disabled {
   background-color: #5A6169;
   border-color: #5A6169;
   box-shadow: none;
@@ -10778,7 +10778,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(23, 198, 113, 0.15), 0 3px 15px rgba(23, 198, 113, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-success.disabled, .btn-success:disabled {
+.btn-success.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-success.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-success.btn-get-product, .btn-success:disabled {
   background-color: #17c671;
   border-color: #17c671;
   box-shadow: none;
@@ -10812,7 +10812,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(14, 196, 211, 0.15), 0 3px 15px rgba(14, 196, 211, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-info.disabled, .btn-info:disabled {
+.btn-info.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-info.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-info.btn-get-product, .btn-info:disabled {
   background-color: #0EC4D3;
   border-color: #0EC4D3;
   box-shadow: none;
@@ -10846,7 +10846,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 212, 30, 0.15), 0 3px 15px rgba(255, 212, 30, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-warning.disabled, .btn-warning:disabled {
+.btn-warning.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-warning.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-warning.btn-get-product, .btn-warning:disabled {
   background-color: #FFD41E;
   border-color: #FFD41E;
   box-shadow: none;
@@ -10880,7 +10880,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15), 0 3px 15px rgba(220, 53, 69, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-danger.disabled, .btn-danger:disabled {
+.btn-danger.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-danger.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-danger.btn-get-product, .btn-danger:disabled {
   background-color: #dc3545;
   border-color: #dc3545;
   box-shadow: none;
@@ -10914,7 +10914,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(233, 236, 239, 0.15), 0 3px 15px rgba(233, 236, 239, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-light.disabled, .btn-light:disabled {
+.btn-light.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-light.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-light.btn-get-product, .btn-light:disabled {
   background-color: #e9ecef;
   border-color: #e9ecef;
   box-shadow: none;
@@ -10948,7 +10948,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.15), 0 3px 15px rgba(33, 37, 41, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-dark.disabled, .btn-dark:disabled {
+.btn-dark.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-dark.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-dark.btn-get-product, .btn-dark:disabled {
   background-color: #212529;
   border-color: #212529;
   box-shadow: none;
@@ -10982,7 +10982,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-brand-text-contrast.disabled, .btn-brand-text-contrast:disabled {
+.btn-brand-text-contrast.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-brand-text-contrast.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-brand-text-contrast.btn-get-product, .btn-brand-text-contrast:disabled {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   box-shadow: none;
@@ -10998,34 +10998,35 @@ fieldset:disabled a.btn {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn-get-product {
+.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product {
   color: #fff;
   border-color: #4472F3;
   background-color: #4472F3;
   box-shadow: none;
 }
 
-.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn-get-product:hover {
+.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:hover {
   color: #fff;
   background-color: #2c60f1;
   border-color: #2c60f1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn-get-product:focus, .btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .focus.btn-get-product {
+.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn-get-product:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:focus, .btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .focus.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-product-reward.disabled, .website-detail.is-reward.is-available section.product-detail .disabled.btn-get-product, .btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn-get-product:disabled {
+.btn-product-reward.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-product-reward.btn-get-product, .website-detail.is-offer.is-not-available .website-detail.is-reward.is-available section.product-detail .btn-get-product, .website-detail.is-reward.is-available .website-detail.is-offer.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-available section.product-detail .disabled.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product, .btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn-get-product:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:disabled {
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn-product-reward.dropdown-toggle,
-.website-detail.is-reward.is-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.website-detail.is-reward.is-available section.product-detail .show > .dropdown-toggle.btn-get-product,
+.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #2c60f1;
   border-color: #144ef0;
@@ -11033,34 +11034,35 @@ fieldset:disabled a.btn {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn-get-product {
+.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product {
   color: #212529;
   border-color: #fd7e14;
   background-color: #fd7e14;
   box-shadow: none;
 }
 
-.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn-get-product:hover {
+.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:hover {
   color: #fff;
   background-color: #f57102;
   border-color: #f57102;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn-get-product:focus, .btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .focus.btn-get-product {
+.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn-get-product:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:focus, .btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .focus.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .disabled.btn-get-product, .btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn-get-product:disabled {
+.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .disabled.btn-get-product, .website-detail.is-offer.is-available .website-detail.is-reward.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available .website-detail.is-offer.is-available section.product-detail .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-product-offer.btn-get-product, .btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn-get-product:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:disabled {
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn-product-offer.dropdown-toggle,
-.website-detail.is-offer.is-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.website-detail.is-offer.is-available section.product-detail .show > .dropdown-toggle.btn-get-product,
+.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #f57102;
   border-color: #dc6502;
@@ -11086,7 +11088,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 180, 0, 0.15), 0 3px 15px rgba(255, 180, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-review.disabled, .btn-review:disabled {
+.btn-review.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-review.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-review.btn-get-product, .btn-review:disabled {
   background-color: #ffb400;
   border-color: #ffb400;
   box-shadow: none;
@@ -11120,7 +11122,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-primary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-primary.btn-get-product, .btn-outline-primary:disabled {
   color: #36255D;
   background-color: transparent;
   box-shadow: none;
@@ -11156,7 +11158,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(90, 97, 105, 0.15), 0 3px 15px rgba(90, 97, 105, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-secondary.disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .disabled.btn-get-product, .btn-outline-secondary:disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product:disabled {
+.btn-outline-secondary.disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .disabled.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-secondary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-secondary.btn-get-product, .btn-outline-secondary:disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product:disabled {
   color: #5A6169;
   background-color: transparent;
   box-shadow: none;
@@ -11194,7 +11196,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(23, 198, 113, 0.15), 0 3px 15px rgba(23, 198, 113, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-success.disabled, .btn-outline-success:disabled {
+.btn-outline-success.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-success.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-success.btn-get-product, .btn-outline-success:disabled {
   color: #17c671;
   background-color: transparent;
   box-shadow: none;
@@ -11230,7 +11232,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(14, 196, 211, 0.15), 0 3px 15px rgba(14, 196, 211, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-info.disabled, .btn-outline-info:disabled {
+.btn-outline-info.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-info.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-info.btn-get-product, .btn-outline-info:disabled {
   color: #0EC4D3;
   background-color: transparent;
   box-shadow: none;
@@ -11266,7 +11268,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 212, 30, 0.15), 0 3px 15px rgba(255, 212, 30, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-warning.disabled, .btn-outline-warning:disabled {
+.btn-outline-warning.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-warning.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-warning.btn-get-product, .btn-outline-warning:disabled {
   color: #FFD41E;
   background-color: transparent;
   box-shadow: none;
@@ -11302,7 +11304,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15), 0 3px 15px rgba(220, 53, 69, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-danger.disabled, .btn-outline-danger:disabled {
+.btn-outline-danger.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-danger.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-danger.btn-get-product, .btn-outline-danger:disabled {
   color: #dc3545;
   background-color: transparent;
   box-shadow: none;
@@ -11338,7 +11340,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(233, 236, 239, 0.15), 0 3px 15px rgba(233, 236, 239, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-light.disabled, .btn-outline-light:disabled {
+.btn-outline-light.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-light.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-light.btn-get-product, .btn-outline-light:disabled {
   color: #e9ecef;
   background-color: transparent;
   box-shadow: none;
@@ -11374,7 +11376,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.15), 0 3px 15px rgba(33, 37, 41, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-dark.disabled, .btn-outline-dark:disabled {
+.btn-outline-dark.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-dark.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-dark.btn-get-product, .btn-outline-dark:disabled {
   color: #212529;
   background-color: transparent;
   box-shadow: none;
@@ -11410,7 +11412,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-brand-text-contrast.disabled, .btn-outline-brand-text-contrast:disabled {
+.btn-outline-brand-text-contrast.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-brand-text-contrast.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-brand-text-contrast.btn-get-product, .btn-outline-brand-text-contrast:disabled {
   color: #FFFFFF;
   background-color: transparent;
   box-shadow: none;
@@ -11428,83 +11430,79 @@ fieldset:disabled a.btn {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product {
+.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:hover {
+.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail.is-reward.is-not-available section.product-detail .focus.btn-get-product {
+.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail.is-reward.is-not-available section.product-detail .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:disabled {
+.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .card.card-product.is-reward .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .card.card-product.is-reward .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-product-reward.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-product-reward.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
-.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product {
+.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:hover {
+.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail.is-offer.is-not-available section.product-detail .focus.btn-get-product {
+.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail.is-offer.is-not-available section.product-detail .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:disabled {
+.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .card.card-product.is-offer .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .card.card-product.is-offer .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-product-offer.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-product-offer.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
-.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -11526,7 +11524,7 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 3px rgba(255, 180, 0, 0.15), 0 3px 15px rgba(255, 180, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-review.disabled, .btn-outline-review:disabled {
+.btn-outline-review.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-review.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-review.btn-get-product, .btn-outline-review:disabled {
   color: #ffb400;
   background-color: transparent;
   box-shadow: none;
@@ -11563,7 +11561,7 @@ fieldset:disabled a.btn {
   box-shadow: none;
 }
 
-.btn-link:disabled, .btn-link.disabled {
+.btn-link:disabled, .btn-link.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-link.btn-get-product {
   color: #868e96;
 }
 
@@ -11788,7 +11786,7 @@ tbody.collapse.show {
   background-color: #c3c7cc;
 }
 
-.dropdown-item.disabled, .dropdown-item:disabled {
+.dropdown-item.disabled, .website-detail.is-offer.is-not-available section.product-detail .dropdown-item.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .dropdown-item.btn-get-product, .dropdown-item:disabled {
   color: #868e96;
   background-color: transparent;
 }
@@ -12353,7 +12351,7 @@ tbody.collapse.show {
   text-decoration: none;
 }
 
-.nav-link.disabled {
+.nav-link.disabled, .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product {
   color: #868e96;
 }
 
@@ -12375,7 +12373,7 @@ tbody.collapse.show {
   border-color: #e9ecef;
 }
 
-.nav-tabs .nav-link.disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product, .nav-tabs .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product {
   color: #868e96;
   background-color: transparent;
   border-color: transparent;
@@ -12797,7 +12795,7 @@ tbody.collapse.show {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .navbar-light .navbar-nav .nav-link.btn-get-product, .navbar-light .navbar-nav .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .navbar-light .navbar-nav .nav-link.btn-get-product {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -12845,7 +12843,7 @@ tbody.collapse.show {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.navbar-dark .navbar-nav .nav-link.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .navbar-dark .navbar-nav .nav-link.btn-get-product, .navbar-dark .navbar-nav .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .navbar-dark .navbar-nav .nav-link.btn-get-product {
   color: rgba(255, 255, 255, 0.25);
 }
 
@@ -13203,7 +13201,7 @@ tbody.collapse.show {
   border-color: #36255D;
 }
 
-.page-item.disabled .page-link {
+.page-item.disabled .page-link, .website-detail.is-offer.is-not-available section.product-detail .page-item.btn-get-product .page-link, .website-detail.is-reward.is-not-available section.product-detail .page-item.btn-get-product .page-link {
   color: #a8aeb4;
   pointer-events: none;
   cursor: auto;
@@ -13732,7 +13730,7 @@ tbody.collapse.show {
   text-decoration: none;
 }
 
-.list-group-item.disabled, .list-group-item:disabled {
+.list-group-item.disabled, .website-detail.is-offer.is-not-available section.product-detail .list-group-item.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .list-group-item.btn-get-product, .list-group-item:disabled {
   color: #868e96;
   background-color: #fff;
 }
@@ -18203,7 +18201,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-primary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-primary.btn-get-product, .btn-primary:disabled {
   background-color: #36255D;
   border-color: #36255D;
   box-shadow: none;
@@ -18237,7 +18235,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(90, 97, 105, 0.15), 0 3px 15px rgba(90, 97, 105, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-secondary.disabled, .btn-secondary:disabled {
+.btn-secondary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-secondary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-secondary.btn-get-product, .btn-secondary:disabled {
   background-color: #5A6169;
   border-color: #5A6169;
   box-shadow: none;
@@ -18271,7 +18269,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(23, 198, 113, 0.15), 0 3px 15px rgba(23, 198, 113, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-success.disabled, .btn-success:disabled {
+.btn-success.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-success.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-success.btn-get-product, .btn-success:disabled {
   background-color: #17c671;
   border-color: #17c671;
   box-shadow: none;
@@ -18305,7 +18303,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(14, 196, 211, 0.15), 0 3px 15px rgba(14, 196, 211, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-info.disabled, .btn-info:disabled {
+.btn-info.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-info.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-info.btn-get-product, .btn-info:disabled {
   background-color: #0EC4D3;
   border-color: #0EC4D3;
   box-shadow: none;
@@ -18339,7 +18337,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 212, 30, 0.15), 0 3px 15px rgba(255, 212, 30, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-warning.disabled, .btn-warning:disabled {
+.btn-warning.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-warning.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-warning.btn-get-product, .btn-warning:disabled {
   background-color: #FFD41E;
   border-color: #FFD41E;
   box-shadow: none;
@@ -18373,7 +18371,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15), 0 3px 15px rgba(220, 53, 69, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-danger.disabled, .btn-danger:disabled {
+.btn-danger.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-danger.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-danger.btn-get-product, .btn-danger:disabled {
   background-color: #dc3545;
   border-color: #dc3545;
   box-shadow: none;
@@ -18407,7 +18405,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(233, 236, 239, 0.15), 0 3px 15px rgba(233, 236, 239, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-light.disabled, .btn-light:disabled {
+.btn-light.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-light.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-light.btn-get-product, .btn-light:disabled {
   background-color: #e9ecef;
   border-color: #e9ecef;
   box-shadow: none;
@@ -18441,7 +18439,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.15), 0 3px 15px rgba(33, 37, 41, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-dark.disabled, .btn-dark:disabled {
+.btn-dark.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-dark.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-dark.btn-get-product, .btn-dark:disabled {
   background-color: #212529;
   border-color: #212529;
   box-shadow: none;
@@ -18475,7 +18473,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-brand-text-contrast.disabled, .btn-brand-text-contrast:disabled {
+.btn-brand-text-contrast.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-brand-text-contrast.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-brand-text-contrast.btn-get-product, .btn-brand-text-contrast:disabled {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   box-shadow: none;
@@ -18491,34 +18489,35 @@ pre {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn-get-product {
+.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product {
   color: #fff;
   border-color: #4472F3;
   background-color: #4472F3;
   box-shadow: none;
 }
 
-.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn-get-product:hover {
+.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:hover {
   color: #fff;
   background-color: #2c60f1;
   border-color: #2c60f1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn-get-product:focus, .btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .focus.btn-get-product {
+.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn-get-product:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:focus, .btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .focus.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-product-reward.disabled, .website-detail.is-reward.is-available section.product-detail .disabled.btn-get-product, .btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn-get-product:disabled {
+.btn-product-reward.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-product-reward.btn-get-product, .website-detail.is-offer.is-not-available .website-detail.is-reward.is-available section.product-detail .btn-get-product, .website-detail.is-reward.is-available .website-detail.is-offer.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-available section.product-detail .disabled.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product, .btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn-get-product:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:disabled {
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn-product-reward.dropdown-toggle,
-.website-detail.is-reward.is-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.website-detail.is-reward.is-available section.product-detail .show > .dropdown-toggle.btn-get-product,
+.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #2c60f1;
   border-color: #144ef0;
@@ -18526,34 +18525,35 @@ pre {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn-get-product {
+.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product {
   color: #212529;
   border-color: #fd7e14;
   background-color: #fd7e14;
   box-shadow: none;
 }
 
-.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn-get-product:hover {
+.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:hover {
   color: #fff;
   background-color: #f57102;
   border-color: #f57102;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn-get-product:focus, .btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .focus.btn-get-product {
+.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn-get-product:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:focus, .btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .focus.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .disabled.btn-get-product, .btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn-get-product:disabled {
+.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .disabled.btn-get-product, .website-detail.is-offer.is-available .website-detail.is-reward.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available .website-detail.is-offer.is-available section.product-detail .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-product-offer.btn-get-product, .btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn-get-product:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:disabled {
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn-product-offer.dropdown-toggle,
-.website-detail.is-offer.is-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.website-detail.is-offer.is-available section.product-detail .show > .dropdown-toggle.btn-get-product,
+.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #f57102;
   border-color: #dc6502;
@@ -18579,7 +18579,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 180, 0, 0.15), 0 3px 15px rgba(255, 180, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-review.disabled, .btn-review:disabled {
+.btn-review.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-review.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-review.btn-get-product, .btn-review:disabled {
   background-color: #ffb400;
   border-color: #ffb400;
   box-shadow: none;
@@ -18613,7 +18613,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-white.disabled, .btn-white:disabled {
+.btn-white.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-white.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-white.btn-get-product, .btn-white:disabled {
   background-color: #fff;
   border-color: #fff;
   box-shadow: none;
@@ -18647,7 +18647,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15), 0 3px 15px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-black.disabled, .btn-black:disabled {
+.btn-black.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-black.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-black.btn-get-product, .btn-black:disabled {
   background-color: #000;
   border-color: #000;
   box-shadow: none;
@@ -18681,7 +18681,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(54, 37, 93, 0.15), 0 3px 15px rgba(54, 37, 93, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-primary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-primary.btn-get-product, .btn-outline-primary:disabled {
   color: #36255D;
   background-color: transparent;
   box-shadow: none;
@@ -18717,7 +18717,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(90, 97, 105, 0.15), 0 3px 15px rgba(90, 97, 105, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-secondary.disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .disabled.btn-get-product, .btn-outline-secondary:disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product:disabled {
+.btn-outline-secondary.disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .disabled.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-secondary.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-secondary.btn-get-product, .btn-outline-secondary:disabled, .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use .card-content-action .btn-get-product:disabled {
   color: #5A6169;
   background-color: transparent;
   box-shadow: none;
@@ -18755,7 +18755,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(23, 198, 113, 0.15), 0 3px 15px rgba(23, 198, 113, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-success.disabled, .btn-outline-success:disabled {
+.btn-outline-success.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-success.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-success.btn-get-product, .btn-outline-success:disabled {
   color: #17c671;
   background-color: transparent;
   box-shadow: none;
@@ -18791,7 +18791,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(14, 196, 211, 0.15), 0 3px 15px rgba(14, 196, 211, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-info.disabled, .btn-outline-info:disabled {
+.btn-outline-info.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-info.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-info.btn-get-product, .btn-outline-info:disabled {
   color: #0EC4D3;
   background-color: transparent;
   box-shadow: none;
@@ -18827,7 +18827,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 212, 30, 0.15), 0 3px 15px rgba(255, 212, 30, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-warning.disabled, .btn-outline-warning:disabled {
+.btn-outline-warning.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-warning.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-warning.btn-get-product, .btn-outline-warning:disabled {
   color: #FFD41E;
   background-color: transparent;
   box-shadow: none;
@@ -18863,7 +18863,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15), 0 3px 15px rgba(220, 53, 69, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-danger.disabled, .btn-outline-danger:disabled {
+.btn-outline-danger.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-danger.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-danger.btn-get-product, .btn-outline-danger:disabled {
   color: #dc3545;
   background-color: transparent;
   box-shadow: none;
@@ -18899,7 +18899,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(233, 236, 239, 0.15), 0 3px 15px rgba(233, 236, 239, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-light.disabled, .btn-outline-light:disabled {
+.btn-outline-light.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-light.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-light.btn-get-product, .btn-outline-light:disabled {
   color: #e9ecef;
   background-color: transparent;
   box-shadow: none;
@@ -18935,7 +18935,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.15), 0 3px 15px rgba(33, 37, 41, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-dark.disabled, .btn-outline-dark:disabled {
+.btn-outline-dark.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-dark.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-dark.btn-get-product, .btn-outline-dark:disabled {
   color: #212529;
   background-color: transparent;
   box-shadow: none;
@@ -18971,7 +18971,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-brand-text-contrast.disabled, .btn-outline-brand-text-contrast:disabled {
+.btn-outline-brand-text-contrast.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-brand-text-contrast.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-brand-text-contrast.btn-get-product, .btn-outline-brand-text-contrast:disabled {
   color: #FFFFFF;
   background-color: transparent;
   box-shadow: none;
@@ -18989,83 +18989,79 @@ pre {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product {
+.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:hover {
+.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn, .website-detail.is-reward.is-not-available section.product-detail .focus.btn-get-product {
+.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .website-detail.is-reward.is-not-available section.product-detail .disabled.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:disabled {
+.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .disabled.btn, .card.card-product.is-reward .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .card.card-product.is-reward .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-product-reward.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-product-reward.btn-get-product, .btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn,
-.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail.is-reward.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product {
+.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:hover {
+.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn, .website-detail.is-offer.is-not-available section.product-detail .focus.btn-get-product {
+.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .focus.btn {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .website-detail.is-offer.is-not-available section.product-detail .disabled.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:disabled {
+.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .disabled.btn, .card.card-product.is-offer .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .card.card-product.is-offer .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-product-offer.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-product-offer.btn-get-product, .btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn,
-.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus,
-.website-detail.is-offer.is-not-available section.product-detail .show > .dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .dropdown-toggle.btn:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -19087,7 +19083,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 180, 0, 0.15), 0 3px 15px rgba(255, 180, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-review.disabled, .btn-outline-review:disabled {
+.btn-outline-review.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-review.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-review.btn-get-product, .btn-outline-review:disabled {
   color: #ffb400;
   background-color: transparent;
   box-shadow: none;
@@ -19124,7 +19120,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 3px 15px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-white.disabled, .btn-outline-white:disabled {
+.btn-outline-white.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-white.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-white.btn-get-product, .btn-outline-white:disabled {
   color: #fff;
   background-color: transparent;
   box-shadow: none;
@@ -19165,7 +19161,7 @@ pre {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15), 0 3px 15px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn-outline-black.disabled, .btn-outline-black:disabled {
+.btn-outline-black.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn-outline-black.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn-outline-black.btn-get-product, .btn-outline-black:disabled {
   color: #000;
   background-color: transparent;
   box-shadow: none;
@@ -19302,11 +19298,11 @@ i.material-icons {
   background-color: #c3c7cc;
 }
 
-.dropdown-item.disabled, .dropdown-item:disabled {
+.dropdown-item.disabled, .website-detail.is-offer.is-not-available section.product-detail .dropdown-item.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .dropdown-item.btn-get-product, .dropdown-item:disabled {
   color: #868e96;
 }
 
-.dropdown-item.disabled:hover, .dropdown-item:disabled:hover {
+.dropdown-item.disabled:hover, .website-detail.is-offer.is-not-available section.product-detail .dropdown-item.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .dropdown-item.btn-get-product:hover, .dropdown-item:disabled:hover {
   background: none;
   cursor: not-allowed;
 }
@@ -19962,7 +19958,7 @@ i.material-icons {
   transition: all 250ms cubic-bezier(0.27, 0.01, 0.38, 1.06);
 }
 
-.nav-link.disabled {
+.nav-link.disabled, .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product {
   color: #868e96;
 }
 
@@ -19984,11 +19980,11 @@ i.material-icons {
   border-color: #e9ecef;
 }
 
-.nav-tabs .nav-link.disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product, .nav-tabs .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-tabs .nav-link.disabled:hover {
+.nav-tabs .nav-link.disabled:hover, .nav-tabs .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product:hover, .nav-tabs .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-tabs .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20046,11 +20042,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-blue .nav-link.disabled {
+.nav-blue .nav-link.disabled, .nav-blue .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-blue .nav-link.btn-get-product, .nav-blue .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-blue .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-blue .nav-link.disabled:hover {
+.nav-blue .nav-link.disabled:hover, .nav-blue .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-blue .nav-link.btn-get-product:hover, .nav-blue .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-blue .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20079,11 +20075,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-indigo .nav-link.disabled {
+.nav-indigo .nav-link.disabled, .nav-indigo .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-indigo .nav-link.btn-get-product, .nav-indigo .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-indigo .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-indigo .nav-link.disabled:hover {
+.nav-indigo .nav-link.disabled:hover, .nav-indigo .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-indigo .nav-link.btn-get-product:hover, .nav-indigo .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-indigo .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20112,11 +20108,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-purple .nav-link.disabled {
+.nav-purple .nav-link.disabled, .nav-purple .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-purple .nav-link.btn-get-product, .nav-purple .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-purple .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-purple .nav-link.disabled:hover {
+.nav-purple .nav-link.disabled:hover, .nav-purple .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-purple .nav-link.btn-get-product:hover, .nav-purple .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-purple .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20145,11 +20141,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-pink .nav-link.disabled {
+.nav-pink .nav-link.disabled, .nav-pink .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-pink .nav-link.btn-get-product, .nav-pink .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-pink .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-pink .nav-link.disabled:hover {
+.nav-pink .nav-link.disabled:hover, .nav-pink .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-pink .nav-link.btn-get-product:hover, .nav-pink .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-pink .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20178,11 +20174,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-red .nav-link.disabled {
+.nav-red .nav-link.disabled, .nav-red .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-red .nav-link.btn-get-product, .nav-red .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-red .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-red .nav-link.disabled:hover {
+.nav-red .nav-link.disabled:hover, .nav-red .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-red .nav-link.btn-get-product:hover, .nav-red .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-red .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20211,11 +20207,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-orange .nav-link.disabled {
+.nav-orange .nav-link.disabled, .nav-orange .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-orange .nav-link.btn-get-product, .nav-orange .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-orange .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-orange .nav-link.disabled:hover {
+.nav-orange .nav-link.disabled:hover, .nav-orange .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-orange .nav-link.btn-get-product:hover, .nav-orange .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-orange .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20244,11 +20240,11 @@ i.material-icons {
   color: #212529;
 }
 
-.nav-yellow .nav-link.disabled {
+.nav-yellow .nav-link.disabled, .nav-yellow .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-yellow .nav-link.btn-get-product, .nav-yellow .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-yellow .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-yellow .nav-link.disabled:hover {
+.nav-yellow .nav-link.disabled:hover, .nav-yellow .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-yellow .nav-link.btn-get-product:hover, .nav-yellow .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-yellow .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20277,11 +20273,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-green .nav-link.disabled {
+.nav-green .nav-link.disabled, .nav-green .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-green .nav-link.btn-get-product, .nav-green .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-green .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-green .nav-link.disabled:hover {
+.nav-green .nav-link.disabled:hover, .nav-green .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-green .nav-link.btn-get-product:hover, .nav-green .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-green .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20310,11 +20306,11 @@ i.material-icons {
   color: #212529;
 }
 
-.nav-teal .nav-link.disabled {
+.nav-teal .nav-link.disabled, .nav-teal .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-teal .nav-link.btn-get-product, .nav-teal .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-teal .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-teal .nav-link.disabled:hover {
+.nav-teal .nav-link.disabled:hover, .nav-teal .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-teal .nav-link.btn-get-product:hover, .nav-teal .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-teal .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20343,11 +20339,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-cyan .nav-link.disabled {
+.nav-cyan .nav-link.disabled, .nav-cyan .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-cyan .nav-link.btn-get-product, .nav-cyan .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-cyan .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-cyan .nav-link.disabled:hover {
+.nav-cyan .nav-link.disabled:hover, .nav-cyan .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-cyan .nav-link.btn-get-product:hover, .nav-cyan .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-cyan .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20376,11 +20372,11 @@ i.material-icons {
   color: #212529;
 }
 
-.nav-white .nav-link.disabled {
+.nav-white .nav-link.disabled, .nav-white .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-white .nav-link.btn-get-product, .nav-white .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-white .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-white .nav-link.disabled:hover {
+.nav-white .nav-link.disabled:hover, .nav-white .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-white .nav-link.btn-get-product:hover, .nav-white .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-white .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20409,11 +20405,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-gray .nav-link.disabled {
+.nav-gray .nav-link.disabled, .nav-gray .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-gray .nav-link.btn-get-product, .nav-gray .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-gray .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-gray .nav-link.disabled:hover {
+.nav-gray .nav-link.disabled:hover, .nav-gray .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-gray .nav-link.btn-get-product:hover, .nav-gray .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-gray .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20442,11 +20438,11 @@ i.material-icons {
   color: #fff;
 }
 
-.nav-gray-dark .nav-link.disabled {
+.nav-gray-dark .nav-link.disabled, .nav-gray-dark .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .nav-gray-dark .nav-link.btn-get-product, .nav-gray-dark .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .nav-gray-dark .nav-link.btn-get-product {
   color: #868e96;
 }
 
-.nav-gray-dark .nav-link.disabled:hover {
+.nav-gray-dark .nav-link.disabled:hover, .nav-gray-dark .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .nav-gray-dark .nav-link.btn-get-product:hover, .nav-gray-dark .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .nav-gray-dark .nav-link.btn-get-product:hover {
   cursor: not-allowed;
   border-color: transparent;
 }
@@ -20544,7 +20540,7 @@ i.material-icons {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
+.navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .navbar-light .navbar-nav .nav-link.btn-get-product, .navbar-light .navbar-nav .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .navbar-light .navbar-nav .nav-link.btn-get-product {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -20613,7 +20609,7 @@ i.material-icons {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.navbar-dark .navbar-nav .nav-link.disabled {
+.navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .website-detail.is-offer.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .navbar-dark .navbar-nav .nav-link.btn-get-product, .navbar-dark .navbar-nav .website-detail.is-reward.is-not-available section.product-detail .nav-link.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .navbar-dark .navbar-nav .nav-link.btn-get-product {
   color: rgba(255, 255, 255, 0.25);
 }
 
@@ -20917,7 +20913,7 @@ i.material-icons {
   border-color: #36255D;
 }
 
-.page-item.disabled .page-link {
+.page-item.disabled .page-link, .website-detail.is-offer.is-not-available section.product-detail .page-item.btn-get-product .page-link, .website-detail.is-reward.is-not-available section.product-detail .page-item.btn-get-product .page-link {
   color: #a8aeb4;
   background-color: #fff;
   border-color: #dfe1e3;
@@ -21425,7 +21421,7 @@ a.badge {
   border-bottom-left-radius: 0.375rem;
 }
 
-.list-group-item.disabled, .list-group-item:disabled {
+.list-group-item.disabled, .website-detail.is-offer.is-not-available section.product-detail .list-group-item.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .list-group-item.btn-get-product, .list-group-item:disabled {
   color: #868e96;
   background-color: #fff;
 }
@@ -22595,7 +22591,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   cursor: pointer;
 }
 
-.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+.datepicker table tr td.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.btn-get-product, .datepicker table tr td.disabled:hover, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.btn-get-product:hover, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.btn-get-product:hover {
   background: none;
   color: #e7e9ea;
   cursor: default;
@@ -22609,7 +22605,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #36255D;
 }
 
-.datepicker table tr td.highlighted.disabled, .datepicker table tr td.highlighted.disabled:active {
+.datepicker table tr td.highlighted.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.highlighted.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.highlighted.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.highlighted.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.highlighted.btn-get-product, .datepicker table tr td.highlighted.disabled:active, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.highlighted.btn-get-product:active, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.highlighted.btn-get-product:active, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.highlighted.btn-get-product:active, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.highlighted.btn-get-product:active {
   background: #36255D;
   color: #5A6169;
 }
@@ -22622,7 +22618,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #f5f5f6;
 }
 
-.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:active {
+.datepicker table tr td.today.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.today.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.today.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.today.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.today.btn-get-product, .datepicker table tr td.today.disabled:active, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.today.btn-get-product:active, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.today.btn-get-product:active, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.today.btn-get-product:active, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.today.btn-get-product:active {
   background: #f5f5f6;
   color: #868e96;
 }
@@ -22637,7 +22633,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #251940;
 }
 
-.datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:active, .datepicker table tr td.range.day.disabled:hover {
+.datepicker table tr td.range.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.btn-get-product, .datepicker table tr td.range.disabled:active, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.btn-get-product:active, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.btn-get-product:active, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.btn-get-product:active, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.btn-get-product:active, .datepicker table tr td.range.day.disabled:hover, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.day.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.day.btn-get-product:hover, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.day.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.day.btn-get-product:hover {
   background: #211639;
   color: #4b3481;
 }
@@ -22646,12 +22642,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #cbd3da;
 }
 
-.datepicker table tr td.range.highlighted.disabled, .datepicker table tr td.range.highlighted.disabled:active {
+.datepicker table tr td.range.highlighted.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.highlighted.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.highlighted.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.highlighted.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.highlighted.btn-get-product, .datepicker table tr td.range.highlighted.disabled:active, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.highlighted.btn-get-product:active, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.highlighted.btn-get-product:active, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.highlighted.btn-get-product:active, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.highlighted.btn-get-product:active {
   background: #e9ecef;
   color: #e7e9ea;
 }
 
-.datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today.disabled:active {
+.datepicker table tr td.range.today.disabled, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.today.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.today.btn-get-product, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.today.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.today.btn-get-product, .datepicker table tr td.range.today.disabled:active, .datepicker table tr .website-detail.is-offer.is-not-available section.product-detail td.range.today.btn-get-product:active, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td.range.today.btn-get-product:active, .datepicker table tr .website-detail.is-reward.is-not-available section.product-detail td.range.today.btn-get-product:active, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td.range.today.btn-get-product:active {
   background: #007bff;
   color: #fff;
 }
@@ -22695,13 +22691,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #e9ecef;
 }
 
-.datepicker table tr td span.disabled, .datepicker table tr td span.disabled:hover {
+.datepicker table tr td span.disabled, .datepicker table tr td .website-detail.is-offer.is-not-available section.product-detail span.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td span.btn-get-product, .datepicker table tr td .website-detail.is-reward.is-not-available section.product-detail span.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td span.btn-get-product, .datepicker table tr td span.disabled:hover, .datepicker table tr td .website-detail.is-offer.is-not-available section.product-detail span.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td span.btn-get-product:hover, .datepicker table tr td .website-detail.is-reward.is-not-available section.product-detail span.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td span.btn-get-product:hover {
   background: none;
   color: #e7e9ea;
   cursor: default;
 }
 
-.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td .website-detail.is-offer.is-not-available section.product-detail span.active.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td span.active.btn-get-product, .datepicker table tr td .website-detail.is-reward.is-not-available section.product-detail span.active.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td span.active.btn-get-product, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td .website-detail.is-offer.is-not-available section.product-detail span.active.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .datepicker table tr td span.active.btn-get-product:hover, .datepicker table tr td .website-detail.is-reward.is-not-available section.product-detail span.active.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .datepicker table tr td span.active.btn-get-product:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -22727,7 +22723,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #e9ecef;
 }
 
-.datepicker .prev.disabled, .datepicker .next.disabled {
+.datepicker .prev.disabled, .datepicker .website-detail.is-offer.is-not-available section.product-detail .prev.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker .prev.btn-get-product, .datepicker .website-detail.is-reward.is-not-available section.product-detail .prev.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker .prev.btn-get-product, .datepicker .next.disabled, .datepicker .website-detail.is-offer.is-not-available section.product-detail .next.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .datepicker .next.btn-get-product, .datepicker .website-detail.is-reward.is-not-available section.product-detail .next.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .datepicker .next.btn-get-product {
   visibility: hidden;
 }
 
@@ -25743,34 +25739,35 @@ a.text-black:hover, a.text-black:focus {
   color: #cc9000;
 }
 
-.btn.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product {
+.btn.btn-product-reward, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product {
   color: #fff;
   border-color: #4472F3;
   background-color: #4472F3;
   box-shadow: none;
 }
 
-.btn.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:hover {
+.btn.btn-product-reward:hover, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:hover, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:hover {
   color: #fff;
   background-color: #2c60f1;
   border-color: #2c60f1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:focus, .btn.btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .btn.focus.btn-get-product {
+.btn.btn-product-reward:focus, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:focus, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:focus, .btn.btn-product-reward.focus, .website-detail.is-reward.is-available section.product-detail .btn.focus.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn.btn-product-reward.disabled, .website-detail.is-reward.is-available section.product-detail .btn.disabled.btn-get-product, .btn.btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:disabled {
+.btn.btn-product-reward.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-product-reward.btn-get-product, .website-detail.is-offer.is-not-available .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-available .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-available section.product-detail .btn.disabled.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .btn.btn-product-reward:disabled, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:disabled {
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-product-reward:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-product-reward:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn.btn-product-reward.dropdown-toggle,
-.website-detail.is-reward.is-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
+.website-detail.is-reward.is-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product,
+.website-detail.is-reward.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #2c60f1;
   border-color: #144ef0;
@@ -25778,74 +25775,73 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product {
+.btn.btn-outline-product-reward, .card.card-product.is-reward .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #4472F3;
   color: #4472F3;
 }
 
-.btn.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:hover {
+.btn.btn-outline-product-reward:hover, .card.card-product.is-reward .card-footer .btn:hover {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(68, 114, 243, 0.25);
 }
 
-.btn.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:focus, .btn.btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .btn.focus, .website-detail.is-reward.is-not-available section.product-detail .btn.focus.btn-get-product {
+.btn.btn-outline-product-reward:focus, .card.card-product.is-reward .card-footer .btn:focus, .btn.btn-outline-product-reward.focus, .card.card-product.is-reward .card-footer .btn.focus {
   box-shadow: 0 0 0 3px rgba(68, 114, 243, 0.15), 0 3px 15px rgba(68, 114, 243, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .btn.disabled, .website-detail.is-reward.is-not-available section.product-detail .btn.disabled.btn-get-product, .btn.btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:disabled {
+.btn.btn-outline-product-reward.disabled, .card.card-product.is-reward .card-footer .btn.disabled, .card.card-product.is-reward .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .card.card-product.is-reward .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-reward .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-outline-product-reward.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-outline-product-reward.btn-get-product, .btn.btn-outline-product-reward:disabled, .card.card-product.is-reward .card-footer .btn:disabled {
   color: #4472F3;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn.btn-outline-product-reward.dropdown-toggle,
-.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle,
-.website-detail.is-reward.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
+.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle {
   color: #fff;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn.btn-outline-product-reward:not(:disabled):not(.disabled):active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-reward:not(:disabled):not(.disabled).active:focus, .card.card-product.is-reward .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn.btn-outline-product-reward.dropdown-toggle:focus,
-.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle:focus,
-.website-detail.is-reward.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-reward .card-footer .show > .btn.dropdown-toggle:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product {
+.btn.btn-product-offer, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product {
   color: #212529;
   border-color: #fd7e14;
   background-color: #fd7e14;
   box-shadow: none;
 }
 
-.btn.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:hover {
+.btn.btn-product-offer:hover, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:hover, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:hover {
   color: #fff;
   background-color: #f57102;
   border-color: #f57102;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:focus, .btn.btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .btn.focus.btn-get-product {
+.btn.btn-product-offer:focus, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:focus, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:focus, .btn.btn-product-offer.focus, .website-detail.is-offer.is-available section.product-detail .btn.focus.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn.focus.btn-get-product {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .btn.disabled.btn-get-product, .btn.btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:disabled {
+.btn.btn-product-offer.disabled, .website-detail.is-offer.is-available section.product-detail .btn.disabled.btn-get-product, .website-detail.is-offer.is-available .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-product-offer.btn-get-product, .btn.btn-product-offer:disabled, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:disabled {
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: none;
   cursor: not-allowed;
 }
 
-.btn.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-product-offer:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-product-offer:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
 .show > .btn.btn-product-offer.dropdown-toggle,
-.website-detail.is-offer.is-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
+.website-detail.is-offer.is-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product,
+.website-detail.is-offer.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
   color: #fff;
   background-color: #f57102;
   border-color: #dc6502;
@@ -25853,43 +25849,41 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
-.btn.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product {
+.btn.btn-outline-product-offer, .card.card-product.is-offer .card-footer .btn {
   background-color: transparent;
   background-image: none;
   border-color: #fd7e14;
   color: #fd7e14;
 }
 
-.btn.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:hover {
+.btn.btn-outline-product-offer:hover, .card.card-product.is-offer .card-footer .btn:hover {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(253, 126, 20, 0.25);
 }
 
-.btn.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:focus, .btn.btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .btn.focus, .website-detail.is-offer.is-not-available section.product-detail .btn.focus.btn-get-product {
+.btn.btn-outline-product-offer:focus, .card.card-product.is-offer .card-footer .btn:focus, .btn.btn-outline-product-offer.focus, .card.card-product.is-offer .card-footer .btn.focus {
   box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15), 0 3px 15px rgba(253, 126, 20, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .btn.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.disabled.btn-get-product, .btn.btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:disabled {
+.btn.btn-outline-product-offer.disabled, .card.card-product.is-offer .card-footer .btn.disabled, .card.card-product.is-offer .card-footer .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .card.card-product.is-offer .card-footer .website-detail.is-reward.is-not-available section.product-detail .btn.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .card.card-product.is-offer .card-footer .btn.btn-get-product, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-outline-product-offer.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-outline-product-offer.btn-get-product, .btn.btn-outline-product-offer:disabled, .card.card-product.is-offer .card-footer .btn:disabled {
   color: #fd7e14;
   background-color: transparent;
   box-shadow: none;
 }
 
-.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active,
+.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active,
 .show > .btn.btn-outline-product-offer.dropdown-toggle,
-.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle,
-.website-detail.is-offer.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product {
+.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle {
   color: #212529;
   background-color: #fd7e14;
   border-color: #fd7e14;
 }
 
-.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-get-product:not(:disabled):not(.disabled).active:focus,
+.btn.btn-outline-product-offer:not(:disabled):not(.disabled):active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled):active:focus, .btn.btn-outline-product-offer:not(:disabled):not(.disabled).active:focus, .card.card-product.is-offer .card-footer .btn:not(:disabled):not(.disabled).active:focus,
 .show > .btn.btn-outline-product-offer.dropdown-toggle:focus,
-.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle:focus,
-.website-detail.is-offer.is-not-available section.product-detail .show > .btn.dropdown-toggle.btn-get-product:focus {
+.card.card-product.is-offer .card-footer .show > .btn.dropdown-toggle:focus {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -25911,7 +25905,7 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: 0 0 0 3px rgba(59, 89, 152, 0.15), 0 3px 15px rgba(59, 89, 152, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn.btn-facebook.disabled, .btn.btn-facebook:disabled {
+.btn.btn-facebook.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-facebook.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-facebook.btn-get-product, .btn.btn-facebook:disabled {
   background-color: #3b5998;
   border-color: #3b5998;
   box-shadow: none;
@@ -25945,7 +25939,7 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: 0 0 0 3px rgba(59, 89, 152, 0.15), 0 3px 15px rgba(59, 89, 152, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.btn.btn-outline-facebook.disabled, .btn.btn-outline-facebook:disabled {
+.btn.btn-outline-facebook.disabled, .website-detail.is-offer.is-not-available section.product-detail .btn.btn-outline-facebook.btn-get-product, .website-detail.is-reward.is-not-available section.product-detail .btn.btn-outline-facebook.btn-get-product, .btn.btn-outline-facebook:disabled {
   color: #3b5998;
   background-color: transparent;
   box-shadow: none;

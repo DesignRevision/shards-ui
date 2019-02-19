@@ -397,7 +397,8 @@
     &.is-not-available {
       section.product-detail {
         .btn-get-product {
-          @extend .btn-outline-product-offer;
+          @extend .btn-product-offer;
+          @extend .disabled;
         }
       }
     }
@@ -447,7 +448,8 @@
     &.is-not-available {
       section.product-detail {
         .btn-get-product {
-          @extend .btn-outline-product-reward;
+          @extend .btn-product-reward;
+          @extend .disabled;
         }
       }
     }
