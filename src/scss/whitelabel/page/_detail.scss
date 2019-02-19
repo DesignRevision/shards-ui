@@ -147,6 +147,77 @@
         }
       }
 
+      &.card-product-how-to-use {
+        .card-body {
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          counter-reset: how-to-use;
+
+          .how-to-use-item {
+            width: calc(100% / 5);
+            border-right: 1px solid rgba(0, 0, 0, 0.125);
+            padding: 15px 10px;
+            text-align: center;
+            position: relative;
+
+            img {
+              max-height: 55px;
+            }
+
+            .item-text {
+              margin-top: 10px;
+              font-weight: 700;
+
+              @media (max-width: 768px - 1px) {
+                font-size: 0.9rem;
+              }
+            }
+
+            &:before {
+              position: absolute;
+              top: 5px;
+              left: 15px;
+              counter-increment: how-to-use;
+              content: counter(how-to-use);
+              font-size: 2rem;
+              font-weight: 700;
+              opacity: 0.3;
+            }
+
+            &:nth-child(5n) {
+              border-right: 0;
+            }
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            @media (max-width: 768px - 1px) {
+              width: calc(100% / 2);
+              border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+              &:nth-child(5n) {
+                width: 100%;
+              }
+
+              &:first-child,
+              &:nth-child(2) {
+                border-top: 0;
+              }
+
+              &:nth-child(2n) {
+                border-right: 0;
+              }
+            }
+          }
+        }
+      }
+
       &.card-voucher-countdown {
         .card-body {
           padding: 15px 1.5625rem;
@@ -297,7 +368,7 @@
       &.card-voucher-code {
         .card-body {
           text-align: center;
-          padding: 30px 15px;
+          padding: 15px;
 
           small {
             font-size: 1.1rem;
@@ -358,13 +429,13 @@
         width: calc(100% - 30px);
         font-weight: 400;
         text-align: center;
-				white-space: normal;
-				margin-left: 30px;
+        white-space: normal;
+        margin-left: 30px;
 
-				@media (max-width: 769px - 1px) {
-					margin-left: 0;
-					text-align: left;
-				}
+        @media (max-width: 769px - 1px) {
+          margin-left: 0;
+          text-align: left;
+        }
       }
 
       .btn-icon {

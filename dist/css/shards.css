@@ -27464,6 +27464,77 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.website-detail section.product-detail .card.card-product-how-to-use .card-body {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  counter-reset: how-to-use;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item {
+  width: calc(100% / 5);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 15px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item img {
+  max-height: 55px;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item .item-text {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item .item-text {
+    font-size: 0.9rem;
+  }
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:before {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  counter-increment: how-to-use;
+  content: counter(how-to-use);
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:nth-child(5n) {
+  border-right: 0;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:first-child {
+  margin-left: 0;
+}
+
+.website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item {
+    width: calc(100% / 2);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:nth-child(5n) {
+    width: 100%;
+  }
+  .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:first-child, .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:nth-child(2) {
+    border-top: 0;
+  }
+  .website-detail section.product-detail .card.card-product-how-to-use .card-body .how-to-use-item:nth-child(2n) {
+    border-right: 0;
+  }
+}
+
 .website-detail section.product-detail .card.card-voucher-countdown .card-body {
   padding: 15px 1.5625rem;
 }
@@ -27610,7 +27681,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail section.product-detail .card.card-voucher-code .card-body {
   text-align: center;
-  padding: 30px 15px;
+  padding: 15px;
 }
 
 .website-detail section.product-detail .card.card-voucher-code .card-body small {
