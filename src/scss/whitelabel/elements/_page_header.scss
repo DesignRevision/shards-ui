@@ -202,16 +202,16 @@ header#page-header {
             }
 
             &.is-mobile {
-              display: none !important;
+              display: none;
             }
 
             @media (max-width: 992px - 1px) {
               &:not(&.is-mobile) {
-                display: none !important;
+                display: none;
               }
 
               &.is-mobile {
-                display: flex !important;
+                display: inline-block;
               }
             }
           }
@@ -239,10 +239,50 @@ header#page-header {
           }
         }
 
-        @media (max-width: 992px - 1px) {
+        &:not(&.is-logged) {
+
+          .menu-item-user,
+          .menu-item-user-points {
+            display: none;
+          }
+
+          li.menu-item-user-points.is-mobile {
+            display: none;
+          }
+        }
+
+        &.is-logged {
 
           .menu-item-signin,
           .menu-item-signup {
+            display: none;
+          }
+
+          .menu-item-user,
+          .menu-item-user-points:not(.is-mobile) {
+            display: inline-block;
+          }
+
+          @media (max-width: 992px - 1px) {
+            .menu-item-user {
+              display: none;
+            }
+
+            .menu-item-user-points:not(.is-mobile) {
+              display: none;
+            }
+
+            .menu-item-user-points.is-mobile {
+              display: inline-block;
+            }
+          }
+        }
+
+        @media (max-width: 992px - 1px) {
+
+          .menu-item-signin,
+          .menu-item-signup,
+          .menu-item-user {
             display: none;
           }
         }
@@ -264,10 +304,6 @@ header#page-header {
             }
           }
         }
-
-        @media (max-width: 992px - 1px) {
-          margin-left: auto;
-        }
       }
 
       &:first-child,
@@ -286,43 +322,6 @@ header#page-header {
           width: auto;
         }
       }
-
-      &.align-right {
-        .nav-header-menu {
-
-          .menu-item-user-points,
-          .menu-item-user {
-            display: none;
-          }
-
-          @media (max-width: 992px - 1px) {
-
-            .menu-item-signin,
-            .menu-item-user {
-              display: none;
-            }
-          }
-
-          &.is-logged {
-
-            .menu-item-user-points,
-            .menu-item-user {
-              display: inline-block;
-            }
-
-            .menu-item-signin,
-            .menu-item-signup {
-              display: none !important;
-            }
-
-            @media (max-width: 992px - 1px) {
-              .menu-item-user {
-                display: none !important;
-              }
-            }
-          }
-        }
-      }
     }
 
     @media (max-width: 992px - 1px) {
@@ -337,7 +336,7 @@ header#page-header {
 
         .nav-header-menu,
         .btn-menu {
-          display: none !important;
+          display: none;
         }
 
         @media (max-width: 992px - 1px) {
