@@ -58,7 +58,14 @@
             .card-product-points,
             .card-product-points-lead,
             .card-product-type {
-              padding: 5px 15px;
+              display: flex;
+              align-items: center;
+              height: 35px;
+              padding: 0 15px;
+
+              @media (max-width: 401px - 1px) {
+                height: 32px;
+              }
             }
 
             .card-product-points {
@@ -92,12 +99,11 @@
 
             .card-product-points-lead {
               flex-grow: 1;
-              align-items: center;
               font-weight: 400;
               font-size: 1.05rem;
-              padding: 6.5px 30px 6.5px 15px;
-							position: relative;
-							background-color: #fff;
+              padding: 0 30px 0 15px;
+              position: relative;
+              background-color: #fff;
 
               strong {
                 font-weight: 700;
@@ -128,8 +134,8 @@
 
             .card-product-type {
               margin-left: auto;
-							border-top-right-radius: .625rem;
-							padding: 7px 15px;
+              border-top-right-radius: .625rem;
+              padding: 0 15px;
 
               i {
                 font-size: 1.2rem;
@@ -519,8 +525,8 @@
               }
 
               .card-product-points-lead {
-								background-color: #fff;
-								color: $product-offer;
+                background-color: #fff;
+                color: $product-offer;
 
                 &:before {
                   border-right-color: $product-offer;
@@ -542,6 +548,27 @@
           &.is-generated {
             background-color: rgba($product-offer, 0.15);
             border: dashed 2px rgba($product-offer, 0.65);
+          }
+        }
+      }
+    }
+
+    &.is-voucher-generated {
+      section.product-detail {
+        .card {
+          &.card-product-infos {
+            .card-body {
+              .card-content-info {
+                .card-product-points {
+                  display: none;
+                }
+
+                .card-product-points-lead {
+                  background-color: $product-offer;
+                  color: #FFF;
+                }
+              }
+            }
           }
         }
       }
@@ -582,8 +609,8 @@
               }
 
               .card-product-points-lead {
-								background-color: #fff;
-								color: $product-reward;
+                background-color: #fff;
+                color: $product-reward;
 
                 &:before {
                   border-right-color: $product-reward;
@@ -605,6 +632,27 @@
           &.is-generated {
             background-color: rgba($product-reward, 0.15);
             border: dashed 2px rgba($product-reward, 0.65);
+          }
+        }
+      }
+    }
+
+    &.is-voucher-generated {
+      section.product-detail {
+        .card {
+          &.card-product-infos {
+            .card-body {
+              .card-content-info {
+                .card-product-points {
+                  display: none;
+                }
+
+                .card-product-points-lead {
+                  background-color: $product-reward;
+                  color: #FFF;
+                }
+              }
+            }
           }
         }
       }

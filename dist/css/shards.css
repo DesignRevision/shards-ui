@@ -26037,13 +26037,80 @@ a.text-black:hover, a.text-black:focus {
   color: #FFF;
 }
 
-.card.card-product .card-image .card-product-value {
+.card.card-product .card-content-info {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #FFF;
+}
+
+.card.card-product .card-content-info .card-product-points,
+.card.card-product .card-content-info .card-product-points-lead {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 35px;
+  padding: 0 15px;
+}
+
+@media (max-width: 400px) {
+  .card.card-product .card-content-info .card-product-points,
+  .card.card-product .card-content-info .card-product-points-lead {
+    height: 32px;
+  }
+}
+
+.card.card-product .card-content-info .card-product-points {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-right: 30px;
+}
+
+.card.card-product .card-content-info .card-product-points:before {
   position: absolute;
-  bottom: -12px;
-  left: 15px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 5px 10px;
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 17.5px solid transparent;
+  border-bottom: 17.5px solid transparent;
+  border-right: 14px solid transparent;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 400px) {
+  .card.card-product .card-content-info .card-product-points {
+    font-size: 1rem;
+  }
+  .card.card-product .card-content-info .card-product-points:before {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+}
+
+.card.card-product .card-content-info .card-product-points-lead {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 30px 0 15px;
+  position: relative;
+  background-color: #fff;
+}
+
+.card.card-product .card-content-info .card-product-points-lead strong {
+  font-weight: 700;
+}
+
+@media (max-width: 400px) {
+  .card.card-product .card-content-info .card-product-points-lead {
+    font-size: 0.9rem;
+  }
 }
 
 .card.card-product .card-body {
@@ -26120,16 +26187,8 @@ a.text-black:hover, a.text-black:focus {
   font-weight: 600;
 }
 
-.card.card-product.is-reward .card-image {
-  border-bottom: solid 2px #4472F3;
-}
-
-.card.card-product.is-reward .card-image .card-product-type,
-.card.card-product.is-reward .card-image .card-product-value {
-  background-color: #4472F3;
-}
-
 .card.card-product.is-reward .card-image .card-product-type {
+  background-color: #4472F3;
   font-weight: 900;
 }
 
@@ -26137,21 +26196,60 @@ a.text-black:hover, a.text-black:focus {
   content: "\f005";
 }
 
-.card.card-product.is-offer .card-image {
-  border-bottom: solid 2px #fd7e14;
+.card.card-product.is-reward .card-content-info {
+  background-color: #4472F3;
 }
 
-.card.card-product.is-offer .card-image .card-product-type,
-.card.card-product.is-offer .card-image .card-product-value {
-  background-color: #fd7e14;
+.card.card-product.is-reward .card-content-info .card-product-points {
+  background-color: #4472F3;
+}
+
+.card.card-product.is-reward .card-content-info .card-product-points:before {
+  border-right-color: #FFF;
+}
+
+.card.card-product.is-reward .card-content-info .card-product-points-lead {
+  background-color: #fff;
+  color: #4472F3;
+}
+
+.card.card-product.is-reward .card-content-info .card-product-points-lead:before {
+  border-right-color: #4472F3;
+}
+
+.card.card-product.is-reward .card-content-info .card-product-type i:before {
+  content: "\f005";
 }
 
 .card.card-product.is-offer .card-image .card-product-type {
+  background-color: #fd7e14;
   font-weight: 900;
 }
 
 .card.card-product.is-offer .card-image .card-product-type i:before {
   content: "\f06b";
+}
+
+.card.card-product.is-offer .card-content-info {
+  background-color: #fd7e14;
+}
+
+.card.card-product.is-offer .card-content-info .card-product-points-lead {
+  background-color: #fd7e14;
+  color: #FFF;
+}
+
+.card.card-product.is-offer .card-content-info .card-product-type i:before {
+  content: "\f06b";
+}
+
+.card.card-product.is-voucher-generated.is-reward .card-content-info .card-product-points {
+  display: none;
+}
+
+.card.card-product.is-voucher-generated.is-reward .card-content-info .card-product-points-lead {
+  background-color: #4472F3;
+  color: #FFF;
 }
 
 .card.card-product.is-voucher-generated.is-reward .card-body .card-product-voucher {
@@ -27369,7 +27467,20 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points,
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead,
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
-  padding: 5px 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 35px;
+  padding: 0 15px;
+}
+
+@media (max-width: 400px) {
+  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points,
+  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead,
+  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
+    height: 32px;
+  }
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
@@ -27405,11 +27516,9 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
   -ms-flex-positive: 1;
       flex-grow: 1;
-  -ms-flex-align: center;
-      align-items: center;
   font-weight: 400;
   font-size: 1.05rem;
-  padding: 6.5px 30px 6.5px 15px;
+  padding: 0 30px 0 15px;
   position: relative;
   background-color: #fff;
 }
@@ -27444,7 +27553,7 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type {
   margin-left: auto;
   border-top-right-radius: .625rem;
-  padding: 7px 15px;
+  padding: 0 15px;
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-type i {
@@ -27851,6 +27960,15 @@ nav#subway-location .subway-location-switch .btn {
   border: dashed 2px rgba(253, 126, 20, 0.65);
 }
 
+.website-detail.is-offer.is-voucher-generated section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
+  display: none;
+}
+
+.website-detail.is-offer.is-voucher-generated section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
+  background-color: #fd7e14;
+  color: #FFF;
+}
+
 .website-detail.is-reward section.product-detail .card.card-product-infos .card-body .card-content-info {
   background-color: #4472F3;
 }
@@ -27879,6 +27997,15 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail.is-reward section.product-detail .card.card-voucher-code.is-generated {
   background-color: rgba(68, 114, 243, 0.15);
   border: dashed 2px rgba(68, 114, 243, 0.65);
+}
+
+.website-detail.is-reward.is-voucher-generated section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
+  display: none;
+}
+
+.website-detail.is-reward.is-voucher-generated section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
+  background-color: #4472F3;
+  color: #FFF;
 }
 
 .website-home .page-header-intro {

@@ -29,14 +29,70 @@
           color: #FFF;
         }
       }
+    }
 
-      .card-product-value {
-        position: absolute;
-        bottom: -12px;
-        left: 15px;
-        font-size: 0.85rem;
-        font-weight: 500;
-        padding: 5px 10px;
+    .card-content-info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: #FFF;
+
+      .card-product-points,
+      .card-product-points-lead {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        padding: 0 15px;
+
+        @media (max-width: 401px - 1px) {
+          height: 32px;
+        }
+      }
+
+      .card-product-points {
+        position: relative;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding-right: 30px;
+
+        &:before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 0px;
+          height: 0px;
+          border-top: 17.5px solid transparent;
+          border-bottom: 17.5px solid transparent;
+          border-right: 14px solid transparent;
+          top: 0;
+          right: 0;
+        }
+
+        @media (max-width: 401px - 1px) {
+          font-size: 1rem;
+
+          &:before {
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+          }
+        }
+      }
+
+      .card-product-points-lead {
+        flex-grow: 1;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 0 30px 0 15px;
+        position: relative;
+        background-color: #fff;
+
+        strong {
+          font-weight: 700;
+        }
+
+        @media (max-width: 401px - 1px) {
+          font-size: 0.9rem;
+        }
       }
     }
 
@@ -111,16 +167,39 @@
 
     &.is-reward {
       .card-image {
-        border-bottom: solid 2px $product-reward;
-
-        .card-product-type,
-        .card-product-value {
+        .card-product-type {
           background-color: $product-reward;
+          font-weight: 900;
+
+          i {
+            &:before {
+              content: "\f005";
+            }
+          }
+        }
+      }
+
+      .card-content-info {
+        background-color: $product-reward;
+
+        .card-product-points {
+          background-color: $product-reward;
+
+          &:before {
+            border-right-color: #FFF;
+          }
+        }
+
+        .card-product-points-lead {
+          background-color: #fff;
+          color: $product-reward;
+
+          &:before {
+            border-right-color: $product-reward;
+          }
         }
 
         .card-product-type {
-          font-weight: 900;
-
           i {
             &:before {
               content: "\f005";
@@ -138,16 +217,27 @@
 
     &.is-offer {
       .card-image {
-        border-bottom: solid 2px $product-offer;
-
-        .card-product-type,
-        .card-product-value {
+        .card-product-type {
           background-color: $product-offer;
+          font-weight: 900;
+
+          i {
+            &:before {
+              content: "\f06b";
+            }
+          }
+        }
+      }
+
+      .card-content-info {
+        background-color: $product-offer;
+
+        .card-product-points-lead {
+          background-color: $product-offer;
+          color: #FFF;
         }
 
         .card-product-type {
-          font-weight: 900;
-
           i {
             &:before {
               content: "\f06b";
@@ -164,15 +254,18 @@
     }
 
     &.is-voucher-generated {
-      // .card-image {
-      //   border-bottom: solid 2px $success;
-
-      //   .card-product-value {
-      //     background-color: $success;
-      //   }
-      // }
-
       &.is-reward {
+        .card-content-info {
+          .card-product-points {
+            display: none;
+          }
+
+          .card-product-points-lead {
+            background-color: $product-reward;
+            color: #FFF;
+          }
+        }
+
         .card-body {
           .card-product-voucher {
             background-color: rgba($product-reward, 0.15);
