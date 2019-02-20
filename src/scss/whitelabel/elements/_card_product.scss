@@ -2,7 +2,7 @@
   &.card-product {
     margin-bottom: 15px;
     color: $body-color;
-    transition: box-shadow 300ms;
+    transition: all 300ms;
 
     .card-image {
       padding-top: 30px;
@@ -282,10 +282,15 @@
           }
         }
       }
-    }
+		}
+
+		&.is-not-available{
+			opacity: 0.5;
+		}
 
     &:hover {
-      box-shadow: $card-box-shadow;
+			box-shadow: $card-box-shadow;
+			opacity: 1;
     }
   }
 }

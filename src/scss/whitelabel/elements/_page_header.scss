@@ -200,6 +200,20 @@ header#page-header {
                 padding-right: 0;
               }
             }
+
+            &.is-mobile {
+              display: none !important;
+            }
+
+            @media (max-width: 992px - 1px) {
+              &:not(&.is-mobile) {
+                display: none !important;
+              }
+
+              &.is-mobile {
+                display: flex !important;
+              }
+            }
           }
 
           &:first-child {
@@ -222,6 +236,14 @@ header#page-header {
               color: #333;
               font-weight: 700;
             }
+          }
+        }
+
+        @media (max-width: 992px - 1px) {
+
+          .menu-item-signin,
+          .menu-item-signup {
+            display: none;
           }
         }
       }
@@ -290,12 +312,12 @@ header#page-header {
 
             .menu-item-signin,
             .menu-item-signup {
-              display: none;
+              display: none !important;
             }
 
             @media (max-width: 992px - 1px) {
               .menu-item-user {
-                display: none;
+                display: none !important;
               }
             }
           }

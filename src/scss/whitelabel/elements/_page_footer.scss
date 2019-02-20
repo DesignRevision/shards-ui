@@ -4,8 +4,8 @@ footer#page-footer {
   color: #656565;
 
   .content-footer {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     @include make-container();
     @include make-container-max-widths();
@@ -30,7 +30,8 @@ footer#page-footer {
 
       p {
         line-height: 1.5;
-        margin-bottom: 25px;
+        margin-top: 5px;
+        margin-bottom: 0;
       }
 
       @media (max-width: 991px) {

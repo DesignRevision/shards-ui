@@ -26004,7 +26004,7 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product {
   margin-bottom: 15px;
   color: #212529;
-  transition: box-shadow 300ms;
+  transition: all 300ms;
 }
 
 .card.card-product .card-image {
@@ -26262,8 +26262,13 @@ a.text-black:hover, a.text-black:focus {
   border: dashed thin rgba(253, 126, 20, 0.25);
 }
 
+.card.card-product.is-not-available {
+  opacity: 0.5;
+}
+
 .card.card-product:hover {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+  opacity: 1;
 }
 
 .empty-state {
@@ -26682,6 +26687,20 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
   }
 }
 
+header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user-points.is-mobile {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user-points {
+    display: none !important;
+  }
+  header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user-points.is-mobile {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 header#page-header .content-header .content-header-section ul.nav-header-menu > li:first-child a {
   padding-left: 0;
 }
@@ -26694,6 +26713,13 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
   opacity: 1;
   color: #333;
   font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  header#page-header .content-header .content-header-section ul.nav-header-menu .menu-item-signin,
+  header#page-header .content-header .content-header-section ul.nav-header-menu .menu-item-signup {
+    display: none;
+  }
 }
 
 header#page-header .content-header .content-header-section.align-right {
@@ -26759,12 +26785,12 @@ header#page-header .content-header .content-header-section.align-right .nav-head
 
 header#page-header .content-header .content-header-section.align-right .nav-header-menu.is-logged .menu-item-signin,
 header#page-header .content-header .content-header-section.align-right .nav-header-menu.is-logged .menu-item-signup {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 991px) {
   header#page-header .content-header .content-header-section.align-right .nav-header-menu.is-logged .menu-item-user {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -26938,8 +26964,8 @@ footer#page-footer {
 }
 
 footer#page-footer .content-footer {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -26994,7 +27020,8 @@ footer#page-footer .content-footer .content-brand a img {
 
 footer#page-footer .content-footer .content-brand p {
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -27607,6 +27634,11 @@ nav#subway-location .subway-location-switch .btn {
   margin-top: 0;
 }
 
+.website-detail section.product-detail .card.card-product-infos .card-body .card-content-main .card-rules {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
 .website-detail section.product-detail .card.card-product-infos .card-body .card-content-how-to-use {
   width: 100%;
   display: -ms-flexbox;
@@ -27863,7 +27895,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail section.product-detail .card.card-voucher-code .card-body {
   text-align: center;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 .website-detail section.product-detail .card.card-voucher-code .card-body small {
@@ -27872,7 +27904,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-voucher-code .card-body .voucher-code {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   letter-spacing: 1px;
@@ -27932,7 +27964,6 @@ nav#subway-location .subway-location-switch .btn {
 @media (max-width: 768px) {
   .website-detail section.product-detail .btn-get-product .btn-text {
     margin-left: 0;
-    text-align: left;
   }
 }
 

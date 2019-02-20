@@ -87,7 +87,7 @@
 							</a>
             </li>
 
-            <li class="menu-item-user-points d-none d-lg-flex">
+            <li class="menu-item-user-points">
               <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
 								<span class="points-quantity">
 									5
@@ -99,7 +99,7 @@
 							</a>
             </li>
 
-            <li class="menu-item-user-points d-lg-none">
+            <li class="menu-item-user-points is-mobile">
               <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
 								<span class="points-text">
 									<strong>5</strong><br>
@@ -138,14 +138,14 @@
     <aside class="main-sidebar px-0">
       <div class="main-navbar">
         <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
-          <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+          <button class="btn btn-link toggle-sidebar">
 						<i class="fal fa-times"></i>
-					</a>
-          <a class="navbar-brand w-100 mr-0" href="#">
-						<div class="d-table m-auto">
+					</button>
+					<div class="d-table m-auto">
+          	<a href="#" class="navbar-brand w-100 mr-0">
 							<img id="main-logo" class="d-inline-block align-top mr-1" src="./images/logo.png">
-						</div>
-					</a>
+						</a>
+					</div>
         </nav>
       </div>
 
@@ -379,6 +379,48 @@
               </div>
               <div class="row">
                 <div class="list-cards">
+                  <a href="detalhe.html" class="card card-product-voucher is-offer">
+										<div class="card-image" style="background-image: url('./images/offers/product-1.png')"></div>
+										<div class="card-body-content">
+											<div class="card-content-info">
+												<div class="card-product-points-lead">
+													<span class="text-container">
+														<span class="text-container">
+															<strong>Resgate</strong> agora
+														</span>
+													</span>
+												</div>
+											</div>
+
+											<div class="card-body">
+												<h4 class="card-title">
+													Ganhe um Cookie!
+												</h4>
+												<p class="card-date-expiration">
+													Válida por mais <strong>2 dias</strong>
+												</p>
+												<div class="card-product-voucher">
+													<div class="voucher-text">
+														Seu Voucher
+													</div>
+													<div class="voucher-code">
+														URHSG6X
+													</div>
+												</div>
+											</div>
+											<div class="card-footer">
+												<button type="button" class="btn btn-block">
+													<span class="btn-text">
+														Ver voucher
+													</span>
+													<span class="btn-icon">
+														<i class="fas fa-arrow-right"></i>
+													</span>
+												</button>
+											</div>
+										</div>
+									</a>
+
                   <a href="detalhe.html" class="card card-product is-offer is-voucher-generated">
 											<div class="card-image" style="background-image: url('./images/offers/product-1.png')">
 												<div class="card-product-type">
@@ -640,8 +682,15 @@
 											<p class="card-text">
 												No seu aniversário é só chegar na Zygo que você ganha um cookie de presente!
 											</p>
-											<p class="card-rules">
-												Oferta válida enquanto durarem os estoques
+
+											<p class="card-rules mb-0">
+												Consulte as lojas participantes e as regras do programa.
+											</p>
+											<p class="card-rules mb-0">
+												Válida somente em algumas lojas da rede.
+											</p>
+											<p class="card-rules mb-0">
+													Sujeito à disponibilidade de estoque.
 											</p>
 										</div>
 										<div class="card-footer">
@@ -977,7 +1026,7 @@
 											</div>
 										</a>
 
-                  <a href="detalhe.html" class="card card-product is-reward">
+                  <a href="detalhe.html" class="card card-product is-reward is-not-available">
 											<div class="card-image" style="background-image: url('./images/rewards/product-3.jpg')">
 												<div class="card-product-type">
 													<i class="fa"></i>
@@ -1027,7 +1076,7 @@
 											</div>
 										</a>
 
-                  <a href="detalhe.html" class="card card-product is-reward">
+                  <a href="detalhe.html" class="card card-product is-reward is-not-available">
 											<div class="card-image" style="background-image: url('./images/rewards/product-4.jpg')">
 												<div class="card-product-type">
 													<i class="fa"></i>
