@@ -26597,7 +26597,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
 }
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user > a .user-avatar {
-  max-height: 45px;
+  max-width: 45px;
   margin-right: 10px;
   border: solid thin #cbcbcb;
   transition: all 300ms;
