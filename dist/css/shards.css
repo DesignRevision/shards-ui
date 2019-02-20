@@ -26098,7 +26098,7 @@ a.text-black:hover, a.text-black:focus {
       flex-grow: 1;
   font-weight: 400;
   font-size: 1rem;
-  padding: 0 30px 0 15px;
+  padding: 0 15px;
   position: relative;
   background-color: #fff;
 }
