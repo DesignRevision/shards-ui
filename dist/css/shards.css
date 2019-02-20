@@ -27368,6 +27368,17 @@ nav#subway-location .subway-location-switch .btn {
       flex-grow: 0;
 }
 
+@media (max-width: 768px) {
+  .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-footer .btn {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+  }
+  .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-footer .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-footer {
     -ms-flex-direction: column-reverse;

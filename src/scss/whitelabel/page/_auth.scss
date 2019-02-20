@@ -144,6 +144,18 @@
                 flex-grow: 0;
               }
 
+							@media (max-width: 769px - 1px) {
+								.btn {
+									width: 100%;
+									margin-bottom: 5px;
+									margin-left: 0 !important;
+
+									&:last-child {
+										margin-bottom: 0;
+									}
+								}
+							}
+
               @media (max-width: 576px - 1px) {
                 flex-direction: column-reverse;
                 flex-wrap: wrap;
