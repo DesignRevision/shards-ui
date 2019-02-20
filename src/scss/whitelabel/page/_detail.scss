@@ -511,7 +511,7 @@
               background-color: $product-offer;
 
               .card-product-points {
-                background-color: darken($product-offer, 10%);
+                background-color: $product-offer;
 
                 &:before {
                   border-right-color: #FFF;
@@ -520,7 +520,7 @@
 
               .card-product-points-lead {
 								background-color: #fff;
-								color: darken($product-offer, 10%);
+								color: $product-offer;
 
                 &:before {
                   border-right-color: $product-offer;
@@ -574,7 +574,7 @@
               background-color: $product-reward;
 
               .card-product-points {
-                background-color: darken($product-reward, 10%);
+                background-color: $product-reward;
 
                 &:before {
                   border-right-color: #FFF;
@@ -583,7 +583,7 @@
 
               .card-product-points-lead {
 								background-color: #fff;
-								color: darken($product-reward, 10%);
+								color: $product-reward;
 
                 &:before {
                   border-right-color: $product-reward;

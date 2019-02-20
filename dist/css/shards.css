@@ -26521,8 +26521,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
 }
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user > a:after {
-  content: "";
-  display: none;
+  margin-left: 0.8rem;
 }
 
 header#page-header .content-header .content-header-section ul.nav-header-menu > li.menu-item-user > a:hover {
@@ -27827,7 +27826,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail.is-offer section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
-  background-color: #dc6502;
+  background-color: #fd7e14;
 }
 
 .website-detail.is-offer section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points:before {
@@ -27836,7 +27835,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail.is-offer section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
   background-color: #fff;
-  color: #dc6502;
+  color: #fd7e14;
 }
 
 .website-detail.is-offer section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead:before {
@@ -27857,7 +27856,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail.is-reward section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
-  background-color: #144ef0;
+  background-color: #4472F3;
 }
 
 .website-detail.is-reward section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points:before {
@@ -27866,7 +27865,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail.is-reward section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
   background-color: #fff;
-  color: #144ef0;
+  color: #4472F3;
 }
 
 .website-detail.is-reward section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead:before {
