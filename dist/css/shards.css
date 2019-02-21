@@ -24508,7 +24508,6 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .main-sidebar .nav .nav-item.active, .main-sidebar .nav .nav-item .nav-link.active, .main-sidebar .nav .nav-item:hover, .main-sidebar .nav .nav-item .nav-link:hover {
-  box-shadow: inset 0.1875rem 0 0 #36255D;
   background-color: #FBFBFB;
   color: #36255D;
 }
@@ -26388,6 +26387,10 @@ aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link:hover, aside.main-sideb
   opacity: 1;
 }
 
+aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link:hover i, aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link:active i {
+  font-weight: 700;
+}
+
 aside.main-sidebar .nav-wrapper .nav .nav-item .nav-link.active {
   color: var(--primary);
   box-shadow: none;
@@ -26708,7 +26711,7 @@ header#page-header .content-header .content-header-section ul.nav-header-menu > 
   padding-left: 0;
 }
 
-header#page-header .content-header .content-header-section ul.nav-header-menu > li:last-child:not(.menu-item-user) a {
+header#page-header .content-header .content-header-section ul.nav-header-menu > li:last-child:not(.menu-item-user) a, header#page-header .content-header .content-header-section ul.nav-header-menu > li:last-child:not(.menu-item-signup) a {
   padding-right: 0;
 }
 

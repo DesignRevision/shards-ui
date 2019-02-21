@@ -93,7 +93,7 @@
 
       &.active, .nav-link.active,
       &:hover, .nav-link:hover {
-        box-shadow: $main-sidebar-nav-link-active-box-shadow;
+        // box-shadow: $main-sidebar-nav-link-active-box-shadow;
         background-color: $main-sidebar-nav-link-active-background-color;
         color: $main-sidebar-nav-link-active-color;
 

@@ -54,6 +54,10 @@ aside.main-sidebar {
           &:active {
             box-shadow: none;
             opacity: 1;
+
+            i {
+              font-weight: 700;
+            }
           }
 
           &.active {

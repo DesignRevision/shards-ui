@@ -223,7 +223,9 @@ header#page-header {
           }
 
           &:last-child {
-            &:not(.menu-item-user) {
+
+            &:not(.menu-item-user),
+            &:not(.menu-item-signup) {
               a {
                 padding-right: 0;
               }
