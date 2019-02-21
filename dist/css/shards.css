@@ -28277,7 +28277,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-loyalty-panel section.loyalty-panel {
-  padding: 30px 0;
+  padding: 15px 0;
   margin-bottom: 0 !important;
 }
 
@@ -28436,7 +28436,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .website-review section.review-store .card {
@@ -28451,7 +28451,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store .card .card-header {
-  padding: 20px 20px 10px;
+  padding: 10px 20px 10px;
 }
 
 .website-review section.review-store .card .card-header .card-title {
@@ -28473,7 +28473,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store .card .card-footer {
-  padding: 10px 20px 20px;
+  padding: 10px 20px 10px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -28526,7 +28526,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-stores section.stores-list {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .website-stores section.stores-list .alert.alert-stores-info {
@@ -28778,7 +28778,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-account-remove section.user-account-remove {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 @media (max-width: 768px) {
@@ -28802,7 +28802,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-edit section.user-edit {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .website-user-infos-complete main#main-container .wrapper {
@@ -28924,7 +28924,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-password section.user-password {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .website-user-password section.user-password .card {
@@ -28939,7 +28939,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-password section.user-password .card .card-header {
-  padding: 20px 20px 10px;
+  padding: 10px 20px 10px;
 }
 
 .website-user-password section.user-password .card .card-header .card-title {
@@ -29223,7 +29223,7 @@ section.products-lists {
 }
 
 section.products-lists section {
-  padding: 30px 0;
+  padding: 15px 0;
   margin-bottom: 0 !important;
   background-color: #f5f6f7;
 }
@@ -29817,8 +29817,8 @@ section.social-network .intro h2 strong {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
   88.8% {
-    -webkit-transform: skewX(-0.195312deg) skewY(-0.195312deg);
-    transform: skewX(-0.195312deg) skewY(-0.195312deg);
+    -webkit-transform: skewX(-0.195313deg) skewY(-0.195313deg);
+    transform: skewX(-0.195313deg) skewY(-0.195313deg);
   }
 }
 
@@ -29854,8 +29854,8 @@ section.social-network .intro h2 strong {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
   88.8% {
-    -webkit-transform: skewX(-0.195312deg) skewY(-0.195312deg);
-    transform: skewX(-0.195312deg) skewY(-0.195312deg);
+    -webkit-transform: skewX(-0.195313deg) skewY(-0.195313deg);
+    transform: skewX(-0.195313deg) skewY(-0.195313deg);
   }
 }
 
