@@ -26286,6 +26286,7 @@ a.text-black:hover, a.text-black:focus {
 
 .card.card-product-voucher .card-content-info {
   width: 100%;
+  height: 35px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -26356,12 +26357,19 @@ a.text-black:hover, a.text-black:focus {
   }
 }
 
+@media (max-width: 400px) {
+  .card.card-product-voucher .card-content-info {
+    height: 32px;
+  }
+}
+
 .card.card-product-voucher .card-content-main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row;
       flex-flow: row;
   color: #212529;
+  height: 100%;
 }
 
 .card.card-product-voucher .card-content-main .card-image {
@@ -26440,6 +26448,10 @@ a.text-black:hover, a.text-black:focus {
 
 .card.card-product-voucher .card-content-main .card-body-content .card-body {
   padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .card.card-product-voucher .card-content-main .card-body-content .card-body .card-title,
@@ -26454,6 +26466,11 @@ a.text-black:hover, a.text-black:focus {
   line-height: 1.3;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.card.card-product-voucher .card-content-main .card-body-content .card-body .card-title small {
+  font-weight: 600;
+  color: #555;
 }
 
 .card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown {
@@ -26473,7 +26490,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item {
-  width: calc((100% / 4) - 10px);
+  width: calc(100% / 4);
   padding: 2.5px 5px;
   text-align: center;
 }
@@ -26517,6 +26534,7 @@ a.text-black:hover, a.text-black:focus {
   padding: 6px 10px;
   border-bottom-right-radius: 0.625rem;
   text-align: center;
+  margin-top: auto;
 }
 
 .card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-voucher .voucher-text {
@@ -29524,7 +29542,7 @@ label {
   margin-right: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 990px) {
   .list-cards.is-list-vouchers .card-product-voucher {
     width: 100%;
     margin: 0 0 15px;

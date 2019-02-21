@@ -309,6 +309,7 @@
 
     .card-content-info {
       width: 100%;
+      height: 35px;
       display: flex;
       align-items: center;
       color: #FFF;
@@ -334,7 +335,7 @@
         padding: 0 30px 0 1.5625rem;
         position: relative;
         background-color: #fff;
-				border-top-left-radius: 0.625rem;
+        border-top-left-radius: 0.625rem;
 
         strong {
           font-weight: 700;
@@ -363,12 +364,17 @@
       @media (max-width: 992px - 1px) {
         border-top-right-radius: 0;
       }
+
+      @media (max-width: 401px - 1px) {
+        height: 32px;
+      }
     }
 
     .card-content-main {
       display: flex;
       flex-flow: row;
       color: $body-color;
+      height: 100%;
 
       .card-image {
         flex: 0 0 auto;
@@ -431,7 +437,9 @@
         }
 
         .card-body {
-          padding: 0;
+					padding: 0;
+					display: flex;
+					flex-direction: column;
 
           .card-title,
           .card-product-countdown,
@@ -445,6 +453,11 @@
             line-height: 1.3;
             padding-bottom: 0;
             margin-bottom: 0;
+
+            small {
+              font-weight: 600;
+              color: #555;
+            }
           }
 
           .card-product-countdown {
@@ -460,7 +473,7 @@
               justify-content: center;
 
               .countdown-item {
-                width: calc((100% / 4) - 10px);
+                width: calc(100% / 4);
                 padding: 2.5px 5px;
                 text-align: center;
 
@@ -501,7 +514,8 @@
             width: 100%;
             padding: 6px 10px;
             border-bottom-right-radius: 0.625rem;
-            text-align: center;
+						text-align: center;
+						margin-top: auto;
 
             .voucher-text {
               font-size: 0.85rem;
@@ -537,8 +551,8 @@
       }
 
       .card-product-voucher {
-				background-color: rgba($product-reward, 0.15);
-				border: dashed 1px rgba($product-reward, 0.65);
+        background-color: rgba($product-reward, 0.15);
+        border: dashed 1px rgba($product-reward, 0.65);
       }
     }
 
@@ -561,8 +575,8 @@
       }
 
       .card-product-voucher {
-				background-color: rgba($product-offer, 0.15);
-				border: dashed 1px rgba($product-offer, 0.65);
+        background-color: rgba($product-offer, 0.15);
+        border: dashed 1px rgba($product-offer, 0.65);
       }
     }
 
