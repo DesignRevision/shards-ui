@@ -48,13 +48,16 @@ footer#page-footer {
     padding: 10px 0;
     font-size: 0.85rem;
     text-align: center;
+    strong {
+      color: #f72bb3
+    }
 
     a {
-      color: #05E2B5;
+      color: #06e1b5;
       font-weight: 700;
 
       &:hover {
-        color: darken(#05E2B5, 5%);
+        color: darken(#06e1b5, 5%);
       }
     }
   }
