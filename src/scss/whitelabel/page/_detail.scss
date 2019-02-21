@@ -337,7 +337,7 @@
           .card-content-rules,
           .card-content-stores {
             padding: 15px 1.5625rem;
-            border-bottom: 1px solid #e1e5eb;
+            border-bottom: 0;
 
             .card-content-title {
               font-size: 1.3rem;
@@ -346,18 +346,51 @@
             }
 
             .list-group {
-              .list-group-item {
-                position: relative;
-                padding-top: 0;
-                padding-left: 20px;
-                padding-right: 0;
-                margin-bottom: 5px;
-                border: 0;
-                font-size: 1.1rem;
 
-                &:last-child {
-                  border-bottom: 0;
-                  margin-bottom: 0;
+              .list-group-item {
+                border-right: 0;
+                border-left: 0;
+                padding: 5px 0 5px 20px;
+                flex-direction: column;
+								align-items: flex-start;
+								position: relative;
+								border: 0;
+
+                .item-container {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+
+                  h5 {
+                    color: var(--primary);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-bottom: 0;
+
+                    small {
+                      font-size: 90%;
+                      color: #444;
+                    }
+                  }
+
+                  .badge {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    margin-left: 15px;
+                  }
+                }
+              }
+
+              li.list-group-item {
+                &:before {
+                  content: '\f111';
+                  position: absolute;
+                  top: 10px;
+                  left: 0;
+                  font-family: 'Font Awesome 5 Pro';
+                  font-size: 8px;
+                  font-weight: 500;
                 }
               }
 
@@ -371,16 +404,6 @@
 
                 p {
                   font-size: 0.95rem;
-                }
-
-                &:before {
-                  content: '\f111';
-                  position: absolute;
-                  top: 4.5px;
-                  left: 0;
-                  font-family: 'Font Awesome 5 Pro';
-                  font-size: 8px;
-                  font-weight: 500;
                 }
               }
 

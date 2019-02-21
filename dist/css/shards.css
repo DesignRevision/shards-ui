@@ -27809,7 +27809,7 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules,
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores {
   padding: 15px 1.5625rem;
-  border-bottom: 1px solid #e1e5eb;
+  border-bottom: 0;
 }
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .card-content-title,
@@ -27821,19 +27821,59 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item,
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  padding: 5px 0 5px 20px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
   position: relative;
-  padding-top: 0;
-  padding-left: 20px;
-  padding-right: 0;
-  margin-bottom: 5px;
   border: 0;
-  font-size: 1.1rem;
 }
 
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item:last-child,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item:last-child {
-  border-bottom: 0;
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item .item-container,
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item .item-container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item .item-container h5,
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item .item-container h5 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 0;
+}
+
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item .item-container h5 small,
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item .item-container h5 small {
+  font-size: 90%;
+  color: #444;
+}
+
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item .item-container .badge,
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item .item-container .badge {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 15px;
+}
+
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group li.list-group-item:before,
+.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item:before {
+  content: '\f111';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 8px;
+  font-weight: 500;
 }
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group div.list-group-item h5,
@@ -27850,19 +27890,6 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group div.list-group-item p,
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item p {
   font-size: 0.95rem;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group div.list-group-item:before,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group li.list-group-item:before,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group div.list-group-item:before,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item:before {
-  content: '\f111';
-  position: absolute;
-  top: 4.5px;
-  left: 0;
-  font-family: 'Font Awesome 5 Pro';
-  font-size: 8px;
-  font-weight: 500;
 }
 
 .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group a.list-group-item,
@@ -28575,6 +28602,40 @@ nav#subway-location .subway-location-switch .btn {
 .website-stores section.stores-list .card.card-stores-list .list-group .list-group-item {
   border-right: 0;
   border-left: 0;
+  padding: 10px 20px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container h5 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container h5 small {
+  font-size: 90%;
+  color: #444;
+}
+
+.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container .badge {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 15px;
 }
 
 .website-stores section.stores-list .card.card-stores-list .list-group .list-group-item:first-child {

@@ -55,6 +55,34 @@
           .list-group-item {
             border-right: 0;
             border-left: 0;
+						padding: 10px 20px;
+						flex-direction: column;
+						align-items: flex-start;
+
+            .item-container {
+							width: 100%;
+							display: flex;
+              justify-content: space-between;
+
+              h5 {
+								color: var(--primary);
+								font-size: 1rem;
+                font-weight: 500;
+								margin-bottom: 0;
+
+								small{
+									font-size: 90%;
+									color: #444;
+								}
+              }
+
+              .badge {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                margin-left: 15px;
+              }
+            }
 
             &:first-child {
               border-top: 0;
