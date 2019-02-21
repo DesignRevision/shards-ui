@@ -7,7 +7,7 @@
 
         .header-intro-title,
         .header-intro-description {
-          color: var(--brand-text-contrast);
+          color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
         }
       }
 
@@ -38,26 +38,26 @@
     .review-store-action {
       text-align: right;
 
-			.review-store-lead {
-				margin-right: 4px;
-			}
+      .review-store-lead {
+        margin-right: 4px;
+      }
 
-			a {
-				color: #FFF;
-				font-weight: 600;
+      a {
+        color: #FFF;
+        font-weight: 600;
 
-				&:before {
-					background-color: #fff;
-				}
-			}
+        &:before {
+          background-color: #fff;
+        }
+      }
 
       @media (max-width: 576px - 1px) {
         text-align: center;
       }
 
-			@media (max-width: 413px - 1px) {
-				font-size: 0.8rem;
-			}
+      @media (max-width: 413px - 1px) {
+        font-size: 0.8rem;
+      }
     }
 
     @media (max-width: 576px - 1px) {
