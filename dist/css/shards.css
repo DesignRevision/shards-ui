@@ -27051,13 +27051,17 @@ footer#page-footer .content-copyright {
   text-align: center;
 }
 
+footer#page-footer .content-copyright strong {
+  color: #f72bb3;
+}
+
 footer#page-footer .content-copyright a {
-  color: #05E2B5;
+  color: #06e1b5;
   font-weight: 700;
 }
 
 footer#page-footer .content-copyright a:hover {
-  color: #04c9a1;
+  color: #05c8a1;
 }
 
 .review-rating-category {
@@ -27270,7 +27274,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-header {
-  padding: 20px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -27299,7 +27303,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn {
@@ -27340,7 +27344,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-divider {
-  padding: 20px 0;
+  padding: 10px 20px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-divider .auth-divider-wrapper {
@@ -27395,7 +27399,7 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section {
@@ -27426,7 +27430,7 @@ nav#subway-location .subway-location-switch .btn {
     text-align: center;
   }
   .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-footer .card-footer-section:first-child {
-    margin-top: 25px;
+    margin-top: 10px;
   }
 }
 
@@ -27874,47 +27878,6 @@ nav#subway-location .subway-location-switch .btn {
   font-family: 'Font Awesome 5 Pro';
   font-size: 8px;
   font-weight: 500;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group div.list-group-item h5,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group li.list-group-item h5,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group div.list-group-item h5,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item h5 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group div.list-group-item p,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group li.list-group-item p,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group div.list-group-item p,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group li.list-group-item p {
-  font-size: 0.95rem;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group a.list-group-item,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group a.list-group-item {
-  padding: 8px 0;
-  color: var(--primary);
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group a.list-group-item:hover, .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group a.list-group-item:focus, .website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group a.list-group-item:active,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group a.list-group-item:hover,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group a.list-group-item:focus,
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group a.list-group-item:active {
-  background-color: transparent;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-rules .list-group .list-group-item {
-  padding-bottom: 5px;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item {
-  border-bottom: 1px solid #e1e5eb;
-}
-
-.website-detail section.product-detail .card.card-product-subinfos .card-body .card-content-stores .list-group .list-group-item:last-child {
-  border-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -28863,7 +28826,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-header {
-  padding: 20px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -28892,7 +28855,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body .user-infos-form-container .form-group {
@@ -28910,7 +28873,7 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer .card-footer-section {
@@ -28930,7 +28893,7 @@ nav#subway-location .subway-location-switch .btn {
     text-align: center;
   }
   .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-footer .card-footer-section:first-child {
-    margin-top: 25px;
+    margin-top: 10px;
   }
 }
 

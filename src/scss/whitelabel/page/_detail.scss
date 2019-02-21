@@ -393,50 +393,6 @@
                   font-weight: 500;
                 }
               }
-
-              div.list-group-item,
-              li.list-group-item {
-                h5 {
-                  font-size: 1.1rem;
-                  font-weight: 400;
-                  margin-bottom: 0;
-                }
-
-                p {
-                  font-size: 0.95rem;
-                }
-              }
-
-              a.list-group-item {
-                padding: 8px 0;
-                color: var(--primary);
-
-                &:hover,
-                &:focus,
-                &:active {
-                  background-color: transparent;
-                }
-              }
-            }
-          }
-
-          .card-content-rules {
-            .list-group {
-              .list-group-item {
-                padding-bottom: 5px;
-              }
-            }
-          }
-
-          .card-content-stores {
-            .list-group {
-              .list-group-item {
-                border-bottom: 1px solid #e1e5eb;
-
-                &:last-child {
-                  border-bottom: 0;
-                }
-              }
             }
           }
         }
