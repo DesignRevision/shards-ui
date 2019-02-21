@@ -160,11 +160,15 @@
         }
 
         .btn-text {
-					width: calc(100% - 20px);
+          width: calc(100% - 20px);
           font-weight: 600;
-					font-weight: 400;
-					text-align: center;
-					white-space: normal;
+          font-weight: 400;
+          text-align: center;
+          white-space: normal;
+
+          strong {
+            font-weight: 600;
+          }
         }
       }
     }
@@ -286,15 +290,15 @@
           }
         }
       }
-		}
+    }
 
-		&.is-not-available{
-			opacity: 0.5;
-		}
+    &.is-not-available {
+      opacity: 0.5;
+    }
 
     &:hover {
-			box-shadow: $card-box-shadow;
-			opacity: 1;
+      box-shadow: $card-box-shadow;
+      opacity: 1;
     }
   }
 }

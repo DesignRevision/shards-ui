@@ -26190,6 +26190,10 @@ a.text-black:hover, a.text-black:focus {
   white-space: normal;
 }
 
+.card.card-product .card-footer .btn .btn-text strong {
+  font-weight: 600;
+}
+
 .card.card-product.is-reward .card-image .card-product-type {
   background-color: #4472F3;
   font-weight: 900;
@@ -27963,6 +27967,10 @@ nav#subway-location .subway-location-switch .btn {
   text-align: center;
   white-space: normal;
   margin-left: 30px;
+}
+
+.website-detail section.product-detail .btn-get-product .btn-text strong {
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
