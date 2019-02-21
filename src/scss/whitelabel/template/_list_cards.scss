@@ -5,7 +5,7 @@
   margin: 0 15px;
 
   .card-product {
-    width: calc((100% / 4) - 15px);
+    width: calc((100% / 4) - 11.5px);
     flex-grow: 0;
     margin-right: 15px;
 
@@ -14,7 +14,7 @@
     }
 
     @media (max-width: 1200px - 1px) {
-      width: calc((100% / 3) - 15px);
+      width: calc((100% / 3) - 10px);
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -26,7 +26,7 @@
     }
 
     @media (max-width: 992px - 1px) {
-      width: calc((100% / 2) - 15px);
+      width: calc((100% / 2) - 8px);
 
       &:nth-child(2n) {
         margin-right: 0;
@@ -47,6 +47,27 @@
       &:nth-child(3n),
       &:nth-child(4n) {
         margin-right: 0;
+      }
+    }
+  }
+
+  &.is-list-vouchers {
+    .card-product-voucher {
+      width: calc((100% / 2) - 7.5px);
+      flex-grow: 0;
+      margin-right: 15px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      @media (max-width: 1200px - 1px) {
+        width: 100%;
+        margin: 0 0 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
