@@ -338,7 +338,7 @@ header#page-header {
 
         .nav-header-menu,
         .btn-menu {
-          display: none;
+          display: none !important;
         }
 
         @media (max-width: 992px - 1px) {

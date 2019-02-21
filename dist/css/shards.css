@@ -26815,7 +26815,7 @@ header#page-header.is-brand-only .content-header .content-header-section {
 
 header#page-header.is-brand-only .content-header .content-header-section .nav-header-menu,
 header#page-header.is-brand-only .content-header .content-header-section .btn-menu {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 991px) {
