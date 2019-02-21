@@ -7,7 +7,7 @@
 
         .header-intro-title,
         .header-intro-description {
-          color: var(--brand-text-contrast);
+          color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
         }
       }
     }

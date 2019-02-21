@@ -8,7 +8,16 @@
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
         href="./css/shards.css">
-
+	<style>
+		:root{
+			--primary: #ff2ef5;
+			--primary-hue: 303;
+			--primary-saturation: 100%;
+			--primary-lightness: 59.02%;
+			--primary-lightness-darker: 49.02%;
+			--primary-lightness-contrast: 0%;
+		}
+	</style>
 </head>
 <!-- TODO: No MOBILE, quando o usuário clicar para abrir/expandir o MENU, é necessário adicionar a classe "is-menu-open" no elemento abaixo para não haver double scroll no página -->
 
@@ -139,13 +148,13 @@
       <div class="main-navbar">
         <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
           <button class="btn btn-link toggle-sidebar">
-						<i class="fal fa-times"></i>
-					</button>
-					<div class="d-table m-auto">
-          	<a href="#" class="navbar-brand w-100 mr-0">
+            <i class="fal fa-times"></i>
+          </button>
+          <div class="d-table m-auto">
+            <a href="#" class="navbar-brand w-100 mr-0">
 							<img id="main-logo" class="d-inline-block align-top mr-1" src="./images/logo.png">
 						</a>
-					</div>
+          </div>
         </nav>
       </div>
 
@@ -378,49 +387,231 @@
                 </div>
               </div>
               <div class="row">
-                <div class="list-cards">
-                  <!-- <a href="detalhe.html" class="card card-product-voucher is-offer">
-										<div class="card-image" style="background-image: url('./images/offers/product-1.png')"></div>
-										<div class="card-body-content">
-											<div class="card-content-info">
-												<div class="card-product-points-lead">
-													<span class="text-container">
-														<span class="text-container">
-															<strong>Resgate</strong> agora
-														</span>
-													</span>
-												</div>
+                <div class="list-cards is-list-vouchers">
+                  <a href="detalhe.html" class="card card-product-voucher is-offer">
+										<div class="card-content-info">
+											<div class="card-product-points-lead">
+												<span class="text-container">
+													<strong>Resgate</strong> agora
+												</span>
 											</div>
-
-											<div class="card-body">
-												<h4 class="card-title">
-													Ganhe um Cookie!
-												</h4>
-												<p class="card-date-expiration">
-													Válida por mais <strong>2 dias</strong>
-												</p>
-												<div class="card-product-voucher">
-													<div class="voucher-text">
-														Seu Voucher
-													</div>
-													<div class="voucher-code">
-														URHSG6X
-													</div>
-												</div>
-											</div>
-											<div class="card-footer">
-												<button type="button" class="btn btn-block">
-													<span class="btn-text">
-														Ver mais
-													</span>
-													<span class="btn-icon">
-														<i class="fas fa-arrow-right"></i>
-													</span>
-												</button>
+											<div class="card-product-type">
+												<i class="fa"></i>
 											</div>
 										</div>
-									</a> -->
 
+										<div class="card-content-main">
+											<div class="card-image" style="background-image: url('./images/offers/product-10.png')">
+											</div>
+
+											<div class="card-body-content">
+												<div class="card-body">
+													<h4 class="card-title">
+														Feliz Aniversário! Você ganhou 3 Montaditos de presente! <small>(Ver mais)</small>
+													</h4>
+													<div class="card-product-countdown">
+														<p>Seu voucher expira em</p>
+														<div class="voucher-countdown">
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	02
+																</div>
+																<div class="countdown-text">
+																	Dias
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	08
+																</div>
+																<div class="countdown-text">
+																	Horas
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	41
+																</div>
+																<div class="countdown-text">
+																	Minutos
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	59
+																</div>
+																<div class="countdown-text">
+																	Segundos
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-product-voucher">
+														<div class="voucher-text">
+															Seu Voucher
+														</div>
+														<div class="voucher-code">
+															P3G43SS3C0D1G0L1ND0!
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+
+                  <a href="detalhe.html" class="card card-product-voucher is-offer">
+										<div class="card-content-info">
+											<div class="card-product-points-lead">
+												<span class="text-container">
+													<strong>Resgate</strong> agora
+												</span>
+											</div>
+											<div class="card-product-type">
+												<i class="fa"></i>
+											</div>
+										</div>
+
+										<div class="card-content-main">
+											<div class="card-image" style="background-image: url('./images/offers/product-10.png')">
+											</div>
+
+											<div class="card-body-content">
+												<div class="card-body">
+													<h4 class="card-title">
+														Feliz Aniversário! Você ganhou 3 Montaditos de presente! <small>(Ver mais)</small>
+													</h4>
+													<div class="card-product-countdown">
+														<p>Seu voucher expira em</p>
+														<div class="voucher-countdown">
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	02
+																</div>
+																<div class="countdown-text">
+																	Dias
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	08
+																</div>
+																<div class="countdown-text">
+																	Horas
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	41
+																</div>
+																<div class="countdown-text">
+																	Minutos
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	59
+																</div>
+																<div class="countdown-text">
+																	Segundos
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-product-voucher">
+														<div class="voucher-text">
+															Seu Voucher
+														</div>
+														<div class="voucher-code">
+															P3G43SS3C0D1G0L1ND0!
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+
+                  <a href="detalhe.html" class="card card-product-voucher is-offer">
+										<div class="card-content-info">
+											<div class="card-product-points-lead">
+												<span class="text-container">
+													<strong>Resgate</strong> agora
+												</span>
+											</div>
+											<div class="card-product-type">
+												<i class="fa"></i>
+											</div>
+										</div>
+
+										<div class="card-content-main">
+											<div class="card-image" style="background-image: url('./images/offers/product-10.png')">
+											</div>
+
+											<div class="card-body-content">
+												<div class="card-body">
+													<h4 class="card-title">
+														Feliz Aniversário! Você ganhou 3 Montaditos de presente! <small>(Ver mais)</small>
+													</h4>
+													<div class="card-product-countdown">
+														<p>Seu voucher expira em</p>
+														<div class="voucher-countdown">
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	02
+																</div>
+																<div class="countdown-text">
+																	Dias
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	08
+																</div>
+																<div class="countdown-text">
+																	Horas
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	41
+																</div>
+																<div class="countdown-text">
+																	Minutos
+																</div>
+															</div>
+
+															<div class="countdown-item">
+																<div class="countdown-value">
+																	59
+																</div>
+																<div class="countdown-text">
+																	Segundos
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-product-voucher">
+														<div class="voucher-text">
+															Seu Voucher
+														</div>
+														<div class="voucher-code">
+															P3G43SS3C0D1G0L1ND0!
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+                </div>
+
+                <div class="list-cards d-none">
                   <a href="detalhe.html" class="card card-product is-offer is-voucher-generated">
 											<div class="card-image" style="background-image: url('./images/offers/product-1.png')">
 												<div class="card-product-type">
