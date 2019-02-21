@@ -61,7 +61,7 @@
               display: flex;
               align-items: center;
               height: 35px;
-              padding: 0 15px;
+              padding: 0 1.5625rem;
 
               @media (max-width: 401px - 1px) {
                 height: 32px;
@@ -101,7 +101,7 @@
               flex-grow: 1;
               font-weight: 400;
               font-size: 1.05rem;
-              padding: 0 30px 0 15px;
+							padding: 0 30px 0 1.5625rem;
               position: relative;
               background-color: #fff;
 
@@ -135,7 +135,7 @@
             .card-product-type {
               margin-left: auto;
               border-top-right-radius: .625rem;
-              padding: 0 15px;
+              padding: 0 1.5625rem;
 
               i {
                 font-size: 1.2rem;
