@@ -26802,7 +26802,7 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   right: 0;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content:after {
     display: none;
   }
@@ -28745,6 +28745,10 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-user-edit section.user-edit {
   padding: 15px 0;
+}
+
+.website-user-edit section.user-edit .btn.btn-facebook {
+  height: 36px;
 }
 
 .website-user-infos-complete main#main-container .wrapper {

@@ -15,5 +15,11 @@
 
   section.user-edit {
     padding: 15px 0;
+
+    .btn {
+      &.btn-facebook {
+        height: 36px;
+      }
+    }
   }
 }
