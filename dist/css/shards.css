@@ -27114,7 +27114,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-account-remove section.account-remove .card .card-header {
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
 }
 
 .website-account-remove section.account-remove .card .card-header .card-title {
@@ -27124,7 +27124,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-account-remove section.account-remove .card .card-body {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .website-account-remove section.account-remove .card .card-body .form-group {
@@ -27136,7 +27136,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-account-remove section.account-remove .card .card-footer {
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -27197,7 +27197,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body {
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-social-connection .btn {
@@ -28489,11 +28489,11 @@ nav#subway-location .subway-location-switch .btn {
   font-weight: 500;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group {
   border-radius: 0.625rem;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item {
   border-right: 0;
   border-left: 0;
   padding: 10px 20px;
@@ -28503,7 +28503,7 @@ nav#subway-location .subway-location-switch .btn {
       align-items: flex-start;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item .item-container {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -28511,19 +28511,19 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: space-between;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container h5 {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item .item-container h5 {
   color: var(--primary);
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container h5 small {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item .item-container h5 small {
   font-size: 90%;
   color: #444;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item .item-container .badge {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item .item-container .badge {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
@@ -28532,20 +28532,31 @@ nav#subway-location .subway-location-switch .btn {
   margin-left: 15px;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item:first-child {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item:first-child {
   border-top: 0;
 }
 
-.website-stores section.stores-list .card.card-stores-list .list-group .list-group-item:last-child {
+.website-stores section.stores-list .store-content-layout .card.card-stores-list .list-group .list-group-item:last-child {
   border-bottom: 0;
 }
 
-.website-stores section.stores-list .stores-list-map {
+.website-stores section.stores-list .store-content-layout .stores-list-map {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   border-radius: 0.625rem;
   overflow: hidden;
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+@media (max-width: 991px) {
+  .website-stores section.stores-list .store-content-layout {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .website-stores section.stores-list .store-content-layout .stores-list-map {
+    margin-bottom: 15px;
+    height: 250px;
+  }
 }
 
 .website-subway-intro {
@@ -28870,7 +28881,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-password section.user-password .card .card-header {
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
 }
 
 .website-user-password section.user-password .card .card-header .card-title {
@@ -28880,7 +28891,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-password section.user-password .card .card-body {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .website-user-password section.user-password .card .card-body .form-group:last-child {
@@ -28888,7 +28899,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-password section.user-password .card .card-footer {
-  padding: 10px 20px 20px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -28916,7 +28927,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-voucher-generate .wrapper .voucher-container .card.card-voucher .card-header {
-  padding: 20px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -28945,7 +28956,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-voucher-generate .wrapper .voucher-container .card.card-voucher .card-body {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .website-voucher-generate .wrapper .voucher-container .card.card-voucher .card-body .voucher-form-container .form-group {
@@ -28963,7 +28974,7 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .website-voucher-generate .wrapper .voucher-container .card.card-voucher .card-footer .card-footer-section {
