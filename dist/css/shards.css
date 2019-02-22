@@ -25723,10 +25723,11 @@ a.text-black:hover, a.text-black:focus {
   padding: 0 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .card.card-product .card-content-info .card-product-points,
   .card.card-product .card-content-info .card-product-points-lead {
     height: 32px;
+    padding: 0 8px;
   }
 }
 
@@ -25750,7 +25751,7 @@ a.text-black:hover, a.text-black:focus {
   right: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .card.card-product .card-content-info .card-product-points {
     font-size: 1rem;
   }
@@ -25774,7 +25775,7 @@ a.text-black:hover, a.text-black:focus {
   font-weight: 700;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .card.card-product .card-content-info .card-product-points-lead {
     font-size: 0.9rem;
   }
@@ -25803,29 +25804,6 @@ a.text-black:hover, a.text-black:focus {
   font-size: 0.8rem;
   font-style: italic;
   margin-bottom: 0;
-}
-
-.card.card-product .card-body .card-product-voucher {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 6px 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.card.card-product .card-body .card-product-voucher .voucher-text {
-  font-size: 0.85rem;
-}
-
-.card.card-product .card-body .card-product-voucher .voucher-code {
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  letter-spacing: 1px;
 }
 
 .card.card-product .card-footer {
@@ -25918,25 +25896,6 @@ a.text-black:hover, a.text-black:focus {
   content: "\f06b";
 }
 
-.card.card-product.is-voucher-generated.is-reward .card-content-info .card-product-points {
-  display: none;
-}
-
-.card.card-product.is-voucher-generated.is-reward .card-content-info .card-product-points-lead {
-  background-color: #4472F3;
-  color: #FFF;
-}
-
-.card.card-product.is-voucher-generated.is-reward .card-body .card-product-voucher {
-  background-color: rgba(68, 114, 243, 0.15);
-  border: dashed thin #4472f3;
-}
-
-.card.card-product.is-voucher-generated.is-offer .card-body .card-product-voucher {
-  background-color: rgba(253, 126, 20, 0.15);
-  border: dashed thin rgba(253, 126, 20, 0.25);
-}
-
 .card.card-product.is-not-available {
   opacity: 0.5;
 }
@@ -25954,18 +25913,18 @@ a.text-black:hover, a.text-black:focus {
 
 .card.card-product-voucher .card-content-info {
   width: 100%;
-  height: 35px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   color: #FFF;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
 
-.card.card-product-voucher .card-content-info .card-product-points-lead,
-.card.card-product-voucher .card-content-info .card-product-type {
+.card.card-product-voucher .card-content-info .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card.card-product-voucher .card-content-info .wrapper .card-product-points-lead,
+.card.card-product-voucher .card-content-info .wrapper .card-product-type {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -25975,54 +25934,42 @@ a.text-black:hover, a.text-black:focus {
 }
 
 @media (max-width: 400px) {
-  .card.card-product-voucher .card-content-info .card-product-points-lead,
-  .card.card-product-voucher .card-content-info .card-product-type {
+  .card.card-product-voucher .card-content-info .wrapper .card-product-points-lead,
+  .card.card-product-voucher .card-content-info .wrapper .card-product-type {
     height: 32px;
   }
 }
 
-.card.card-product-voucher .card-content-info .card-product-points-lead {
+.card.card-product-voucher .card-content-info .wrapper .card-product-points-lead {
   -ms-flex-positive: 1;
       flex-grow: 1;
   font-weight: 400;
   font-size: 1.05rem;
-  padding: 0 30px 0 1.5625rem;
+  padding: 0 15px;
   position: relative;
   background-color: #fff;
   border-top-left-radius: 0.625rem;
 }
 
-.card.card-product-voucher .card-content-info .card-product-points-lead strong {
+.card.card-product-voucher .card-content-info .wrapper .card-product-points-lead strong {
   font-weight: 700;
 }
 
 @media (max-width: 400px) {
-  .card.card-product-voucher .card-content-info .card-product-points-lead {
+  .card.card-product-voucher .card-content-info .wrapper .card-product-points-lead {
     font-size: 0.95rem;
   }
 }
 
-.card.card-product-voucher .card-content-info .card-product-type {
+.card.card-product-voucher .card-content-info .wrapper .card-product-type {
   margin-left: auto;
   border-top-right-radius: .625rem;
-  padding: 0 1.5625rem;
+  padding: 0 10px;
 }
 
-.card.card-product-voucher .card-content-info .card-product-type i {
+.card.card-product-voucher .card-content-info .wrapper .card-product-type i {
   font-size: 1.2rem;
   color: #FFF;
-}
-
-@media (max-width: 991px) {
-  .card.card-product-voucher .card-content-info .card-product-type {
-    border-top-right-radius: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .card.card-product-voucher .card-content-info {
-    border-top-right-radius: 0;
-  }
 }
 
 @media (max-width: 400px) {
@@ -26034,16 +25981,14 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product-voucher .card-content-main {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row;
-      flex-flow: row;
   color: #212529;
   height: 100%;
 }
 
 .card.card-product-voucher .card-content-main .card-image {
-  -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
   width: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
   padding-top: 30px;
   padding-bottom: 30%;
@@ -26053,151 +25998,79 @@ a.text-black:hover, a.text-black:focus {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .card.card-product-voucher .card-content-main .card-image {
     width: 100%;
     padding-bottom: 55%;
-    border-top-right-radius: .625rem;
-    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 0;
   }
 }
 
-.card.card-product-voucher .card-content-main .card-body-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-  -ms-flex-flow: column;
-      flex-flow: column;
-  position: relative;
-  padding: 0;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-content-info {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  color: #FFF;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-content-info .card-product-points {
-  display: none;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-content-info .card-product-points-lead {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 35px;
-  padding: 0 15px;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 0 15px;
-  position: relative;
-  background-color: #fff;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-content-info .card-product-points-lead strong {
-  font-weight: 700;
-}
-
-@media (max-width: 400px) {
-  .card.card-product-voucher .card-content-main .card-body-content .card-content-info .card-product-points-lead {
-    font-size: 0.9rem;
-    height: 32px;
-  }
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-body {
-  padding: 0;
+.card.card-product-voucher .card-content-main .card-body {
+  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  position: relative;
+  padding: 0;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-title,
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown,
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-voucher {
+.card.card-product-voucher .card-content-main .card-body .card-title,
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown,
+.card.card-product-voucher .card-content-main .card-body .card-product-voucher {
   padding: 15px;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-title {
+.card.card-product-voucher .card-content-main .card-body .card-title {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.3;
-  padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-title small {
+.card.card-product-voucher .card-content-main .card-body .card-title small {
   font-weight: 600;
   color: #555;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown {
   text-align: center;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown p {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown-title {
   font-size: 80%;
   margin-bottom: 0;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown .countdown-item {
   width: calc(100% / 4);
-  padding: 2.5px 5px;
+  padding: 2.5px 5px 0;
   text-align: center;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-value,
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-text {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-value,
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-text {
   display: block;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-value {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-value {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-@media (max-width: 510px) {
-  .card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-value {
-    font-size: 1rem;
-  }
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-text {
+.card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-text {
   font-size: 65%;
 }
 
-@media (max-width: 510px) {
-  .card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item .countdown-text {
-    font-size: .9rem;
-  }
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item:first-child {
-  padding-left: 0;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-countdown .voucher-countdown .countdown-item:last-child {
-  padding-right: 0;
-}
-
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-voucher {
+.card.card-product-voucher .card-content-main .card-body .card-voucher-code {
   width: 100%;
   padding: 6px 10px;
   border-bottom-right-radius: 0.625rem;
@@ -26205,22 +26078,32 @@ a.text-black:hover, a.text-black:focus {
   margin-top: auto;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-voucher .voucher-text {
+.card.card-product-voucher .card-content-main .card-body .card-voucher-code .voucher-text {
   font-size: 0.85rem;
 }
 
-.card.card-product-voucher .card-content-main .card-body-content .card-body .card-product-voucher .voucher-code {
+.card.card-product-voucher .card-content-main .card-body .card-voucher-code .voucher-code {
   font-size: 1.05rem;
   font-weight: 700;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  letter-spacing: 1px;
 }
 
-.card.card-product-voucher.is-reward .card-content-info {
-  background-color: #4472F3;
+@media (max-width: 575px) {
+  .card.card-product-voucher .card-content-main .card-body .card-voucher-code {
+    margin-top: inherit;
+    border-bottom-left-radius: 0.625rem;
+  }
 }
 
-.card.card-product-voucher.is-reward .card-content-info .card-product-points-lead {
+@media (max-width: 575px) {
+  .card.card-product-voucher .card-content-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.card.card-product-voucher.is-reward .card-content-info .card-product-points-lead,
+.card.card-product-voucher.is-reward .card-content-info .card-product-type {
   background-color: #4472F3;
   color: #FFF;
 }
@@ -26229,16 +26112,13 @@ a.text-black:hover, a.text-black:focus {
   content: "\f005";
 }
 
-.card.card-product-voucher.is-reward .card-product-voucher {
+.card.card-product-voucher.is-reward .card-voucher-code {
   background-color: rgba(68, 114, 243, 0.15);
   border: dashed 1px rgba(68, 114, 243, 0.65);
 }
 
-.card.card-product-voucher.is-offer .card-content-info {
-  background-color: #fd7e14;
-}
-
-.card.card-product-voucher.is-offer .card-content-info .card-product-points-lead {
+.card.card-product-voucher.is-offer .card-content-info .card-product-points-lead,
+.card.card-product-voucher.is-offer .card-content-info .card-product-type {
   background-color: #fd7e14;
   color: #FFF;
 }
@@ -26247,7 +26127,7 @@ a.text-black:hover, a.text-black:focus {
   content: "\f06b";
 }
 
-.card.card-product-voucher.is-offer .card-product-voucher {
+.card.card-product-voucher.is-offer .card-voucher-code {
   background-color: rgba(253, 126, 20, 0.15);
   border: dashed 1px rgba(253, 126, 20, 0.65);
 }
@@ -26255,13 +26135,6 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product-voucher:hover {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
   opacity: 1;
-}
-
-@media (max-width: 767px) {
-  .card.card-product-voucher {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .empty-state {
@@ -26941,12 +26814,6 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
 
 @media (max-width: 575px) {
   .page-header-intro.page-header-intro-home {
-    height: inherit;
-  }
-}
-
-@media (max-width: 575px) {
-  .page-header-intro {
     height: inherit;
   }
 }
@@ -29233,7 +29100,7 @@ label {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .list-cards .card-product {
     width: 100%;
     height: auto;
@@ -29256,7 +29123,7 @@ label {
   margin-right: 0;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .list-cards.is-list-vouchers .card-product-voucher {
     width: 100%;
     margin: 0 0 15px;
@@ -29298,6 +29165,7 @@ section.products-lists section .products-list-header .product-list-title strong 
 section.products-lists section .products-list-header .product-list-lead {
   font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 section.products-lists section.products-list-offers .product-list-title strong {
