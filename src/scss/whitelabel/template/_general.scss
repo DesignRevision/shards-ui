@@ -28,6 +28,14 @@ a {
         opacity: 1;
       }
     }
+
+    &.link-effect-muted {
+      color: #555;
+
+      &:before {
+        background-color: #555;
+      }
+    }
   }
 
   &:hover {

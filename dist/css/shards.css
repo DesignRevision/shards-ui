@@ -29049,6 +29049,14 @@ a.link-effect:hover:before {
   opacity: 1;
 }
 
+a.link-effect.link-effect-muted {
+  color: #555;
+}
+
+a.link-effect.link-effect-muted:before {
+  background-color: #555;
+}
+
 a:hover {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
   text-decoration: none;
