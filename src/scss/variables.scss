@@ -85,8 +85,14 @@ $pagination-font-family: $font-family-base !default;
 $card-cap-bg: #FFF;
 $card-title-font-weight: 300 !default;
 $card-link-font-family: $headings-font-family !default;
-$card-spacer-y: 1.25rem !default;
-$card-spacer-x: 1.25rem !default;
+$card-spacer-y: 15px !default;
+$card-spacer-x: 20px !default;
+$card-header-spacer-y: 10px;
+$card-header-spacer-x: 20px;
+$card-footer-spacer-y: 10px;
+$card-footer-spacer-x: 20px;
+$card-small-spacer-y: 10px;
+$card-small-spacer-x: 20px;
 
 /*! Badge Variables */
 $badge-font-family: $font-family-base !default;

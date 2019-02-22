@@ -48,7 +48,7 @@
 }
 
 .card-body {
-  padding: $card-spacer-x;
+  padding: $card-spacer-y $card-spacer-x;
 
   > p:last-child {
     margin-bottom: 0;

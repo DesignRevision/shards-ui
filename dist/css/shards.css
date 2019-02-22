@@ -12825,15 +12825,15 @@ tbody.collapse.show {
 .card-body {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 20px;
 }
 
 .card-title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 15px;
 }
 
 .card-subtitle {
-  margin-top: -0.625rem;
+  margin-top: -7.5px;
   margin-bottom: 0;
 }
 
@@ -12846,11 +12846,11 @@ tbody.collapse.show {
 }
 
 .card-link + .card-link {
-  margin-left: 1.25rem;
+  margin-left: 20px;
 }
 
 .card-header {
-  padding: 1.25rem 1.25rem;
+  padding: 15px 20px;
   margin-bottom: 0;
   background-color: #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -12865,7 +12865,7 @@ tbody.collapse.show {
 }
 
 .card-footer {
-  padding: 1.25rem 1.25rem;
+  padding: 15px 20px;
   background-color: #FFF;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -12875,15 +12875,15 @@ tbody.collapse.show {
 }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -1.25rem;
-  margin-left: -0.625rem;
+  margin-right: -10px;
+  margin-bottom: -15px;
+  margin-left: -10px;
   border-bottom: 0;
 }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .card-img-overlay {
@@ -13017,7 +13017,7 @@ tbody.collapse.show {
 }
 
 .card-columns .card {
-  margin-bottom: 1.25rem;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -20429,11 +20429,11 @@ i.material-icons {
 .card-small .card-header,
 .card-small .card-body,
 .card-small .card-footer {
-  padding: 1rem 1rem;
+  padding: 10px 20px;
 }
 
 .card-body {
-  padding: 1.25rem;
+  padding: 15px 20px;
 }
 
 .card-body > p:last-child {
@@ -20446,7 +20446,7 @@ i.material-icons {
 }
 
 .card-subtitle {
-  margin-top: -0.625rem;
+  margin-top: -7.5px;
 }
 
 .card-link {
@@ -20454,11 +20454,11 @@ i.material-icons {
 }
 
 .card-link + .card-link {
-  margin-left: 1.25rem;
+  margin-left: 20px;
 }
 
 .card-header {
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   background-color: #FFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -20468,7 +20468,7 @@ i.material-icons {
 }
 
 .card-footer {
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   background-color: #FFF;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -20488,8 +20488,8 @@ i.material-icons {
 }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .card-header-pills:hover {
@@ -20590,7 +20590,7 @@ i.material-icons {
 }
 
 .card-columns .card {
-  margin-bottom: 1.25rem;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -28382,7 +28382,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store .card .card-header {
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
 }
 
 .website-review section.review-store .card .card-header .card-title {
@@ -28392,7 +28392,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store .card .card-body {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .website-review section.review-store .card .card-body .form-group {
@@ -28404,7 +28404,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-review section.review-store .card .card-footer {
-  padding: 10px 20px 10px;
+  padding: 10px 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -28643,7 +28643,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-subway-intro main#main-container .wrapper .card .card-header {
-  padding: 20px 20px 10px;
+  padding: 10px 20px;
 }
 
 .website-subway-intro main#main-container .wrapper .card .card-header .card-title {
@@ -28654,7 +28654,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-subway-intro main#main-container .wrapper .card .card-body {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .website-subway-intro main#main-container .wrapper .card .card-body .form-group {
@@ -28666,7 +28666,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-subway-intro main#main-container .wrapper .card .card-footer {
-  padding: 10px 20px 20px;
+  padding: 10px 20px;
 }
 
 .website-subway-intro:before {
@@ -28797,7 +28797,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body {
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .website-user-infos-complete main#main-container .wrapper .user-infos-container .card.card-user-infos .card-body .user-infos-form-container .form-group {
