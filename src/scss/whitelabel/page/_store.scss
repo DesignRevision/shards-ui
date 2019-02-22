@@ -47,61 +47,72 @@
       }
     }
 
-    .card {
-      &.card-stores-list {
-        .list-group {
-          border-radius: 0.625rem;
+    .store-content-layout {
+      .card {
+        &.card-stores-list {
+          .list-group {
+            border-radius: 0.625rem;
 
-          .list-group-item {
-            border-right: 0;
-            border-left: 0;
-						padding: 10px 20px;
-						flex-direction: column;
-						align-items: flex-start;
+            .list-group-item {
+              border-right: 0;
+              border-left: 0;
+              padding: 10px 20px;
+              flex-direction: column;
+              align-items: flex-start;
 
-            .item-container {
-							width: 100%;
-							display: flex;
-              justify-content: space-between;
-
-              h5 {
-								color: var(--primary);
-								font-size: 1rem;
-                font-weight: 500;
-								margin-bottom: 0;
-
-								small{
-									font-size: 90%;
-									color: #444;
-								}
-              }
-
-              .badge {
+              .item-container {
+                width: 100%;
                 display: flex;
-                height: 100%;
-                align-items: center;
-                margin-left: 15px;
+                justify-content: space-between;
+
+                h5 {
+                  color: var(--primary);
+                  font-size: 1rem;
+                  font-weight: 500;
+                  margin-bottom: 0;
+
+                  small {
+                    font-size: 90%;
+                    color: #444;
+                  }
+                }
+
+                .badge {
+                  display: flex;
+                  height: 100%;
+                  align-items: center;
+                  margin-left: 15px;
+                }
               }
-            }
 
-            &:first-child {
-              border-top: 0;
-            }
+              &:first-child {
+                border-top: 0;
+              }
 
-            &:last-child {
-              border-bottom: 0;
+              &:last-child {
+                border-bottom: 0;
+              }
             }
           }
         }
       }
-    }
 
-    .stores-list-map {
-      width: 100%;
-      height: 80vh;
-      border-radius: 0.625rem;
-      overflow: hidden;
-      box-shadow: $card-box-shadow;
+      .stores-list-map {
+        width: 100%;
+        height: 60vh;
+        border-radius: 0.625rem;
+        overflow: hidden;
+        box-shadow: $card-box-shadow;
+      }
+
+      @media (max-width: 992px - 1px) {
+        flex-direction: column-reverse;
+
+        .stores-list-map {
+					margin-bottom: 15px;
+					height: 250px;
+        }
+      }
     }
   }
 }

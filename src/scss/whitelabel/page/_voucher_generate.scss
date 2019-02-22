@@ -15,7 +15,7 @@
           border-top: solid 3px var(--primary);
 
           .card-header {
-            padding: 20px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
 
@@ -40,7 +40,7 @@
           }
 
           .card-body {
-            padding: 20px;
+            padding: 15px 20px;
 
             .voucher-form-container {
               .form-group {
@@ -57,7 +57,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px 20px;
 
             .card-footer-section {
               flex-grow: 0;
