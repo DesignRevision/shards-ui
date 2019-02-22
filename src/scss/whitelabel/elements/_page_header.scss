@@ -153,7 +153,7 @@ header#page-header {
             >a {
               display: flex;
               align-items: center;
-              margin-right: 5px;
+              margin-right: 0;
               opacity: 1;
               transition: all 300ms;
 
@@ -219,16 +219,6 @@ header#page-header {
           &:first-child {
             a {
               padding-left: 0;
-            }
-          }
-
-          &:last-child {
-
-            &:not(.menu-item-user),
-            &:not(.menu-item-signup) {
-              a {
-                padding-right: 0;
-              }
             }
           }
 
