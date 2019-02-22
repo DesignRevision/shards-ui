@@ -32,8 +32,8 @@
   section.review-store {
     padding: 10px 0;
     margin-bottom: 0 !important;
-    background-color: #271B43;
-    color: #fff;
+    background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 5%));
+		color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 
     .review-store-action {
       text-align: right;
@@ -43,11 +43,11 @@
       }
 
       a {
-        color: #FFF;
+				color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
         font-weight: 600;
 
         &:before {
-          background-color: #fff;
+          background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
         }
       }
 

@@ -2,31 +2,90 @@
 .badge {
   &.badge-primary {
     background-color: var(--primary);
-		color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+    color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   }
 }
-
 
 // Button
 .btn {
   &.btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-		color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+    color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 
-    &:active {}
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    &:active {
+      background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+      border-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+      color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+    }
 
     &:focus {
       background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
       border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
-			color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+      color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+      box-shadow: 0 0 0 3px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .15), 0 3px 15px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .2), 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     &:hover {
       background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
       border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
-			color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
-      // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(var(--primary), 0.25);
+      color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .25);
     }
+  }
+
+  &.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    &:active {
+      background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+      border-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+      color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .15), 0 3px 15px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &:hover {
+      background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+      border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+      color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .25);
+    }
+  }
+}
+
+.pagination {
+  .page-item {
+    .page-link {
+      color: var(--primary);
+    }
+
+    &.active {
+      .page-link {
+        background-color: var(--primary);
+        color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+
+        &:hover {
+          background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+          border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+          color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), .25);
+        }
+      }
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-input:checked~.custom-control-label:before {
+    background-color: var(--primary);
+    color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   }
 }

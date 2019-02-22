@@ -69,17 +69,17 @@
             align-items: center;
             justify-content: center;
             content: "\f582";
-						font-family: "Font Awesome 5 Pro";
-						font-weight: 700;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 700;
             font-size: 7rem;
-            color: #fff;
+            color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
             top: 0;
             bottom: 0;
             right: 0;
 
-						@media (max-width: 576px - 1px) {
-							display: none;
-						}
+            @media (max-width: 576px - 1px) {
+              display: none;
+            }
           }
         }
       }

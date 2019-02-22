@@ -8241,6 +8241,7 @@ readers do not read off random characters that represent icons */
   --primary-lightness: 25.49%;
   --primary-lightness-darker: 20.49%;
   --primary-lightness-contrast: 100%;
+  --primary-lightness-contrast-inverse: 0%;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -26926,7 +26927,7 @@ header#page-header.is-brand-only .content-header .content-header-section .btn-me
   font-family: "Font Awesome 5 Pro";
   font-weight: 700;
   font-size: 7rem;
-  color: #fff;
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   top: 0;
   bottom: 0;
   right: 0;
@@ -27232,6 +27233,51 @@ nav#subway-location .subway-location-switch .btn {
 
 .timeline-activity.timeline-activity-points .activity-item.is-redeem .activity-item-icon i:before {
   content: "\f068";
+}
+
+.website-account-remove section.account-remove {
+  padding: 15px 0;
+}
+
+.website-account-remove section.account-remove .card {
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.website-account-remove section.account-remove .card .card-header,
+.website-account-remove section.account-remove .card .card-footer {
+  background-color: #fff;
+}
+
+.website-account-remove section.account-remove .card .card-header {
+  padding: 10px 20px 10px;
+}
+
+.website-account-remove section.account-remove .card .card-header .card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.website-account-remove section.account-remove .card .card-body {
+  padding: 20px;
+}
+
+.website-account-remove section.account-remove .card .card-body .form-group {
+  margin-bottom: 25px;
+}
+
+.website-account-remove section.account-remove .card .card-body .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.website-account-remove section.account-remove .card .card-footer {
+  padding: 10px 20px 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .website-auth main#main-container {
@@ -28061,8 +28107,8 @@ nav#subway-location .subway-location-switch .btn {
 .website-home section.review-store {
   padding: 10px 0;
   margin-bottom: 0 !important;
-  background-color: #271B43;
-  color: #fff;
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 5%));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 }
 
 .website-home section.review-store .review-store-action {
@@ -28074,12 +28120,12 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-home section.review-store .review-store-action a {
-  color: #FFF;
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   font-weight: 600;
 }
 
 .website-home section.review-store .review-store-action a:before {
-  background-color: #fff;
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 }
 
 @media (max-width: 575px) {
@@ -29093,6 +29139,7 @@ a.link-effect:hover:before {
 }
 
 a:hover {
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
   text-decoration: none;
 }
 
@@ -29294,15 +29341,66 @@ section.social-network .intro h2 strong {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 }
 
+.btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary:not(:disabled):not(.disabled).active, .btn.btn-primary:active {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+  border-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+}
+
 .btn.btn-primary:focus {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
   border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+  box-shadow: 0 0 0 3px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.15), 0 3px 15px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.2), 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn.btn-primary:hover {
   background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
   border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.25);
+}
+
+.btn.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn.btn-outline-primary:not(:disabled):not(.disabled):active, .btn.btn-outline-primary:not(:disabled):not(.disabled).active, .btn.btn-outline-primary:active {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+  border-color: hsl(var(--primary-hue), var(--primary-saturation), calc(var(--primary-lightness-darker) - 2.5%));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+}
+
+.btn.btn-outline-primary:focus {
+  box-shadow: 0 0 0 3px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.15), 0 3px 15px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.2), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+  border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.25);
+}
+
+.pagination .page-item .page-link {
+  color: var(--primary);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary);
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+}
+
+.pagination .page-item.active .page-link:hover {
+  background-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+  border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05), 0 4px 10px hsla(var(--primary-hue), var(--primary-saturation), var(--primary-lightness), 0.25);
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
+  background-color: var(--primary);
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 }
 
