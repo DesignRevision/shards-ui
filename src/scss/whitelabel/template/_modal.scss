@@ -1,0 +1,42 @@
+.modal {
+  &.modal-rules {
+    .modal-header {
+      padding: 15px 20px;
+
+      .modal-title {
+        font-weight: 500;
+      }
+
+      .close {
+        margin: -.9375rem 0;
+        padding: 15px;
+      }
+    }
+
+    .modal-body {
+      padding: 15px 20px;
+
+      .list-group {
+        .list-group-item {
+          border-right: 0;
+          border-left: 0;
+          padding: 5px 0 5px 20px !important;
+          flex-direction: column;
+          align-items: flex-start;
+          position: relative;
+          border: 0;
+
+          &:before {
+            content: '\f111';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-family: 'Font Awesome 5 Pro';
+            font-size: 8px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

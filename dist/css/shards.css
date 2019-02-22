@@ -29189,6 +29189,45 @@ label {
   }
 }
 
+.modal.modal-rules .modal-header {
+  padding: 15px 20px;
+}
+
+.modal.modal-rules .modal-header .modal-title {
+  font-weight: 500;
+}
+
+.modal.modal-rules .modal-header .close {
+  margin: -.9375rem 0;
+  padding: 15px;
+}
+
+.modal.modal-rules .modal-body {
+  padding: 15px 20px;
+}
+
+.modal.modal-rules .modal-body .list-group .list-group-item {
+  border-right: 0;
+  border-left: 0;
+  padding: 5px 0 5px 20px !important;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  position: relative;
+  border: 0;
+}
+
+.modal.modal-rules .modal-body .list-group .list-group-item:before {
+  content: '\f111';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 8px;
+  font-weight: 500;
+}
+
 .empty-state-wrapper {
   padding: 40px 0;
   margin-bottom: 0;
