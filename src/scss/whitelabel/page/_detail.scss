@@ -159,6 +159,11 @@
           }
 
           .card-content-main {
+            display: flex;
+						flex-direction: column;
+						width: 100%;
+            height: calc(100% - 100px);
+
             .card-product-value {
               font-size: 0.9rem;
             }
@@ -171,6 +176,8 @@
             }
 
             .card-rules {
+							margin-top: auto;
+							margin-bottom: 10px;
               font-size: 0.95rem;
               font-style: italic;
             }
