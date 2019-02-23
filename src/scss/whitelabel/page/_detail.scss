@@ -87,8 +87,8 @@
                 right: 0;
               }
 
-              @media (max-width: 401px - 1px) {
-                font-size: 1.1rem;
+              @media (max-width: 768px - 1px) {
+                font-size: 1rem;
 
                 &:before {
                   border-top: 16px solid transparent;
@@ -122,13 +122,8 @@
                 right: 0;
               }
 
-              @media (max-width: 401px - 1px) {
-                font-size: 0.95rem;
-
-                &:before {
-                  border-top: 16px solid transparent;
-                  border-bottom: 16px solid transparent;
-                }
+              @media (max-width: 768px - 1px) {
+                font-size: 0.9rem;
               }
             }
 

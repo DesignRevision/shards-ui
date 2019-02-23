@@ -27447,9 +27447,9 @@ nav#subway-location .subway-location-switch .btn {
   right: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points:before {
     border-top: 16px solid transparent;
@@ -27484,13 +27484,9 @@ nav#subway-location .subway-location-switch .btn {
   right: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
   .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead {
-    font-size: 0.95rem;
-  }
-  .website-detail section.product-detail .card.card-product-infos .card-body .card-content-info .card-product-points-lead:before {
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
+    font-size: 0.9rem;
   }
 }
 
