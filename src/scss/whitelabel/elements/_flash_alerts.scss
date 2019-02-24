@@ -1,15 +1,12 @@
 .flash__wrapper {
-  top: 90px;
-  align-items: flex-end;
+	top: inherit;
+	align-items: center !important;
+	bottom: 0;
 
   .alert {
     margin: 15px;
+    font-weight: 500;
+    font-size: 1.1rem;
     box-shadow: $card-box-shadow;
-  }
-
-  @media (max-width: 992px - 1px) {
-    top: inherit;
-    align-items: center;
-    bottom: 0;
   }
 }

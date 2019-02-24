@@ -26197,23 +26197,17 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .flash__wrapper {
-  top: 90px;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  top: inherit;
+  -ms-flex-align: center !important;
+      align-items: center !important;
+  bottom: 0;
 }
 
 .flash__wrapper .alert {
   margin: 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
-}
-
-@media (max-width: 991px) {
-  .flash__wrapper {
-    top: inherit;
-    -ms-flex-align: center;
-        align-items: center;
-    bottom: 0;
-  }
 }
 
 aside.main-sidebar {
