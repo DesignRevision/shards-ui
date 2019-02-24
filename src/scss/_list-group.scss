@@ -64,6 +64,11 @@
   }
 }
 
+// Remove border radius from flushed list groups.
+.list-group-flush .list-group-item {
+  border-radius: 0;
+}
+
 
 // Contextual variants
 //
