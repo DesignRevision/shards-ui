@@ -1,5 +1,5 @@
 /*
- * Shards v2.1.0 (https://designrevision.com/downloads/shards/)
+ * Shards v2.1.1 (https://designrevision.com/downloads/shards/)
  * Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
  * Copyright 2017-* DesignRevision (https://designrevision.com)
  * Copyright 2017-* Catalin Vasile (http://catalin.me)
@@ -1639,11 +1639,7 @@ i.material-icons {
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + .btn-group,
-.btn-group-vertical .btn + .btn,
-.btn-group-vertical .btn + .btn-group,
-.btn-group-vertical .btn-group + .btn,
-.btn-group-vertical .btn-group + .btn-group {
+.btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
 
@@ -3589,6 +3585,10 @@ a.badge {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+}
+
+.list-group-flush .list-group-item {
+  border-radius: 0;
 }
 
 .list-group-item-primary {
