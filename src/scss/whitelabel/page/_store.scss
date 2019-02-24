@@ -51,7 +51,8 @@
       .card {
         &.card-stores-list {
           .list-group {
-            border-radius: 0.625rem;
+						border-radius: 0.625rem;
+						min-height: 30vh;
 
             .list-group-item {
               border-right: 0;
