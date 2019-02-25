@@ -1,0 +1,8 @@
+.form-control-plaintext {
+  user-select: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
