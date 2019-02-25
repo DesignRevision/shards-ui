@@ -216,12 +216,6 @@ header#page-header {
             }
           }
 
-          &:first-child {
-            a {
-              padding-left: 0;
-            }
-          }
-
           &.active {
             a {
               opacity: 1;
@@ -292,6 +286,18 @@ header#page-header {
 
               &:last-child {
                 margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      &:not(.align-right) {
+        ul.nav-header-menu {
+          li {
+            &:first-child {
+              a {
+                padding-left: 0;
               }
             }
           }

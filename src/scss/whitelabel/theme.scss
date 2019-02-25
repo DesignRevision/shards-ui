@@ -90,8 +90,8 @@
   }
 
   &.btn-outline-white {
-    border-color: var(--primary-lightness-contrast);
-    color: var(--primary-lightness-contrast-inverse);
+    border-color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+		color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
