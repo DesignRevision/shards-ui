@@ -28798,6 +28798,7 @@ nav#subway-location .subway-location-switch .btn {
 
 @media (max-width: 575px) {
   .website-user-edit section.user-edit .card .card-body.card-user-social .btn.btn-facebook-link {
+    width: 100%;
     margin-top: 10px;
   }
 }
