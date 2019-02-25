@@ -1,6 +1,6 @@
 jQuery('[data-provide="datepicker"]').datepicker({
 	language: 'pt-BR',
-	format: 'DD, dd MM yyyy',
+	format: 'dd/mm/yyyy',
 	autoclose: true,
 	clearBtn: true,
 	todayBtn: true,
