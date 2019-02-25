@@ -16,9 +16,17 @@
   section.user-edit {
     padding: 15px 0;
 
-    .btn {
-      &.btn-facebook-link {
-        height: 36px;
+    .card {
+      &.card-user-social {
+        .btn {
+          &.btn-facebook-link {
+            height: 36px;
+
+            @media (max-width: 576px - 1px) {
+              margin-top: 10px;
+            }
+          }
+        }
       }
     }
   }
