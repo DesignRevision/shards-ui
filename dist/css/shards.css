@@ -28792,12 +28792,12 @@ nav#subway-location .subway-location-switch .btn {
   padding: 15px 0;
 }
 
-.website-user-edit section.user-edit .card.card-user-social .btn.btn-facebook-link {
+.website-user-edit section.user-edit .card .card-body.card-user-social .btn.btn-facebook-link {
   height: 36px;
 }
 
 @media (max-width: 575px) {
-  .website-user-edit section.user-edit .card.card-user-social .btn.btn-facebook-link {
+  .website-user-edit section.user-edit .card .card-body.card-user-social .btn.btn-facebook-link {
     margin-top: 10px;
   }
 }

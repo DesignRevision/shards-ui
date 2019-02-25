@@ -17,13 +17,15 @@
     padding: 15px 0;
 
     .card {
-      &.card-user-social {
-        .btn {
-          &.btn-facebook-link {
-            height: 36px;
+      .card-body {
+        &.card-user-social {
+          .btn {
+            &.btn-facebook-link {
+              height: 36px;
 
-            @media (max-width: 576px - 1px) {
-              margin-top: 10px;
+              @media (max-width: 576px - 1px) {
+                margin-top: 10px;
+              }
             }
           }
         }
