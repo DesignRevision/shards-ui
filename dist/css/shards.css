@@ -29467,6 +29467,20 @@ section.social-network .intro h2 strong {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
 }
 
+.form-control:focus:focus,
+.form-control:focus:hover .form-control:focus {
+  border-color: var(--primary);
+}
+
+.form-control:focus:focus:hover,
+.form-control:focus:hover .form-control:focus:hover {
+  border-color: var(--primary);
+}
+
+.select2-custom .select2-container--default.select2-container--focus .select2-selection {
+  border-color: var(--primary);
+}
+
 /*! Vendor */
 /*!
  * animate.css -http://daneden.me/animate
@@ -32764,7 +32778,8 @@ section.social-network .intro h2 strong {
 
 .select2-custom .select2-container {
   box-sizing: border-box;
-  display: inline-block;
+  width: 100%;
+  display: block;
   margin: 0;
   position: relative;
   vertical-align: middle;
