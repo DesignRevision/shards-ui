@@ -1,0 +1,99 @@
+@import "single";
+@import "multiple";
+
+// basic
+.select2-container {
+    *:focus {
+        outline: 0;
+    }
+}
+
+.select2-container--bootstrap4 {
+
+    // input box
+    .select2-selection {
+        border: $input-border-width solid $input-border-color;
+        border-radius: $input-border-radius;
+        width: 100%;
+    }
+
+    // focused input box
+    &.select2-container--focus {
+        .select2-selection {
+            border-color: $info;
+            box-shadow: $input-focus-box-shadow;
+        }
+
+        // when open, hide bottom border
+        &.select2-container--open .select2-selection {
+            border-bottom: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    // validated input box
+    select.is-invalid ~ & .select2-selection {
+        border-color: $danger;
+    }
+    select.is-valid ~ & .select2-selection {
+        border-color: $success;
+    }
+
+    // dropdown
+    .select2-dropdown {
+        border-color: $input-border-color;
+
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        // selected item
+        .select2-results__option[aria-selected=true] {
+            background-color: darken($light, 5%);
+        }
+    }
+
+    // mouse hovered item
+    .select2-results__option--highlighted,
+    .select2-results__option--highlighted.select2-results__option[aria-selected=true] {
+        background-color: $primary;
+        color: $light;
+    }
+
+    // for <optgroup>
+    .select2-results__option[role=group] {
+        padding: 0;
+    }
+
+    // fixes vertical overflow
+    .select2-results__options {
+        max-height: 15em;
+        overflow-y: auto;
+    }
+
+    .select2-results__group {
+        padding: 6px;
+        display: list-item;
+        color: $secondary;
+    }
+
+    // all clear button
+    .select2-selection__clear {
+        width: 1.2em;
+        height: 1.2em;
+        line-height: 1.15em;
+        padding-left: 0.3em;
+        margin-top: 0.5em;
+        border-radius: 100%;
+
+        background-color: $secondary;
+        color: $light;
+        float: right;
+        margin-right: 0.3em;
+
+        &:hover {
+            background-color: $dark;
+        }
+    }
+}
