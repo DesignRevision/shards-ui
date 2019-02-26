@@ -3,15 +3,18 @@ aside.main-sidebar {
 
   .main-navbar {
     .navbar {
+      height: 80px;
       position: relative;
       z-index: 1;
       background-color: #fff;
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.075);
 
       .navbar-brand {
+        height: inherit;
+
         img {
-          max-height: 35px;
-          max-width: 150px;
+          max-width: 180px;
+          max-height: 60px;
         }
       }
 
