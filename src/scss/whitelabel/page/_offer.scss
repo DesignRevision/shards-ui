@@ -1,6 +1,10 @@
 .website-offers {
   .page-header-intro {
     background-color: $product-offer;
+
+    .header-intro-title {
+      color: #FFF;
+    }
   }
 
   section.products-lists {

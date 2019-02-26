@@ -28456,6 +28456,10 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #fd7e14;
 }
 
+.website-offers .page-header-intro .header-intro-title {
+  color: #FFF;
+}
+
 .website-offers section.products-lists section .products-list-header .product-list-title strong {
   font-weight: 600;
   color: #fd7e14;
