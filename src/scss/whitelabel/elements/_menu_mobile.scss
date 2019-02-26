@@ -27,11 +27,12 @@ aside.main-sidebar {
   }
 
   .nav-wrapper {
+		height: calc(100vh - 80px);
     overflow-y: auto;
 
     .main-sidebar__nav-title {
       margin: 0;
-      font-size: .9rem;
+      font-size: 1rem;
       padding: 20px 1.5625rem 2.5px;
       font-weight: 400;
     }
@@ -40,7 +41,7 @@ aside.main-sidebar {
       .nav-item {
         .nav-link {
           font-family: $headings-font-family;
-          font-size: 0.9rem;
+          font-size: 1.1rem;
           font-weight: 400;
           color: $body-color;
           opacity: 0.6;
@@ -92,7 +93,7 @@ aside.main-sidebar {
             background-color: rgba(0, 0, 0, 0.05);
 
             .user-avatar {
-              max-height: 45px;
+              max-height: 65px;
               margin-right: 10px;
               border: solid thin #cbcbcb;
               transition: all 300ms;
@@ -101,7 +102,7 @@ aside.main-sidebar {
             .user-info {
               text-align: left;
               line-height: 1.2;
-              font-size: 1rem;
+              font-size: 1.25rem;
               font-weight: 600;
               transition: all 300ms;
 

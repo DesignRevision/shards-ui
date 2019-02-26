@@ -3,12 +3,15 @@ footer#page-footer {
   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.075);
   color: #656565;
 
+  .content-footer,
+  .content-capture-lead {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
   .content-footer {
     padding-top: 15px;
     padding-bottom: 15px;
-
-    @include make-container();
-    @include make-container-max-widths();
 
     .content-brand {
       text-align: center;
@@ -18,8 +21,8 @@ footer#page-footer {
 
         img {
           display: inline-block;
-					max-width: 200px;
-					max-height: 80px;
+          max-width: 200px;
+          max-height: 80px;
 
           @media (max-width: 992px - 1px) {
             max-width: 180px;
@@ -30,8 +33,27 @@ footer#page-footer {
 
       p {
         line-height: 1.5;
-        margin-top: 5px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+
+        &.content-zygo-poweredby {
+          strong {
+            color: #f72bb3
+          }
+
+          a {
+            color: #06e1b5;
+            font-weight: 700;
+
+            &:hover {
+              color: darken(#06e1b5, 5%);
+            }
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
 
       @media (max-width: 991px) {
@@ -40,24 +62,63 @@ footer#page-footer {
     }
   }
 
-  .content-copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.075);
-    padding: 10px 0;
-    font-size: 0.85rem;
+  .content-capture-lead {
+    border-top: solid thin rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
     text-align: center;
-    strong {
-      color: #f72bb3
-    }
 
-    a {
-      color: #06e1b5;
-      font-weight: 700;
+    p {
+      margin-bottom: 0;
 
-      &:hover {
-        color: darken(#06e1b5, 5%);
+      &.content-capture-contact {
+        .btn {
+          font-family: $font-family-base;
+          font-weight: 600;
+          letter-spacing: normal;
+          margin: 0 15px;
+          white-space: normal;
+        }
+
+        a {
+          img {
+            width: 50px;
+            margin-top: 15px;
+            display: inline-block;
+          }
+
+          &:before {
+            bottom: -20px;
+          }
+        }
+      }
+
+      &.content-capture-poweredby {
+        display: inline-flex;
+        align-items: center;
+
+        strong {
+          position: relative;
+          top: -1px;
+          font-size: 1.2rem;
+          color: #f72bb3;
+          margin: 0 4px;
+        }
+
+
+        a {
+          margin-left: 4px;
+          img {
+            width: 50px;
+            position: relative;
+            top: 6.5px;
+          }
+
+          &:before {
+            bottom: -10px;
+          }
+        }
       }
     }
   }

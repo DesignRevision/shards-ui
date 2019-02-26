@@ -3,28 +3,17 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Alterar senha | Zygo - Valoriza.io</title>
+  <title>Exclusão de Conta | Zygo - Valoriza.io</title>
   <meta name="viewport"
         content="width=device-width, initial-scale=1" />
   <link rel="stylesheet"
         href="./css/shards.css">
-	<style>
-		:root{
-			--primary: #ff2ef5;
-			--primary-hue: 303;
-			--primary-saturation: 100%;
-			--primary-lightness: 59.02%;
-			--primary-lightness-darker: 49.02%;
-			--primary-lightness-contrast: 0%;
-			--primary-lightness-contrast-inverse: 100%;
-		}
-	</style>
 </head>
 
 <body>
   <div id="page-container"
-       class="website-user-password">
-    <header id="page-header">
+       class="website-account-remove">
+    <header id="page-header" class="is-brand-only">
       <div class="content-header">
         <div class="content-header-section">
           <button type="button"
@@ -100,28 +89,6 @@
 								</span>
 							</a>
             </li>
-
-            <li class="menu-item-user dropdown">
-              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
-								<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
-								<span class="user-info">
-									Jerônimo <br>
-									<small>048 99656-3619</small>
-								</span>
-							</a>
-              <div class="dropdown-menu dropdown-menu-right"
-                   aria-labelledby="user-dropdown">
-                <a class="dropdown-item" href="painel-fidelidade.html">
-									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
-								</a>
-                <a class="dropdown-item" href="editar-perfil.html">
-									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
-								</a>
-                <a class="dropdown-item" href="inicio.html">
-									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
-								</a>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -129,48 +96,45 @@
 
     <main id="main-container">
       <div class="wrapper">
-        <section class="user-password">
+        <section class="account-remove">
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-                <div class="card card-small">
-                    <div class="card-header">
-                        <h4 class="mb-0">Alterar minha senha</h4>
-                      </div>
-                  <div class="card-body">
-										<div class="form-group">
-											<label for="oldPasswd">Senha antiga</label>
-											<input type="text"
-															class="form-control"
-															id="oldPasswd"
-															placeholder="••••••">
-										</div>
-										<div class="form-group">
-											<label for="newPasswd">Nova senha</label>
-											<input type="text"
-														 class="form-control"
-														 id="newPasswd"
-														 placeholder="••••••">
-											<small class="form-text">A senha deve conter no mínimo seis letras, números e/ou símbolos.</small>
-										</div>
-										<div class="form-group">
-											<label for="confirmNewPasswd">Confirme a nova senha</label>
-											<input type="email"
-														 class="form-control"
-														 id="confirmNewPasswd"
-														 placeholder="••••••">
-										</div>
+                <div class="card" >
+                  <div class="card-header">
+                    <h3 class="card-title">
+											Exclusão de Conta
+										</h3>
                   </div>
-                  <div class="card-footer text-right">
+
+                  <div class="card-body">
+                        <p class="mb-0">Conta excluída com sucesso. Por favor, conte-nos o motivo de sua solicitação:</p>
+                        <div class="form-group">
+                            <label for=""> </label>
+                                <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Estou recebendo muitas comunicações por e-mail e SMS</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Não tenho interesse em participar do programa</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Outro motivo. Qual?</label>
+                                          </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Escreva aqui o motivo:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                              </div>
+                    </div>
+
+                  <div class="card-footer justify-content-end">
                     <button type="button"
-                            class="btn btn-outline-secondary">
-                      <i class="fas fa-times fa-fw mr-5"></i>
-                      Cancelar
-                    </button>
-                    <button type="button"
-                            class="btn btn-success ml-10">
-                      <i class="fas fa-check fa-fw mr-5"></i>
-                      Salvar
+                        class="btn btn-success btn-pill ">
+                      Enviar
+                      <i class="fas fa-arrow-right fa-fw ml-1"></i>
                     </button>
                   </div>
                 </div>
@@ -219,9 +183,9 @@
   </div>
 
   <script src="./js/shards.js"></script>
-  <script>
-  window.reviewRating.init();
-  </script>
+	<script>
+		window.reviewRating.init();
+	</script>
 </body>
 
 </html>
