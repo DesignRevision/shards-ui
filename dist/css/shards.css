@@ -26043,6 +26043,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.card-product-voucher .card-content-main .card-body .card-product-countdown {
+  margin-top: auto;
   text-align: center;
 }
 
@@ -26082,7 +26083,6 @@ a.text-black:hover, a.text-black:focus {
   padding: 6px 10px;
   border-bottom-right-radius: 0.625rem;
   text-align: center;
-  margin-top: auto;
 }
 
 .card.card-product-voucher .card-content-main .card-body .card-voucher-code .voucher-text {
