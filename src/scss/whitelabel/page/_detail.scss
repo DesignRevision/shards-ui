@@ -61,10 +61,12 @@
               display: flex;
               align-items: center;
               height: 35px;
-              padding: 0 1.5625rem;
+              padding: 0 15px;
+              line-height: 1;
 
-              @media (max-width: 401px - 1px) {
+              @media (max-width: 768px - 1px) {
                 height: 32px;
+                padding: 0 8px;
               }
             }
 
@@ -101,7 +103,7 @@
               flex-grow: 1;
               font-weight: 400;
               font-size: 1.05rem;
-              padding: 0 30px 0 1.5625rem;
+              padding: 0 15px 0 5px;
               position: relative;
               background-color: #fff;
 
@@ -124,13 +126,17 @@
 
               @media (max-width: 768px - 1px) {
                 font-size: 0.9rem;
+
+                &:before {
+                  border-top: 16px solid transparent;
+                  border-bottom: 16px solid transparent;
+                }
               }
             }
 
             .card-product-type {
               margin-left: auto;
               border-top-right-radius: .625rem;
-              padding: 0 1.5625rem;
 
               i {
                 font-size: 1.2rem;
@@ -149,8 +155,6 @@
 
           .card-content-main,
           .card-content-how-to-use {
-            padding: 15px 1.5625rem;
-
             h2 {
               font-size: 1.2rem;
               font-weight: 500;
@@ -160,9 +164,10 @@
 
           .card-content-main {
             display: flex;
-						flex-direction: column;
-						width: 100%;
-            height: calc(100% - 100px);
+            flex-direction: column;
+            width: 100%;
+            height: calc(100% - 90px);
+            padding: 15px;
 
             .card-product-value {
               font-size: 0.9rem;
@@ -176,8 +181,8 @@
             }
 
             .card-rules {
-							margin-top: auto;
-							margin-bottom: 10px;
+              margin-top: auto;
+              margin-bottom: 10px;
               font-size: 0.95rem;
               font-style: italic;
             }
@@ -191,6 +196,7 @@
             border-top: 1px solid #e1e5eb;
             font-weight: 600;
             color: #666;
+            padding: 10px 15px;
 
             .card-content-title {
               flex: 1 1 auto;
@@ -553,6 +559,7 @@
                 }
 
                 .card-product-points-lead {
+                  padding: 0 15px;
                   background-color: $product-offer;
                   color: #FFF;
                 }
@@ -637,6 +644,7 @@
                 }
 
                 .card-product-points-lead {
+                  padding: 0 15px;
                   background-color: $product-reward;
                   color: #FFF;
                 }
