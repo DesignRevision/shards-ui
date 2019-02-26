@@ -25721,6 +25721,7 @@ a.text-black:hover, a.text-black:focus {
       align-items: center;
   height: 35px;
   padding: 0 15px;
+  line-height: 1;
 }
 
 @media (max-width: 767px) {

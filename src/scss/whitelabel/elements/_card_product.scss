@@ -42,7 +42,8 @@
         display: flex;
         align-items: center;
         height: 35px;
-        padding: 0 15px;
+				padding: 0 15px;
+				line-height: 1;
 
         @media (max-width: 768px - 1px) {
           height: 32px;
