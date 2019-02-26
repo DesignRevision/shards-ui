@@ -45,8 +45,8 @@
         padding: 0 15px;
 
         @media (max-width: 768px - 1px) {
-					height: 32px;
-					padding: 0 8px;
+          height: 32px;
+          padding: 0 8px;
         }
       }
 
@@ -243,12 +243,21 @@
     }
 
     &.is-not-available {
-      opacity: 0.5;
+
+      .card-body,
+      .card-footer {
+				opacity: 0.5;
+				transition: all 300ms;
+      }
     }
 
     &:hover {
       box-shadow: $card-box-shadow;
-      opacity: 1;
+
+      .card-body,
+      .card-footer {
+        opacity: 1;
+      }
     }
   }
 }

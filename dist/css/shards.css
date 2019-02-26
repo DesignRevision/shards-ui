@@ -25896,12 +25896,18 @@ a.text-black:hover, a.text-black:focus {
   content: "\f06b";
 }
 
-.card.card-product.is-not-available {
+.card.card-product.is-not-available .card-body,
+.card.card-product.is-not-available .card-footer {
   opacity: 0.5;
+  transition: all 300ms;
 }
 
 .card.card-product:hover {
   box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.card.card-product:hover .card-body,
+.card.card-product:hover .card-footer {
   opacity: 1;
 }
 
