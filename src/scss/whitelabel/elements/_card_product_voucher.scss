@@ -70,7 +70,7 @@
         flex-shrink: 0;
         position: relative;
         padding-top: 30px;
-        padding-bottom: 30%;
+        padding-bottom: 25%;
         border-bottom-left-radius: .625rem;
         background-size: cover;
         background-position: center;
@@ -112,6 +112,8 @@
         .card-product-countdown {
           margin-top: auto;
           text-align: center;
+					padding-top: 0;
+					padding-bottom: 5px;
 
           .voucher-countdown-title {
             font-size: 80%;

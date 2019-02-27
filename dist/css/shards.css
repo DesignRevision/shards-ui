@@ -25676,7 +25676,7 @@ a.text-black:hover, a.text-black:focus {
 
 .card.card-product .card-image {
   padding-top: 30px;
-  padding-bottom: 60%;
+  padding-bottom: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25998,7 +25998,7 @@ a.text-black:hover, a.text-black:focus {
       flex-shrink: 0;
   position: relative;
   padding-top: 30px;
-  padding-bottom: 30%;
+  padding-bottom: 25%;
   border-bottom-left-radius: .625rem;
   background-size: cover;
   background-position: center;
@@ -26045,6 +26045,8 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product-voucher .card-content-main .card-body .card-product-countdown {
   margin-top: auto;
   text-align: center;
+  padding-top: 0;
+  padding-bottom: 5px;
 }
 
 .card.card-product-voucher .card-content-main .card-body .card-product-countdown .voucher-countdown-title {
@@ -27508,7 +27510,7 @@ nav#subway-location .subway-location-switch .btn {
   width: 60%;
   position: relative;
   padding-top: 30px;
-  padding-bottom: 40%;
+  padding-bottom: 34%;
   border-top-left-radius: .625rem;
   border-bottom-left-radius: .625rem;
   background-size: cover;
