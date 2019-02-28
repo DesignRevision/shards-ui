@@ -26080,6 +26080,12 @@ a.text-black:hover, a.text-black:focus {
   font-size: 65%;
 }
 
+@media (max-width: 575px) {
+  .card.card-product-voucher .card-content-main .card-body .card-product-countdown {
+    margin-top: inherit;
+  }
+}
+
 .card.card-product-voucher .card-content-main .card-body .card-voucher-code {
   width: 100%;
   padding: 6px 10px;

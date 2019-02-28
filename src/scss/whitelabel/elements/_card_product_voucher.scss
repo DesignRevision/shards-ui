@@ -144,6 +144,10 @@
               }
             }
           }
+
+          @media (max-width: 576px - 1px) {
+            margin-top: inherit;
+          }
         }
 
         .card-voucher-code {
