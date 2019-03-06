@@ -27292,10 +27292,6 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: space-between;
 }
 
-.website-auth main#main-container {
-  min-height: inherit !important;
-}
-
 .website-auth main#main-container .wrapper {
   display: -ms-flexbox;
   display: flex;
