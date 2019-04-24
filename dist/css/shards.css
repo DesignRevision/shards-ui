@@ -27540,18 +27540,7 @@ nav#subway-location .subway-location-switch .btn {
   background-repeat: no-repeat;
   z-index: 100;
   margin-top: -30px;
-}
-
-.website-detail section.product-detail .card.card-product-infos:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-body {
