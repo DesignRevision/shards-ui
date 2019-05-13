@@ -93,7 +93,15 @@ aside.main-sidebar {
             background-color: rgba(0, 0, 0, 0.05);
 
             .user-avatar {
-              max-height: 65px;
+              display: inline-flex;
+              border-radius: 100%;
+              justify-content: center;
+              align-items: center;
+              color: #FFF;
+              font-weight: bold;
+              font-size: 25px;
+              height: 50px;
+              width: 50px;
               margin-right: 10px;
               border: solid thin #cbcbcb;
               transition: all 300ms;
