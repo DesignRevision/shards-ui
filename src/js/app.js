@@ -11,13 +11,8 @@ import './sliderPlugin';
 // Internal Scripts
 import './pluginConfigurations';
 import './components/reviewRating';
-
-const openModals = () => {
-  jQuery('.modal[data-show="true"]').modal('show');
-  jQuery('.modal[data-show="true"]').data('show', '');
-};
-
-window.openModals = openModals;
+import './components/mobileMenu';
+import './components/openModals';
 
 window.jQuery = $;
 window.$ = $;
