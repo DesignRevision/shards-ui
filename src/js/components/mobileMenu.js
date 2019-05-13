@@ -10,5 +10,3 @@ const mobileMenu = () => {
 };
 
 window.mobileMenu = mobileMenu;
-
-console.log('mobileMenu', mobileMenu);
