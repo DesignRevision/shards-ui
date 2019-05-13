@@ -4,3 +4,5 @@ const openModals = () => {
 };
 
 window.openModals = openModals;
+
+console.log('openModals', openModals);

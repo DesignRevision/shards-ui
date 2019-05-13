@@ -54,3 +54,5 @@ const reviewRating = (function() {
 })();
 
 window.reviewRating = reviewRating;
+
+console.log('reviewRating', reviewRating);
