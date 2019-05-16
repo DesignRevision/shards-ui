@@ -27,7 +27,7 @@ aside.main-sidebar {
   }
 
   .nav-wrapper {
-		height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     overflow-y: auto;
 
     .main-sidebar__nav-title {
@@ -39,6 +39,15 @@ aside.main-sidebar {
 
     .nav {
       .nav-item {
+        .nav-alert-context {
+          font-family: $headings-font-family;
+          font-size: 1.1rem;
+          font-weight: 400;
+          background-color: var(--primary);
+          color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+          padding: 0.9375rem 1.5625rem;
+        }
+
         .nav-link {
           font-family: $headings-font-family;
           font-size: 1.1rem;

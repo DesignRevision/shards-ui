@@ -26,6 +26,14 @@
     @include button-outline-variant($brand-facebook);
   }
 
+  &.btn-whatsapp {
+    @include button-variant($brand-whatsapp);
+  }
+
+  &.btn-outline-whatsapp {
+    @include button-outline-variant($brand-whatsapp);
+  }
+
   // Btn Styles
   &.btn-circle {
     padding: 9px 0;

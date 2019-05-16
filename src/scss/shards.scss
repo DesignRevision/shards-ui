@@ -108,6 +108,9 @@
 @import './whitelabel/template/mixin';
 @import './whitelabel/theme';
 
+/*! Site Generator Application */
+@import './site-generator/page/mixin';
+
 /*! Vendor */
 @import './vendor/animate';
 @import './vendor/select2/core';
