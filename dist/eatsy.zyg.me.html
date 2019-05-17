@@ -10,7 +10,6 @@
   <meta property="og:image" content="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p200x200/46837058_1995243400558517_7675255919734685696_n.png?_nc_cat=100&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=513bd6614358cde54476d7df117d0d0b&amp;oe=5CBBE8E2">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./css/shards.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
   :root {
     --primary: #5d8646;
@@ -21,18 +20,10 @@
     --primary-lightness-contrast: 100%;
     --primary-lightness-contrast-inverse: 0%;
   }
-
-  .bg-brand {
-    background-color: #5d8646 !important;
-  }
-
-  .text-brand {
-    color: #5d8646 !important;
-  }
   </style>
 </head>
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-gr-c-s-loaded="true" class="landing-page-site" id="inicio">
+<body class="landing-page-site" id="inicio">
   <div id="page-container">
     <header id="page-header" class="page-header-alternative">
       <div class="content-header content-header-site-menu">
@@ -74,19 +65,19 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="btn btn-sm btn-outline-primary">
                 Programa de Fidelidade
               </a>
             </li>
 
-            <li class="social-media-link">
+            <li class="social-media-link ml-30">
               <a href="#">
-                <i class="fab fa-facebook fa-fw fa-2x"></i>
+                <i class="fab fa-facebook fa-2x"></i>
               </a>
             </li>
             <li class="social-media-link">
               <a href="#">
-                <i class="fab fa-instagram fa-fw fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
               </a>
             </li>
           </ul>
@@ -95,6 +86,11 @@
 
       <div class="content-header content-header-loyalty-menu">
         <div class="content-header-section">
+          <button type="button"
+                  class="btn d-lg-none btn-link btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
           <ul class="nav-header-menu d-none d-lg-flex">
             <li class="">
               <a href="/rewards">Recompensas</a>
@@ -115,6 +111,12 @@
           </ul>
         </div>
 
+        <div class="content-header-section header-section-brand">
+          <a href="index.html" class="header-brand">
+						<img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/47010858_1995243397225184_3499463065571688448_o.png?_nc_cat=108&_nc_ht=scontent.ffln2-2.fna&oh=72249bf36cb4b9d9dc408ae35bb79bee&oe=5D5CB6D1" />
+					</a>
+        </div>
+
         <div class="content-header-section align-right">
           <ul class="nav-header-menu is-logged">
             <li class="menu-item-signin">
@@ -132,6 +134,15 @@
 								<span class="points-text">
 									<strong>Seu saldo</strong><br>
 									de pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user-points is-mobile">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-text">
+									<strong>5</strong><br>
+									pontos
 								</span>
 							</a>
             </li>
@@ -209,8 +220,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link " href="/stores">
-                <i class="far fa-heart fa-fw"></i>
-                <span>Programa de Fidelidade</span>
+              <i class="far fa-heart fa-fw text-danger"></i>
+              <span>Programa de Fidelidade</span>
             </a>
           </li>
         </ul>
@@ -316,7 +327,7 @@
         </section>
 
         <section class="news" id="novidades">
-          <div class="container aos-init" data-aos="fade-up" data-aos-delay="20">
+          <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="section-header">
@@ -326,7 +337,7 @@
                 </div>
 
                 <div class="card-list-news">
-                  <div class="card card-small aos-init" data-aos="fade-up" data-aos-delay="20">
+                  <div class="card card-small">
                     <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
 
                     <div class="card-body">
@@ -342,7 +353,7 @@
                     </div>
                   </div>
 
-                  <div class="card card-small aos-init" data-aos="fade-up" data-aos-delay="20">
+                  <div class="card card-small">
                     <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
 
                     <div class="card-body">
@@ -358,7 +369,7 @@
                     </div>
                   </div>
 
-                  <div class="card card-small aos-init" data-aos="fade-up" data-aos-delay="20">
+                  <div class="card card-small">
                     <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
 
                     <div class="card-body">
@@ -375,7 +386,7 @@
                   </div>
                 </div>
 
-                <div class="section-action aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="section-action">
                   <a href="https://www.facebook.com/eatsyfloripa/" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
                     <i class="fab fa-facebook mr-1"></i>
                     Confira mais novidades no Facebook
@@ -396,44 +407,44 @@
               </div>
 
               <div class="gallery">
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
-                <div class="gallery-item aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="gallery-item">
                   <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
                     <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
                   </a>
                 </div>
               </div>
 
-              <div class="section-action aos-init" data-aos="fade-up" data-aos-delay="20">
+              <div class="section-action">
                 <a href="https://www.instagram.com/eatsynaturalfloripa" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
                   <i class="fab fa-instagram mr-1"></i>
                   Veja mais no Instagram
@@ -503,7 +514,7 @@
                   </div>
                 </div>
 
-                <div class="section-action aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="section-action">
                   <a href="https://www.instagram.com/eatsynaturalfloripa" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
                     Faça seu pedido online agora
                   </a>
@@ -526,7 +537,7 @@
             </div>
 
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4  aos-init" data-aos="fade-up" data-aos-delay="20">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
                 <div class="card card-testimonial-item">
                   <div class="card-body">
                     <div class="testimonial-item-review">
@@ -558,7 +569,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4  aos-init" data-aos="fade-up" data-aos-delay="20">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
                 <div class="card card-testimonial-item">
                   <div class="card-body">
                     <div class="testimonial-item-review">
@@ -590,7 +601,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4  aos-init" data-aos="fade-up" data-aos-delay="20">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
                 <div class="card card-testimonial-item">
                   <div class="card-body">
                     <div class="testimonial-item-review">
@@ -638,20 +649,20 @@
             </div>
 
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 map aos-init" data-aos="fade-up" data-aos-delay="20">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 map">
                 <iframe class="openstreetmap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-48.517967299999995%2C-27.597265099999998%2C-48.4979673%2C-27.5812651&amp;layer=mapnik&amp;marker=-27.5892651%2C-48.5079673">
                 </iframe>
               </div>
 
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <div class="location-address aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="location-address">
                   <h5>Endereço</h5>
                   <p>
                     Av. Me. Benvenuta, 1392 - Santa Monica, Florianópolis - SC, 88010-145, Brasil
                   </p>
                 </div>
 
-                <div class="location-opening-time aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="location-opening-time">
                   <h5>Horário de Funcionamento</h5>
                   <table>
                     <tr>
@@ -713,7 +724,7 @@
                   </table>
                 </div>
 
-                <div class="location-phone aos-init" data-aos="fade-up" data-aos-delay="20">
+                <div class="location-phone">
                   <h5>Telefone</h5>
                   <a href="tel:+554830252880" class="link-effect">
                     Ligar (48) 3025-2880
@@ -757,7 +768,6 @@
     </button>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -771,8 +781,6 @@
   });
   </script>
   <script>
-  AOS.init();
-
   $(document).ready(function() {
     $('a[href*="#"]')
       .not('[href="#"]')

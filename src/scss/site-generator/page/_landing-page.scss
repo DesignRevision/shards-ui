@@ -1,5 +1,21 @@
 .landing-page-site {
   #page-container {
+    header#page-header {
+      &.page-header-alternative {
+        .content-header {
+          &.content-header-site-menu {
+            @media (max-width: 992px - 1px) {
+              display: flex;
+            }
+          }
+
+          &.content-header-loyalty-menu {
+            display: none;
+          }
+        }
+      }
+    }
+
     main#main-container {
       .wrapper {
         section {
@@ -68,7 +84,7 @@
 
             .page-banner-image {
               max-width: 350px;
-              max-height: 200px;
+              max-height: 150px;
               margin-bottom: 16px;
             }
 
@@ -113,7 +129,7 @@
           }
 
           @media (max-width: 1200px - 1px) {
-            height: calc(100vh - 80px);
+            height: calc(80vh - 80px);
           }
         }
 
@@ -207,6 +223,38 @@
               &:nth-child(4n) {
                 margin-right: 0;
               }
+
+              @media (max-width: 768px - 1px) {
+                display: none;
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                  display: inline-block;
+                }
+              }
+
+              @media (max-width: 585px - 1px) {
+                width: 150px;
+                height: 150px;
+
+                a {
+                  img {
+                    height: 100%;
+                  }
+                }
+              }
+
+              @media (max-width: 380px - 1px) {
+                width: 150px;
+                height: 100px;
+              }
+
+              @media (max-width: 321px - 1px) {
+                width: 150px;
+                height: 80px;
+              }
             }
 
             @media (max-width: 992px - 1px) {
@@ -230,21 +278,6 @@
 
                 &:nth-child(odd) {
                   margin-right: 15px !important;
-                }
-              }
-            }
-
-            @media (max-width: 576px - 1px) {
-              .gallery-item {
-                width: 100%;
-                margin: 0 0 15px !important;
-
-                &:nth-child(odd) {
-                  margin-right: 0 !important;
-                }
-
-                &:last-child {
-                  margin: 0 !important;
                 }
               }
             }
@@ -420,6 +453,7 @@
         position: fixed;
         bottom: 15px;
         right: 15px;
+        z-index: 500;
       }
     }
   }
