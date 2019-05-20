@@ -21,7 +21,14 @@ a {
       transition: transform .12s ease-out, opacity .12s ease-out,
     }
 
+    &.alert-link {
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
     &:hover {
+      text-decoration: none;
+
       &:before {
         visibility: visible;
         transform: translateY(0);

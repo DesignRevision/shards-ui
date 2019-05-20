@@ -29414,6 +29414,15 @@ a.link-effect:before {
   transition: transform 0.12s ease-out, opacity 0.12s ease-out, -webkit-transform 0.12s ease-out;
 }
 
+a.link-effect.alert-link {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+a.link-effect:hover {
+  text-decoration: none;
+}
+
 a.link-effect:hover:before {
   visibility: visible;
   -webkit-transform: translateY(0);
