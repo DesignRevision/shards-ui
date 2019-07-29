@@ -236,24 +236,11 @@
               }
 
               @media (max-width: 585px - 1px) {
-                width: 150px;
-                height: 150px;
-
                 a {
                   img {
                     height: 100%;
                   }
                 }
-              }
-
-              @media (max-width: 380px - 1px) {
-                width: 150px;
-                height: 100px;
-              }
-
-              @media (max-width: 321px - 1px) {
-                width: 150px;
-                height: 80px;
               }
             }
 

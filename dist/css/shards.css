@@ -30049,26 +30049,8 @@ section.social-network .intro h2 strong {
 }
 
 @media (max-width: 584px) {
-  .landing-page-site #page-container main#main-container .wrapper section.photos .gallery .gallery-item {
-    width: 150px;
-    height: 150px;
-  }
   .landing-page-site #page-container main#main-container .wrapper section.photos .gallery .gallery-item a img {
     height: 100%;
-  }
-}
-
-@media (max-width: 379px) {
-  .landing-page-site #page-container main#main-container .wrapper section.photos .gallery .gallery-item {
-    width: 150px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 320px) {
-  .landing-page-site #page-container main#main-container .wrapper section.photos .gallery .gallery-item {
-    width: 150px;
-    height: 80px;
   }
 }
 
