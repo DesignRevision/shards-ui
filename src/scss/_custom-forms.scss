@@ -60,6 +60,7 @@
 
 .custom-control-label {
   position: static;
+
   &:hover {
     cursor: pointer;
   }
@@ -85,6 +86,17 @@
   }
 }
 
+// Custom Switches (core)
+//
+// Adjustments for the default Bootstrap custom switches.
+
+.custom-switch {
+  padding-left: $custom-switch-padding-left;
+
+  .custom-control-label {
+    position: relative;
+  }
+}
 
 // Checkboxes
 //
