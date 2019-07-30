@@ -4249,7 +4249,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 }
 
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-  right: -17px;
+  right: -11.5px;
   left: auto;
 }
 
