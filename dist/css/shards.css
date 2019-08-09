@@ -26252,7 +26252,8 @@ a.text-black:hover, a.text-black:focus {
 
 .empty-state .wrapper .empty-state-content .empty-state-title {
   margin-bottom: 5px;
-  font-size: 2.2rem;
+  line-height: 1.3;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 991px) {
@@ -29608,6 +29609,7 @@ label {
 .empty-state-wrapper {
   padding: 40px 0;
   margin-bottom: 0;
+  margin-top: 3em;
 }
 
 section.products-lists {
