@@ -69,16 +69,10 @@
         width: 50%;
         flex-shrink: 0;
         position: relative;
-        padding-top: 30px;
-        padding-bottom: 25%;
         border-bottom-left-radius: .625rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
 
         @media (max-width: 576px - 1px) {
           width: 100%;
-          padding-bottom: 55%;
           border-top-right-radius: 0;
           border-bottom-left-radius: 0;
         }

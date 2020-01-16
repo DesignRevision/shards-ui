@@ -18,12 +18,10 @@
         color: $body-color;
         transition: box-shadow 300ms;
 
-        .card-image {          
+        .card-image {
           flex: 0 0 auto;
           width: 60%;
           position: relative;
-          padding-top: 30px;
-          padding-bottom: 34%;
           border-top-left-radius: .625rem;
           border-bottom-left-radius: .625rem;
           background-size: cover;
@@ -34,22 +32,18 @@
 
           @media (max-width: 992px - 1px) {
             width: 100%;
-            padding-bottom: 55%;
             border-top-right-radius: .625rem;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
           }
         }
-        
+
         .card-image-product {
-          position: absolute;
+          display: flex;
+          align-items: center;
           width: 100%;
           height: 100%;
-          background-size: contain;
-          background-position: center;
-          background-repeat: no-repeat;
-          z-index: 100;
-          margin-top: -30px;
+          z-index: 20;
           background-color: rgba(0, 0, 0, 0.5)
         }
 

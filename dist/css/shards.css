@@ -25745,8 +25745,6 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.card-product .card-image {
-  padding-top: 30px;
-  padding-bottom: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26067,18 +26065,12 @@ a.text-black:hover, a.text-black:focus {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 25%;
   border-bottom-left-radius: .625rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 575px) {
   .card.card-product-voucher .card-content-main .card-image {
     width: 100%;
-    padding-bottom: 55%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -27689,8 +27681,6 @@ nav#subway-location .subway-location-switch .btn {
       flex: 0 0 auto;
   width: 60%;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 34%;
   border-top-left-radius: .625rem;
   border-bottom-left-radius: .625rem;
   background-size: cover;
@@ -27702,7 +27692,6 @@ nav#subway-location .subway-location-switch .btn {
 @media (max-width: 991px) {
   .website-detail section.product-detail .card.card-product-infos .card-image {
     width: 100%;
-    padding-bottom: 55%;
     border-top-right-radius: .625rem;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -27710,14 +27699,13 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-detail section.product-detail .card.card-product-infos .card-image-product {
-  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
   height: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 100;
-  margin-top: -30px;
+  z-index: 20;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
