@@ -25745,11 +25745,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.card-product .card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 0.625rem 0.625rem 0 0;
-  position: relative;
 }
 
 .card.card-product .card-image .card-product-type {
@@ -26061,10 +26057,6 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.card-product-voucher .card-content-main .card-image {
-  width: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  position: relative;
   border-bottom-left-radius: .625rem;
 }
 
@@ -27679,14 +27671,8 @@ nav#subway-location .subway-location-switch .btn {
 .website-detail section.product-detail .card.card-product-infos .card-image {
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-  width: 60%;
-  position: relative;
   border-top-left-radius: .625rem;
   border-bottom-left-radius: .625rem;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
 @media (max-width: 991px) {
