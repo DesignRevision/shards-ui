@@ -20,14 +20,8 @@
 
         .card-image {
           flex: 0 0 auto;
-          width: 60%;
-          position: relative;
           border-top-left-radius: .625rem;
           border-bottom-left-radius: .625rem;
-          background-size: cover;
-          background-position: 50%;
-          background-repeat: no-repeat;
-          z-index: 1;
 
 
           @media (max-width: 992px - 1px) {
