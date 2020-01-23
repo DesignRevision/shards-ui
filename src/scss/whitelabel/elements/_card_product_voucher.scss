@@ -67,6 +67,7 @@
 
       .card-image {
         border-bottom-left-radius: .625rem;
+        width: 50%;
 
         @media (max-width: 576px - 1px) {
           width: 100%;
