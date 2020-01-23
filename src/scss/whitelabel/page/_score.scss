@@ -1,0 +1,46 @@
+.website-score {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  .page-header-intro {
+    background-color: var(--primary);
+    margin-bottom: 30px;
+    .page-header-content {
+      .header-intro-title, .header-intro-description {
+        color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+      }
+    }
+  }
+
+  .delivery-score {
+    display: flex;
+    justify-content: center;
+    .card {
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .info-score {
+    .head-icon {
+      display: flex;
+      justify-content: center;
+      margin: 35px 0;
+    }
+    .info-box {
+      display: flex;
+      margin-top: 30px;
+      .icon-box {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

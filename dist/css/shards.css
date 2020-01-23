@@ -29362,6 +29362,67 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.website-score {
+  margin-bottom: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.website-score .page-header-intro {
+  background-color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.website-score .page-header-intro .page-header-content .header-intro-title, .website-score .page-header-intro .page-header-content .header-intro-description {
+  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+}
+
+.website-score .delivery-score {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.website-score .delivery-score .card .card-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.website-score .delivery-score .card .card-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.website-score .info-score .head-icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 35px 0;
+}
+
+.website-score .info-score .info-box {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.website-score .info-score .info-box .icon-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 a {
   font-weight: 400;
   color: var(--primary);
