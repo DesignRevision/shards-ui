@@ -1,0 +1,51 @@
+.page-header-intro.page-header-lg-intro-home {
+  height: 295px;
+}
+
+.page-join-us .wrapper .join-us-content,
+.page-join-us .wrapper .join-us-action {
+  width: 100%;
+}
+
+.page-join-us {
+  background-color: var(--primary);
+  position: relative;
+  height: 295px;
+}
+
+.page-join-us .wrapper {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-join-us .wrapper .join-us-title {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #ffff;
+}
+
+.page-join-us .wrapper .join-us-title strong {
+  font-weight: 600;
+  color: #ffff;
+}
+
+.page-join-us .wrapper .join-us-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #ffff;
+}
