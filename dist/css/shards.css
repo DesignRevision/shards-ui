@@ -26059,6 +26059,7 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product-voucher .card-content-main .card-image {
   border-bottom-left-radius: .625rem;
   width: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 575px) {
