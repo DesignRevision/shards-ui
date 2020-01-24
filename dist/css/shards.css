@@ -28674,6 +28674,100 @@ nav#subway-location .subway-location-switch .btn {
   color: #ffff;
 }
 
+.landing-page .landing-page-reward-highlight {
+  min-height: 295px;
+  padding: 30px;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper {
+  height: 100%;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .card-wrapper {
+    order: 1;
+    margin-right: 20px;
+    max-width: 320px;
+  }
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 532px;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper .reward-highlight-description .description-text {
+  margin-bottom: 5px;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper .reward-highlight-description .description-observation {
+  font-style: italic;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper i {
+  margin: 0 auto 15px auto;
+  color: #4472F3;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper h4 {
+  font-weight: 500;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper h4 span {
+  color: #4472F3;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper {
+    order: 2;
+  }
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action {
+  width: 100%;
+}
+
+.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action .btn {
+  width: 100%;
+  background-color: #4472F3;
+  border-color: #4472F3;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action {
+    order: 3;
+  }
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action .btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight .wrapper {
+    padding: 0 50px;
+  }
+}
+
 .landing-page .landing-page-register-and-win {
   min-height: 295px;
   padding: 30px;
