@@ -29502,9 +29502,112 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .landing-page-join-us .wrapper .join-us-description {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.35;
   color: #ffff;
+}
+
+.landing-page .landing-page-how-use {
+  background-color: #fff;
+  min-height: 295px;
+  padding: 30px;
+}
+
+.landing-page .landing-page-how-use .wrapper {
+  height: 100%;
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-title {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+    padding: 0;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+    width: 80%;
+    max-width: 960px;
+  }
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item {
+  color: var(--primary);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item {
+    border-right: 1px solid black;
+  }
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item:last-child {
+  border: none;
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item h5 {
+  color: var(--primary);
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item p {
+  color: #252525;
+  margin: 0;
+  text-align: center;
+}
+
+.landing-page .landing-page-how-use .wrapper .how-use-content .landing-page-how-use-action {
+  margin-top: 20px;
+  text-align: center;
 }
 
 a {
