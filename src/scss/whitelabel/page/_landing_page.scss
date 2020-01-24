@@ -1,4 +1,8 @@
 .landing-page {
+  .card {
+    box-shadow: black;
+  }
+
   .landing-page-banner {
     background-color: var(--primary);
     position: relative;
@@ -85,6 +89,92 @@
       }
     }
   }
+
+  .landing-page-register-and-win {
+    min-height: 295px;
+    padding: 30px;
+
+    .wrapper {
+      height: 100%;
+
+      .register-and-win-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card-wrapper {
+          @media (min-width: 768px) {
+            order: 1;
+            margin-right: 20px;
+            max-width: 320px;
+          }
+        }
+
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          max-width: 532px;
+
+          .register-and-win-description {
+            .description-text {
+              margin-bottom: 5px;
+            }
+
+            .description-observation {
+              font-style: italic;
+            }
+          }
+
+          i {
+            margin: 0 auto 15px auto;
+            color: $product-offer;
+
+            @media (min-width: 768px) {
+              margin: 0 0 15px 0;
+            }
+          }
+
+          h4 {
+            font-weight: 500;
+
+            span {
+              color: $product-offer;
+            }
+          }
+
+          @media (min-width: 768px) {
+            order: 2;
+          }
+        }
+
+        .register-and-win-action {
+          width: 100%;
+
+          .btn {
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            order: 3;
+
+            .btn {
+              width: auto;
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 768px) {
+        padding: 0 50px;
+      }
+    }
+  }
+
   .landing-page-how-use {
     background-color: $white;
     min-height: 295px;
@@ -162,6 +252,17 @@
         .landing-page-how-use-action {
           margin-top: 20px;
           text-align: center;
+          width: 100%;
+
+          .btn {
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            .btn {
+              width: auto;
+            }
+          }
         }
       }
     }
