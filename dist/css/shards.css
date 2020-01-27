@@ -29432,13 +29432,20 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-banner {
   background-color: var(--primary);
   position: relative;
-  height: 295px;
+  min-height: 295px;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-banner {
+    padding: 30px 115px;
+  }
 }
 
 .landing-page .landing-page-banner .wrapper .landing-page-banner-content .banner-title {
@@ -29467,7 +29474,7 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-join-us {
   background-color: var(--primary);
   position: relative;
-  height: 295px;
+  min-height: 295px;
 }
 
 .landing-page .landing-page-join-us .wrapper {
@@ -29514,6 +29521,12 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-reward-highlight {
   min-height: 295px;
   padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-highlight {
+    padding: 30px 115px;
+  }
 }
 
 .landing-page .landing-page-reward-highlight .wrapper {
@@ -29577,6 +29590,7 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper {
     -ms-flex-order: 2;
         order: 2;
+    margin-left: 40px;
   }
 }
 
@@ -29604,8 +29618,6 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content {
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
 }
 
@@ -29618,6 +29630,12 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-register-and-win {
   min-height: 295px;
   padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-register-and-win {
+    padding: 30px 115px;
+  }
 }
 
 .landing-page .landing-page-register-and-win .wrapper {
@@ -29681,6 +29699,7 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper {
     -ms-flex-order: 2;
         order: 2;
+    margin-left: 40px;
   }
 }
 
@@ -29706,8 +29725,6 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-register-and-win .wrapper .register-and-win-content {
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
 }
 
@@ -29828,6 +29845,116 @@ nav#subway-location .subway-location-switch .btn {
 @media (min-width: 768px) {
   .landing-page .landing-page-how-use .wrapper .how-use-content .landing-page-how-use-action .btn {
     width: auto;
+  }
+}
+
+.landing-page .landing-page-reward-list {
+  min-height: 295px;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list {
+    padding: 30px 115px;
+  }
+}
+
+.landing-page .landing-page-reward-list .wrapper {
+  height: 100%;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .cards {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper .reward-list-content .cards {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper .reward-list-content .cards .card-wrapper {
+    margin-right: 20px;
+    max-width: 320px;
+    min-width: 250px;
+  }
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  max-width: 532px;
+  margin-bottom: 20px;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper .reward-list-description .description-text {
+  margin-bottom: 5px;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper .reward-list-description .description-observation {
+  font-style: italic;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper i {
+  margin: 0 auto 15px auto;
+  color: #4472F3;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper h4 {
+  font-weight: 500;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper h4 span {
+  color: #4472F3;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action {
+  width: 100%;
+}
+
+.landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action .btn {
+  width: 100%;
+  background-color: #4472F3;
+  border-color: #4472F3;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper .reward-list-content {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-reward-list .wrapper {
+    padding: 0 50px;
   }
 }
 
