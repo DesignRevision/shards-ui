@@ -39,4 +39,26 @@
       }
     }
   }
+
+  &.modal-success {
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .icon-check {
+        color: var(--success);
+        padding: 20px 0px 40px 0px;
+      }
+
+      .primary-text {
+        font-size: 16px;
+      }
+
+      .secondary-text {
+        color: var(--gray);
+        font-style: italic;
+      }
+    }
+  }
 }
