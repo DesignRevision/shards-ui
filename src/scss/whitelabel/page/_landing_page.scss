@@ -94,6 +94,10 @@
     min-height: 295px;
     padding: 30px;
 
+    @media (min-width: 768px) {
+      padding: 30px 115px;
+    }
+
     .wrapper {
       height: 100%;
 
@@ -144,6 +148,7 @@
 
           @media (min-width: 768px) {
             order: 2;
+            margin-left: 40px;
           }
         }
 
@@ -167,7 +172,6 @@
 
         @media (min-width: 768px) {
           flex-direction: row;
-          justify-content: center;
         }
       }
 
@@ -180,6 +184,10 @@
   .landing-page-register-and-win {
     min-height: 295px;
     padding: 30px;
+
+    @media (min-width: 768px) {
+      padding: 30px 115px;
+    }
 
     .wrapper {
       height: 100%;
@@ -231,6 +239,7 @@
 
           @media (min-width: 768px) {
             order: 2;
+            margin-left: 40px;
           }
         }
 
@@ -252,7 +261,6 @@
 
         @media (min-width: 768px) {
           flex-direction: row;
-          justify-content: center;
         }
       }
 
@@ -351,6 +359,100 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .landing-page-reward-list {
+    min-height: 295px;
+    padding: 30px;
+
+    @media (min-width: 768px) {
+      padding: 30px 115px;
+    }
+
+    .wrapper {
+      height: 100%;
+
+      .reward-list-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cards {
+          flex-direction: column;
+
+          @media (min-width: 768px) {
+            flex-direction: row;
+          }
+
+          .card-wrapper {
+            @media (min-width: 768px) {
+              margin-right: 20px;
+              max-width: 320px;
+              min-width: 250px;
+            }
+          }
+        }
+
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          max-width: 532px;
+          margin-bottom: 20px;
+
+          .reward-list-description {
+            .description-text {
+              margin-bottom: 5px;
+            }
+
+            .description-observation {
+              font-style: italic;
+            }
+          }
+
+          i {
+            margin: 0 auto 15px auto;
+            color: $product-reward;
+
+            @media (min-width: 768px) {
+              margin: 0 0 15px 0;
+            }
+          }
+
+          h4 {
+            font-weight: 500;
+
+            span {
+              color: $product-reward;
+            }
+          }
+        }
+
+        .reward-list-action {
+          width: 100%;
+
+          .btn {
+            width: 100%;
+            background-color: $product-reward;
+            border-color: $product-reward;
+          }
+
+          @media (min-width: 768px) {
+            .btn {
+              width: auto;
+              margin-top: 20px;
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 768px) {
+        padding: 0 50px;
       }
     }
   }
