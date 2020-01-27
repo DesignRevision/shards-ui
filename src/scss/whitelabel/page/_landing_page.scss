@@ -6,10 +6,15 @@
   .landing-page-banner {
     background-color: var(--primary);
     position: relative;
-    height: 295px;
+    min-height: 295px;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 30px;
+
+    @media (min-width: 768px) {
+      padding: 30px 115px;
+    }
 
     .wrapper {
       .landing-page-banner-content {
@@ -46,7 +51,7 @@
   .landing-page-join-us {
     background-color: var(--primary);
     position: relative;
-    height: 295px;
+    min-height: 295px;
 
     .wrapper {
       height: 100%;

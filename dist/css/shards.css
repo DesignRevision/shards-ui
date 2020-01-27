@@ -29432,13 +29432,20 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-banner {
   background-color: var(--primary);
   position: relative;
-  height: 295px;
+  min-height: 295px;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
   display: -ms-flexbox;
   display: flex;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .landing-page .landing-page-banner {
+    padding: 30px 115px;
+  }
 }
 
 .landing-page .landing-page-banner .wrapper .landing-page-banner-content .banner-title {
@@ -29467,7 +29474,7 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-join-us {
   background-color: var(--primary);
   position: relative;
-  height: 295px;
+  min-height: 295px;
 }
 
 .landing-page .landing-page-join-us .wrapper {
