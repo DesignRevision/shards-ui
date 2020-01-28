@@ -27039,30 +27039,6 @@ header#page-header.page-header-alternative .content-header.content-header-loyalt
   position: relative;
 }
 
-.page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content:after {
-  position: absolute;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  content: "\f582";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 700;
-  font-size: 7rem;
-  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-@media (max-width: 767px) {
-  .page-header-intro.page-header-intro-home.is-user-logged .wrapper .page-header-content:after {
-    display: none;
-  }
-}
-
 @media (max-width: 575px) {
   .page-header-intro.page-header-intro-home {
     height: inherit;
