@@ -29425,10 +29425,6 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: center;
 }
 
-.landing-page .card {
-  box-shadow: black;
-}
-
 .landing-page .landing-page-banner {
   background-color: var(--primary);
   position: relative;
@@ -29442,12 +29438,6 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-banner {
-    padding: 30px 115px;
-  }
-}
-
 .landing-page .landing-page-banner .wrapper .landing-page-banner-content .banner-title {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   font-size: 30px;
@@ -29457,18 +29447,6 @@ nav#subway-location .subway-location-switch .btn {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   font-size: 18px;
   font-weight: 300;
-}
-
-@media (max-width: 500px) {
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn {
-    width: 100%;
-  }
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:first-child {
-    margin-top: 0 !important;
-  }
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:last-child {
-    margin-top: 15px;
-  }
 }
 
 .landing-page .landing-page-join-us {
@@ -29523,17 +29501,8 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight {
-    padding: 30px 115px;
-  }
-}
-
-.landing-page .landing-page-reward-highlight .wrapper {
+.landing-page .landing-page-reward-highlight .reward-highlight-content {
   height: 100%;
-}
-
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -29542,89 +29511,42 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .card-wrapper {
-    -ms-flex-order: 1;
-        order: 1;
-    margin-right: 20px;
-    max-width: 320px;
-  }
-}
-
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  max-width: 532px;
 }
 
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper .reward-highlight-description .description-text {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-text {
   margin-bottom: 5px;
 }
 
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper .reward-highlight-description .description-observation {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-observation {
   font-style: italic;
 }
 
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper i {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper i {
   margin: 0 auto 15px auto;
   color: #4472F3;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper i {
-    margin: 0 0 15px 0;
-  }
-}
-
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper h4 {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper h4 {
   font-weight: 500;
 }
 
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper h4 span {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper h4 span {
   color: #4472F3;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .text-wrapper {
-    -ms-flex-order: 2;
-        order: 2;
-    margin-left: 40px;
-  }
-}
-
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action {
   width: 100%;
 }
 
-.landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action .btn {
+.landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action .btn {
   width: 100%;
   background-color: #4472F3;
   border-color: #4472F3;
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action {
-    -ms-flex-order: 3;
-        order: 3;
-  }
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content .reward-highlight-action .btn {
-    width: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper .reward-highlight-content {
-    -ms-flex-direction: row;
-        flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-highlight .wrapper {
-    padding: 0 50px;
-  }
 }
 
 .landing-page .landing-page-register-and-win {
@@ -29632,17 +29554,8 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win {
-    padding: 30px 115px;
-  }
-}
-
-.landing-page .landing-page-register-and-win .wrapper {
+.landing-page .landing-page-register-and-win .register-and-win-content {
   height: 100%;
-}
-
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -29651,87 +29564,40 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .card-wrapper {
-    -ms-flex-order: 1;
-        order: 1;
-    margin-right: 20px;
-    max-width: 320px;
-  }
-}
-
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  max-width: 532px;
 }
 
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper .register-and-win-description .description-text {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper .register-and-win-description .description-text {
   margin-bottom: 5px;
 }
 
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper .register-and-win-description .description-observation {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper .register-and-win-description .description-observation {
   font-style: italic;
 }
 
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper i {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper i {
   margin: 0 auto 15px auto;
   color: #fd7e14;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper i {
-    margin: 0 0 15px 0;
-  }
-}
-
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper h4 {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper h4 {
   font-weight: 500;
 }
 
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper h4 span {
+.landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper h4 span {
   color: #fd7e14;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .text-wrapper {
-    -ms-flex-order: 2;
-        order: 2;
-    margin-left: 40px;
-  }
-}
-
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .register-and-win-action {
+.landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action {
   width: 100%;
 }
 
-.landing-page .landing-page-register-and-win .wrapper .register-and-win-content .register-and-win-action .btn {
+.landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action .btn {
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .register-and-win-action {
-    -ms-flex-order: 3;
-        order: 3;
-  }
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content .register-and-win-action .btn {
-    width: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper .register-and-win-content {
-    -ms-flex-direction: row;
-        flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-register-and-win .wrapper {
-    padding: 0 50px;
-  }
 }
 
 .landing-page .landing-page-how-use {
@@ -29740,11 +29606,7 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-.landing-page .landing-page-how-use .wrapper {
-  height: 100%;
-}
-
-.landing-page .landing-page-how-use .wrapper .how-use-content {
+.landing-page .landing-page-how-use .how-use-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -29754,49 +29616,20 @@ nav#subway-location .subway-location-switch .btn {
   height: 100%;
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-title {
+.landing-page .landing-page-how-use .how-use-content .how-use-title {
   font-weight: 500;
   margin-bottom: 20px;
   color: var(--primary);
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-@media (min-width: 576px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
-    padding: 0 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
-    padding: 0;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media (min-width: 992px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
-    width: 90%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item {
-    width: 80%;
-    max-width: 960px;
-  }
-}
-
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item {
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item {
   color: var(--primary);
   display: -ms-flexbox;
   display: flex;
@@ -29809,43 +29642,31 @@ nav#subway-location .subway-location-switch .btn {
   padding: 20px;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item {
-    border-right: 1px solid black;
-  }
-}
-
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item:last-child {
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item:last-child {
   border: none;
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item h5 {
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item h5 {
   color: var(--primary);
   font-weight: 400;
   margin: 10px;
   text-align: center;
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .how-use-list-item .how-use-item p {
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item p {
   color: #252525;
   margin: 0;
   text-align: center;
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .landing-page-how-use-action {
+.landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action {
   margin-top: 20px;
   text-align: center;
   width: 100%;
 }
 
-.landing-page .landing-page-how-use .wrapper .how-use-content .landing-page-how-use-action .btn {
+.landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-how-use .wrapper .how-use-content .landing-page-how-use-action .btn {
-    width: auto;
-  }
 }
 
 .landing-page .landing-page-reward-list {
@@ -29853,17 +29674,8 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list {
-    padding: 30px 115px;
-  }
-}
-
-.landing-page .landing-page-reward-list .wrapper {
+.landing-page .landing-page-reward-list .reward-list-content {
   height: 100%;
-}
-
-.landing-page .landing-page-reward-list .wrapper .reward-list-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -29872,27 +29684,16 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .cards {
+.landing-page .landing-page-reward-list .reward-list-content .cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper .reward-list-content .cards {
-    -ms-flex-direction: row;
-        flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper .reward-list-content .cards .card-wrapper {
-    margin-right: 20px;
-    max-width: 320px;
-    min-width: 250px;
-  }
-}
-
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -29901,60 +29702,172 @@ nav#subway-location .subway-location-switch .btn {
   margin-bottom: 20px;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper .reward-list-description .description-text {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper .reward-list-description .description-text {
   margin-bottom: 5px;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper .reward-list-description .description-observation {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper .reward-list-description .description-observation {
   font-style: italic;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper i {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper i {
   margin: 0 auto 15px auto;
   color: #4472F3;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper i {
-    margin: 0 0 15px 0;
-  }
-}
-
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper h4 {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper h4 {
   font-weight: 500;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .text-wrapper h4 span {
+.landing-page .landing-page-reward-list .reward-list-content .text-wrapper h4 span {
   color: #4472F3;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action {
+.landing-page .landing-page-reward-list .reward-list-content .reward-list-action {
   width: 100%;
 }
 
-.landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action .btn {
+.landing-page .landing-page-reward-list .reward-list-content .reward-list-action .btn {
   width: 100%;
   background-color: #4472F3;
   border-color: #4472F3;
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper .reward-list-content .reward-list-action .btn {
-    width: auto;
-    margin-top: 20px;
+.landing-page .card-wrapper {
+  width: 100%;
+}
+
+.landing-page .card-wrapper img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn {
+    width: 100%;
+  }
+  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:first-child {
+    margin-top: 0 !important;
+  }
+  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:last-child {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .landing-page .landing-page-how-use .how-use-content .how-use-list-item {
+    padding: 0 50px;
   }
 }
 
 @media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper .reward-list-content {
+  .landing-page .landing-page-banner, .landing-page .landing-page-reward-highlight,
+  .landing-page .landing-page-register-and-win, .landing-page .landing-page-reward-list {
+    padding: 30px 115px;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .card-wrapper {
+    -ms-flex-order: 1;
+        order: 1;
+    margin-right: 20px;
+    max-width: 320px;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper {
+    -ms-flex-order: 2;
+        order: 2;
+    margin-left: 40px;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action .btn {
+    width: auto;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content .card-wrapper {
+    -ms-flex-order: 1;
+        order: 1;
+    margin-right: 20px;
+    max-width: 320px;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper {
+    -ms-flex-order: 2;
+        order: 2;
+    margin-left: 40px;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action .btn {
+    width: auto;
+  }
+  .landing-page .landing-page-how-use .how-use-content .how-use-list-item {
+    padding: 0;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item {
+    border-right: 1px solid black;
+  }
+  .landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {
+    width: auto;
+  }
+  .landing-page .landing-page-reward-list .reward-list-content {
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .landing-page .landing-page-reward-list .reward-list-content .cards {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper {
+    margin-right: 5px;
+    width: 49%;
+  }
+  .landing-page .landing-page-reward-list .reward-list-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .landing-page .landing-page-reward-list .reward-list-content .reward-list-action .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+  .landing-page .card-wrapper img {
+    height: 226px;
+  }
 }
 
-@media (min-width: 768px) {
-  .landing-page .landing-page-reward-list .wrapper {
-    padding: 0 50px;
+@media (min-width: 992px) {
+  .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper {
+    margin-right: 5px;
+    width: 24%;
+  }
+  .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-page .landing-page-how-use .how-use-content .how-use-list-item {
+    max-width: 1070px;
   }
 }
 

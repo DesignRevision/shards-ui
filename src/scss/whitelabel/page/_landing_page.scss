@@ -1,8 +1,4 @@
 .landing-page {
-  .card {
-    box-shadow: black;
-  }
-
   .landing-page-banner {
     background-color: var(--primary);
     position: relative;
@@ -11,10 +7,6 @@
     justify-content: center;
     display: flex;
     padding: 30px;
-
-    @media (min-width: 768px) {
-      padding: 30px 115px;
-    }
 
     .wrapper {
       .landing-page-banner-content {
@@ -27,22 +19,6 @@
           color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
           font-size: 18px;
           font-weight: 300;
-        }
-      }
-
-      .landing-page-banner-action {
-        @media (max-width: 501px - 1px) {
-          .btn {
-            width: 100%;
-
-            &:first-child {
-              margin-top: 0 !important;
-            }
-
-            &:last-child {
-              margin-top: 15px;
-            }
-          }
         }
       }
     }
@@ -99,89 +75,48 @@
     min-height: 295px;
     padding: 30px;
 
-    @media (min-width: 768px) {
-      padding: 30px 115px;
-    }
-
-    .wrapper {
+    .reward-highlight-content {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      .reward-highlight-content {
+      .text-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
-        .card-wrapper {
-          @media (min-width: 768px) {
-            order: 1;
-            margin-right: 20px;
-            max-width: 320px;
+        .reward-highlight-description {
+          .description-text {
+            margin-bottom: 5px;
+          }
+
+          .description-observation {
+            font-style: italic;
           }
         }
 
-        .text-wrapper {
-          display: flex;
-          flex-direction: column;
-          max-width: 532px;
+        i {
+          margin: 0 auto 15px auto;
+          color: $product-reward;
+        }
 
-          .reward-highlight-description {
-            .description-text {
-              margin-bottom: 5px;
-            }
+        h4 {
+          font-weight: 500;
 
-            .description-observation {
-              font-style: italic;
-            }
-          }
-
-          i {
-            margin: 0 auto 15px auto;
+          span {
             color: $product-reward;
-
-            @media (min-width: 768px) {
-              margin: 0 0 15px 0;
-            }
           }
-
-          h4 {
-            font-weight: 500;
-
-            span {
-              color: $product-reward;
-            }
-          }
-
-          @media (min-width: 768px) {
-            order: 2;
-            margin-left: 40px;
-          }
-        }
-
-        .reward-highlight-action {
-          width: 100%;
-
-          .btn {
-            width: 100%;
-            background-color: $product-reward;
-            border-color: $product-reward;
-          }
-
-          @media (min-width: 768px) {
-            order: 3;
-
-            .btn {
-              width: auto;
-            }
-          }
-        }
-
-        @media (min-width: 768px) {
-          flex-direction: row;
         }
       }
 
-      @media (min-width: 768px) {
-        padding: 0 50px;
+      .reward-highlight-action {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          background-color: $product-reward;
+          border-color: $product-reward;
+        }
       }
     }
   }
@@ -190,87 +125,46 @@
     min-height: 295px;
     padding: 30px;
 
-    @media (min-width: 768px) {
-      padding: 30px 115px;
-    }
-
-    .wrapper {
+    .register-and-win-content {
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      .register-and-win-content {
+      .text-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
-        .card-wrapper {
-          @media (min-width: 768px) {
-            order: 1;
-            margin-right: 20px;
-            max-width: 320px;
+        .register-and-win-description {
+          .description-text {
+            margin-bottom: 5px;
+          }
+
+          .description-observation {
+            font-style: italic;
           }
         }
 
-        .text-wrapper {
-          display: flex;
-          flex-direction: column;
-          max-width: 532px;
+        i {
+          margin: 0 auto 15px auto;
+          color: $product-offer;
+        }
 
-          .register-and-win-description {
-            .description-text {
-              margin-bottom: 5px;
-            }
+        h4 {
+          font-weight: 500;
 
-            .description-observation {
-              font-style: italic;
-            }
-          }
-
-          i {
-            margin: 0 auto 15px auto;
+          span {
             color: $product-offer;
-
-            @media (min-width: 768px) {
-              margin: 0 0 15px 0;
-            }
           }
-
-          h4 {
-            font-weight: 500;
-
-            span {
-              color: $product-offer;
-            }
-          }
-
-          @media (min-width: 768px) {
-            order: 2;
-            margin-left: 40px;
-          }
-        }
-
-        .register-and-win-action {
-          width: 100%;
-
-          .btn {
-            width: 100%;
-          }
-
-          @media (min-width: 768px) {
-            order: 3;
-
-            .btn {
-              width: auto;
-            }
-          }
-        }
-
-        @media (min-width: 768px) {
-          flex-direction: row;
         }
       }
 
-      @media (min-width: 768px) {
-        padding: 0 50px;
+      .register-and-win-action {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+        }
       }
     }
   }
@@ -280,89 +174,56 @@
     min-height: 295px;
     padding: 30px;
 
-    .wrapper {
+    .how-use-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       height: 100%;
 
-      .how-use-content {
+      .how-use-title {
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      .how-use-list-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 100%;
 
-        .how-use-title {
-          font-weight: 500;
-          margin-bottom: 20px;
+        .how-use-item {
           color: var(--primary);
-        }
-
-        .how-use-list-item {
           display: flex;
+          align-items: center;
           flex-direction: column;
+          flex-grow: 1;
+          padding: 20px;
 
-          @media (min-width: 576px) {
-            padding: 0 50px;
+          &:last-child {
+            border: none;
           }
 
-          @media (min-width: 768px) {
-            padding: 0;
-            flex-direction: row;
-            justify-content: space-around;
-          }
-
-          @media (min-width: 992px) {
-            width: 90%;
-          }
-
-          @media (min-width: 1200px) {
-            width: 80%;
-            max-width: 960px;
-          }
-
-          .how-use-item {
+          h5 {
             color: var(--primary);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            flex-grow: 1;
-            padding: 20px;
+            font-weight: 400;
+            margin: 10px;
+            text-align: center;
+          }
 
-            @media (min-width: 768px) {
-              border-right: 1px solid black;
-            }
-
-            &:last-child {
-              border: none;
-            }
-
-            h5 {
-              color: var(--primary);
-              font-weight: 400;
-              margin: 10px;
-              text-align: center;
-            }
-
-            p {
-              color: #252525;
-              margin: 0;
-              text-align: center;
-            }
+          p {
+            color: #252525;
+            margin: 0;
+            text-align: center;
           }
         }
+      }
 
-        .landing-page-how-use-action {
-          margin-top: 20px;
-          text-align: center;
+      .landing-page-how-use-action {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+
+        .btn {
           width: 100%;
-
-          .btn {
-            width: 100%;
-          }
-
-          @media (min-width: 768px) {
-            .btn {
-              width: auto;
-            }
-          }
         }
       }
     }
@@ -372,94 +233,245 @@
     min-height: 295px;
     padding: 30px;
 
-    @media (min-width: 768px) {
+    .reward-list-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 532px;
+        margin-bottom: 20px;
+
+        .reward-list-description {
+          .description-text {
+            margin-bottom: 5px;
+          }
+
+          .description-observation {
+            font-style: italic;
+          }
+        }
+
+        i {
+          margin: 0 auto 15px auto;
+          color: $product-reward;
+        }
+
+        h4 {
+          font-weight: 500;
+
+          span {
+            color: $product-reward;
+          }
+        }
+      }
+
+      .reward-list-action {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          background-color: $product-reward;
+          border-color: $product-reward;
+        }
+      }
+    }
+  }
+
+  .card-wrapper {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 501px - 1px) {
+    .landing-page-banner {
+      .wrapper {
+        .landing-page-banner-action {
+          .btn {
+            width: 100%;
+
+            &:first-child {
+              margin-top: 0 !important;
+            }
+
+            &:last-child {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .landing-page-how-use {
+      .how-use-content {
+        .how-use-list-item {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .landing-page-banner, .landing-page-reward-highlight,
+    .landing-page-register-and-win, .landing-page-reward-list {
       padding: 30px 115px;
     }
 
-    .wrapper {
-      height: 100%;
+    .landing-page-reward-highlight {
+      .reward-highlight-content {
+        flex-direction: row;
 
-      .reward-list-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        .card-wrapper {
+          order: 1;
+          margin-right: 20px;
+          max-width: 320px;
+        }
 
-        .cards {
-          flex-direction: column;
+        .text-wrapper {
+          order: 2;
+          margin-left: 40px;
 
-          @media (min-width: 768px) {
+          i {
+            margin: 0 0 15px 0;
+          }
+        }
+
+        .reward-highlight-action {
+          order: 3;
+
+          .btn {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .landing-page-register-and-win {
+      .register-and-win-content {
+        flex-direction: row;
+
+        .card-wrapper {
+          order: 1;
+          margin-right: 20px;
+          max-width: 320px;
+        }
+
+        .text-wrapper {
+          order: 2;
+          margin-left: 40px;
+
+          i {
+            margin: 0 0 15px 0;
+          }
+        }
+
+        .register-and-win-action {
+          order: 3;
+
+          .btn {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .landing-page-how-use {
+        .how-use-content {
+          .how-use-list-item {
+            padding: 0;
             flex-direction: row;
+            justify-content: space-around;
+
+            .how-use-item {
+              border-right: 1px solid black;
+            }
           }
 
-          .card-wrapper {
-            @media (min-width: 768px) {
-              margin-right: 20px;
-              max-width: 320px;
-              min-width: 250px;
+          .landing-page-how-use-action {
+            .btn {
+              width: auto;
             }
+          }
+        }
+    }
+
+    .landing-page-reward-list {
+      .reward-list-content {
+        justify-content: center;
+
+        .cards {
+          display: flex;
+          flex-direction: row;
+          // flex-wrap: wrap;
+
+          .card-wrapper {
+            margin-right: 5px;
+            width: 49%;
           }
         }
 
         .text-wrapper {
-          display: flex;
-          flex-direction: column;
-          max-width: 532px;
-          margin-bottom: 20px;
-
-          .reward-list-description {
-            .description-text {
-              margin-bottom: 5px;
-            }
-
-            .description-observation {
-              font-style: italic;
-            }
-          }
-
           i {
-            margin: 0 auto 15px auto;
-            color: $product-reward;
-
-            @media (min-width: 768px) {
-              margin: 0 0 15px 0;
-            }
-          }
-
-          h4 {
-            font-weight: 500;
-
-            span {
-              color: $product-reward;
-            }
+            margin: 0 0 15px 0;
           }
         }
 
         .reward-list-action {
-          width: 100%;
-
           .btn {
-            width: 100%;
-            background-color: $product-reward;
-            border-color: $product-reward;
+            width: auto;
+            margin-top: 20px;
           }
+        }
+      }
+    }
 
-          @media (min-width: 768px) {
-            .btn {
-              width: auto;
-              margin-top: 20px;
+    .card-wrapper {
+      img {
+        height: 226px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .landing-page-reward-list {
+      .reward-list-content {
+        .cards {
+          .card-wrapper {
+            margin-right: 5px;
+            width: 24%;
+
+            &:last-child {
+              margin-right: 0;
             }
           }
         }
-
-        @media (min-width: 768px) {
-          justify-content: center;
-        }
       }
+    }
+  }
 
-      @media (min-width: 768px) {
-        padding: 0 50px;
+  @media (min-width: 1200px) {
+    .landing-page-how-use {
+      .how-use-content {
+        .how-use-list-item {
+          max-width: 1070px;
+        }
       }
     }
   }
 }
-
