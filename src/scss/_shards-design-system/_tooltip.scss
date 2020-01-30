@@ -3,7 +3,7 @@
 // Base class
 .tooltip {
   z-index: $zindex-tooltip;
-  margin: $tooltip-margin;  
+  margin: $tooltip-margin;
   @include reset-text();
   font-size: $tooltip-font-size;
 
@@ -80,8 +80,6 @@
 .tooltip-inner {
   max-width: $tooltip-max-width;
   padding: $tooltip-padding-y $tooltip-padding-x;
-  color: $tooltip-color;
-  background-color: $tooltip-bg;
   box-shadow: $tooltip-box-shadow;
   @include border-radius($border-radius);
 }
