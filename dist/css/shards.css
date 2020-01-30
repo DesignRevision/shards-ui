@@ -14144,7 +14144,7 @@ button.close {
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
   border-width: 5px 2.5px 0;
-  border-top-color: #fff;
+  border-top-color: #000;
 }
 
 .bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
@@ -14160,7 +14160,7 @@ button.close {
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   right: 0;
   border-width: 2.5px 5px 2.5px 0;
-  border-right-color: #fff;
+  border-right-color: #000;
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
@@ -14174,7 +14174,7 @@ button.close {
 .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
   bottom: 0;
   border-width: 0 2.5px 5px;
-  border-bottom-color: #fff;
+  border-bottom-color: #000;
 }
 
 .bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
@@ -14190,15 +14190,13 @@ button.close {
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
   left: 0;
   border-width: 2.5px 0 2.5px 5px;
-  border-left-color: #fff;
+  border-left-color: #000;
 }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 7px 13px;
-  color: #5A6169;
   text-align: center;
-  background-color: #fff;
   border-radius: 0.375rem;
 }
 
@@ -21533,7 +21531,7 @@ button.list-group-item-review.active {
 
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   border-width: 5px 2.5px 0;
-  border-top-color: #fff;
+  border-top-color: #000;
 }
 
 .bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
@@ -21547,7 +21545,7 @@ button.list-group-item-review.active {
 
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   border-width: 2.5px 5px 2.5px 0;
-  border-right-color: #fff;
+  border-right-color: #000;
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
@@ -21556,7 +21554,7 @@ button.list-group-item-review.active {
 
 .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
   border-width: 0 2.5px 5px;
-  border-bottom-color: #fff;
+  border-bottom-color: #000;
 }
 
 .bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
@@ -21570,14 +21568,12 @@ button.list-group-item-review.active {
 
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
   border-width: 2.5px 0 2.5px 5px;
-  border-left-color: #fff;
+  border-left-color: #000;
 }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 7px 13px;
-  color: #5A6169;
-  background-color: #fff;
   box-shadow: 0 3px 15px rgba(90, 97, 105, 0.1), 0 2px 3px rgba(90, 97, 105, 0.2);
   border-radius: 0.375rem;
 }
