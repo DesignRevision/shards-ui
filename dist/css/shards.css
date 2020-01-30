@@ -29490,10 +29490,6 @@ nav#subway-location .subway-location-switch .btn {
       flex-direction: column;
 }
 
-.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-text {
-  margin-bottom: 5px;
-}
-
 .landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-observation {
   font-style: italic;
 }
@@ -29602,6 +29598,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item {
+  width: 100%;
   color: var(--primary);
   display: -ms-flexbox;
   display: flex;
@@ -29796,6 +29793,7 @@ nav#subway-location .subway-location-switch .btn {
         justify-content: space-around;
   }
   .landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item {
+    width: 33%;
     border-right: 1px solid black;
   }
   .landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {

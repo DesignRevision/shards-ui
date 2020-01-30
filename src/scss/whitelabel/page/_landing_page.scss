@@ -86,10 +86,6 @@
         flex-direction: column;
 
         .reward-highlight-description {
-          .description-text {
-            margin-bottom: 5px;
-          }
-
           .description-observation {
             font-style: italic;
           }
@@ -191,6 +187,7 @@
         flex-direction: column;
 
         .how-use-item {
+          width: 100%;
           color: var(--primary);
           display: flex;
           align-items: center;
@@ -399,6 +396,7 @@
             justify-content: space-around;
 
             .how-use-item {
+              width: 33%;
               border-right: 1px solid black;
             }
           }
