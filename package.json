@@ -1,15 +1,7 @@
 {
   "name": "shards-ui",
   "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
-<<<<<<< HEAD
-  "version": "3.0.33",
-=======
-<<<<<<< Updated upstream
-  "version": "3.0.32",
-=======
   "version": "3.0.34",
->>>>>>> Stashed changes
->>>>>>> little adjustments
   "main": "dist/js/shards",
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
