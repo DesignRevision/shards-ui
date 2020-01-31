@@ -86,10 +86,6 @@
         flex-direction: column;
 
         .reward-highlight-description {
-          .description-text {
-            margin-bottom: 5px;
-          }
-
           .description-observation {
             font-style: italic;
           }
@@ -191,6 +187,7 @@
         flex-direction: column;
 
         .how-use-item {
+          width: 100%;
           color: var(--primary);
           display: flex;
           align-items: center;
@@ -207,6 +204,10 @@
             font-weight: 400;
             margin: 10px;
             text-align: center;
+
+            span {
+              white-space: nowrap;
+            }
           }
 
           p {
@@ -243,6 +244,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        margin-bottom: 10px;
       }
 
       .text-wrapper {
@@ -267,6 +269,8 @@
         }
 
         h4 {
+          margin: 0;
+          text-align: center;
           font-weight: 500;
 
           span {
@@ -288,13 +292,19 @@
   }
 
   .card-wrapper {
-    width: 100%;
-
-    img {
+    .card {
       width: 100%;
-      height: 320px;
-      object-fit: cover;
+
+      img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
     }
+  }
+
+  .card.card-product:hover {
+    box-shadow: none;
   }
 
   @media (max-width: 501px - 1px) {
@@ -325,12 +335,24 @@
         }
       }
     }
+
+    .card-wrapper {
+      padding: 0 140px;
+
+      img {
+        height: 330px;
+      }
+    }
   }
 
   @media (min-width: 768px) {
     .landing-page-banner, .landing-page-reward-highlight,
-    .landing-page-register-and-win, .landing-page-reward-list {
+    .landing-page-reward-list {
       padding: 30px 115px;
+    }
+
+    .landing-page-register-and-win {
+      padding: 30px;
     }
 
     .landing-page-reward-highlight {
@@ -399,6 +421,7 @@
             justify-content: space-around;
 
             .how-use-item {
+              width: 33%;
               border-right: 1px solid black;
             }
           }
@@ -418,7 +441,6 @@
         .cards {
           display: flex;
           flex-direction: row;
-          // flex-wrap: wrap;
 
           .card-wrapper {
             margin-right: 5px;
@@ -442,6 +464,8 @@
     }
 
     .card-wrapper {
+      padding: 0;
+
       img {
         height: 226px;
       }
@@ -449,6 +473,10 @@
   }
 
   @media (min-width: 992px) {
+    .landing-page-register-and-win {
+      padding: 30px 115px;
+    }
+
     .landing-page-reward-list {
       .reward-list-content {
         .cards {
