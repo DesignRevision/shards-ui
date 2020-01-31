@@ -240,6 +240,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        margin-bottom: 10px;
       }
 
       .text-wrapper {
@@ -416,7 +417,6 @@
         .cards {
           display: flex;
           flex-direction: row;
-          // flex-wrap: wrap;
 
           .card-wrapper {
             margin-right: 5px;

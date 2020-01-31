@@ -29660,6 +29660,7 @@ nav#subway-location .subway-location-switch .btn {
       flex-wrap: wrap;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .landing-page .landing-page-reward-list .reward-list-content .text-wrapper {
