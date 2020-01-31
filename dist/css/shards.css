@@ -29686,6 +29686,8 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .landing-page .landing-page-reward-list .reward-list-content .text-wrapper h4 {
+  margin: 0;
+  text-align: center;
   font-weight: 500;
 }
 
@@ -29703,14 +29705,18 @@ nav#subway-location .subway-location-switch .btn {
   border-color: #4472F3;
 }
 
-.landing-page .card-wrapper {
+.landing-page .card-wrapper .card {
   width: 100%;
 }
 
-.landing-page .card-wrapper img {
+.landing-page .card-wrapper .card img {
   width: 100%;
-  height: 320px;
+  height: 270px;
   object-fit: cover;
+}
+
+.landing-page .card.card-product:hover {
+  box-shadow: none;
 }
 
 @media (max-width: 500px) {
@@ -29729,12 +29735,21 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-how-use .how-use-content .how-use-list-item {
     padding: 0 50px;
   }
+  .landing-page .card-wrapper {
+    padding: 0 90px;
+  }
+  .landing-page .card-wrapper img {
+    height: 330px;
+  }
 }
 
 @media (min-width: 768px) {
   .landing-page .landing-page-banner, .landing-page .landing-page-reward-highlight,
-  .landing-page .landing-page-register-and-win, .landing-page .landing-page-reward-list {
+  .landing-page .landing-page-reward-list {
     padding: 30px 115px;
+  }
+  .landing-page .landing-page-register-and-win {
+    padding: 30px;
   }
   .landing-page .landing-page-reward-highlight .reward-highlight-content {
     -ms-flex-direction: row;
@@ -29821,12 +29836,18 @@ nav#subway-location .subway-location-switch .btn {
     width: auto;
     margin-top: 20px;
   }
+  .landing-page .card-wrapper {
+    padding: 0;
+  }
   .landing-page .card-wrapper img {
     height: 226px;
   }
 }
 
 @media (min-width: 992px) {
+  .landing-page .landing-page-register-and-win {
+    padding: 30px 115px;
+  }
   .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper {
     margin-right: 5px;
     width: 24%;
