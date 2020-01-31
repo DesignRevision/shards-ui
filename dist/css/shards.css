@@ -29715,7 +29715,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .card-wrapper .card img {
   width: 100%;
-  height: 270px;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -29740,7 +29740,7 @@ nav#subway-location .subway-location-switch .btn {
     padding: 0 50px;
   }
   .landing-page .card-wrapper {
-    padding: 0 90px;
+    padding: 0 140px;
   }
   .landing-page .card-wrapper img {
     height: 330px;
