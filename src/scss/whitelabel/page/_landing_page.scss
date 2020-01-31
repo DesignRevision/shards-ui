@@ -204,6 +204,10 @@
             font-weight: 400;
             margin: 10px;
             text-align: center;
+
+            span {
+              white-space: nowrap;
+            }
           }
 
           p {

@@ -29622,6 +29622,10 @@ nav#subway-location .subway-location-switch .btn {
   text-align: center;
 }
 
+.landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item h5 span {
+  white-space: nowrap;
+}
+
 .landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item p {
   color: #252525;
   margin: 0;
