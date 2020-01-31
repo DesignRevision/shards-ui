@@ -29424,7 +29424,13 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-join-us {
   background-color: var(--primary);
   position: relative;
-  min-height: 295px;
+  min-height: 324px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .landing-page .landing-page-join-us .wrapper {
@@ -29483,11 +29489,20 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
+.landing-page .landing-page-reward-highlight .reward-highlight-content .card {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  max-width: 600px;
+}
+
+.landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-text {
+  margin-bottom: 30px;
 }
 
 .landing-page .landing-page-reward-highlight .reward-highlight-content .text-wrapper .reward-highlight-description .description-observation {
@@ -29790,6 +29805,9 @@ nav#subway-location .subway-location-switch .btn {
     margin-right: 20px;
     max-width: 320px;
   }
+  .landing-page .landing-page-register-and-win .register-and-win-content .card-wrapper .card {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   .landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper {
     -ms-flex-order: 2;
         order: 2;
@@ -29813,8 +29831,8 @@ nav#subway-location .subway-location-switch .btn {
         justify-content: space-around;
   }
   .landing-page .landing-page-how-use .how-use-content .how-use-list-item .how-use-item {
+    border-right: solid 1px rgba(0, 0, 0, 0.25);
     width: 33%;
-    border-right: 1px solid black;
   }
   .landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {
     width: auto;
