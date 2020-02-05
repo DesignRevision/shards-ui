@@ -27383,6 +27383,30 @@ nav#subway-location .subway-location-switch .btn {
   content: "\f068";
 }
 
+.timeline-activity.timeline-activity-points .activity-item.is-waiting .activity-item-icon i {
+  color: #322659;
+}
+
+.timeline-activity.timeline-activity-points .activity-item.is-waiting .activity-item-icon i:before {
+  content: "\f017";
+}
+
+.timeline-activity.timeline-activity-points .activity-item.is-waiting .activity-item-content .badge {
+  background-color: #322659;
+}
+
+.timeline-activity.timeline-activity-points .activity-item.is-rejected .activity-item-icon i {
+  color: #dc3545;
+}
+
+.timeline-activity.timeline-activity-points .activity-item.is-rejected .activity-item-icon i:before {
+  content: "\f071";
+}
+
+.timeline-activity.timeline-activity-points .activity-item.is-rejected .activity-item-content .badge {
+  background-color: #dc3545;
+}
+
 .website-account-remove section.account-remove {
   padding: 15px 0;
 }

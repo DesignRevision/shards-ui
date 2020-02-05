@@ -90,6 +90,42 @@
           }
         }
       }
+
+      &.is-waiting {
+        .activity-item-icon {
+          i {
+            color: $status-purchase-waiting;
+
+            &:before {
+              content: "\f017";
+            }
+          }
+        }
+
+        .activity-item-content {
+          .badge {
+            background-color: $status-purchase-waiting;
+          }
+        }
+      }
+
+      &.is-rejected {
+        .activity-item-icon {
+          i {
+            color: $danger;
+
+            &:before {
+              content: "\f071";
+            }
+          }
+        }
+
+        .activity-item-content {
+          .badge {
+            background-color: $danger;
+          }
+        }
+      }
     }
   }
 }
