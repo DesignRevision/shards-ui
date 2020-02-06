@@ -139,6 +139,10 @@
       flex-direction: column;
       align-items: center;
 
+      .card {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
       .text-wrapper {
         display: flex;
         flex-direction: column;
@@ -171,6 +175,10 @@
         width: 100%;
 
         .btn {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 13px;
+          text-align: center;
           width: 100%;
         }
       }
@@ -243,7 +251,7 @@
   }
 
   .landing-page-reward-list {
-    min-height: 295px;
+    min-height: 610px;
     padding: 30px;
 
     .reward-list-content {
@@ -303,14 +311,82 @@
     }
   }
 
+  .landing-page-offers {
+    min-height: 610px;
+    padding: 30px;
+
+    .offers-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 532px;
+        margin-bottom: 20px;
+
+        .offers-description {
+          .description-text {
+            margin-bottom: 5px;
+          }
+
+          .description-observation {
+            font-style: italic;
+          }
+        }
+
+        i {
+          margin: 0 auto 15px auto;
+          color: $product-reward;
+        }
+
+        h4 {
+          margin: 0;
+          text-align: center;
+          font-weight: 500;
+
+          span {
+            color: $product-offer;
+          }
+        }
+      }
+
+      .offers-action {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          background-color: $product-offer;
+          border-color: $product-offer;
+        }
+      }
+    }
+  }
+
   .card-wrapper {
     .card {
       width: 100%;
+      min-height: 380px;
 
       img {
-        width: 100%;
-        height: 240px;
+        min-width: 273px;
+        max-height: 169px;
+        width: auto;
+        height: auto;
         object-fit: cover;
+      }
+
+      .card-text {
+        max-width: fit-content;
       }
     }
   }
@@ -359,7 +435,7 @@
 
   @media (min-width: 768px) {
     .landing-page-banner, .landing-page-reward-highlight,
-    .landing-page-reward-list {
+    .landing-page-reward-list, .landing-page-offers {
       padding: 30px 115px;
     }
 
@@ -404,10 +480,6 @@
           order: 1;
           margin-right: 20px;
           max-width: 320px;
-
-          .card {
-            box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
-          }
         }
 
         .text-wrapper {
@@ -459,8 +531,7 @@
           flex-direction: row;
 
           .card-wrapper {
-            margin-right: 5px;
-            width: 49%;
+            margin: 8px;
           }
         }
 
@@ -471,6 +542,34 @@
         }
 
         .reward-list-action {
+          .btn {
+            width: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .landing-page-offers {
+      .offers-content {
+        justify-content: center;
+
+        .cards {
+          display: flex;
+          flex-direction: row;
+
+          .card-wrapper {
+            margin: 8px;
+          }
+        }
+
+        .text-wrapper {
+          i {
+            margin: 0 0 15px 0;
+          }
+        }
+
+        .offers-action {
           .btn {
             width: auto;
             margin-top: 20px;
@@ -497,8 +596,7 @@
       .reward-list-content {
         .cards {
           .card-wrapper {
-            margin-right: 5px;
-            width: 24%;
+            margin: 8px;
 
             &:last-child {
               margin-right: 0;

@@ -29571,6 +29571,10 @@ nav#subway-location .subway-location-switch .btn {
       align-items: center;
 }
 
+.landing-page .landing-page-register-and-win .register-and-win-content .card {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -29604,6 +29608,10 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action .btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  text-align: center;
   width: 100%;
 }
 
@@ -29682,7 +29690,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .landing-page .landing-page-reward-list {
-  min-height: 295px;
+  min-height: 610px;
   padding: 30px;
 }
 
@@ -29748,14 +29756,90 @@ nav#subway-location .subway-location-switch .btn {
   border-color: #4472F3;
 }
 
-.landing-page .card-wrapper .card {
+.landing-page .landing-page-offers {
+  min-height: 610px;
+  padding: 30px;
+}
+
+.landing-page .landing-page-offers .offers-content {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.landing-page .landing-page-offers .offers-content .cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  max-width: 532px;
+  margin-bottom: 20px;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper .offers-description .description-text {
+  margin-bottom: 5px;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper .offers-description .description-observation {
+  font-style: italic;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper i {
+  margin: 0 auto 15px auto;
+  color: #4472F3;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper h4 {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.landing-page .landing-page-offers .offers-content .text-wrapper h4 span {
+  color: #fd7e14;
+}
+
+.landing-page .landing-page-offers .offers-content .offers-action {
   width: 100%;
 }
 
-.landing-page .card-wrapper .card img {
+.landing-page .landing-page-offers .offers-content .offers-action .btn {
   width: 100%;
-  height: 240px;
+  background-color: #fd7e14;
+  border-color: #fd7e14;
+}
+
+.landing-page .card-wrapper .card {
+  width: 100%;
+  min-height: 380px;
+}
+
+.landing-page .card-wrapper .card img {
+  min-width: 273px;
+  max-height: 169px;
+  width: auto;
+  height: auto;
   object-fit: cover;
+}
+
+.landing-page .card-wrapper .card .card-text {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .landing-page .card.card-product:hover {
@@ -29788,7 +29872,7 @@ nav#subway-location .subway-location-switch .btn {
 
 @media (min-width: 768px) {
   .landing-page .landing-page-banner, .landing-page .landing-page-reward-highlight,
-  .landing-page .landing-page-reward-list {
+  .landing-page .landing-page-reward-list, .landing-page .landing-page-offers {
     padding: 30px 115px;
   }
   .landing-page .landing-page-register-and-win {
@@ -29828,9 +29912,6 @@ nav#subway-location .subway-location-switch .btn {
         order: 1;
     margin-right: 20px;
     max-width: 320px;
-  }
-  .landing-page .landing-page-register-and-win .register-and-win-content .card-wrapper .card {
-    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
   }
   .landing-page .landing-page-register-and-win .register-and-win-content .text-wrapper {
     -ms-flex-order: 2;
@@ -29872,13 +29953,32 @@ nav#subway-location .subway-location-switch .btn {
         flex-direction: row;
   }
   .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper {
-    margin-right: 5px;
-    width: 49%;
+    margin: 8px;
   }
   .landing-page .landing-page-reward-list .reward-list-content .text-wrapper i {
     margin: 0 0 15px 0;
   }
   .landing-page .landing-page-reward-list .reward-list-content .reward-list-action .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+  .landing-page .landing-page-offers .offers-content {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .landing-page .landing-page-offers .offers-content .cards {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .landing-page .landing-page-offers .offers-content .cards .card-wrapper {
+    margin: 8px;
+  }
+  .landing-page .landing-page-offers .offers-content .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .landing-page .landing-page-offers .offers-content .offers-action .btn {
     width: auto;
     margin-top: 20px;
   }
@@ -29895,8 +29995,7 @@ nav#subway-location .subway-location-switch .btn {
     padding: 30px 115px;
   }
   .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper {
-    margin-right: 5px;
-    width: 24%;
+    margin: 8px;
   }
   .landing-page .landing-page-reward-list .reward-list-content .cards .card-wrapper:last-child {
     margin-right: 0;
