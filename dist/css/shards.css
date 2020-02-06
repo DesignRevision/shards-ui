@@ -29421,6 +29421,18 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: center;
 }
 
+.landing-page .bg-brand-color {
+  background-color: var(--primary);
+}
+
+.landing-page [class^="landing-page"] {
+  background-color: #fff;
+}
+
+.landing-page [class^="landing-page"]:nth-child(2n) {
+  background-color: #f5f6f7;
+}
+
 .landing-page .landing-page-banner {
   background-color: var(--primary);
   position: relative;
@@ -29434,12 +29446,12 @@ nav#subway-location .subway-location-switch .btn {
   padding: 30px;
 }
 
-.landing-page .landing-page-banner .wrapper .landing-page-banner-content .banner-title {
+.landing-page .landing-page-banner .wrapper .content .banner-title {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   font-size: 30px;
 }
 
-.landing-page .landing-page-banner .wrapper .landing-page-banner-content .banner-description {
+.landing-page .landing-page-banner .wrapper .content .banner-description {
   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
   font-size: 18px;
   font-weight: 300;
@@ -29569,6 +29581,7 @@ nav#subway-location .subway-location-switch .btn {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  max-width: 1140px;
 }
 
 .landing-page .landing-page-register-and-win .register-and-win-content .card {
@@ -29679,13 +29692,13 @@ nav#subway-location .subway-location-switch .btn {
   text-align: center;
 }
 
-.landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action {
+.landing-page .landing-page-how-use .how-use-content .action {
   margin-top: 20px;
   text-align: center;
   width: 100%;
 }
 
-.landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {
+.landing-page .landing-page-how-use .how-use-content .action .btn {
   width: 100%;
   font-size: 13px;
 }
@@ -29850,13 +29863,13 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 @media (max-width: 500px) {
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn {
+  .landing-page .landing-page-banner .wrapper .action .btn {
     width: 100%;
   }
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:first-child {
+  .landing-page .landing-page-banner .wrapper .action .btn:first-child {
     margin-top: 0 !important;
   }
-  .landing-page .landing-page-banner .wrapper .landing-page-banner-action .btn:last-child {
+  .landing-page .landing-page-banner .wrapper .action .btn:last-child {
     margin-top: 15px;
   }
 }
@@ -29942,7 +29955,7 @@ nav#subway-location .subway-location-switch .btn {
     border-right: solid 1px rgba(0, 0, 0, 0.25);
     width: 33%;
   }
-  .landing-page .landing-page-how-use .how-use-content .landing-page-how-use-action .btn {
+  .landing-page .landing-page-how-use .how-use-content .action .btn {
     width: auto;
   }
   .landing-page .landing-page-reward-list .reward-list-content {
