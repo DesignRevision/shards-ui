@@ -1,4 +1,20 @@
 .landing-page {
+  .bg-brand-color {
+    background-color: var(--primary);
+  }
+
+  [class^="landing-page"] {
+    background-color: #fff;
+
+    &:nth-child(2n) {
+      background-color: #f5f6f7;
+    }
+  }
+
+  .list-cards {
+    margin: 0;
+  }
+
   .landing-page-banner {
     background-color: var(--primary);
     position: relative;
@@ -6,10 +22,10 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 30px;
+    padding: 30px 0;
 
     .wrapper {
-      .landing-page-banner-content {
+      .content {
         .banner-title{
           color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
           font-size: 30px;
@@ -19,6 +35,12 @@
           color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
           font-size: 18px;
           font-weight: 300;
+        }
+      }
+
+      .action {
+        .btn {
+          font-size: 13px;
         }
       }
     }
@@ -51,6 +73,10 @@
 
       .join-us-content, .join-us-action {
         width: 100%;
+
+        .btn {
+          width: 100%;
+        }
       }
 
       .join-us-title {
@@ -76,7 +102,6 @@
 
   .landing-page-reward-highlight {
     min-height: 295px;
-    padding: 30px;
 
     .reward-highlight-content {
       height: 100%;
@@ -124,6 +149,7 @@
           width: 100%;
           background-color: $product-reward;
           border-color: $product-reward;
+          font-size: 13px;
         }
       }
     }
@@ -131,13 +157,18 @@
 
   .landing-page-register-and-win {
     min-height: 295px;
-    padding: 30px;
+    padding: 20px 0;
 
     .register-and-win-content {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 1140px;
+
+      .card {
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+      }
 
       .text-wrapper {
         display: flex;
@@ -171,6 +202,10 @@
         width: 100%;
 
         .btn {
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 13px;
+          text-align: center;
           width: 100%;
         }
       }
@@ -180,7 +215,6 @@
   .landing-page-how-use {
     background-color: $white;
     min-height: 295px;
-    padding: 30px;
 
     .how-use-content {
       display: flex;
@@ -230,34 +264,27 @@
         }
       }
 
-      .landing-page-how-use-action {
+      .action {
         margin-top: 20px;
         text-align: center;
         width: 100%;
 
         .btn {
           width: 100%;
+          font-size: 13px;
         }
       }
     }
   }
 
   .landing-page-reward-list {
-    min-height: 295px;
-    padding: 30px;
+    padding: 20px 0;
 
     .reward-list-content {
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      .cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-bottom: 10px;
-      }
 
       .text-wrapper {
         display: flex;
@@ -298,19 +325,60 @@
           width: 100%;
           background-color: $product-reward;
           border-color: $product-reward;
+          font-size: 13px;
         }
       }
     }
   }
 
-  .card-wrapper {
-    .card {
-      width: 100%;
+  .landing-page-offers {
+    .offers-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      img {
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 532px;
+        margin-bottom: 20px;
+
+        .offers-description {
+          .description-text {
+            margin-bottom: 5px;
+          }
+
+          .description-observation {
+            font-style: italic;
+          }
+        }
+
+        i {
+          margin: 0 auto 15px auto;
+          color: $product-reward;
+        }
+
+        h4 {
+          margin: 0;
+          text-align: center;
+          font-weight: 500;
+
+          span {
+            color: $product-offer;
+          }
+        }
+      }
+
+      .offers-action {
         width: 100%;
-        height: 240px;
-        object-fit: cover;
+
+        .btn {
+          width: 100%;
+          background-color: $product-offer;
+          border-color: $product-offer;
+          font-size: 13px;
+        }
       }
     }
   }
@@ -322,7 +390,7 @@
   @media (max-width: 501px - 1px) {
     .landing-page-banner {
       .wrapper {
-        .landing-page-banner-action {
+        .action {
           .btn {
             width: 100%;
 
@@ -348,87 +416,12 @@
       }
     }
 
-    .card-wrapper {
-      padding: 0 140px;
-
-      img {
-        height: 330px;
-      }
+    .list-cards {
+      margin: 0 15px;
     }
   }
 
   @media (min-width: 768px) {
-    .landing-page-banner, .landing-page-reward-highlight,
-    .landing-page-reward-list {
-      padding: 30px 115px;
-    }
-
-    .landing-page-register-and-win {
-      padding: 30px;
-    }
-
-    .landing-page-reward-highlight {
-      .reward-highlight-content {
-        flex-direction: row;
-
-        .card-wrapper {
-          order: 1;
-          margin-right: 20px;
-          max-width: 320px;
-        }
-
-        .text-wrapper {
-          order: 2;
-          margin-left: 40px;
-
-          i {
-            margin: 0 0 15px 0;
-          }
-        }
-
-        .reward-highlight-action {
-          order: 3;
-
-          .btn {
-            width: auto;
-          }
-        }
-      }
-    }
-
-    .landing-page-register-and-win {
-      .register-and-win-content {
-        flex-direction: row;
-
-        .card-wrapper {
-          order: 1;
-          margin-right: 20px;
-          max-width: 320px;
-
-          .card {
-            box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
-          }
-        }
-
-        .text-wrapper {
-          order: 2;
-          margin-left: 40px;
-
-          i {
-            margin: 0 0 15px 0;
-          }
-        }
-
-        .register-and-win-action {
-          order: 3;
-
-          .btn {
-            width: auto;
-          }
-        }
-      }
-    }
-
     .landing-page-how-use {
         .how-use-content {
           .how-use-list-item {
@@ -442,7 +435,7 @@
             }
           }
 
-          .landing-page-how-use-action {
+          .action {
             .btn {
               width: auto;
             }
@@ -453,16 +446,6 @@
     .landing-page-reward-list {
       .reward-list-content {
         justify-content: center;
-
-        .cards {
-          display: flex;
-          flex-direction: row;
-
-          .card-wrapper {
-            margin-right: 5px;
-            width: 49%;
-          }
-        }
 
         .text-wrapper {
           i {
@@ -479,31 +462,109 @@
       }
     }
 
-    .card-wrapper {
-      padding: 0;
+    .landing-page-offers {
+      .offers-content {
+        justify-content: center;
 
-      img {
-        height: 226px;
+        .text-wrapper {
+          i {
+            margin: 0 0 15px 0;
+          }
+        }
+
+        .offers-action {
+          .btn {
+            width: auto;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .landing-page-register-and-win {
+      .register-and-win-content {
+        .register-and-win-action {
+          width: auto;
+
+          .btn {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .landing-page-reward-highlight {
+      .reward-highlight-content {
+        .reward-highlight-action {
+          width: auto;
+
+          .btn {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .landing-page-join-us {
+      .wrapper {
+        .join-us-content, .join-us-action {
+          .btn {
+            width: auto;
+          }
+        }
       }
     }
   }
 
   @media (min-width: 992px) {
-    .landing-page-register-and-win {
-      padding: 30px 115px;
+    .landing-page-reward-highlight {
+      .reward-highlight-content {
+        flex-direction: row;
+
+        .card-wrapper {
+          order: 1;
+          margin-right: 20px;
+          max-width: 320px;
+        }
+
+        .text-wrapper {
+          flex: 1;
+          order: 2;
+          margin-left: 40px;
+
+          i {
+            margin: 0 0 15px 0;
+          }
+        }
+
+        .reward-highlight-action {
+          order: 3;
+        }
+      }
     }
 
-    .landing-page-reward-list {
-      .reward-list-content {
-        .cards {
-          .card-wrapper {
-            margin-right: 5px;
-            width: 24%;
+    .landing-page-register-and-win {
+      .register-and-win-content {
+        flex-direction: row;
 
-            &:last-child {
-              margin-right: 0;
-            }
+        .card-wrapper {
+          order: 1;
+          margin-right: 20px;
+          max-width: 320px;
+        }
+
+        .text-wrapper {
+          flex: 1;
+          order: 2;
+          margin-left: 40px;
+
+          i {
+            margin: 0 0 15px 0;
           }
+        }
+
+        .register-and-win-action {
+          order: 3;
         }
       }
     }
