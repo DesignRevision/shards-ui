@@ -29433,7 +29433,7 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #f5f6f7;
 }
 
-.landing-page .container .list-cards {
+.landing-page .list-cards {
   margin: 0;
 }
 
@@ -29447,7 +29447,7 @@ nav#subway-location .subway-location-switch .btn {
       justify-content: center;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .landing-page .landing-page-banner .wrapper .content .banner-title {
@@ -29496,6 +29496,10 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .landing-page .landing-page-join-us .wrapper .join-us-content, .landing-page .landing-page-join-us .wrapper .join-us-action {
+  width: 100%;
+}
+
+.landing-page .landing-page-join-us .wrapper .join-us-content .btn, .landing-page .landing-page-join-us .wrapper .join-us-action .btn {
   width: 100%;
 }
 
@@ -29578,6 +29582,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .landing-page-register-and-win {
   min-height: 295px;
+  padding: 20px 0;
 }
 
 .landing-page .landing-page-register-and-win .register-and-win-content {
@@ -29707,6 +29712,10 @@ nav#subway-location .subway-location-switch .btn {
 .landing-page .landing-page-how-use .how-use-content .action .btn {
   width: 100%;
   font-size: 13px;
+}
+
+.landing-page .landing-page-reward-list {
+  padding: 20px 0;
 }
 
 .landing-page .landing-page-reward-list .reward-list-content {
@@ -29880,7 +29889,16 @@ nav#subway-location .subway-location-switch .btn {
   .landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action {
     width: auto;
   }
+  .landing-page .landing-page-register-and-win .register-and-win-content .register-and-win-action .btn {
+    width: auto;
+  }
   .landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action {
+    width: auto;
+  }
+  .landing-page .landing-page-reward-highlight .reward-highlight-content .reward-highlight-action .btn {
+    width: auto;
+  }
+  .landing-page .landing-page-join-us .wrapper .join-us-content .btn, .landing-page .landing-page-join-us .wrapper .join-us-action .btn {
     width: auto;
   }
 }
