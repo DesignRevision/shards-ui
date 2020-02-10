@@ -29524,6 +29524,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .landing-page-reward-highlight {
   min-height: 295px;
+  padding: 20px 0;
 }
 
 .landing-page .landing-page-reward-highlight .reward-highlight-content {
@@ -29800,7 +29801,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .landing-page-offers .offers-content .text-wrapper i {
   margin: 0 auto 15px auto;
-  color: #4472F3;
+  color: #fd7e14;
 }
 
 .landing-page .landing-page-offers .offers-content .text-wrapper h4 {

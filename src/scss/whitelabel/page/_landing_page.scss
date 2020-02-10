@@ -102,6 +102,7 @@
 
   .landing-page-reward-highlight {
     min-height: 295px;
+    padding: 20px 0;
 
     .reward-highlight-content {
       height: 100%;
@@ -356,7 +357,7 @@
 
         i {
           margin: 0 auto 15px auto;
-          color: $product-reward;
+          color: $product-offer;
         }
 
         h4 {
