@@ -29429,7 +29429,7 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #fff;
 }
 
-.landing-page [class^="landing-page"]:nth-child(2n) {
+.landing-page [class^="landing-page"]:nth-child(2n):not(.bg-brand-color) {
   background-color: #f5f6f7;
 }
 
@@ -29501,6 +29501,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .landing-page-join-us .wrapper .join-us-content .btn, .landing-page .landing-page-join-us .wrapper .join-us-action .btn {
   width: 100%;
+  font-size: 13px;
 }
 
 .landing-page .landing-page-join-us .wrapper .join-us-title {

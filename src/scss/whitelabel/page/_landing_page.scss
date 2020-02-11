@@ -7,7 +7,9 @@
     background-color: #fff;
 
     &:nth-child(2n) {
-      background-color: #f5f6f7;
+      &:not(.bg-brand-color) {
+        background-color: #f5f6f7;
+      }
     }
   }
 
@@ -76,6 +78,7 @@
 
         .btn {
           width: 100%;
+          font-size: 13px;
         }
       }
 
