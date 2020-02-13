@@ -334,7 +334,7 @@ header#page-header {
         @media (max-width: 992px - 1px) {
           width: auto;
         }
-        @media (min-width: 992px - 1px) {
+        @media (min-width: 992px) {
           order: -1;
         }
       }

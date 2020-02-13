@@ -26836,7 +26836,7 @@ header#page-header .content-header .content-header-section:nth-child(2) {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   header#page-header .content-header .content-header-section:nth-child(2) {
     -ms-flex-order: -1;
         order: -1;
