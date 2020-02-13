@@ -83,6 +83,15 @@ img {
     &.is-height-auto {
       min-height: auto;
     }
+
+    &.landing-page {
+      .wrapper {
+        section{
+          margin: 0px;
+          padding: 50px 0;
+        }
+      }
+    }
   }
 }
 

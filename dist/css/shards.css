@@ -27469,7 +27469,6 @@ nav#subway-location .subway-location-switch .btn {
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth {
   margin: 0 0 30px;
-  border-top: solid 3px var(--primary);
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-header {
@@ -30050,6 +30049,11 @@ img {
 
 #page-container main#main-container.is-height-auto {
   min-height: auto;
+}
+
+#page-container main#main-container.landing-page .wrapper section {
+  margin: 0px;
+  padding: 50px 0;
 }
 
 body {
