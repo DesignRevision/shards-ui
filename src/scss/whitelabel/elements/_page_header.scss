@@ -6,7 +6,6 @@ header#page-header {
   .content-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     height: 80px;
@@ -325,26 +324,31 @@ header#page-header {
         }
       }
 
-      &:first-child,
-      &:last-child {
-        width: calc((100% - 200px) / 2);
-        flex-grow: 1;
+      &:first-child{
+        margin-left: 20px;
       }
 
       &:nth-child(2) {
-        width: 200px;
-        flex-shrink: 0;
-        flex-grow: 0;
         text-align: center;
 
         @media (max-width: 992px - 1px) {
           width: auto;
         }
+        @media (min-width: 992px - 1px) {
+          order: -1;
+        }
+      }
+      &:nth-child(3) {
+        margin-left: auto;
+
+        @media (max-width: 992px - 1px) {
+          margin-left: 0;
+        }
       }
     }
 
     @media (max-width: 992px - 1px) {
-      justify-content: inherit;
+      justify-content: space-between;
     }
   }
 
