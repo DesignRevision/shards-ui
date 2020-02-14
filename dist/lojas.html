@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lojas | Zygo - Valoriza.io</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="./css/shards.css">
+	<style>
+		:root{
+			--primary: #ff2ef5;
+			--primary-hue: 303;
+			--primary-saturation: 100%;
+			--primary-lightness: 59.02%;
+			--primary-lightness-darker: 49.02%;
+			--primary-lightness-contrast: 0%;
+			--primary-lightness-contrast-inverse: 100%;
+		}
+	</style>
+</head>
+
+<body>
+  <div id="page-container"
+       class="website-stores">
+    <header id="page-header">
+      <div class="content-header">
+        <div class="content-header-section">
+          <button type="button"
+                  class="btn d-lg-none btn-link btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <ul class="nav-header-menu d-none d-lg-flex">
+            <li>
+              <a href="inicio.html">
+									Início
+								</a>
+            </li>
+            <li>
+              <a href="recompensas.html">
+								Recompensas
+							</a>
+            </li>
+            <li>
+              <a href="ofertas.html">
+								Ofertas
+							</a>
+            </li>
+            <li>
+              <a href="#">
+								Regras
+							</a>
+            </li>
+            <li class="active">
+              <a href="lojas.html">
+								Lojas
+							</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-header-section">
+          <a href="index.html" class="header-brand">
+						<img src="./images/logo.png" />
+					</a>
+        </div>
+
+        <div class="content-header-section align-right">
+          <ul class="nav-header-menu is-logged">
+            <li class="menu-item-signin">
+              <a href="acessar.html">
+								Minha conta
+							</a>
+            </li>
+            <li class="menu-item-signup">
+              <a href="cadastrar.html" class="btn btn-primary btn-noborder btn-pill">
+                Quero me cadastrar
+							</a>
+            </li>
+
+            <li class="menu-item-user-points">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-quantity">
+									5
+								</span>
+								<span class="points-text">
+									<strong>Seu saldo</strong><br>
+									de pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user-points is-mobile">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-text">
+									<strong>5</strong><br>
+									pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user dropdown">
+              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
+								<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+								<span class="user-info">
+									Jerônimo <br>
+									<small>048 99656-3619</small>
+								</span>
+							</a>
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-dropdown">
+                <a class="dropdown-item" href="painel-fidelidade.html">
+									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
+								</a>
+                <a class="dropdown-item" href="editar-perfil.html">
+									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
+								</a>
+                <a class="dropdown-item" href="inicio.html">
+									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
+								</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div class="wrapper">
+        <div class="page-header-intro">
+          <div class="wrapper">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">Lojas</h1>
+              <p class="header-intro-description">Confira as lojas participantes do programa.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="stores-list">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="alert alert-stores-info alert-light">
+                  <ul>
+                    <li>
+                      Cada recompensa e oferta pode ser resgatada <strong>apenas em lojas específicas</strong>. Verifique na página de cada oferta e recompensa as lojas participantes.
+                    </li>
+                    <li>
+                      <strong>Esta lista pode estar desatualizada!</strong> Para confirmar, entre em contato com a loja por telefone para garantir que ela está participando do programa.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row store-content-layout">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                <div class="card card-small card-stores-list">
+                  <div class="card-header">
+                    <div class="form-group mb-0 row">
+                      <label for="inputEmail3"
+                             class="col col-form-label h5 mb-0">
+                        <i class="fas fa-map-marker-alt fa-fw mr-5"></i>
+                        Filtrar por estado:
+                      </label>
+                      <div class="col-sm-5">
+                        <select name=""
+                                id="location-state"
+                                class="form-control">
+                          <option value="0"
+                                  disabled
+                                  selected>Selecione um estado</option>
+                          <option value="1">Só</option>
+                          <option value="2">vai</option>
+                          <option value="3">nego</option>
+                          <option value="4">veio</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="list-group">
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Rio Branco Rua -
+														<small>Avenida Nações Unidas - AC - Rio Branco</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AC</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Via Verde Shopping - <small>Estrada da Floresta, 2320 - AC - Rio Branco</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AC</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Aeroporto Maceió - <small>Aeroporto Zumbi Dos Palmares Rod Br, 104 - Rio Lago - AL - Rio Largo</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AL</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Amazonas Shopping - <small>Avenida Djalma Batista, 482 - Chapada - AM - Manaus</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AM</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Shopping Manauara - <small>Avenida Mario Ypiranga, 1300 - Adrianopolis - AM - Manaus</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AM</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Shopping Millenium - <small>Avenida Djalma Batista, 1661 - Nossa Senhora das Graças - AM - Manaus</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AM</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Macapá Shopping - <small>Rua Leopoldo Machado, 2334 - AP - Macapá</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">AP</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Barreiras Rua - <small>Rua Marechal Hermes, 158 - BA - Barreiras</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">BA</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Shopping Feira de Santana - <small>Avenida Governador João Durval Carneiro - BA - Feira de Santana</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">BA</span>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item">
+                        <div class="item-container">
+                          <h5>
+														Zygo Jequitiba Plaza Shopping - <small>Avenida Aziz Maron, 0 - Goes Calmon - BA - Itabuna</small>
+													</h5>
+                          <span class="badge badge-primary badge-pill">BA</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item">
+                          <a class="page-link" href="#">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Próximo</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                <div class="stores-list-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d226250.4015620388!2d-48.65350234225199!3d-27.619482684550405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPanvel!5e0!3m2!1sen!2sbr!4v1549252050759"
+                          width="100%"
+                          height="100%"
+                          frameborder="0"
+                          style="border:0"
+                          allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="page-footer">
+      <div class="content-footer">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-brand">
+            <p class="content-brand-image">
+              <a href="#">
+									<img src="./images/logo.png" height="auto" />
+								</a>
+            </p>
+            <p class="content-brand-copyright">
+              Copyright © 2010 - 2019 - Todos os direitos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-capture-lead font-size-xs">
+        <p class="content-capture-contact">
+          <a href="https://lp.zyg.me/leadsvaloriza" target="_blank" class="btn btn-sm btn-pill btn-outline-secondary">
+						Gostou? Crie um site como esse para o seu restaurante
+					</a><br>
+					<a href="http://zygotecnologia.com.br" class="link-effect link-effect-muted">
+						<img src="./images/logo.png" height="auto" />
+					</a>
+        </p>
+
+          <p class="content-capture-poweredby">
+            Desenvolvido com
+            <strong>❤</strong> por
+						<a href="http://zygotecnologia.com.br" class="link-effect link-effect-muted">
+							<img src="./images/logo.png" height="auto" />
+						</a>
+          </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/shards.js"></script>
+</body>
+
+</html>

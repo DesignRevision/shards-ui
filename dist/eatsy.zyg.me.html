@@ -1,0 +1,816 @@
+<html>
+
+<head>
+  <title>Eatsy</title>
+  <meta charset="UTF-8">
+  <meta property="og:site_name" content="Eatsy">
+  <meta property="og:title" content="Eatsy">
+  <meta property="og:description" content="Empório - Café - Comidas Saudáveis">
+  <meta name="description" content="Empório - Café - Comidas Saudáveis">
+  <meta property="og:image" content="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-1/p200x200/46837058_1995243400558517_7675255919734685696_n.png?_nc_cat=100&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=513bd6614358cde54476d7df117d0d0b&amp;oe=5CBBE8E2">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/shards.css">
+  <style>
+  :root {
+    --primary: #5d8646;
+    --primary-hue: 98.43750000000001;
+    --primary-saturation: 31.372549019607842%;
+    --primary-lightness: 40.0%;
+    --primary-lightness-darker: 35.0%;
+    --primary-lightness-contrast: 100%;
+    --primary-lightness-contrast-inverse: 0%;
+  }
+  </style>
+</head>
+
+<body class="landing-page-site" id="inicio">
+  <div id="page-container">
+    <header id="page-header" class="page-header-alternative">
+      <div class="content-header content-header-site-menu">
+        <div class="content-header-section header-section-brand">
+          <button type="button" class="btn d-lg-none btn-link btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <a href="#" class="header-brand">
+            <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/47010858_1995243397225184_3499463065571688448_o.png?_nc_cat=108&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=72249bf36cb4b9d9dc408ae35bb79bee&amp;oe=5D5CB6D1" />
+          </a>
+        </div>
+
+        <div class="content-header-section header-section-menu align-right">
+          <ul class="nav-header-menu d-none d-lg-flex">
+            <li>
+              <a href="#inicio">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="#novidades">
+                Novidades
+              </a>
+            </li>
+            <li>
+              <a href="#fotos">
+                Fotos
+              </a>
+            </li>
+            <li>
+              <a href="#cardapio">
+                Cardápio
+              </a>
+            </li>
+            <li>
+              <a href="#localizacao">
+                Localização
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-sm btn-outline-primary">
+                Programa de Fidelidade
+              </a>
+            </li>
+
+            <li class="social-media-link ml-30">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </li>
+            <li class="social-media-link">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-header content-header-loyalty-menu">
+        <div class="content-header-section">
+          <button type="button"
+                  class="btn d-lg-none btn-link btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <ul class="nav-header-menu d-none d-lg-flex">
+            <li class="">
+              <a href="/rewards">Recompensas</a>
+            </li>
+
+            <li class="">
+              <a href="/offers">Ofertas</a>
+            </li>
+
+            <li class="">
+              <a href="#" data-toggle="modal" data-target="#rulesModal">
+                Regras
+              </a>
+            </li>
+            <li class="">
+              <a href="/stores">Lojas</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-header-section header-section-brand">
+          <a href="index.html" class="header-brand">
+						<img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/47010858_1995243397225184_3499463065571688448_o.png?_nc_cat=108&_nc_ht=scontent.ffln2-2.fna&oh=72249bf36cb4b9d9dc408ae35bb79bee&oe=5D5CB6D1" />
+					</a>
+        </div>
+
+        <div class="content-header-section align-right">
+          <ul class="nav-header-menu is-logged">
+            <li class="menu-item-signin">
+              <a href="/session/new">Minha conta</a>
+            </li>
+            <li class="menu-item-signup">
+              <a class="btn btn-primary btn-noborder btn-pill pr-10" href="/users/check_existence">Quero me cadastrar</a>
+            </li>
+
+            <li class="menu-item-user-points">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-quantity">
+									5
+								</span>
+								<span class="points-text">
+									<strong>Seu saldo</strong><br>
+									de pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user-points is-mobile">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-text">
+									<strong>5</strong><br>
+									pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user dropdown">
+              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
+								<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+								<span class="user-info">
+									Jerônimo <br>
+									<small>048 99656-3619</small>
+								</span>
+							</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+                <a class="dropdown-item" href="painel-fidelidade.html">
+									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
+								</a>
+                <a class="dropdown-item" href="editar-perfil.html">
+									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
+								</a>
+                <a class="dropdown-item" href="inicio.html">
+									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
+								</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <aside class="main-sidebar px-0">
+      <div class="main-navbar">
+        <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+          <button type="button" class="btn btn-link toggle-sidebar js--header__sidebar-button">
+            <i class="fal fa-times"></i>
+          </button>
+          <div class="d-table m-auto">
+            <a class="navbar-brand w-100 mr-0" href="/">
+                  <img src="https://s3.amazonaws.com/p3.bonuz.me/images/profile/2019/1/10/13/1547134118_logo_EATSY_QUADRADO_VERDE_jpg.jpg" class="d-inline-block align-top">
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="nav-wrapper" style="overflow-y: auto;">
+        <ul class="nav nav--no-borders flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">
+                <i class="far fa-home fa-fw"></i>
+                <span>Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/rewards">
+                <i class="far fa-stars fa-fw"></i>
+                <span>Novidades</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/offers">
+                <i class="far fa-images fa-fw"></i>
+                <span>Fotos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js--header__side-rules" href="#" data-toggle="modal" data-target="#rulesModal">
+                <i class="far fa-utensils fa-fw"></i>
+                <span>Cardápio</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/stores">
+                <i class="far fa-map-marked fa-fw"></i>
+                <span>Localização</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/stores">
+              <i class="far fa-heart fa-fw text-danger"></i>
+              <span>Programa de Fidelidade</span>
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="main-sidebar__nav-title">Siga nas redes sociais</h6>
+        <ul class="nav nav--no-borders flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="/stores">
+                <i class="fab fa-facebook fa-fw"></i>
+                <span>Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/stores">
+                <i class="fab fa-instagram fa-fw"></i>
+                <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-wrapper d-none" style="overflow-y: auto;">
+        <ul class="nav nav--no-borders flex-column">
+          <!-- CONTEXTO: Usuário NÃO LOGADO -->
+          <li class="nav-item">
+            <div class="nav-alert-context">
+              Você está no <strong>Programa de Fidelidade</strong>
+            </div>
+          </li>
+          <li class="nav-item nav-item-user-snippet is-logged">
+            <a class="nav-link" href="/session/new">
+                  <img onerror="this.error=null;this.src='https://s3.amazonaws.com/assets.companion.com.br/user.png'" class="user-avatar rounded-circle" src="https://cdn.valoriza.io/NW7kneLLZZAtL5-1djRf8DoYPEY=/100x100/https%3A%2F%2Fs3.amazonaws.com%2Fassets.companion.com.br%2Fuser.png" alt="Https%3a%2f%2fs3.amazonaws.com%2fassets.companion.com.br%2fuser">
+                  <span class="user-info">
+                    Já possui conta? <br>
+                    <small>Clique aqui para acessar</small>
+                  </span>
+      </a> </li>
+        </ul>
+
+        <ul class="nav nav--no-borders flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">
+                <i class="far fa-home fa-fw"></i>
+                <span>Início</span>
+      </a> </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/rewards">
+                <i class="far fa-star fa-fw"></i>
+                <span>Recompensas</span>
+      </a> </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/offers">
+                <i class="far fa-gift fa-fw"></i>
+                <span>Ofertas</span>
+      </a> </li>
+          <li class="nav-item">
+            <a class="nav-link js--header__side-rules" href="#" data-toggle="modal" data-target="#rulesModal">
+                <i class="far fa-list-alt fa-fw"></i>
+                <span>Regras</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/stores">
+                <i class="far fa-store-alt fa-fw"></i>
+                <span>Lojas</span>
+      </a> </li>
+        </ul>
+
+        <h6 class="main-sidebar__nav-title">Vamos começar?</h6>
+        <ul class="nav nav--no-borders flex-column">
+          <li class="nav-item">
+            <a class="nav-link " href="/session/new">
+                  <i class="far fa-sign-in fa-fw"></i>
+                  <span>Acessar minha conta</span>
+      </a> </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/users/check_existence">
+                  <i class="far fa-rocket fa-fw"></i>
+                  <span>Quero me cadastrar</span>
+      </a> </li>
+        </ul>
+
+        <ul class="nav nav--no-borders flex-column mt-15">
+          <li class="nav-item">
+            <a class="nav-link " href="/session/new">
+                  <i class="far fa-arrow-left fa-fw"></i>
+                  <span>Voltar para o site</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main id="main-container">
+      <div class="wrapper">
+        <section class="page-banner" style="background-image: url('https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42088782_1891803484235843_568270829490536448_n.jpg?_nc_cat=106&_nc_ht=scontent.ffln2-2.fna&oh=8954e2bc4e641cd0273bee39af2e79fc&oe=5D6A2CBD')">
+          <div class="page-banner-content">
+            <img class="page-banner-image" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/47010858_1995243397225184_3499463065571688448_o.png?_nc_cat=108&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=72249bf36cb4b9d9dc408ae35bb79bee&amp;oe=5D5CB6D1">
+
+            <h1 class="page-banner-name">Eatsy</h1>
+            <p class="page-banner-description">Empório - Café - Comidas Saudáveis</p>
+          </div>
+        </section>
+
+        <section class="news" id="novidades">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="section-header">
+                  <h2 class="section-header-title">
+                    Confira as nossas novidades
+                  </h2>
+                </div>
+
+                <div class="card-list-news">
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
+
+                    <div class="card-body">
+                      <p class="card-text">
+                        Aquele almoço preparado com muito carinho. São diversas opções de pratos quentes e saladas. Venha nos visitar!
+                        __________
+                        Av. Madre Benvenuta, 1392. Loja 1. Aberto de segunda a sexta, das 7h às 21h e ...
+                      </p>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="https://www.facebook.com/eatsyfloripa/photos/a.425201427562730/2073805236035666/?type=3" target="_blank" class="btn btn-outline-dark js--product-info__btn">Ver mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
+
+                    <div class="card-body">
+                      <p class="card-text">
+                        Aquele almoço preparado com muito carinho. São diversas opções de pratos quentes e saladas. Venha nos visitar!
+                        __________
+                        Av. Madre Benvenuta, 1392. Loja 1. Aberto de segunda a sexta, das 7h às 21h e ...
+                      </p>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="https://www.facebook.com/eatsyfloripa/photos/a.425201427562730/2073805236035666/?type=3" target="_blank" class="btn btn-outline-dark js--product-info__btn">Ver mais</a>
+                    </div>
+                  </div>
+
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E">
+
+                    <div class="card-body">
+                      <p class="card-text">
+                        Aquele almoço preparado com muito carinho. São diversas opções de pratos quentes e saladas. Venha nos visitar!
+                        __________
+                        Av. Madre Benvenuta, 1392. Loja 1. Aberto de segunda a sexta, das 7h às 21h e ...
+                      </p>
+                    </div>
+
+                    <div class="card-footer">
+                      <a href="https://www.facebook.com/eatsyfloripa/photos/a.425201427562730/2073805236035666/?type=3" target="_blank" class="btn btn-outline-dark js--product-info__btn">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-action">
+                  <a href="https://www.facebook.com/eatsyfloripa/" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
+                    <i class="fab fa-facebook mr-1"></i>
+                    Confira mais novidades no Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="photos" id="fotos">
+          <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="section-header">
+                <h2 class="section-header-title">
+                  Fotos
+                </h2>
+              </div>
+
+              <div class="gallery">
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+                <div class="gallery-item">
+                  <a href="https://www.instagram.com/p/BssnpiIAzFY/" target="_blank" class="js--photo__btn">
+                    <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/42087729_1891803487569176_720761173728821248_o.jpg?_nc_cat=102&amp;_nc_ht=scontent.ffln2-2.fna&amp;oh=ecace497b2536cdc60135bce1422da88&amp;oe=5D5D024E" class="gallery-img">
+                  </a>
+                </div>
+              </div>
+
+              <div class="section-action">
+                <a href="https://www.instagram.com/eatsynaturalfloripa" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
+                  <i class="fab fa-instagram mr-1"></i>
+                  Veja mais no Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu" id="cardapio">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="section-header">
+                  <h2 class="section-header-title">
+                    Conheça nosso cardápio
+                  </h2>
+                </div>
+
+                <div class="card-list-menu">
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://static-images.ifood.com.br/image/upload/t_high/pratos/818e8137-67cd-450e-9eca-ae0f8169c78e/201712221116_17638559.jpg">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        Exec. Gran strogonoff de filet
+                      </h3>
+
+                      <p class="card-text">
+                        Acomp. Arroz e batata palha
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      R$ 24,90 - R$ 34,90
+                    </div>
+                  </div>
+
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://static-images.ifood.com.br/image/upload/t_high/pratos/818e8137-67cd-450e-9eca-ae0f8169c78e/201804261046_44035574.jpg">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        Exec.  Gran strogonoff de frango
+                      </h3>
+
+                      <p class="card-text">
+                        Acomp. Arroz e spätzle
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      R$ 24,90 - R$ 28,90
+                    </div>
+                  </div>
+
+                  <div class="card card-small">
+                    <img class="card-img-top" src="https://static-images.ifood.com.br/image/upload/t_high/pratos/818e8137-67cd-450e-9eca-ae0f8169c78e/201804261045_44035587.jpg">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        Exec. Penne à moda do chef
+                      </h3>
+
+                      <p class="card-text">
+                        Massa penne, cubos de frango, molho com ervas, champignon e brocólis.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      R$ 24,90 - R$ 27,90
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-action">
+                  <a href="https://www.instagram.com/eatsynaturalfloripa" class="btn btn-lg btn-primary btn-pill js--photo-info__btn"target="_blank">
+                    Faça seu pedido online agora
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials" id="avaliacoes">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="section-header">
+                  <h2 class="section-header-title">
+                    Avaliações dos nossos clientes
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <div class="card card-testimonial-item">
+                  <div class="card-body">
+                    <div class="testimonial-item-review">
+                      <div class="review-user">
+                        <img src="https://randomuser.me/api/portraits/lego/6.jpg">
+
+                        <div class="user-info">
+                          <h5>Nick Robert Lloyd Foyston</h5>
+                          <p class="text-muted mb-0">
+                            Via Google
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-rating">
+                        <div class="star-rating mb-2">
+                          <i class="fa fa-star" data-rating="1"></i>
+                          <i class="fa fa-star" data-rating="2"></i>
+                          <i class="fa fa-star" data-rating="3"></i>
+                          <i class="fa fa-star" data-rating="4"></i>
+                          <i class="fa fa-star" data-rating="5"></i>
+                          <input type="hidden" name="rating" class="rating-value" value="5.0">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-item-content">
+                      Lugar Maravilhoso ! Sem palavras! Incrível desde o atendimento até a qualidade dos produtos. Vale a pena cada dia lá!
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <div class="card card-testimonial-item">
+                  <div class="card-body">
+                    <div class="testimonial-item-review">
+                      <div class="review-user">
+                        <img src="https://randomuser.me/api/portraits/lego/6.jpg">
+
+                        <div class="user-info">
+                          <h5>Nick Robert Lloyd Foyston</h5>
+                          <p class="text-muted mb-0">
+                            Via Facebook
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-rating">
+                        <div class="star-rating mb-2">
+                          <i class="fa fa-star" data-rating="1"></i>
+                          <i class="fa fa-star" data-rating="2"></i>
+                          <i class="fa fa-star" data-rating="3"></i>
+                          <i class="fa fa-star" data-rating="4"></i>
+                          <i class="fa fa-star" data-rating="5"></i>
+                          <input type="hidden" name="rating" class="rating-value" value="5.0">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-item-content">
+                      Wonderful cool shop/ cafe... Delicious juices( healthy ) and the owners are so so friendly and the food is very nice. Busy place and great atmosphere :)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <div class="card card-testimonial-item">
+                  <div class="card-body">
+                    <div class="testimonial-item-review">
+                      <div class="review-user">
+                        <img src="https://randomuser.me/api/portraits/lego/6.jpg">
+
+                        <div class="user-info">
+                          <h5>Nick Robert Lloyd Foyston</h5>
+                          <p class="text-muted mb-0">
+                            Via Facebook
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-rating">
+                        <div class="star-rating mb-2">
+                          <i class="fa fa-star" data-rating="1"></i>
+                          <i class="fa fa-star" data-rating="2"></i>
+                          <i class="fa fa-star" data-rating="3"></i>
+                          <i class="fa fa-star" data-rating="4"></i>
+                          <i class="fa fa-star" data-rating="5"></i>
+                          <input type="hidden" name="rating" class="rating-value" value="5.0">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="testimonial-item-content">
+                      Ótimas opções vegetarianas (beirute e kibe super recomendo) e tortas sem glúten e sem lactose deliciosas! Ambiente agradável e atendimento excelente!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="location" id="localizacao">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="section-header">
+                  <h2 class="section-header-title">
+                    Conheça nossa loja
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 map">
+                <iframe class="openstreetmap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-48.517967299999995%2C-27.597265099999998%2C-48.4979673%2C-27.5812651&amp;layer=mapnik&amp;marker=-27.5892651%2C-48.5079673">
+                </iframe>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="location-address">
+                  <h5>Endereço</h5>
+                  <p>
+                    Av. Me. Benvenuta, 1392 - Santa Monica, Florianópolis - SC, 88010-145, Brasil
+                  </p>
+                </div>
+
+                <div class="location-opening-time">
+                  <h5>Horário de Funcionamento</h5>
+                  <table>
+                    <tr>
+                      <td class="week">
+                        segunda-feira
+                      </td>
+                      <td class="time">
+                        07:00 – 21:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        terça-feira
+                      </td>
+                      <td class="time">
+                        07:00 – 21:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        quarta-feira
+                      </td>
+                      <td class="time">
+                        07:00 – 21:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        quinta-feira
+                      </td>
+                      <td class="time">
+                        07:00 – 21:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        sexta-feira
+                      </td>
+                      <td class="time">
+                        07:00 – 21:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        sábado
+                      </td>
+                      <td class="time">
+                        08:00 – 20:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="week">
+                        domingo
+                      </td>
+                      <td class="time">
+                        Fechado
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="location-phone">
+                  <h5>Telefone</h5>
+                  <a href="tel:+554830252880" class="link-effect">
+                    Ligar (48) 3025-2880
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="page-footer" class="">
+      <div class="content-footer">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-brand">
+            <p class="content-brand-image">
+              <a height="auto" href="#">
+                <img src="https://scontent.ffln2-2.fna.fbcdn.net/v/t1.0-9/47010858_1995243397225184_3499463065571688448_o.png?_nc_cat=108&_nc_ht=scontent.ffln2-2.fna&oh=72249bf36cb4b9d9dc408ae35bb79bee&oe=5D5CB6D1">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-capture-lead font-size-xs">
+        <p class="content-capture-contact">
+          <a href="https://lp.zyg.me/leadsvaloriza" target="_blank" class="btn btn-sm btn-pill btn-outline-secondary">
+            Gostou? Crie um site como esse para o seu restaurante
+          </a>
+          <br>
+          <a href="http://zygotecnologia.com" target="_blank" class="link-effect link-effect-muted">
+            <img src="https://s3.amazonaws.com/assets.companion.com.br/logo-zygo.png" height="auto">
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <button class="btn btn-lg btn-pill btn-whatsapp">
+      <i class="fab fa-whatsapp mr-1"></i> Entre em contato
+    </button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+  $('.star-rating .fa').each(function() {
+    if (parseInt($(this).siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+      return $(this).removeClass('fa-star-o').addClass('fa-star');
+    } else {
+      return $(this).removeClass('fa-star').addClass('fa-star-o');
+    }
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+    $('a[href*="#"]')
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname
+        ) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) {
+                return false;
+              } else {
+                $target.attr('tabindex', '-1');
+                $target.focus();
+              };
+            });
+          }
+        }
+      });
+  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Editar perfil | Zygo - Valoriza.io</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet"
+        href="./css/shards.css">
+  <style>
+    :root{
+			--primary: #ff2ef5;
+			--primary-hue: 303;
+			--primary-saturation: 100%;
+			--primary-lightness: 59.02%;
+			--primary-lightness-darker: 49.02%;
+			--primary-lightness-contrast: 0%;
+			--primary-lightness-contrast-inverse: 100%;
+		}
+	</style>
+</head>
+
+<body>
+  <div id="page-container"
+       class="website-user-edit">
+    <header id="page-header">
+      <div class="content-header">
+        <div class="content-header-section">
+          <button type="button"
+                  class="btn d-lg-none btn-link btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <ul class="nav-header-menu d-none d-lg-flex">
+            <li>
+              <a href="inicio.html">
+									Início
+								</a>
+            </li>
+            <li>
+              <a href="recompensas.html">
+								Recompensas
+							</a>
+            </li>
+            <li>
+              <a href="ofertas.html">
+								Ofertas
+							</a>
+            </li>
+            <li>
+              <a href="#">
+								Regras
+							</a>
+            </li>
+            <li>
+              <a href="lojas.html">
+								Lojas
+							</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-header-section">
+          <a href="index.html" class="header-brand">
+						<img src="./images/logo.png" />
+					</a>
+        </div>
+
+        <div class="content-header-section align-right">
+          <ul class="nav-header-menu is-logged">
+            <li class="menu-item-signin">
+              <a href="acessar.html">
+								Minha conta
+							</a>
+            </li>
+            <li class="menu-item-signup">
+              <a href="cadastro.html" class="btn btn-primary btn-noborder btn-rounded">
+                Cadastrar
+							</a>
+            </li>
+
+            <li class="menu-item-user-points">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-quantity">
+									5
+								</span>
+								<span class="points-text">
+									<strong>Seu saldo</strong><br>
+									de pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user-points is-mobile">
+              <a class="text-nowrap" href="painel-fidelidade.html" id="user-points">
+								<span class="points-text">
+									<strong>5</strong><br>
+									pontos
+								</span>
+							</a>
+            </li>
+
+            <li class="menu-item-user dropdown">
+              <a class="dropdown-toggle text-nowrap" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="user-dropdown">
+								<img class="user-avatar rounded-circle" src="./images/user/avatar.jpg">
+								<span class="user-info">
+									Jerônimo <br>
+									<small>048 99656-3619</small>
+								</span>
+							</a>
+              <div class="dropdown-menu dropdown-menu-right"
+                   aria-labelledby="user-dropdown">
+                <a class="dropdown-item" href="painel-fidelidade.html">
+									<i class="fas fa-trophy fa-fw mr-2"></i> Painel de fidelidade
+								</a>
+                <a class="dropdown-item" href="editar-perfil.html">
+									<i class="fas fa-user-edit fa-fw mr-2"></i> Editar perfil
+								</a>
+                <a class="dropdown-item" href="inicio.html">
+									<i class="fas fa-sign-out-alt fa-fw mr-2"></i> Sair
+								</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div class="wrapper">
+        <div class="page-header-intro">
+          <div class="wrapper">
+            <div class="page-header-content">
+              <h1 class="header-intro-title">Editar perfil</h1>
+              <p class="header-intro-description">Complete e atualize suas informações de perfil, contato e preferências.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="user-edit">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Suas informações</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row ">
+                      <div class="col-lg-8">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label class="mb-0"
+                                   for="cpf">CPF</label>
+                            <input type="text"
+                                   class="form-control-plaintext"
+                                   id="cpf"
+                                   value="000.000.000-00"
+                                   readonly>
+                          </div>
+
+                          <div class="form-group col-md-6">
+                            <label class="mb-0"
+                                   for="cpf">Data de nascimento</label>
+                            <input type="text"
+                                   class="form-control-plaintext"
+                                   id="cpf"
+                                   value="29 de janeiro de 1996"
+                                   readonly>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label for="name">Nome completo</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="name"
+                                   value="Jerônimo Velasquez">
+                          </div>
+
+                          <div class="form-group col-md-5">
+                            <label for="displayEmail">Gênero</label>
+                            <select class="custom-select">
+                              <option value="1"
+                                      selected="">Masculino</option>
+                              <option value="2">Feminino</option>
+                              <option value="3">Outro</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-5">
+                            <div class="form-group"
+                                 data-select2-id="4"><label for="user_gender">Gênero</label><select class="form-control js--edit-profile__gender js--select2 select2-hidden-accessible"
+                                      data-gender="male"
+                                      name="user[gender]"
+                                      id="user_gender"
+                                      data-select2-id="user_gender"
+                                      tabindex="-1"
+                                      aria-hidden="true">
+                                <option selected="selected"
+                                        value="male"
+                                        data-select2-id="2">Masculino</option>
+                                <option value="female"
+                                        data-select2-id="13">Feminino</option>
+                                <option value="other"
+                                        data-select2-id="14">Outros</option>
+                              </select><span class="select2 select2-container select2-container--below select2-container--default" dir="ltr" data-select2-id="1" style="width: 195px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-user_gender-container"><span class="select2-selection__rendered" id="select2-user_gender-container" role="textbox" aria-readonly="true" title="Masculino">Masculino</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <label for="userProfilePicture"
+                               class="text-center w-100 mb-4">Foto de Perfil</label>
+                        <div class="edit-user-details__avatar m-auto">
+                          <img src="./images/user/avatar.jpg" alt="User Avatar">
+                          <label class="edit-user-details__avatar__change">
+                            <i class="fas fa-cloud-upload-alt mr-1 text-secondary"></i>
+                            <input type="file"
+                                   id="userProfilePicture"
+                                   class="d-none">
+                          </label>
+                        </div>
+                        <button class="btn btn-sm btn-outline-dark d-table mx-auto mt-4">
+                          <i class="fas fa-cloud-upload-alt fa-fw mr-1"></i> Alterar foto
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-outline-secondary ml-10">
+                      <i class="fas fa-times fa-fw mr-5"></i>
+                      Cancelar
+                    </button>
+                    <button type="button"
+                            class="btn btn-success ml-10">
+                      <i class="fas fa-check fa-fw mr-5"></i>
+                      Salvar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Informações de contato</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="form-group col-md-5">
+                        <label for="phone">Telefone</label>
+                        <div class="input-group input-group-seamless">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fas fa-phone"></i>
+                            </div>
+                          </div>
+                          <input type="text"
+                                 class="form-control"
+                                 id="phone"
+                                 value="(00) 00000-0000">
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <i class="fas fa-check text-success"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-5">
+                        <label for="email">E-mail</label>
+                        <div class="input-group input-group-seamless">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fas fa-envelope"></i>
+                            </div>
+                          </div>
+                          <input type="email"
+                                 class="form-control"
+                                 id="email"
+                                 value="jeronimo.velasquez@sumone.com.br">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col font-italic">
+                        <i class="fas fa-info-circle fa-fw text-warning mr-5"></i>
+                        Seu telefone não está verificado.
+                        <a href="valide-seu-telefone.html" class="link-effect">
+													Valide ele agora
+												</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button"
+                            class="btn btn-outline-secondary ml-10">
+                      <i class="fas fa-times fa-fw mr-5"></i>
+                      Cancelar
+                    </button>
+                    <button type="button"
+                            class="btn btn-success ml-10">
+                      <i class="fas fa-check fa-fw mr-5"></i>
+                      Salvar
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card card-small mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Redes Sociais</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <p class="m-0">
+                          <strong class="font-w500">Conectar Facebook</strong>
+                          <small class="form-text text-muted">
+														Use seu Facebook para se manter logado e atualizar seus dados.
+													</small>
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-auto d-flex">
+                        <button type="button"
+                                class="btn btn-facebook">
+                          <i class="fab fa-facebook fa-fw mr-5"></i> Conectar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-small card-toggle mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Notificações e Permissões</h5>
+                    <div class="card-actions">
+                      <button type="button"
+                              class="btn btn-outline-secondary btn-circle">
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-row">
+                      <label for="emailMessages"
+                             class="col col-form-label">
+                        Aceito receber comunicações e ofertas por e-mail
+                      </label>
+                      <div class="col-auto ml-10 d-flex">
+                        <div class="custom-control custom-toggle ml-auto my-auto">
+                          <input type="checkbox"
+                                 id="emailMessages"
+                                 class="custom-control-input"
+                                 checked="">
+                          <label class="custom-control-label"
+                                 for="emailMessages"></label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <label for="smsMessages"
+                             class="col col-form-label">
+                        Quero receber comunicações e ofertas via SMS
+                      </label>
+                      <div class="col-auto ml-10 d-flex">
+                        <div class="custom-control custom-toggle ml-auto my-auto">
+                          <input type="checkbox"
+                                 id="smsMessages"
+                                 class="custom-control-input"
+                                 checked="">
+                          <label class="custom-control-label"
+                                 for="smsMessages"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-small card-action mb-20">
+                  <div class="card-header">
+                    <h5 class="m-0">Alterar minha senha</h5>
+
+                    <div class="card-actions">
+                      <a href="alterar-senha.html"
+                              class="btn btn-outline-secondary btn-circle">
+												<i class="fas fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card bg-transparent border-0">
+                  <div class="card-body text-right px-0">
+                    <a href="remover-conta.html" class="link-effect link-effect-muted">
+											Excluir minha conta
+											<i class="fas fa-arrow-right fa-fw ml-5"></i>
+										</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="page-footer">
+      <div class="content-footer">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-brand">
+            <p class="content-brand-image">
+              <a href="#">
+									<img src="./images/logo.png" height="auto" />
+								</a>
+            </p>
+            <p class="content-brand-copyright">
+              Copyright © 2010 - 2019 - Todos os direitos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-capture-lead font-size-xs">
+        <p class="content-capture-contact">
+          <a href="https://lp.zyg.me/leadsvaloriza" target="_blank" class="btn btn-sm btn-pill btn-outline-secondary">
+						Gostou? Crie um site como esse para o seu restaurante
+					</a><br>
+					<a href="http://zygotecnologia.com.br" class="link-effect link-effect-muted">
+						<img src="./images/logo.png" height="auto" />
+					</a>
+        </p>
+
+          <p class="content-capture-poweredby">
+            Desenvolvido com
+            <strong>❤</strong> por
+						<a href="http://zygotecnologia.com.br" class="link-effect link-effect-muted">
+							<img src="./images/logo.png" height="auto" />
+						</a>
+          </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/shards.js"></script>
+</body>
+
+</html>
