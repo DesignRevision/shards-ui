@@ -22,6 +22,12 @@ a {
       }
     }
   }
+
+  &:hover {
+  //   color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
+    text-decoration: none;
+    color: darken(#1c94f5, 10%);
+  }
 }
 
 img {
