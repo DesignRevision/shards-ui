@@ -26850,6 +26850,7 @@ header#page-header .content-header .content-header-section:nth-child(3) {
 @media (max-width: 991px) {
   header#page-header .content-header .content-header-section:nth-child(3) {
     margin-left: 0;
+    min-width: 62px;
   }
 }
 
