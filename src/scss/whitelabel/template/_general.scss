@@ -6,34 +6,12 @@ a {
   text-decoration: none;
 
   &.link-effect {
-    &:before {
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      content: "";
-      background-color: var(--primary);
-      visibility: hidden;
-      transform: translateY(6px);
-      transform-origin: 50% 50%;
-      opacity: 0;
-      transition: transform .12s ease-out, opacity .12s ease-out,
-    }
+    text-decoration: underline;
+    color: #1c94f5;
 
     &.alert-link {
       font-weight: bolder;
       text-decoration: underline;
-    }
-
-    &:hover {
-      text-decoration: none;
-
-      &:before {
-        visibility: visible;
-        transform: translateY(0);
-        opacity: 1;
-      }
     }
 
     &.link-effect-muted {
@@ -43,11 +21,6 @@ a {
         background-color: #555;
       }
     }
-  }
-
-  &:hover {
-    color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
-    text-decoration: none;
   }
 }
 
