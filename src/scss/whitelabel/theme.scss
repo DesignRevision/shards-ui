@@ -138,8 +138,8 @@
 
 .custom-checkbox {
   .custom-control-input:checked~.custom-control-label:before {
-    background-color: var(--primary);
-    color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-contrast));
+    background-color: $success;
+    color: #fff;
   }
 }
 
