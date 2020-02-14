@@ -27585,6 +27585,10 @@ nav#subway-location .subway-location-switch .btn {
   margin-bottom: 0;
 }
 
+.website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group .bl-0 {
+  border-left: 0px;
+}
+
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-actions {
   text-align: right;
 }
@@ -29977,39 +29981,14 @@ a {
   text-decoration: none;
 }
 
-a.link-effect:before {
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  content: "";
-  background-color: var(--primary);
-  visibility: hidden;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  opacity: 0;
-  transition: opacity 0.12s ease-out, -webkit-transform 0.12s ease-out;
-  transition: transform 0.12s ease-out, opacity 0.12s ease-out;
-  transition: transform 0.12s ease-out, opacity 0.12s ease-out, -webkit-transform 0.12s ease-out;
+a.link-effect {
+  text-decoration: underline;
+  color: #1c94f5;
 }
 
 a.link-effect.alert-link {
   font-weight: bolder;
   text-decoration: underline;
-}
-
-a.link-effect:hover {
-  text-decoration: none;
-}
-
-a.link-effect:hover:before {
-  visibility: visible;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
 }
 
 a.link-effect.link-effect-muted {
@@ -30018,11 +29997,6 @@ a.link-effect.link-effect-muted {
 
 a.link-effect.link-effect-muted:before {
   background-color: #555;
-}
-
-a:hover {
-  color: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-lightness-darker));
-  text-decoration: none;
 }
 
 img {
