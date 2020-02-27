@@ -7,12 +7,35 @@
       flex-wrap: wrap;
 
       .details-container {
-        max-width: 475px;
-        margin: 30px 0;
+        max-width: 430px;
+        margin: 15px auto;
+
+        .title {
+          font-size: 26px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .subtitle {
+          font-size: 26px;
+          font-weight: 500;
+          text-align: center;
+        }
+
+        .offer-wrapper {
+          width: 70%;
+          margin: 0 auto;
+        }
 
         .welcome-list {
           display: flex;
           flex-direction: column;
+          margin: 20px 0;
+
+          .title {
+            font-weight: 400;
+          }
 
           .list-item {
             display: flex;
@@ -42,6 +65,14 @@
         width: 450px;
         max-width: 100%;
         margin: 20px 15px 50px;
+
+        .title {
+          font-size: 26px;
+          font-weight: 600;
+          margin-bottom: 5px;
+          text-align: center;
+          margin-bottom: 25px;
+        }
 
         .card {
           &.card-auth {
@@ -144,6 +175,10 @@
                     margin-bottom: 0;
                   }
 
+                  .font-bold {
+                    font-weight: bold;
+                  }
+
                   .bl-0 {
                     border-left: 0px;
                   }
@@ -224,7 +259,22 @@
     main#main-container {
       .wrapper {
         .details-container {
-          margin: 100px 0;
+          margin-right: 30px;
+          margin-top: 100px;
+
+          .title {
+            text-align: left;
+          }
+
+          .subtitle {
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: left;
+          }
+
+          .offer-wrapper {
+            width: 60%;
+          }
         }
       }
     }

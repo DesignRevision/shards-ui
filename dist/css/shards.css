@@ -27471,8 +27471,26 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .details-container {
-  max-width: 475px;
-  margin: 30px 0;
+  max-width: 430px;
+  margin: 15px auto;
+}
+
+.website-auth main#main-container .wrapper .details-container .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.website-auth main#main-container .wrapper .details-container .subtitle {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.website-auth main#main-container .wrapper .details-container .offer-wrapper {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .website-auth main#main-container .wrapper .details-container .welcome-list {
@@ -27480,6 +27498,11 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin: 20px 0;
+}
+
+.website-auth main#main-container .wrapper .details-container .welcome-list .title {
+  font-weight: 400;
 }
 
 .website-auth main#main-container .wrapper .details-container .welcome-list .list-item {
@@ -27514,6 +27537,14 @@ nav#subway-location .subway-location-switch .btn {
   width: 450px;
   max-width: 100%;
   margin: 20px 15px 50px;
+}
+
+.website-auth main#main-container .wrapper .auth-container .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .website-auth main#main-container .wrapper .auth-container .card.card-auth {
@@ -27626,6 +27657,10 @@ nav#subway-location .subway-location-switch .btn {
   margin-bottom: 0;
 }
 
+.website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group .font-bold {
+  font-weight: bold;
+}
+
 .website-auth main#main-container .wrapper .auth-container .card.card-auth .card-body .auth-form-container .form-group .bl-0 {
   border-left: 0px;
 }
@@ -27697,7 +27732,19 @@ nav#subway-location .subway-location-switch .btn {
 
 @media (min-width: 768px) {
   .website-auth main#main-container .wrapper .details-container {
-    margin: 100px 0;
+    margin-right: 30px;
+    margin-top: 100px;
+  }
+  .website-auth main#main-container .wrapper .details-container .title {
+    text-align: left;
+  }
+  .website-auth main#main-container .wrapper .details-container .subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  .website-auth main#main-container .wrapper .details-container .offer-wrapper {
+    width: 60%;
   }
 }
 
