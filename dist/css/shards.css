@@ -27483,7 +27483,7 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .website-auth main#main-container .wrapper .details-container .subtitle {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
 }
@@ -27743,7 +27743,6 @@ nav#subway-location .subway-location-switch .btn {
   }
   .website-auth main#main-container .wrapper .details-container .subtitle {
     font-size: 1rem;
-    font-weight: 600;
     text-align: left;
   }
   .website-auth main#main-container .wrapper .details-container .offer-wrapper {
