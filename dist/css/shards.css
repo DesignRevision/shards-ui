@@ -26141,6 +26141,7 @@ a.text-black:hover, a.text-black:focus {
 .card.card-product-voucher .card-content-main .card-body .card-voucher-code {
   width: 100%;
   padding: 6px 10px;
+  margin-top: auto;
   border-bottom-right-radius: 0.625rem;
   text-align: center;
 }
