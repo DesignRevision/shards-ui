@@ -30069,6 +30069,37 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.mgm-page .banner-wrapper {
+  background-color: #7a00ff;
+  padding: 30px 0;
+}
+
+.mgm-page .banner-wrapper h3 {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+}
+
+.mgm-page .content-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 50px 0;
+}
+
+.mgm-page .content-wrapper .text-wrapper {
+  text-align: center;
+  margin: 10px 0;
+  max-width: 50%;
+}
+
+.mgm-page .content-wrapper .text-wrapper h4 {
+  font-weight: 400;
+}
+
 a {
   font-weight: 400;
   color: var(--primary);
