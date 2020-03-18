@@ -1,0 +1,355 @@
+.mgm-page {
+  .mgm-disabled-info {
+    .banner-wrapper {
+      background-color: #7a00ff;
+      padding: 30px 0;
+
+      h3 {
+        color: white;
+        margin: 0;
+        font-weight: 400;
+      }
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+
+      .text-wrapper {
+        text-align: center;
+        margin: 10px 0;
+        max-width: 50%;
+
+        h4 {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .mgm-home {
+    .card:hover {
+      box-shadow: none;
+    }
+
+    section {
+      background-color: #fff;
+
+      &:nth-child(2n) {
+        &:not(.bg-brand-color) {
+          background-color: #f5f6f7;
+        }
+      }
+    }
+
+    .list-cards {
+      margin: 0;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .bg-brand-color {
+      background-color: var(--primary);
+    }
+
+    .banner {
+      display: flex;
+      height: 350px;
+      align-items: center;
+      text-align: center;
+
+      .text-wrapper {
+        color: white;
+
+        h3 {
+          color: white;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+      }
+
+      .image-wrapper {
+        text-align: center;
+      }
+    }
+
+    .how-use {
+      min-height: 395px;
+      display: flex;
+      align-items: center;
+      padding: 30px 0;
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .card {
+        margin-bottom: 10px;
+      }
+
+      i {
+        color: var(--primary);
+      }
+    }
+
+    .register-and-win {
+      min-height: 295px;
+      padding: 30px 0;
+
+      .content-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+
+        .card {
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          i {
+            font-size: 70px;
+            color: $product-offer;
+            margin-bottom: 20px;
+          }
+
+          .description {
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-size: 20px;
+
+            .highlight {
+              color: $product-offer;
+            }
+          }
+        }
+
+        .btn-wrapper {
+          width: 100%;
+
+          .btn {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 13px;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .rewards {
+      padding: 30px 0;
+
+      .content-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          max-width: 532px;
+          margin-bottom: 20px;
+
+          .reward-list-description {
+            .description-text {
+              margin-bottom: 5px;
+            }
+
+            .description-observation {
+              font-style: italic;
+            }
+          }
+
+          i {
+            margin: 0 auto 15px auto;
+            color: $product-reward;
+          }
+
+          h4 {
+            margin: 0;
+            text-align: center;
+            font-weight: 500;
+
+            .text-highlight {
+              color: $product-reward;
+            }
+          }
+        }
+
+        .btn-wrapper {
+          width: 100%;
+
+          .btn {
+            width: 100%;
+            background-color: $product-reward;
+            border-color: $product-reward;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .rules {
+      padding: 30px 0;
+
+      .content-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          margin: 0;
+          text-align: center;
+          font-weight: 500;
+        }
+
+        .rules-list {
+          display: flex;
+          flex-direction: column;
+          padding: 10px 0;
+
+          .rule-row {
+            display: flex;
+            flex-direction: row;
+            max-width: 750px;
+
+            .number-wrapper {
+              .number-circle {
+                background-color: $gray-200;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+
+            .rule-wrapper {
+              p {
+                margin: frule-row0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      height: 184px;
+      text-align: center;
+
+      .text-wrapper {
+        color: white;
+
+        p {
+          font-size: 22px;
+          color: white;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .banner {
+        text-align: left;
+      }
+
+      .how-use {
+        .card {
+          margin-bottom: 0;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+      }
+
+      .register-and-win {
+        .content-wrapper {
+          .text-wrapper{
+            text-align: left;
+
+            .description {
+              font-size: 26px;
+            }
+          }
+
+          .btn-wrapper {
+            .btn {
+              width: 300px;
+            }
+          }
+        }
+      }
+
+      .rewards {
+        .content-wrapper {
+          justify-content: center;
+
+          .text-wrapper {
+            i {
+              margin: 0 0 15px 0;
+            }
+          }
+
+          .btn-wrapper {
+            .btn {
+              width: auto;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        height: 144px;
+        text-align: left;
+
+        p {
+          font-size: 26px;
+          margin: 0;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      .register-and-win {
+        .content-wrapper {
+          flex-direction: row;
+
+          .text-wrapper {
+            flex: 1;
+            order: 2;
+            margin-left: 40px;
+
+            i {
+              margin: 0 0 15px 0;
+            }
+          }
+
+          .btn-wrapper {
+            order: 3;
+          }
+        }
+      }
+    }
+  }
+}

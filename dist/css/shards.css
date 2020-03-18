@@ -25734,6 +25734,33 @@ a.text-black:hover, a.text-black:focus {
       flex: 0 0 auto;
 }
 
+.card.clean {
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card.clean .card-body {
+  height: 233px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 15px 25px;
+}
+
+.card.clean .card-body i {
+  margin-bottom: 13px;
+}
+
+.card.clean .card-body p {
+  text-align: center;
+}
+
 .card.card-product {
   margin-bottom: 15px;
   color: #212529;
@@ -30066,6 +30093,355 @@ nav#subway-location .subway-location-switch .btn {
 @media (min-width: 1200px) {
   .landing-page .landing-page-how-use .how-use-content .how-use-list-item {
     max-width: 1070px;
+  }
+}
+
+.mgm-page .mgm-disabled-info .banner-wrapper {
+  background-color: #7a00ff;
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-disabled-info .banner-wrapper h3 {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+}
+
+.mgm-page .mgm-disabled-info .content-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 50px 0;
+}
+
+.mgm-page .mgm-disabled-info .content-wrapper .text-wrapper {
+  text-align: center;
+  margin: 10px 0;
+  max-width: 50%;
+}
+
+.mgm-page .mgm-disabled-info .content-wrapper .text-wrapper h4 {
+  font-weight: 400;
+}
+
+.mgm-page .mgm-home .card:hover {
+  box-shadow: none;
+}
+
+.mgm-page .mgm-home section {
+  background-color: #fff;
+}
+
+.mgm-page .mgm-home section:nth-child(2n):not(.bg-brand-color) {
+  background-color: #f5f6f7;
+}
+
+.mgm-page .mgm-home .list-cards {
+  margin: 0;
+}
+
+.mgm-page .mgm-home .section-title {
+  margin-bottom: 30px;
+}
+
+.mgm-page .mgm-home .bg-brand-color {
+  background-color: var(--primary);
+}
+
+.mgm-page .mgm-home .banner {
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+
+.mgm-page .mgm-home .banner .text-wrapper {
+  color: white;
+}
+
+.mgm-page .mgm-home .banner .text-wrapper h3 {
+  color: white;
+}
+
+.mgm-page .mgm-home .banner .text-wrapper .description {
+  font-size: 20px;
+}
+
+.mgm-page .mgm-home .banner .image-wrapper {
+  text-align: center;
+}
+
+.mgm-page .mgm-home .how-use {
+  min-height: 395px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-home .how-use .section-title {
+  font-size: 20px;
+}
+
+.mgm-page .mgm-home .how-use .card {
+  margin-bottom: 10px;
+}
+
+.mgm-page .mgm-home .how-use i {
+  color: var(--primary);
+}
+
+.mgm-page .mgm-home .register-and-win {
+  min-height: 295px;
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 1140px;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .card {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper i {
+  font-size: 70px;
+  color: #fd7e14;
+  margin-bottom: 20px;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description .highlight {
+  color: #fd7e14;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper {
+  width: 100%;
+}
+
+.mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper .btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+
+.mgm-page .mgm-home .rewards {
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  max-width: 532px;
+  margin-bottom: 20px;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper .reward-list-description .description-text {
+  margin-bottom: 5px;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper .reward-list-description .description-observation {
+  font-style: italic;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper i {
+  margin: 0 auto 15px auto;
+  color: #4472F3;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper h4 {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .text-wrapper h4 .text-highlight {
+  color: #4472F3;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .btn-wrapper {
+  width: 100%;
+}
+
+.mgm-page .mgm-home .rewards .content-wrapper .btn-wrapper .btn {
+  width: 100%;
+  background-color: #4472F3;
+  border-color: #4472F3;
+  font-size: 13px;
+}
+
+.mgm-page .mgm-home .rules {
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper h4 {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper .rules-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 10px 0;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper .rules-list .rule-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  max-width: 750px;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper .rules-list .rule-row .number-wrapper .number-circle {
+  background-color: #e9ecef;
+  width: 40px;
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper .rules-list .rule-row .rule-wrapper p {
+  margin: frule-row0;
+}
+
+.mgm-page .mgm-home .footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 184px;
+  text-align: center;
+}
+
+.mgm-page .mgm-home .footer .text-wrapper {
+  color: white;
+}
+
+.mgm-page .mgm-home .footer .text-wrapper p {
+  font-size: 22px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .mgm-page .mgm-home .banner {
+    text-align: left;
+  }
+  .mgm-page .mgm-home .how-use .card {
+    margin-bottom: 0;
+  }
+  .mgm-page .mgm-home .how-use .section-title {
+    font-size: 24px;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper {
+    text-align: left;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
+    font-size: 26px;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper .btn {
+    width: 300px;
+  }
+  .mgm-page .mgm-home .rewards .content-wrapper {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .mgm-page .mgm-home .rewards .content-wrapper .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .mgm-page .mgm-home .rewards .content-wrapper .btn-wrapper .btn {
+    width: auto;
+    margin-top: 20px;
+  }
+  .mgm-page .mgm-home .footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 144px;
+    text-align: left;
+  }
+  .mgm-page .mgm-home .footer p {
+    font-size: 26px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .mgm-page .mgm-home .register-and-win .content-wrapper {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper {
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-order: 2;
+        order: 2;
+    margin-left: 40px;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper i {
+    margin: 0 0 15px 0;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper {
+    -ms-flex-order: 3;
+        order: 3;
   }
 }
 

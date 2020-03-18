@@ -1,5 +1,4 @@
 .card {
-
   &.card-toggle,
   &.card-action {
     .card-header {
@@ -20,6 +19,29 @@
 
       .card-actions {
         flex: 0 0 auto;
+      }
+    }
+  }
+
+  &.clean {
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+    .card-body {
+      height: 233px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 25px;
+
+      i {
+        margin-bottom: 13px;
+      }
+
+      p {
+        text-align: center;
       }
     }
   }
