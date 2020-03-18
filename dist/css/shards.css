@@ -30157,10 +30157,10 @@ nav#subway-location .subway-location-switch .btn {
   height: 350px;
   -ms-flex-align: center;
       align-items: center;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .banner .text-wrapper {
-  max-width: 430px;
   color: white;
 }
 
@@ -30168,8 +30168,12 @@ nav#subway-location .subway-location-switch .btn {
   color: white;
 }
 
+.mgm-page .mgm-home .banner .text-wrapper .description {
+  font-size: 20px;
+}
+
 .mgm-page .mgm-home .banner .image-wrapper {
-  text-align: right;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .how-use {
@@ -30178,6 +30182,15 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  padding: 30px 0;
+}
+
+.mgm-page .mgm-home .how-use .section-title {
+  font-size: 20px;
+}
+
+.mgm-page .mgm-home .how-use .card {
+  margin-bottom: 10px;
 }
 
 .mgm-page .mgm-home .how-use i {
@@ -30209,19 +30222,22 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper i {
+  font-size: 70px;
   color: #fd7e14;
   margin-bottom: 20px;
 }
 
-.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .main-text {
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
   font-weight: 400;
   margin-bottom: 30px;
+  font-size: 20px;
 }
 
-.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .main-text .text-highlight {
+.mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description .highlight {
   color: #fd7e14;
 }
 
@@ -30349,30 +30365,39 @@ nav#subway-location .subway-location-switch .btn {
 .mgm-page .mgm-home .footer {
   display: -ms-flexbox;
   display: flex;
-  height: 144px;
   -ms-flex-align: center;
       align-items: center;
+  height: 184px;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .footer .text-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   color: white;
 }
 
-.mgm-page .mgm-home .footer .text-wrapper h3 {
+.mgm-page .mgm-home .footer .text-wrapper p {
+  font-size: 22px;
   color: white;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
-  .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper {
-    width: auto;
+  .mgm-page .mgm-home .banner {
+    text-align: left;
+  }
+  .mgm-page .mgm-home .how-use .card {
+    margin-bottom: 0;
+  }
+  .mgm-page .mgm-home .how-use .section-title {
+    font-size: 24px;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper {
+    text-align: left;
+  }
+  .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
+    font-size: 26px;
   }
   .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper .btn {
-    width: auto;
+    width: 300px;
   }
   .mgm-page .mgm-home .rewards .content-wrapper {
     -ms-flex-pack: center;
@@ -30384,6 +30409,18 @@ nav#subway-location .subway-location-switch .btn {
   .mgm-page .mgm-home .rewards .content-wrapper .btn-wrapper .btn {
     width: auto;
     margin-top: 20px;
+  }
+  .mgm-page .mgm-home .footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 144px;
+    text-align: left;
+  }
+  .mgm-page .mgm-home .footer p {
+    font-size: 26px;
+    margin: 0;
   }
 }
 

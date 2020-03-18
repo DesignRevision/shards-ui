@@ -60,18 +60,22 @@
       display: flex;
       height: 350px;
       align-items: center;
+      text-align: center;
 
       .text-wrapper {
-        max-width: 430px;
         color: white;
 
         h3 {
           color: white;
         }
+
+        .description {
+          font-size: 20px;
+        }
       }
 
       .image-wrapper {
-        text-align: right;
+        text-align: center;
       }
     }
 
@@ -79,6 +83,15 @@
       min-height: 395px;
       display: flex;
       align-items: center;
+      padding: 30px 0;
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .card {
+        margin-bottom: 10px;
+      }
 
       i {
         color: var(--primary);
@@ -103,17 +116,20 @@
         .text-wrapper {
           display: flex;
           flex-direction: column;
+          text-align: center;
 
           i {
+            font-size: 70px;
             color: $product-offer;
             margin-bottom: 20px;
           }
 
-          .main-text {
+          .description {
             font-weight: 400;
             margin-bottom: 30px;
+            font-size: 20px;
 
-            .text-highlight {
+            .highlight {
               color: $product-offer;
             }
           }
@@ -235,29 +251,48 @@
 
     .footer {
       display: flex;
-      height: 144px;
       align-items: center;
+      height: 184px;
+      text-align: center;
 
       .text-wrapper {
-        display: flex;
-        align-items: center;
         color: white;
 
-        h3 {
+        p {
+          font-size: 22px;
           color: white;
-          margin: 0;
         }
       }
     }
 
     @media (min-width: 768px) {
+      .banner {
+        text-align: left;
+      }
+
+      .how-use {
+        .card {
+          margin-bottom: 0;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+      }
+
       .register-and-win {
         .content-wrapper {
-          .btn-wrapper {
-            width: auto;
+          .text-wrapper{
+            text-align: left;
 
+            .description {
+              font-size: 26px;
+            }
+          }
+
+          .btn-wrapper {
             .btn {
-              width: auto;
+              width: 300px;
             }
           }
         }
@@ -279,6 +314,18 @@
               margin-top: 20px;
             }
           }
+        }
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        height: 144px;
+        text-align: left;
+
+        p {
+          font-size: 26px;
+          margin: 0;
         }
       }
     }
