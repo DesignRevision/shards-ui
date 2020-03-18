@@ -1,11 +1,14 @@
 .mgm-page {
   .mgm-disabled-info {
+    .bg-brand-color {
+      background-color: var(--primary);
+    }
+
     .banner-wrapper {
-      background-color: #7a00ff;
       padding: 30px 0;
 
       h3 {
-        color: white;
+        color: #FFF;
         margin: 0;
         font-weight: 400;
       }
@@ -30,6 +33,10 @@
   }
 
   .mgm-home {
+    .bg-brand-color {
+      background-color: var(--primary);
+    }
+
     .card:hover {
       box-shadow: none;
     }
@@ -39,7 +46,7 @@
 
       &:nth-child(2n) {
         &:not(.bg-brand-color) {
-          background-color: #f5f6f7;
+          background-color: #F5F6F7;
         }
       }
     }
@@ -52,10 +59,6 @@
       margin-bottom: 30px;
     }
 
-    .bg-brand-color {
-      background-color: var(--primary);
-    }
-
     .banner {
       display: flex;
       height: 350px;
@@ -63,10 +66,10 @@
       text-align: center;
 
       .text-wrapper {
-        color: white;
+        color: #FFF;
 
         h3 {
-          color: white;
+          color: #FFF;
         }
 
         .description {
@@ -230,18 +233,18 @@
 
             .number-wrapper {
               .number-circle {
-                background-color: $gray-200;
-                width: 40px;
-                height: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-color: $gray-200;
+                width: 40px;
+                height: 40px;
               }
             }
 
             .rule-wrapper {
               p {
-                margin: frule-row0;
+                margin: 0;
               }
             }
           }
@@ -256,11 +259,11 @@
       text-align: center;
 
       .text-wrapper {
-        color: white;
+        color: #FFF;
 
         p {
           font-size: 22px;
-          color: white;
+          color: #FFF;
         }
       }
     }
