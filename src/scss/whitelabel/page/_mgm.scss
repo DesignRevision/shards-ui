@@ -37,12 +37,20 @@
       background-color: #7A00FF;;
     }
 
+    .bg-mgm-info-color {
+      background-color: #490099;
+    }
+
+    .text-mgm-info {
+      color: #490099;
+    }
+
     .card:hover {
       box-shadow: none;
     }
 
     section {
-      background-color: #fff;
+      background-color: #FFF;
 
       &:nth-child(2n) {
         &:not(.bg-mgm-color) {

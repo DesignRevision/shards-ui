@@ -30138,12 +30138,20 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #7A00FF;
 }
 
+.mgm-page .mgm-home .bg-mgm-info-color {
+  background-color: #490099;
+}
+
+.mgm-page .mgm-home .text-mgm-info {
+  color: #490099;
+}
+
 .mgm-page .mgm-home .card:hover {
   box-shadow: none;
 }
 
 .mgm-page .mgm-home section {
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 .mgm-page .mgm-home section:nth-child(2n):not(.bg-mgm-color) {
