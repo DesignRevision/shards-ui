@@ -1,7 +1,7 @@
 .mgm-page {
   .mgm-disabled-info {
     .bg-mgm-color {
-      background-color: #7a00ff;
+      background-color: #7A00FF;
     }
 
     .banner-wrapper {
@@ -34,7 +34,7 @@
 
   .mgm-home {
     .bg-mgm-color {
-      background-color: #7a00ff;;
+      background-color: #7A00FF;;
     }
 
     .card:hover {
@@ -45,7 +45,7 @@
       background-color: #fff;
 
       &:nth-child(2n) {
-        &:not(.bg-brand-color) {
+        &:not(.bg-mgm-color) {
           background-color: #F5F6F7;
         }
       }
@@ -97,7 +97,7 @@
       }
 
       i {
-        color: var(--primary);
+        color: #7A00FF;
       }
     }
 
