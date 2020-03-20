@@ -24753,6 +24753,10 @@ a.text-black:hover, a.text-black:focus {
   padding-left: 0;
 }
 
+.white-border {
+  border-color: white;
+}
+
 .alert.alert-review {
   color: #ffb400;
   background-color: #ffb400;
@@ -28717,6 +28721,10 @@ nav#subway-location .subway-location-switch .btn {
 
 .landing-page .bg-brand-color {
   background-color: var(--primary);
+}
+
+.landing-page .bg-mgm-color {
+  background-color: #7a00ff;
 }
 
 .landing-page [class^="landing-page"] {
