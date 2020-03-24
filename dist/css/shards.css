@@ -30191,6 +30191,11 @@ nav#subway-location .subway-location-switch .btn {
   text-align: center;
 }
 
+.mgm-page .mgm-home .banner .social-network-button {
+  width: 34px;
+  height: 34px;
+}
+
 .mgm-page .mgm-home .how-use {
   min-height: 395px;
   display: -ms-flexbox;
