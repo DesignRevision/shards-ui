@@ -73,6 +73,26 @@
       align-items: center;
       text-align: center;
 
+      .share-link-wrapper {
+        display: flex;
+
+        .copy-link {
+          max-width: 260px;
+          margin-right: 20px;
+
+          .shortened-link {
+            height: 40px;
+            font-size: 16px;
+          }
+          .btn-copy {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+          }
+        }
+
+      }
+
       .text-wrapper {
         color: #FFF;
 
@@ -93,8 +113,12 @@
       }
 
       .social-network-button {
+        justify-content: center;
+        display: flex;
+        align-items: center;
         width: 34px;
         height: 34px;
+        font-size: 16px;
       }
     }
 
@@ -141,12 +165,15 @@
             font-size: 70px;
             color: $product-offer;
             margin-bottom: 20px;
+            text-align: center;
           }
 
           .description {
             font-weight: 400;
             margin-bottom: 30px;
             font-size: 20px;
+            text-align: center;
+
 
             .highlight {
               color: $product-offer;
@@ -156,6 +183,7 @@
 
         .btn-wrapper {
           width: 100%;
+          text-align: center;
 
           .btn {
             padding-left: 10px;
@@ -282,6 +310,19 @@
         h3 {
           font-size: 26px;
           color: #FFF;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        .share-link-wrapper {
+          flex-direction: column;
+          align-items: center;
+          .copy-link {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
         }
       }
     }
