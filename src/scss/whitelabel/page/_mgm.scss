@@ -78,6 +78,9 @@
 
         h3 {
           color: #FFF;
+          strong {
+            font-weight: bold;
+          }
         }
 
         .description {
@@ -252,10 +255,13 @@
                 background-color: $gray-200;
                 width: 40px;
                 height: 40px;
+                margin: 0;
               }
             }
 
             .rule-wrapper {
+              display: flex;
+              align-items: center;
               p {
                 margin: 0;
               }
@@ -272,10 +278,9 @@
       text-align: center;
 
       .text-wrapper {
-        color: #FFF;
-
-        p {
-          font-size: 22px;
+        display: flex;
+        h3 {
+          font-size: 26px;
           color: #FFF;
         }
       }
