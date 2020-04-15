@@ -37,11 +37,37 @@
       padding: 15px 25px;
 
       i {
+        font-size: 60px;
         margin-bottom: 13px;
       }
 
       p {
         text-align: center;
+        font-size: 18px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    &.clean {
+      .card-body {
+        height: 151px;
+        padding: 10px 25px;
+
+        i {
+          font-size: 50px;
+          margin-bottom: 13px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 16px;
+        }
       }
     }
   }

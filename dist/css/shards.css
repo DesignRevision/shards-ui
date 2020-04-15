@@ -25758,11 +25758,32 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .card.clean .card-body i {
+  font-size: 60px;
   margin-bottom: 13px;
 }
 
 .card.clean .card-body p {
   text-align: center;
+  font-size: 18px;
+}
+
+.card.clean:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+  .card.clean .card-body {
+    height: 151px;
+    padding: 10px 25px;
+  }
+  .card.clean .card-body i {
+    font-size: 50px;
+    margin-bottom: 13px;
+  }
+  .card.clean .card-body p {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .card.card-product {
@@ -30183,6 +30204,10 @@ nav#subway-location .subway-location-switch .btn {
   color: #FFF;
 }
 
+.mgm-page .mgm-home .banner .text-wrapper h3 strong {
+  font-weight: bold;
+}
+
 .mgm-page .mgm-home .banner .text-wrapper .description {
   font-size: 20px;
 }
@@ -30376,6 +30401,14 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #e9ecef;
   width: 40px;
   height: 40px;
+  margin: 0;
+}
+
+.mgm-page .mgm-home .rules .content-wrapper .rules-list .rule-row .rule-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .mgm-page .mgm-home .rules .content-wrapper .rules-list .rule-row .rule-wrapper p {
@@ -30392,11 +30425,12 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .mgm-page .mgm-home .footer .text-wrapper {
-  color: #FFF;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.mgm-page .mgm-home .footer .text-wrapper p {
-  font-size: 22px;
+.mgm-page .mgm-home .footer .text-wrapper h3 {
+  font-size: 26px;
   color: #FFF;
 }
 
