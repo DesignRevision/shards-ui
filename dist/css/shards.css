@@ -30196,6 +30196,29 @@ nav#subway-location .subway-location-switch .btn {
   text-align: center;
 }
 
+.mgm-page .mgm-home .banner .share-link-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mgm-page .mgm-home .banner .share-link-wrapper .copy-link {
+  max-width: 260px;
+  margin-right: 20px;
+}
+
+.mgm-page .mgm-home .banner .share-link-wrapper .copy-link .shortened-link {
+  height: 40px;
+  font-size: 16px;
+}
+
+.mgm-page .mgm-home .banner .share-link-wrapper .copy-link .btn-copy {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 10px;
+}
+
 .mgm-page .mgm-home .banner .text-wrapper {
   color: #FFF;
 }
@@ -30217,8 +30240,15 @@ nav#subway-location .subway-location-switch .btn {
 }
 
 .mgm-page .mgm-home .banner .social-network-button {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   width: 34px;
   height: 34px;
+  font-size: 16px;
 }
 
 .mgm-page .mgm-home .how-use {
@@ -30274,12 +30304,14 @@ nav#subway-location .subway-location-switch .btn {
   font-size: 70px;
   color: #fd7e14;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
   font-weight: 400;
   margin-bottom: 30px;
   font-size: 20px;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description .highlight {
@@ -30288,6 +30320,7 @@ nav#subway-location .subway-location-switch .btn {
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper {
   width: 100%;
+  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .btn-wrapper .btn {
@@ -30432,6 +30465,19 @@ nav#subway-location .subway-location-switch .btn {
 .mgm-page .mgm-home .footer .text-wrapper h3 {
   font-size: 26px;
   color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .mgm-page .mgm-home .banner .share-link-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .mgm-page .mgm-home .banner .share-link-wrapper .copy-link {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {
