@@ -30133,6 +30133,7 @@ nav#subway-location .subway-location-switch .btn {
   color: #FFF;
   margin: 0;
   font-weight: 400;
+  font-size: 24px;
 }
 
 .mgm-page .mgm-disabled-info .content-wrapper {
@@ -30148,6 +30149,7 @@ nav#subway-location .subway-location-switch .btn {
 .mgm-page .mgm-disabled-info .content-wrapper .text-wrapper {
   text-align: center;
   margin: 10px 0;
+  min-width: 290px;
   max-width: 50%;
 }
 

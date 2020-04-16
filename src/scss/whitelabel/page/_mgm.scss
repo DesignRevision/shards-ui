@@ -11,6 +11,7 @@
         color: #FFF;
         margin: 0;
         font-weight: 400;
+        font-size: 24px;
       }
     }
 
@@ -23,6 +24,7 @@
       .text-wrapper {
         text-align: center;
         margin: 10px 0;
+        min-width: 290px;
         max-width: 50%;
 
         h4 {
