@@ -1,7 +1,7 @@
 {
   "name": "shards-ui",
   "description": "A free, modern and lightweight Bootstrap 4 UI toolkit for web makers.",
-  "version": "3.0.55",
+  "version": "3.0.56",
   "main": "dist/js/shards",
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
@@ -9,7 +9,7 @@
     "copy-images": "copyfiles -u 3 src/extras/images/**/**/**/* dist/images/",
     "copy-icons": "copyfiles -u 3 src/extras/icons/**/**/**/* dist/icons/",
     "copy-fonts": "copyfiles -f src/fonts/* dist/fonts/",
-    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css": "npm-run-all css-compile css-prefix css-minify && npm run bundlesize",
     "css-compile": "npm-run-all css-compile:main",
     "css-compile:main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/shards.scss dist/css/shards.css",
     "css-minify": "npm-run-all css-minify:main",
