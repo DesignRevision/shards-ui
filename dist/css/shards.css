@@ -25771,6 +25771,10 @@ a.text-black:hover, a.text-black:focus {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
+.card .card-footer .win-offer-not-member {
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .card.clean .card-body {
     height: 151px;
