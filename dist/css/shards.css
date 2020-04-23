@@ -30303,21 +30303,18 @@ nav#subway-location .subway-location-switch .btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper i {
   font-size: 70px;
   color: #fd7e14;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description {
   font-weight: 400;
   margin-bottom: 30px;
   font-size: 20px;
-  text-align: center;
 }
 
 .mgm-page .mgm-home .register-and-win .content-wrapper .text-wrapper .description .highlight {

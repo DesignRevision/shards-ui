@@ -161,21 +161,17 @@
         .text-wrapper {
           display: flex;
           flex-direction: column;
-          text-align: center;
 
           i {
             font-size: 70px;
             color: $product-offer;
             margin-bottom: 20px;
-            text-align: center;
           }
 
           .description {
             font-weight: 400;
             margin-bottom: 30px;
             font-size: 20px;
-            text-align: center;
-
 
             .highlight {
               color: $product-offer;
