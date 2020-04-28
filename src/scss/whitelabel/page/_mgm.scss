@@ -39,26 +39,12 @@
       background-color: #7A00FF;;
     }
 
-    .bg-mgm-info-color {
-      background-color: #490099;
-    }
-
-    .text-mgm-info {
-      color: #490099;
-    }
-
     .card:hover {
       box-shadow: none;
     }
 
     section {
       background-color: #FFF;
-
-      &:nth-child(2n) {
-        &:not(.bg-mgm-color) {
-          background-color: #F5F6F7;
-        }
-      }
     }
 
     .list-cards {
@@ -121,6 +107,46 @@
         width: 34px;
         height: 34px;
         font-size: 16px;
+      }
+    }
+
+    .info-banner {
+      min-height: 166px;
+      background-color: #490099;
+      display: flex;
+
+      .info-wrapper {
+        display: flex;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+
+        .info-icon-wrapper {
+          margin-right: 25px;
+        }
+
+        .info-description-wrapper {
+          .points-won {
+            font-size: 26px;
+            color: $white;
+
+            strong {
+              font-weight: 500;
+            }
+          }
+
+          .extra-text {
+            font-size: 16px;
+          }
+        }
+
+        .info-button-wrapper {
+          margin-left: auto;
+        }
+      }
+
+      .text-mgm-info {
+        color: #490099;
       }
     }
 
@@ -320,6 +346,31 @@
           .copy-link {
             margin-right: 0;
             margin-bottom: 20px;
+          }
+        }
+      }
+
+      .info-banner {
+        padding: 30px 0;
+        .info-wrapper {
+          flex-direction: column;
+
+          .info-icon-wrapper {
+            margin-right: 0;
+          }
+
+          .info-description-wrapper {
+            margin-top: 15px;
+            text-align: center;
+
+            .points-won {
+              font-size: 22px;
+            }
+          }
+
+          .info-button-wrapper {
+            margin-right: auto;
+            margin-top: 30px;
           }
         }
       }

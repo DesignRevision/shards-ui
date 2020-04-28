@@ -30165,24 +30165,12 @@ nav#subway-location .subway-location-switch .btn {
   background-color: #7A00FF;
 }
 
-.mgm-page .mgm-home .bg-mgm-info-color {
-  background-color: #490099;
-}
-
-.mgm-page .mgm-home .text-mgm-info {
-  color: #490099;
-}
-
 .mgm-page .mgm-home .card:hover {
   box-shadow: none;
 }
 
 .mgm-page .mgm-home section {
   background-color: #FFF;
-}
-
-.mgm-page .mgm-home section:nth-child(2n):not(.bg-mgm-color) {
-  background-color: #F5F6F7;
 }
 
 .mgm-page .mgm-home .list-cards {
@@ -30255,6 +30243,48 @@ nav#subway-location .subway-location-switch .btn {
   width: 34px;
   height: 34px;
   font-size: 16px;
+}
+
+.mgm-page .mgm-home .info-banner {
+  min-height: 166px;
+  background-color: #490099;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper .info-icon-wrapper {
+  margin-right: 25px;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper .info-description-wrapper .points-won {
+  font-size: 26px;
+  color: #fff;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper .info-description-wrapper .points-won strong {
+  font-weight: 500;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper .info-description-wrapper .extra-text {
+  font-size: 16px;
+}
+
+.mgm-page .mgm-home .info-banner .info-wrapper .info-button-wrapper {
+  margin-left: auto;
+}
+
+.mgm-page .mgm-home .info-banner .text-mgm-info {
+  color: #490099;
 }
 
 .mgm-page .mgm-home .how-use {
@@ -30480,6 +30510,27 @@ nav#subway-location .subway-location-switch .btn {
   .mgm-page .mgm-home .banner .share-link-wrapper .copy-link {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .mgm-page .mgm-home .info-banner {
+    padding: 30px 0;
+  }
+  .mgm-page .mgm-home .info-banner .info-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .mgm-page .mgm-home .info-banner .info-wrapper .info-icon-wrapper {
+    margin-right: 0;
+  }
+  .mgm-page .mgm-home .info-banner .info-wrapper .info-description-wrapper {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .mgm-page .mgm-home .info-banner .info-wrapper .info-description-wrapper .points-won {
+    font-size: 22px;
+  }
+  .mgm-page .mgm-home .info-banner .info-wrapper .info-button-wrapper {
+    margin-right: auto;
+    margin-top: 30px;
   }
 }
 
