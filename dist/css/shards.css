@@ -30217,6 +30217,10 @@ nav#subway-location .subway-location-switch .btn {
   padding-bottom: 10px;
 }
 
+.mgm-page .mgm-home .banner .share-link-wrapper .copy-link .btn-copy .stronger {
+  font-weight: bolder;
+}
+
 .mgm-page .mgm-home .banner .text-wrapper {
   color: #FFF;
 }
