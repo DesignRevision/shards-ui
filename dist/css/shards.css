@@ -28476,6 +28476,23 @@ nav#subway-location .subway-location-switch .btn {
   }
 }
 
+.modal-detail .product-detail .modal-body {
+  padding: 1.5rem 1.75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: justify;
+}
+
+.modal-detail .product-detail .modal-body .product-img {
+  padding-bottom: 1.75rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .website-home .page-header-intro {
   background-color: var(--primary);
 }
