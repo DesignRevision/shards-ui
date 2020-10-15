@@ -26537,6 +26537,23 @@ aside.main-sidebar:not(.open) {
           transform: translateX(-100%);
 }
 
+.modal-show-detail .product-detail .modal-body {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 1.75rem;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: justify;
+}
+
+.modal-show-detail .product-detail .modal-body .product-img {
+  padding-bottom: 1.75rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 header#page-header {
   background-color: #fff;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.075);
@@ -28474,6 +28491,23 @@ nav#subway-location .subway-location-switch .btn {
     right: 0;
     margin: 0 auto;
   }
+}
+
+.modal-detail .product-detail .modal-body {
+  padding: 1.5rem 1.75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: justify;
+}
+
+.modal-detail .product-detail .modal-body .product-img {
+  padding-bottom: 1.75rem;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .website-home .page-header-intro {
