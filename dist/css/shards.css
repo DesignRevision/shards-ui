@@ -26537,6 +26537,10 @@ aside.main-sidebar:not(.open) {
           transform: translateX(-100%);
 }
 
+.modal-show-detail {
+  width: 600px;
+}
+
 .modal-show-detail .modal-body {
   display: -ms-flexbox;
   display: flex;
