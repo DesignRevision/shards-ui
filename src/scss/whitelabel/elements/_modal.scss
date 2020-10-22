@@ -1,0 +1,14 @@
+.modal-show-detail {
+  width: 600px;
+
+  .modal-body {
+    display: flex;
+    padding: 1.5rem 1.75rem;
+    flex-direction: column;
+
+    .product-img {
+      padding-bottom: 1.75rem;
+      align-self: center;
+    }
+  }
+}
