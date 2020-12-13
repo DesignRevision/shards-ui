@@ -476,6 +476,9 @@ $custom-file-text: (
   en: "Browse"
 ) !default;
 
+// Custom switches (core)
+$custom-switch-padding-left: 2.25rem !default;
+
 // Form validation
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $small-font-size !default;
@@ -752,11 +755,11 @@ $popover-body-color:               $body-color !default;
 $popover-body-padding-y:           15px !default;
 $popover-body-padding-x:           20px !default;
 
-$popover-arrow-width:                 10px !default;
-$popover-arrow-height:                5px !default;
+$popover-arrow-width:                 1rem !default;
+$popover-arrow-height:                0.3rem !default;
 $popover-arrow-color:                 $popover-bg !default;
 
-$popover-arrow-outer-width:           $popover-arrow-width + 1px !default;
+$popover-arrow-outer-width:           $popover-arrow-width !default;
 $popover-arrow-outer-color:           fade-in($popover-border-color, .05) !default;
 
 
