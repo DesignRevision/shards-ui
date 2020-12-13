@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A modern UI kit packed with 2 custom page templates and 11 extra <br />custom components built on top of Bootstrap (4.1.3).
+A modern UI kit packed with 2 custom page templates and 11 extra <br />custom components built on top of Bootstrap (4.3.1).
 </p>
 
 <br />
@@ -68,7 +68,7 @@ npm install --save shards-ui bootstrap
 
 ### Dependencies
 
-The only hard dependency is Bootstrap 4 (final) which needs to be included in your HTML document before Shards. Datepickers and slider controls also require the Shards JavaScript dependency.
+The only hard dependency is Bootstrap 4.3.1 which needs to be included in your HTML document before Shards. Datepickers and slider controls also require the Shards JavaScript dependency.
 
 <br />
 
