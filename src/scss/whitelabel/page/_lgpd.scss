@@ -1,0 +1,111 @@
+#userPrivacyTermModal {
+  .birthday-label {
+    margin-top: 10px;
+    background: #EFEEF1;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 0px 0px 10px;
+    margin-bottom: -5px;
+  }
+
+  .birthday-input {
+    background: #EFEEF1;
+    padding: 0px 10px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .day-input, .month-input, .year-input {
+    padding: 5px;
+    font-size: 15px;
+    font-family: montserrat;
+    text-align: right;
+    width: 47px;
+    margin-right: 10px;
+
+    color: #000 !important;
+    border: #FFF;
+    border-radius: 3px;
+  }
+
+  .year-input {
+    width: 80px;
+  }
+
+  .do-after-btn {
+    margin-left: 80px;
+    text-decoration: none
+  }
+}
+
+.banner-lgpd-consent-container {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  z-index: 29999999;
+}
+
+.banner-lgpd-consent--show {
+  animation: show 1s both;
+}
+
+.banner-lgpd-consent {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 27px;
+  background-color: rgba(#404040,0.9);
+  box-shadow: 0 8px 6px 0 rgba(#000,0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.banner-lgpd-consent__column {
+  padding: 0 54px;
+  margin: auto;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.banner-lgpd-consent__link {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.banner-lgpd-consent__link:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.banner-lgpd-consent__accept {
+  margin-top: -8px;
+  width: 118px;
+  height: 36px;
+  line-height: 15px;
+  background: #E9B425;
+  border-radius: 1px;
+  cursor: pointer;
+  color: #000;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 rgba(#000,0.4);
+  transition: all .3s;
+}
+
+.banner-lgpd-consent__accept:hover {
+  color: #FFF;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-lgpd-consent {
+      height: auto;
+      padding: 17px;
+      flex-wrap: wrap;
+  }
+
+  .banner-lgpd-consent__accept {
+    margin-top: 16px;
+  }
+}
