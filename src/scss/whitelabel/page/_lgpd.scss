@@ -109,3 +109,40 @@
     margin-top: 16px;
   }
 }
+
+.user-data-lgpd {
+  .container {
+    max-width: 700px;
+    margin: 30px auto 0;
+  }
+
+  div.message {
+    display: flex;
+    background-color: #D3D3D3;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    i {
+      margin: auto;
+      padding-right: 20px;
+      font-size: 60px;
+    }
+
+    &.alert {
+      i {
+        color: #EEAD2D;
+      }
+    }
+
+    &.info {
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      i {
+        color: black;
+      }
+    }
+  }
+}
