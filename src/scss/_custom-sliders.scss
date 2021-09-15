@@ -104,7 +104,7 @@ html:not([dir="rtl"]) {
 
   .noUi-handle {
     left: -10px;
-    top: -$slider-handle-width / 2;
+    top: -$slider-handle-width * 0.5;
 
     &:before,
     &:after {
@@ -140,7 +140,7 @@ html:not([dir="rtl"]) {
   }
 
   .noUi-handle {
-    left: -$slider-handle-width / 2;
+    left: -$slider-handle-width * 0.5;
     top: -10px;
   }
 

@@ -57,7 +57,7 @@
 
 // Optional captions
 .carousel-caption {
-  right: ((100% - $carousel-caption-width) / 2);
-  left: ((100% - $carousel-caption-width) / 2);
+  right: ((100% - $carousel-caption-width) * 0.5);
+  left: ((100% - $carousel-caption-width) * 0.5);
   color: $carousel-caption-color;
 }

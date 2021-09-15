@@ -602,7 +602,7 @@ $navbar-nav-link-padding-x: .625rem !default;
 
 // Navbar
 
-$navbar-padding-y:                  ($spacer / 2) !default;
+$navbar-padding-y:                  ($spacer * 0.5) !default;
 $navbar-padding-x:                  $spacer !default;
 
 $navbar-brand-font-size:            1rem !default;
@@ -610,7 +610,7 @@ $navbar-brand-font-size:            1rem !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   $navbar-brand-font-size * $line-height-base !default;
 $navbar-brand-height:               ($font-size-base * $line-height-base + $nav-link-padding-y * 2) !default;
-$navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) / 2 !default;
+$navbar-brand-padding-y:            ($navbar-brand-height - $nav-link-height) * 0.5 !default;
 
 $navbar-font-family:                $font-family-poppins-first !default;
 $navbar-toggler-padding-y:           .5rem !default;
@@ -675,10 +675,10 @@ $card-spacer-y:                 2.1875rem !default;
 $card-spacer-x:                 1.875rem !default;
 
 $card-header-spacer-x:          $card-spacer-x !default;
-$card-header-spacer-y:          ($card-spacer-y / 2) !default;
+$card-header-spacer-y:          ($card-spacer-y * 0.5) !default;
 
 $card-footer-spacer-x:          $card-spacer-x !default;
-$card-footer-spacer-y:          ($card-spacer-y / 2) !default;
+$card-footer-spacer-y:          ($card-spacer-y * 0.5) !default;
 
 $card-border-radius:            0.625rem !default;
 $card-inner-border-radius:      $card-border-radius !default;
