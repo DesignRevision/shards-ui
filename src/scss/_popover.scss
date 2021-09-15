@@ -97,7 +97,7 @@
   // This will remove the popover-header's border just below the arrow
   .popover-header::before {
     width: $popover-arrow-width;
-    margin-left: ($popover-arrow-width / -2);
+    margin-left: ($popover-arrow-width * -0.5);
     border-bottom: $popover-border-width solid $popover-header-bg;
   }
 }
