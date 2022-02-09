@@ -60,7 +60,7 @@
     "bundlesize": "^0.18.0",
     "clean-css-cli": "^4.1.11",
     "copyfiles": "^1.2.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.4",
     "nouislider": "^11.1.0",
     "npm-run-all": "^4.1.2",
