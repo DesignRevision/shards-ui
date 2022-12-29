@@ -68,7 +68,7 @@
     "sass-lint": "^1.12.1",
     "sass-unused": "^0.2.2",
     "uglify-js": "^3.3.23",
-    "webpack": "^3.11.0"
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "bootstrap": "4.3.1"
